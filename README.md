@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14976788.svg)](https://doi.org/10.5281/zenodo.14976788)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17091694.svg)](https://doi.org/10.5281/zenodo.17091694)
 
 # Rapamycin model
 This repository provides the rapamycin physiologically based pharmacokinetics (PBPK) model.
@@ -22,11 +22,11 @@ The intestine submodel is available from [`rapamycin_intestine.xml`](./models/ra
 The whole-body submodel is available from [`rapamycin_body.xml`](./models/rapamycin_body.xml) with corresponding [SBML4humans report](https://sbml4humans.de/model_url?url=https://raw.githubusercontent.com/matthiaskoenig/rapamycin-model/main/models/rapamycin_body.xml) and [equations](./models/rapamycin_body.md).
 
 ## How to cite
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14976788.svg)](https://doi.org/10.5281/zenodo.14976788)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17091694.svg)](https://doi.org/10.5281/zenodo.17091694)
 
 > Jesionek, M., & König, M. (2025).
 > *Physiologically based pharmacokinetic (PBPK) model of rapamycin.*   
-> Zenodo. [https://doi.org/10.5281/zenodo.14976788](https://doi.org/10.5281/zenodo.14976788)
+> Zenodo. [https://doi.org/10.5281/zenodo.17091694](https://doi.org/10.5281/zenodo.17091694)
 
 ## License
 
