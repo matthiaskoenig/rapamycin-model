@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	0.25	hr	9.677104273347867e-05						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	0.5	hr							ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	0.75	hr							ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	1.0	hr							ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	2.0	hr	0.0001233003405024055						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	3.0	hr							ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	4.0	hr	0.00010212389926143813						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	5.0	hr	7.90793409741111e-05						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	6.0	hr	4.9370874840153475e-05						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	8.0	hr	4.554050803392479e-05						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	10.0	hr	3.980548790885324e-05						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	12.0	hr	3.252824049498503e-05						ng/ml	mole/meter^3
+BasaDenes2019	D5	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D5	24.0	hr	2.451914043744158e-05						ng/ml	mole/meter^3

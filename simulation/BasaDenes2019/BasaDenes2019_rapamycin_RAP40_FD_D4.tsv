@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	0.25	hr	7.005733518359107e-05						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	0.5	hr	0.0001092332482342753						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	0.75	hr							ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	1.0	hr	0.00011071343878880218						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	2.0	hr	0.00013012065589753524						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	3.0	hr	0.00010212389926143813						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	4.0	hr	9.677104273347867e-05						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	5.0	hr	7.90793409741111e-05						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	6.0	hr	6.912069906291255e-05						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	8.0	hr	4.615761528771273e-05						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	10.0	hr	3.386858465058443e-05						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	12.0	hr	2.8051762978839972e-05						ng/ml	mole/meter^3
+BasaDenes2019	D4	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D4	24.0	hr	1.823494333542433e-05						ng/ml	mole/meter^3

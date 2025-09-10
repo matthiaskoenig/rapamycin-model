@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	0.33	hr		2.6153440780367563e-05		5.554292544449683e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	0.67	hr		5.894071925360427e-05		9.01618914716182e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	1.0	hr		5.798192864116825e-05		9.998447963003675e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	2.0	hr		3.915916526610346e-05		4.8702093146240855e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	3.0	hr		2.7809448478230407e-05		3.1979337767913245e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	5.0	hr		2.0964015652489753e-05		3.6150508358251888e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	8.0	hr		1.635846377185582e-05		2.502361786415225e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	12.0	hr		1.3239322598103922e-05		1.6928784657057382e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	24.0	hr		1.0411612618461362e-05		1.6495443292299839e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	48.0	hr		8.413262849789957e-06		1.597065624682742e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	72.0	hr		7.56578320682131e-06		1.5574448730234543e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	96.0	hr		6.3637833624197586e-06		1.2080940623236074e-06			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	120.0	hr		5.571809197118485e-06		8.828233074683768e-07			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	144.0	hr		5.21566084356138e-06		8.263334492899093e-07			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	216.0	hr		4.055339098806056e-06		5.80108660035733e-07			mole/meter^3	ng/ml
+Zimmerman2008		GRADE_C	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_GRADE_C	312.0	hr		2.87366789791537e-06		3.674485960986658e-07			mole/meter^3	ng/ml

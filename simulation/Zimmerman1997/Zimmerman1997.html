@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Zimmerman1997</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Zimmerman1997</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/rapamycin_body_flat.xml">../../../../models/results/models/rapamycin_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>rapamycin_RAP05</strong>: <a href="Zimmerman1997_rapamycin_RAP05.tsv">Zimmerman1997_rapamycin_RAP05.tsv</a></li>
+                <li><strong>rapamycin_RAP1_5</strong>: <a href="Zimmerman1997_rapamycin_RAP1_5.tsv">Zimmerman1997_rapamycin_RAP1_5.tsv</a></li>
+                <li><strong>rapamycin_RAP2_5A</strong>: <a href="Zimmerman1997_rapamycin_RAP2_5A.tsv">Zimmerman1997_rapamycin_RAP2_5A.tsv</a></li>
+                <li><strong>rapamycin_RAP3_5</strong>: <a href="Zimmerman1997_rapamycin_RAP3_5.tsv">Zimmerman1997_rapamycin_RAP3_5.tsv</a></li>
+                <li><strong>rapamycin_RAP6_5</strong>: <a href="Zimmerman1997_rapamycin_RAP6_5.tsv">Zimmerman1997_rapamycin_RAP6_5.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>Fig1</strong>: <a href="Zimmerman1997_Fig1.svg">Zimmerman1997_Fig1.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>Fig1</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Zimmerman1997_Fig1.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Zimmerman1997_Fig1.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/zimmerman1997.py">../../../../experiments/studies/zimmerman1997.py</a>
+            <pre>
+<code class="python">from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+
+from pkdb_models.models.rapamycin.experiments.base_experiment import (
+    RapamycinSimulationExperiment,
+)
+from pkdb_models.models.rapamycin.experiments.metadata import (
+    RapamycinMappingMetaData,
+    Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration
+)
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.rapamycin.helpers import run_experiments
+
+
+class Zimmerman1997(RapamycinSimulationExperiment):
+    """Simulation experiment of Zimmerman1997."""
+
+    interventions = ["RAP05","RAP1_5", "RAP2_5A", "RAP3_5", "RAP6_5"]
+    colors = {
+        "RAP05": "tab:blue",
+        "RAP1_5": "tab:green",
+        "RAP2_5A": "tab:purple",
+        "RAP3_5": "tab:red",
+        "RAP6_5": "tab:pink",
+    }
+    doses = {  # [mg]
+        "RAP05": 0.5,
+        "RAP1_5": 1.5,
+        "RAP2_5A": 2.5,
+        "RAP3_5": 3.5,
+        "RAP6_5": 6.5,
+    }
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        for fig_id in ["Fig1"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+
+                # unit conversion
+                if label.startswith("rapamycin_"):
+                   dset.unit_conversion("mean", 1 / self.Mr.rap)
+
+                dsets[label] = dset
+
+        # console.print(dsets)
+
+        #console.print(dsets.keys())
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        for intervention in self.interventions:
+            dose = self.doses[intervention]
+            tcsims[f"rap_{intervention}"] = TimecourseSim(
+                [Timecourse(
+                    start=0,
+                    end=350 * 60,  # [min]
+                    steps=2000,
+                    changes={
+                        **self.default_changes(),
+                        # physiological changes
+                        "BW": Q_(83.2, "kg"),
+                        # dose
+                        "PODOSE_rap": Q_(dose, "mg"),
+                    },
+                )]
+            )
+
+        #console.print(tcsims.keys())
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+
+        mappings = {}
+
+        for intervention in self.interventions:
+            mappings[f"fm_rap_{intervention}"] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=f"rapamycin_{intervention}",
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count"
+                ),
+                observable=FitData(
+                    self, task=f"task_rap_{intervention}", xid="time",yid="[Cveblood_rap]",
+                ),
+                metadata=RapamycinMappingMetaData(
+                    tissue=Tissue.BLOOD,
+                    route=Route.PO,
+                    application_form=ApplicationForm.SOLUTION,
+                    dosing=Dosing.MULTIPLE,
+                    health=Health.RENAL_TRANSPLANT,
+                    fasting=Fasting.FASTED,
+                    coadministration=Coadministration.CYCLOSPORINE and Coadministration.PREDNISONE
+                )
+            )
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+
+        fig = Figure(
+            experiment=self,
+            sid="Fig1",
+            name=f"{self.__class__.__name__} (healthy)",
+            num_rows=2,
+        )
+        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        for k in range(2):
+            plots[k].set_yaxis(self.label_rap_blood, unit=self.unit_rap)
+
+        plots[1].xaxis.min = -1
+        plots[1].xaxis.max = 48
+
+        for intervention in self.interventions:
+            for k in range(2):
+                # simulation
+                plots[k].add_data(
+                    task=f"task_rap_{intervention}",
+                    xid="time",
+                    yid="[Cveblood_rap]",
+                    label=intervention,
+                    color=self.colors[intervention],
+                )
+                # data
+                plots[k].add_data(
+                    dataset=f"rapamycin_{intervention}",
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                    label=intervention,
+                    color=self.colors[intervention],
+                )
+
+        return {
+            fig.sid: fig,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Zimmerman1997, output_dir=Zimmerman1997.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

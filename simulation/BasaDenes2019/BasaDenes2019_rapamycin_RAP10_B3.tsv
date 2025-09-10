@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	0.25	hr	3.2805858332539425e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	0.5	hr							ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	0.75	hr							ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	1.0	hr							ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	2.0	hr	6.470046788171426e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	3.0	hr	4.607118821320476e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	4.0	hr	3.757877409782339e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	5.0	hr	3.023825207939535e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	6.0	hr	2.6041521795918797e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	8.0	hr	1.7802909764149282e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	10.0	hr	1.4521256131161655e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	12.0	hr	1.2337147067304738e-05						ng/ml	mole/meter^3
+BasaDenes2019	B3	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B3	24.0	hr	8.097333223431184e-06						ng/ml	mole/meter^3

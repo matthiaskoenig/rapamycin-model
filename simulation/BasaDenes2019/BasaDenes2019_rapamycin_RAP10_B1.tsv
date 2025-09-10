@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	0.25	hr	4.189243176433458e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	0.5	hr							ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	0.75	hr	0.00017920141950992916						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	1.0	hr	0.00015019410293614253						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	2.0	hr	0.00013657117284538388						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	3.0	hr	9.21052847798206e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	4.0	hr	8.040690514010176e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	5.0	hr	6.382756858616984e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	6.0	hr	5.2774073360095295e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	8.0	hr	3.809269756638111e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	10.0	hr	3.14959015419508e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	12.0	hr	2.9830296004226664e-05						ng/ml	mole/meter^3
+BasaDenes2019	B1	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B1	24.0	hr	2.1531717596463856e-05						ng/ml	mole/meter^3

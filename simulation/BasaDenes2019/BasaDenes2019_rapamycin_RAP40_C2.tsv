@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	0.25	hr	0.00013028045230565168						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	0.5	hr	0.00027048185793008623						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	0.75	hr	0.00026326177911060376						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	1.0	hr	0.00017544172013573265						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	2.0	hr	0.00013385345533504145						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	3.0	hr	0.0001137961614125713						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	4.0	hr	9.416192090938093e-05						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	5.0	hr	8.224768152924882e-05						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	6.0	hr							ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	8.0	hr	6.805677438502254e-05						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	10.0	hr	5.9445600211514155e-05						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	12.0	hr	4.9188934284288e-05						ng/ml	mole/meter^3
+BasaDenes2019	C2	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C2	24.0	hr	3.70244792387307e-05						ng/ml	mole/meter^3

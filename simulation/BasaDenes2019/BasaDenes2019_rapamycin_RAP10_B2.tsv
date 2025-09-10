@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	0.25	hr	6.831308565734266e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	0.5	hr	0.0001241838719879292						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	0.75	hr							ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	1.0	hr	0.00011292012611895422						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	2.0	hr	7.512729374243805e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	3.0	hr	5.496901785701639e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	4.0	hr	3.9141725716968985e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	5.0	hr	3.325450789357581e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	6.0	hr	2.6041521795918797e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	8.0	hr	2.0393050458531162e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	10.0	hr	1.6188147330818526e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	12.0	hr	1.3026004478310918e-05						ng/ml	mole/meter^3
+BasaDenes2019	B2	RAP10	8.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_B2	24.0	hr	1.0063010758663081e-05						ng/ml	mole/meter^3

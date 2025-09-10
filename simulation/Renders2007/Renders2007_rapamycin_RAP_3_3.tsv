@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	0.0	hr		5.699536364063486e-06		3.186076228358474e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	0.5	hr		8.767609769149422e-06		4.071097402902462e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	1.0	hr		1.2779705760415627e-05		5.9001411636267756e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	2.0	hr		1.2838707172051886e-05		6.785162338170861e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	3.0	hr		1.0950661999691305e-05		5.428129870536601e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	4.0	hr		1.0242645060056132e-05		5.1921242239915386e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	6.0	hr		8.88561259242196e-06		4.779114342537645e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	8.0	hr		8.413601299331821e-06		5.0151199890827535e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	9.0	hr		8.177595652786746e-06		4.248101637811226e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	10.0	hr		7.705584359696596e-06		4.425105872720087e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	11.0	hr		8.059592829514208e-06		5.01511998908271e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	12.0	hr		7.056568831697648e-06		4.012095991266173e-06			mole/meter^3	ng/ml
+Renders2007		SRL	7.0	RAP_3_3	concentration	rapamycin	plasma	LC MS	rapamycin_RAP_3_3	24.0	hr		5.7585377756997554e-06		3.5990861098123553e-06			mole/meter^3	ng/ml

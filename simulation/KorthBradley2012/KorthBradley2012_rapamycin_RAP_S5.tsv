@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	0.0	hr							mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	0.5	hr		4.210662721608573e-06		2.769960148763816e-06	5.53992029752763e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	1.0	hr		1.0301453645644983e-05		4.754331323028513e-06	9.508662646057037e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	2.0	hr		1.2583764385045961e-05		3.814532333579166e-06	7.629064667158343e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	3.0	hr		1.0861871174596636e-05		3.2925726778468033e-06	6.585145355693606e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	5.0	hr		8.736226203500905e-06		2.376331763332531e-06	4.752663526665051e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	8.0	hr		7.0265654095800905e-06		2.1299716149090778e-06	4.2599432298181556e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	12.0	hr		4.8495355646855035e-06		1.6218655129581755e-06	3.243731025916351e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	24.0	hr		2.9578505189524965e-06		1.0823606882692412e-06	2.1647213765384827e-07		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	48.0	hr		1.7009436399394907e-06		4.100452903699512e-07	8.200905807399025e-08		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	72.0	hr		1.2974869893415885e-06		4.3392802742782947e-07	8.678560548556589e-08		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	96.0	hr		1.0497320853628644e-06		1.886721720950075e-07	3.773443441900139e-08		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	120.0	hr		8.593427282032076e-07		2.6049364260606785e-07	5.2098728521213566e-08		mole/meter^3	ng/ml
+KorthBradley2012		shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_S5	144.0	hr		7.118144750152571e-07		2.6047293470745495e-07	5.209458694149098e-08		mole/meter^3	ng/ml

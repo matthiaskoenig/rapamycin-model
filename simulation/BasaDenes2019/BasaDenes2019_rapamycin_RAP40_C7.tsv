@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	0.25	hr	7.518290460434618e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	0.5	hr	0.00022995145763806454						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	0.75	hr	0.00022147069344187673						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	1.0	hr	0.0001818179610211165						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	2.0	hr	0.00012253998374528902						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	3.0	hr	8.903456813317407e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	4.0	hr	7.447990685033394e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	5.0	hr	6.408546195023626e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	6.0	hr	5.411528660557232e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	8.0	hr	4.1991426503626285e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	10.0	hr	3.545855816698512e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	12.0	hr	3.050994793517751e-05						ng/ml	mole/meter^3
+BasaDenes2019	C7	RAP40	8.0	RAP40	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_C7	24.0	hr	2.135022239440383e-05						ng/ml	mole/meter^3

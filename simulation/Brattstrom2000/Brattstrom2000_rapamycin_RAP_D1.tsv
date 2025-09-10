@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	up	down	mean_unit	value_unit
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	0.0	hr		8.94830413895741e-06		3.646185116475228e-06	1.4885488405157932e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	0.33	hr		1.2628909303470495e-05							mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	0.66	hr		1.1423228275686552e-05							mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	1.0	hr		8.203482717111125e-06		2.9802727654787543e-06	1.2166912616227108e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	2.0	hr		6.5884135138381515e-06		2.6563599016121535e-06	1.0844543886899169e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	3.0	hr		4.911285576195778e-06		1.4219596110964767e-06	5.805125803387961e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	4.0	hr									mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	6.0	hr		3.539867949264564e-06		1.3027753618703138e-06	5.318558143419961e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	8.0	hr		2.4431481073107913e-06		8.671570975529887e-07	3.5401540263961293e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	12.0	hr		1.599261204133544e-06		4.853827037064624e-07	1.9815665900889099e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	16.0	hr		1.2037936763708553e-06		4.799795670592629e-07	1.9595083770952914e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	24.0	hr		1.0075081818339285e-06		4.2044198874780143e-07	1.716447231455166e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	48.0	hr		7.230720954584701e-07		2.499308632414962e-07	1.020338476524984e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	72.0	hr		5.471712520348776e-07		1.7170425975147596e-07	7.009797050890308e-08				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	96.0	hr		4.429398942340013e-07		9.620402409346776e-08	3.9275128371902475e-08				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	120.0	hr		4.1630608927928434e-07		4.299789551547373e-08	1.7553817337735932e-08				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	144.0	hr		3.856609286420836e-07		5.579453354227504e-08	2.277802293586239e-08				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D1	6.0	RAP_D1	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP_D1	312.0	hr									mole/meter^3	ng/ml

@@ -1,0 +1,34 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	0.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	0.5	hr		2.881736582992531e-07		2.7059576363058086e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	1.0	hr		1.933233840367375e-06		3.1085843119787975e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	1.5	hr		4.424476082152426e-06		1.0766902043144894e-06			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	2.0	hr		7.1260865449773055e-06		6.50658673916224e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	2.5	hr		8.691537523121656e-06		7.608872566389318e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	3.0	hr		9.761511393579895e-06					mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	4.0	hr		1.1477315845676836e-05					mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	6.0	hr		1.179728361194377e-05		1.566129951650756e-06			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	8.0	hr		1.0600885077529235e-05					mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	10.0	hr		9.467787993058448e-06		7.199768198772025e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	12.0	hr		8.691537523121656e-06					mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	16.0	hr		7.691701914184509e-06		3.2608586016132187e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	24.0	hr		6.306333416019142e-06		3.7123852586642617e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	48.0	hr		4.688911974705708e-06		2.6334724351204623e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	72.0	hr		4.000144373452388e-06		2.515784143874308e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	96.0	hr		3.6498082033662596e-06		2.000304692752041e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	120.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	144.0	hr		3.200481464696256e-06		1.7540478118804023e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	168.0	hr		3.038496892575936e-06		1.6238794897651086e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	192.0	hr		2.7470882479439913e-06		1.4681404721231314e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	216.0	hr		2.6160313566126126e-06		1.3980990650230005e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	240.0	hr		2.423659426689094e-06		1.361219900637232e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	264.0	hr		2.238583950713449e-06		1.6441597819010845e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	288.0	hr		2.1188002322918917e-06		1.3889813557601146e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	312.0	hr		1.999308368595009e-06		1.0685006331287352e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	336.0	hr		1.8186423768032795e-06		8.720892744523758e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	360.0	hr		1.8242071794171315e-06		1.0492431812024085e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	384.0	hr		1.6900626651330235e-06		9.262514882268848e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	408.0	hr		1.6143585431766496e-06		7.517996572054445e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	432.0	hr		1.481999582593022e-06		8.122209591680186e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	456.0	hr		1.3899018886885388e-06		8.926748369687373e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05_3D	480.0	hr		1.3480798088203322e-06		6.277948244151882e-08			mole/meter^3	pg/ml

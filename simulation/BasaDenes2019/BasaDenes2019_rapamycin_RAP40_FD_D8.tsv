@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	0.25	hr							ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	0.5	hr	6.0416171658661676e-05						ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	0.75	hr							ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	1.0	hr							ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	2.0	hr							ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	3.0	hr							ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	4.0	hr	9.677104273347867e-05						ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	5.0	hr	7.802208455746768e-05						ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	6.0	hr	5.802521073065667e-05						ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	8.0	hr	5.352340998625543e-05						ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	10.0	hr	4.257654450407434e-05						ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	12.0	hr	3.72147830717038e-05						ng/ml	mole/meter^3
+BasaDenes2019	D8	RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD_D8	24.0	hr	3.252824049498503e-05						ng/ml	mole/meter^3

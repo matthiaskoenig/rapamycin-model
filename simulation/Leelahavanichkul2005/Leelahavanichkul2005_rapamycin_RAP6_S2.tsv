@@ -1,0 +1,13 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	0.0	hr	0.0		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	0.5	hr	1.8012658961259477e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	1.0	hr	2.326331258559424e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	1.5	hr	2.051297021094271e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	2.0	hr	1.6137425523997072e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	2.5	hr	1.4512223211702962e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	3.0	hr	2.0387954648458564e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	4.0	hr	1.1886896399535579e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	6.0	hr	1.0261694087241568e-05		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	8.0	hr	6.261196087748398e-06		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	12.0	hr	5.886149400295929e-06		mole/meter^3
+Leelahavanichkul2005	S2		1.0	RAP6	concentration	rapamycin	blood	HPLC/UV	rapamycin_RAP6_S2	24.0	hr	5.01104046290679e-06		mole/meter^3

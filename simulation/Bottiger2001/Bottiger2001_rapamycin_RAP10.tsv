@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	0.0	hr		7.537850578051676e-05		2.050327035594334e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	0.67	hr		6.968902064241516e-05		3.297613421272192e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	1.0	hr		4.0629606506842856e-05		2.0878782796840724e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	2.0	hr		3.1175393320444545e-05		9.742119745751537e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	3.0	hr		2.4156925610260056e-05		8.70170073367569e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	4.0	hr		1.584326408116406e-05		6.18428147578509e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	6.0	hr		1.1349878667133283e-05		5.272083670402733e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	8.0	hr		7.591279973224532e-06		2.7700996104731395e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	12.0	hr		6.177982961839179e-06		1.970898596162494e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	15.0	hr		5.1274235565633766e-06		1.8353363048621925e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	24.0	hr		3.6018445148407317e-06		1.4291620686000302e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	48.0	hr		2.9893547014533918e-06		1.4011726173594921e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	72.0	hr		2.385549078621318e-06		1.372496067720458e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	120.0	hr		1.77736447271593e-06		1.066503680423719e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	144.0	hr		1.4183630260404744e-06		7.543165408005715e-07			mole/meter^3	ng/ml

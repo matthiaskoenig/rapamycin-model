@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	0.0	hr							mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	0.5	hr		2.6636379862589085e-06		2.395749045018032e-06	4.698450434699316e-07		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	1.0	hr		8.130884210394488e-06		8.87877694221206e-07	1.7412714186606587e-07		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	2.0	hr		1.1094483831966834e-05		2.0335420104328735e-06	3.9881039972722736e-07		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	3.0	hr		1.0265137482358098e-05		5.4403505762392715e-06	1.0669405288088387e-06		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	5.0	hr		8.482867518024859e-06		2.514462409202985e-06	4.93126649643136e-07		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	8.0	hr		6.863065512565831e-06		1.5149179453793866e-06	2.970998524992838e-07		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	12.0	hr		4.855247754568205e-06		1.4391758376855053e-06	2.822456030711401e-07		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	24.0	hr		2.982324898756076e-06		1.112928878963836e-06	2.182633104260588e-07		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	48.0	hr		1.7683209382339905e-06		4.5700854695717185e-07	8.96267499543577e-08		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	72.0	hr		1.352062202764863e-06		3.4942977223262494e-07	6.852881643247828e-08		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	96.0	hr		1.0265137482358099e-06		3.0427567411425246e-07	5.967336922385275e-08		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	120.0	hr		8.305011352260554e-07		2.1463644344729804e-07	4.2093669748689494e-08		mole/meter^3	ng/ml
+KorthBradley2012		all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_T5	144.0	hr		6.911711931803133e-07		2.048745875003979e-07	4.017921228860786e-08		mole/meter^3	ng/ml

@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	0.0	hr		8.780522113892125e-05		5.07896215262088e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	0.67	hr		9.023079266096815e-05		3.4901082119706045e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	1.0	hr		5.834502999992867e-05		2.4238391098850775e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	2.0	hr		5.6391133984875165e-05		1.7161213103689138e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	3.0	hr		4.066283452896813e-05		1.4587511757789318e-05			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	4.0	hr		2.4898769283431703e-05		6.9203214538463725e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	6.0	hr		1.9885834493161076e-05		6.051749971429333e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	8.0	hr		1.4242034511064166e-05		4.334202418061417e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	12.0	hr		1.2011765262752224e-05		3.5491069551846866e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	15.0	hr		8.900780461369627e-06		2.6299066915649564e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	24.0	hr		6.418224594958858e-06		2.010448810705317e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	48.0	hr		4.659725563625462e-06		2.3528380353874796e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	72.0	hr		3.7215707446017426e-06		1.6183215490837664e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	120.0	hr		2.992614848898495e-06		1.9281113740668357e-06			mole/meter^3	ng/ml
+Bottiger2001		all	18.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_DIL120	144.0	hr		2.232701618218127e-06		1.291472975061944e-06			mole/meter^3	ng/ml

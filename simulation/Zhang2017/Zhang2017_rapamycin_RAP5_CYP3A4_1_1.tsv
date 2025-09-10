@@ -1,0 +1,18 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	0.0	hr							mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	0.5	hr		6.54143930698373e-06		5.174081592313218e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	1.0	hr		1.3324361342544438e-05		1.0128558179484186e-05			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	1.5	hr							mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	2.0	hr		1.5947592016370444e-05		4.721056048095113e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	2.5	hr							mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	3.0	hr		1.6962236848326228e-05		3.7064112161393274e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	4.0	hr		1.4269978412888757e-05		4.930880761343791e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	6.0	hr		1.4235991729855074e-05		4.964867444377474e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	8.0	hr		1.3432577471873178e-05		6.15492854833068e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	12.0	hr		1.070682440465593e-05		4.511231334846346e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	24.0	hr		6.551205540270128e-06		2.4829257734426206e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	48.0	hr		3.9750360542230405e-06		1.3288898505749193e-06			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	72.0	hr		2.8675692678803847e-06		6.994157108289043e-07			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	96.0	hr		2.179822201071341e-06		4.546202120387861e-07			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	120.0	hr		1.5620167053451763e-06		5.245617831216864e-07			mole/meter^3	ng/ml
+Zhang2017		CYP3A4_1_1	18.0	RAP5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP5_CYP3A4_1_1	144.0	hr		1.3638606361163691e-06		4.196494264973469e-07			mole/meter^3	ng/ml

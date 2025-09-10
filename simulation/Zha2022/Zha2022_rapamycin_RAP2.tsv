@@ -1,0 +1,34 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	0.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	0.5	hr		1.7160782163457003e-06		5.159644939782988e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	1.0	hr		4.012384280621107e-06		1.036615193130269e-06			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	1.5	hr		5.462793514503781e-06		1.061224003090447e-06			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	2.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	2.5	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	3.0	hr		6.954025191459505e-06					mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	4.0	hr		6.1907819526264036e-06					mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	6.0	hr		4.812771803051132e-06		6.895061407690062e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	8.0	hr		3.58119195159721e-06		5.750582254906762e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	10.0	hr		2.845680110157947e-06		4.795623708939314e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	12.0	hr		2.2861194319400646e-06		3.6016842919493033e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	16.0	hr		1.8365880403907733e-06		3.0516322302966755e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	24.0	hr		1.308056938738261e-06		2.1989965027835134e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	48.0	hr		8.350220893353339e-07		1.309834471676235e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	72.0	hr		6.491539836535501e-07		1.0425542822832172e-07			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	96.0	hr		5.330516348550671e-07		9.502943307696449e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	120.0	hr		4.1439932748921944e-07		7.772511966783927e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	144.0	hr		3.633847888923987e-07		7.35738978681985e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	168.0	hr		3.1174947425143344e-07		7.068144957449685e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	192.0	hr		2.645393958102344e-07		5.710665404633855e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	216.0	hr		2.2447862054516987e-07		4.831278608618521e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	240.0	hr		1.7451177954818343e-07		4.744345804170944e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	264.0	hr		1.4487740499890338e-07		5.089496595941955e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	288.0	hr		1.163894176421196e-07		4.602726607482181e-08			mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	312.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	336.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	360.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	384.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	408.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	432.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	456.0	hr							mole/meter^3	pg/ml
+Zha2022		all	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2	480.0	hr							mole/meter^3	pg/ml
