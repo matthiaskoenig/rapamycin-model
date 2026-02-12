@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	0.5	hr	4.2388089154785866e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	1.0	hr	8.545985716690699e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	2.0	hr	8.614353602424225e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	3.0	hr	7.58883531642134e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	4.0	hr			mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	6.0	hr	4.2388089154785866e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	8.0	hr	3.1449227437421772e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	12.0	hr	2.6663475436074984e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	12.5	hr			mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	13.0	hr	2.32450811493987e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	14.0	hr	2.256140229206345e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	15.0	hr	1.982668686272242e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	16.0	hr			mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	18.0	hr	1.7775650290716654e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	20.0	hr	1.845932914805191e-06		mole/meter^3
+Rogers2008		P7	1.0	RAP6, MMF2, TRL8	concentration	rapamycin	blood	LC MS/MS	rapamycin_P7	24.0	hr	1.6408292576046142e-06		mole/meter^3

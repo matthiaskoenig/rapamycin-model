@@ -1,0 +1,49 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	0.33	hr	NA	1.91213861068681	NA	1.1448341708847647	0.2203234389126003	ng/ml	only 3 SE readable
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	0.67	hr	NA	6.00924264322918	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	1.0	hr	NA	7.49935100265124	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	2.0	hr	NA	7.02914543569248	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	3.0	hr	NA	5.90771365915411	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	5.0	hr	NA	4.54417208362139	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	8.0	hr	NA	3.519250837225	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	12.0	hr	NA	3.07077359595344	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	24.0	hr	NA	2.56333037955615	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	36.0	hr	NA	2.16911018760437	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	48.0	hr	NA	2.0055810605253	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	72.0	hr	NA	1.51145488310609	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	96.0	hr	NA	1.21113135438881	NA	0.4209769982470583	0.08101706108685991	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	120.0	hr	NA	0.977118932635558	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_TAC10	144.0	hr	NA	0.754158830983832	NA	0.2479139920346921	0.04771107001236807	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	0.33	hr	NA	2.4690160766003	NA	NA	NA	ng/ml	no SE
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	0.67	hr	NA	6.26008842767914	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	1.0	hr	NA	7.27282496204977	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	2.0	hr	NA	6.81682246483856	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	3.0	hr	NA	5.82772694373693	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	5.0	hr	NA	4.27379491625228	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	8.0	hr	NA	3.32115536086311	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	12.0	hr	NA	2.97801754492597	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	24.0	hr	NA	2.59851260061236	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	36.0	hr	NA	2.08930068781849	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	48.0	hr	NA	1.92521613274233	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	72.0	hr	NA	1.48591814114577	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	96.0	hr	NA	1.18258079862532	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	120.0	hr	NA	0.934774034037068	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10	144.0	hr	NA	0.749036014600869	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	0.0	hr	NA	NA	NA	NA	NA	ng/ml	no SE
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	0.33	hr	NA	2.76290478369414	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	0.67	hr	NA	6.02975687104196	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	1.0	hr	NA	7.0772192541662	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	2.0	hr	NA	6.88687444464828	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	3.0	hr	NA	5.90771365915411	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	5.0	hr	NA	4.317713882417	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	8.0	hr	NA	3.29859556524181	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	12.0	hr	NA	2.81998164851812	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	24.0	hr	NA	2.48590220191398	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	36.0	hr	NA	2.11077105034508	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	48.0	hr	NA	1.91866622978927	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	72.0	hr	NA	1.46081285446556	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	96.0	hr	NA	1.14295785562972	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	120.0	hr	NA	0.885167928572871	NA	NA	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15, TAC10_4H	concentration	fujimycin	blood	LC MS/MS	fujimycin_RAP15_TAC10_4H	144.0	hr	NA	0.70446854836974	NA	NA	NA	ng/ml	NA

@@ -1,0 +1,37 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	unit	comments
+Bottiger2001	S1	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S1	24.0	hr	313.959238681224	ng/ml	NA
+Bottiger2001	S2	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S2	24.0	hr	413.617553032022	ng/ml	NA
+Bottiger2001	S3	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S3	24.0	hr	456.328259182364	ng/ml	NA
+Bottiger2001	S4	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S4	24.0	hr	560.732207549866	ng/ml	NA
+Bottiger2001	S5	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S5	24.0	hr	589.206011650093	ng/ml	NA
+Bottiger2001	S6	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S6	24.0	hr	660.390521900663	ng/ml	NA
+Bottiger2001	S7	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S7	24.0	hr	684.118691984186	ng/ml	NA
+Bottiger2001	S8	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S8	24.0	hr	703.101228051004	ng/ml	NA
+Bottiger2001	S9	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S9	24.0	hr	731.575032151232	ng/ml	NA
+Bottiger2001	S10	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S10	24.0	hr	793.268274368392	ng/ml	NA
+Bottiger2001	S11	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S11	24.0	hr	807.505176418506	ng/ml	NA
+Bottiger2001	S12	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S12	24.0	hr	869.198418635667	ng/ml	NA
+Bottiger2001	S13	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S13	24.0	hr	888.180954702485	ng/ml	NA
+Bottiger2001	S14	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S14	24.0	hr	926.146026836122	ng/ml	NA
+Bottiger2001	S15	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S15	24.0	hr	1305.79674817249	ng/ml	NA
+Bottiger2001	S16	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S16	24.0	hr	1486.13084080726	ng/ml	NA
+Bottiger2001	S17	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S17	24.0	hr	717.368545635067	ng/ml	NA
+Bottiger2001	S18	NA	1.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_S18	24.0	hr	673.885209255154	ng/ml	NA
+Bottiger2001	A1	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A1	24.0	hr	798.60950426291	ng/ml	NA
+Bottiger2001	A2	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A2	24.0	hr	780.300731050315	ng/ml	NA
+Bottiger2001	A3	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A3	24.0	hr	787.170743508086	ng/ml	NA
+Bottiger2001	A4	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A4	24.0	hr	864.978807158568	ng/ml	NA
+Bottiger2001	A5	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A5	24.0	hr	851.247227249121	ng/ml	NA
+Bottiger2001	A6	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A6	24.0	hr	839.808466494297	ng/ml	NA
+Bottiger2001	A7	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A7	24.0	hr	981.693013885814	ng/ml	NA
+Bottiger2001	A8	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A8	24.0	hr	1045.77372012989	ng/ml	NA
+Bottiger2001	A9	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A9	24.0	hr	1057.21670338776	ng/ml	NA
+Bottiger2001	A10	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A10	24.0	hr	1155.63058190851	ng/ml	NA
+Bottiger2001	A11	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A11	24.0	hr	1251.74741877159	ng/ml	NA
+Bottiger2001	A12	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A12	24.0	hr	1334.13689822826	ng/ml	NA
+Bottiger2001	A13	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A13	24.0	hr	1427.97358344586	ng/ml	NA
+Bottiger2001	A14	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A14	24.0	hr	1514.95292371483	ng/ml	NA
+Bottiger2001	A15	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A15	24.0	hr	1704.89377828636	ng/ml	NA
+Bottiger2001	A16	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A16	24.0	hr	1723.20255149896	ng/ml	NA
+Bottiger2001	A17	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A17	24.0	hr	1752.95008546638	ng/ml	NA
+Bottiger2001	A18	NA	1.0	RAP10, DIL120	concentration	rapamycin	blood	LC MS/MS	rapamycin_A18	24.0	hr	2782.81857867485	ng/ml	NA

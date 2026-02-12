@@ -1,0 +1,3 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Renders2007	TAC	0	NA	hr	oral	single dose	dosing	NR	fujimycin	6.13	mg	"""+/- 2.79mg"" - how to approach that?"
+Renders2007	RAP	0	NA	hr	oral	single dose	dosing	NR	rapamycin	2.9	mg	"""+/-"" 2.26mg"

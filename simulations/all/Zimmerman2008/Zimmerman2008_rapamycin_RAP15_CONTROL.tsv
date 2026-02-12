@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	0.33	hr		4.042218099966056e-05		7.368917723882247e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	0.67	hr		7.704781436077667e-05		6.73083062171655e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	1.0	hr		7.391429831792991e-05		4.461685229684592e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	2.0	hr		4.827620740620216e-05		3.7796721946798953e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	3.0	hr		3.486300531028168e-05		2.7295170618005213e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	5.0	hr		2.2986090021579966e-05		2.008045002630796e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	8.0	hr		1.4307090564817512e-05		1.7935881959559245e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	12.0	hr		9.477544672430643e-06		1.6494422230786133e-06			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	24.0	hr		6.017958214276264e-06		5.904114541755112e-07			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	48.0	hr		4.087026336344292e-06		4.614230483958214e-07			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	72.0	hr		3.0074915397723555e-06		3.3954415756167954e-07			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	96.0	hr		2.334679117710028e-06		2.635323463118151e-07			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	120.0	hr		1.8614993399391407e-06		1.8264879472413228e-07			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	144.0	hr		1.3882594335631514e-06		1.5671837649443171e-07			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	216.0	hr		8.37254037253465e-07		9.452552500475468e-08			mole/meter^3	ng/ml
+Zimmerman2008		CONTROL	9.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_CONTROL	312.0	hr		3.475499429943405e-07		3.923435454496359e-08			mole/meter^3	ng/ml

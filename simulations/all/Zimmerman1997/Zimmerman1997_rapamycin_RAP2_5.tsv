@@ -1,0 +1,30 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.0	day							mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.014	day							mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.028	day							mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.042	day							mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.084	day							mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.125	day		1.7730529134287108e-05		3.3814280985684417e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.2	day		1.4167972601345983e-05		1.6829164630623625e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.34	day		8.446417400831243e-06					mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	0.5	day		7.742121128365135e-06		3.796279770011307e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	1.0	day		1.73145473024511e-05		1.792579691334824e-05			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	2.0	day		1.8555166381214298e-05		1.8053412837373802e-05			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	4.0	day		1.673527938012052e-05		1.1516147999197634e-05			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	6.0	day		2.139876618275447e-05		1.009754005685167e-05			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	9.0	day		1.8384113745594566e-05		3.235488646945394e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.0	day		2.080743143432083e-05		6.227711724302726e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.014	day		2.2439774782120737e-05		2.6647171942560254e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.028	day		3.695067091835081e-05					mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.042	day		3.5154118881052344e-05					mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.084	day		3.957578344667267e-05		2.2839051011662027e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.125	day		3.16220181355547e-05					mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.2	day		3.0086344324206527e-05		8.042187259766462e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.34	day		2.449647191529503e-05		1.2237732543574682e-05			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	13.5	day		2.1764767568699495e-05		1.2758631912461103e-05			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	14.0	day		1.6046877963980622e-05		5.329950334617482e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	15.0	day		1.3162883627085888e-05		4.59149828278664e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	16.0	day							mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	17.0	day		8.856172683538433e-06		6.188192426489776e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	18.0	day		4.9355513750444965e-06		1.7634575018411525e-06			mole/meter^3	ng/ml
+Zimmerman1997		RAP05_6_5	3.0	RAP2_5	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP2_5	19.0	day		3.827627772470594e-06		1.912172704617392e-06			mole/meter^3	ng/ml

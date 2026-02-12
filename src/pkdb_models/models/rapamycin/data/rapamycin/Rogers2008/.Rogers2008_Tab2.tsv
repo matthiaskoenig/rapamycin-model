@@ -1,0 +1,42 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Rogers2008	P5	1.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	10.2	NA	NA	NA	NA	NA	ug/l	first dose
+Rogers2008	P5	1.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P5	1.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	38.4	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P5	1.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	51.3	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P6	1.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	10.3	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P6	1.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	2.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P6	1.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	34.4	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P6	1.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	41.0	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	23.1	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	77.8	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	98.6	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	19.7	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	75.6	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	93.4	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	15.8	NA	NA	NA	6.6	NA	ug/l	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.3	NA	NA	NA	0.5	NA	hr	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	56.6	NA	NA	NA	23.4	NA	hr*ug/l	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	71.1	NA	NA	NA	29.2	NA	hr*ug/l	NA
+Rogers2008	P6	1.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	3.4	NA	NA	NA	NA	NA	ug/l	second dose
+Rogers2008	P6	1.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	8.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P6	1.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	30.0	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	21.3	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	87.8	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P7	1.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	142.7	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	12.4	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	57.5	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	96.3	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF2	cmax	fujimycin	blood	LC MS/MS	NA	NA	12.3	NA	NA	NA	8.9	NA	ug/l	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF3	tmax	fujimycin	blood	LC MS/MS	NA	NA	3.3	NA	NA	NA	4.0	NA	hr	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF4	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	58.5	NA	NA	NA	28.9	NA	hr*ug/l	NA
+Rogers2008	PRE_ALL	4.0	TRL8, RAP6, MMF5	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	119.5	NA	NA	NA	27.5	NA	hr*ug/l	NA
+Rogers2008	PST3	1.0	TRL8, MMF1500	cmax	fujimycin	blood	LC MS/MS	NA	NA	19.8	NA	NA	NA	NA	NA	ug/l	first dose
+Rogers2008	PST3	1.0	TRL8, MMF1500	tmax	fujimycin	blood	LC MS/MS	NA	NA	0.5	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	PST3	1.0	TRL8, MMF1500	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	65.4	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	PST3	1.0	TRL8, MMF1500	cmax	fujimycin	blood	LC MS/MS	NA	NA	16.0	NA	NA	NA	NA	NA	ug/l	second dose
+Rogers2008	PST3	1.0	TRL8, MMF1500	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	PST3	1.0	TRL8, MMF1500	auc_end	fujimycin	blood	LC MS/MS	12.0	hr	63.8	NA	NA	NA	NA	NA	hr*ug/l	NA

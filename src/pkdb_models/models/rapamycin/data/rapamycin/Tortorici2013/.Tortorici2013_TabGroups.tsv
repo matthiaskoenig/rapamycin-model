@@ -1,0 +1,9 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Tortorici2013	all	30	NA	species	28	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	One subject withdrew from the study for personal reasons (study day 1 of period 2), and this subject was not replaced
+Tortorici2013	all	30	NA	healthy	28	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2013	all	30	NA	sex	28	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2013	all	30	NA	ethnicity	28	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	white
+Tortorici2013	all	30	NA	age	28	NA	NA	31.4	NA	8.6	NA	18.0	46.0	years	NA
+Tortorici2013	all	30	NA	weight	28	NA	NA	71.4	NA	8.0	NA	57.0	91.0	kg	NA
+Tortorici2013	all	30	NA	bmi	28	NA	NA	NA	NA	NA	NA	NA	28.0	kg/m^2	NA
+Tortorici2013	all	30	NA	overnight fast	28	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA

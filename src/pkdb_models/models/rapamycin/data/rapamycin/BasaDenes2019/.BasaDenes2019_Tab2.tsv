@@ -1,0 +1,41 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	median	min	max	cv	sd	se	unit	comments
+BasaDenes2019	RAP05	8.0	RAP05	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	0.75	1.0	NA	NA	NA	hr	mean and CV are geometric
+BasaDenes2019	RAP05	8.0	RAP05	cmax	rapamycin	blood	LC MS/MS	NA	NA	5.67	4.53	7.92	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP05	8.0	RAP05	concentration per dose	rapamycin	blood	LC MS/MS	NA	NA	11.3	9.06	15.8	NA	NA	NA	ng/ml/mg	Cmax/D
+BasaDenes2019	RAP05	8.0	RAP05	concentration 	rapamycin	blood	LC MS/MS	24.0	hr	0.579	0.41	0.904	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP05	8.0	RAP05	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	36.8	25.9	55.3	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP05	8.0	RAP05	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	48.9	34.6	73.7	NA	NA	NA	ng*hr/ml	AUClast??
+BasaDenes2019	RAP05	8.0	RAP05	auc_per_dose	rapamycin	blood	LC MS/MS	NA	NA	97.7	69.2	147.0	NA	NA	NA	ng*hr/ml/mg	NA
+BasaDenes2019	RAP05	8.0	RAP05	thalf	rapamycin	blood	LC MS/MS	NA	NA	33.47	25.75	37.18	NA	NA	NA	hr	AUClast/D
+BasaDenes2019	RAP2	8.0	RAP2	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.75	0.75	1.0	NA	NA	NA	hr	NA
+BasaDenes2019	RAP2	8.0	RAP2	cmax	rapamycin	blood	LC MS/MS	NA	NA	26.7	13.7	35.1	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP2	8.0	RAP2	concentration per dose	rapamycin	blood	LC MS/MS	NA	NA	13.3	6.85	17.6	NA	NA	NA	ng/ml/mg	NA
+BasaDenes2019	RAP2	8.0	RAP2	concentration 	rapamycin	blood	LC MS/MS	24.0	hr	1.95	1.08	2.63	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP2	8.0	RAP2	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	134.0	70.7	194.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP2	8.0	RAP2	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	175.0	92.5	248.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP2	8.0	RAP2	auc_per_dose	rapamycin	blood	LC MS/MS	NA	NA	87.7	46.2	124.0	NA	NA	NA	ng*hr/ml/mg	NA
+BasaDenes2019	RAP2	8.0	RAP2	thalf	rapamycin	blood	LC MS/MS	NA	NA	29.39	25.26	39.12	NA	NA	NA	hr	NA
+BasaDenes2019	RAP10	8.0	RAP10	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.71	0.5	1.0	NA	NA	NA	hr	NA
+BasaDenes2019	RAP10	8.0	RAP10	cmax	rapamycin	blood	LC MS/MS	NA	NA	121.0	96.6	155.0	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP10	8.0	RAP10	concentration per dose	rapamycin	blood	LC MS/MS	NA	NA	12.1	9.66	15.5	NA	NA	NA	ng/ml/mg	NA
+BasaDenes2019	RAP10	8.0	RAP10	concentration 	rapamycin	blood	LC MS/MS	24.0	hr	9.63	7.84	19.6	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP10	8.0	RAP10	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	566.0	517.0	1010.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP10	8.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	762.0	674.0	1420.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP10	8.0	RAP10	auc_per_dose	rapamycin	blood	LC MS/MS	NA	NA	76.2	67.4	142.0	NA	NA	NA	ng*hr/ml/mg	NA
+BasaDenes2019	RAP10	8.0	RAP10	thalf	rapamycin	blood	LC MS/MS	NA	NA	36.25	31.29	40.77	NA	NA	NA	hr	NA
+BasaDenes2019	RAP40	8.0	RAP40	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.5	0.5	0.75	NA	NA	NA	hr	NA
+BasaDenes2019	RAP40	8.0	RAP40	cmax	rapamycin	blood	LC MS/MS	NA	NA	221.0	174.0	275.0	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40	concentration per dose	rapamycin	blood	LC MS/MS	NA	NA	5.51	4.35	6.88	NA	NA	NA	ng/ml/mg	NA
+BasaDenes2019	RAP40	8.0	RAP40	concentration 	rapamycin	blood	LC MS/MS	24.0	hr	30.9	16.7	37.0	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	1250.0	999.0	1690.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	1880.0	1340.0	2400.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40	auc_per_dose	rapamycin	blood	LC MS/MS	NA	NA	46.9	33.5	60.1	NA	NA	NA	ng*hr/ml/mg	NA
+BasaDenes2019	RAP40	8.0	RAP40	thalf	rapamycin	blood	LC MS/MS	NA	NA	73.35	57.14	82.25	NA	NA	NA	hr	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.75	0.5	2.0	NA	NA	NA	hr	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	cmax	rapamycin	blood	LC MS/MS	NA	NA	140.0	111.0	224.0	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	concentration per dose	rapamycin	blood	LC MS/MS	NA	NA	3.49	2.78	5.6	NA	NA	NA	ng/ml/mg	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	concentration 	rapamycin	blood	LC MS/MS	24.0	hr	24.4	16.7	39.6	NA	NA	NA	ng/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	1140.0	1030.0	1870.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	1640.0	1370.0	2710.0	NA	NA	NA	ng*hr/ml	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	auc_per_dose	rapamycin	blood	LC MS/MS	NA	NA	41.0	34.3	67.7	NA	NA	NA	ng*hr/ml/mg	NA
+BasaDenes2019	RAP40	8.0	RAP40_FD	thalf	rapamycin	blood	LC MS/MS	NA	NA	42.04	27.91	51.72	NA	NA	NA	hr	NA

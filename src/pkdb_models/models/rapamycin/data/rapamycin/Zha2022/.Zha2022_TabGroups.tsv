@@ -1,0 +1,23 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Zha2022	all	24.0	NA	species	24.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	all	24.0	NA	healthy	24.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	all	24.0	NA	sex	21.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	all	24.0	NA	sex	3.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	RAPA	12.0	all	sex	11.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	RAPA	12.0	all	sex	1.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	RAPA	12.0	all	ethnicity	10.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	white
+Zha2022	RAPA	12.0	all	ethnicity	2.0	NA	black 	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	RAPA	12.0	all	age	12.0	NA	NA	38.7	NA	9.2	NA	26.0	52.0	years	NA
+Zha2022	RAPA	12.0	all	weight	12.0	NA	NA	77.2	NA	7.3	NA	66.0	87.0	kg	NA
+Zha2022	RAPA	12.0	all	height	12.0	NA	NA	174.0	NA	8.0	NA	163.0	194.0	cm	NA
+Zha2022	RAPA	12.0	all	bmi	12.0	NA	NA	25.5	NA	2.7	NA	21.2	29.7	kg/m^2	NA
+Zha2022	RAPA	12.0	all	overnight fast	12.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	FUJI	12.0	all	sex	10.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	FUJI	12.0	all	sex	2.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	FUJI	12.0	all	ethnicity	5.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	white
+Zha2022	FUJI	12.0	all	ethnicity	7.0	NA	black 	NA	NA	NA	NA	NA	NA	NA	NA
+Zha2022	FUJI	12.0	all	age	12.0	NA	NA	36.8	NA	10.0	NA	23.0	52.0	years	NA
+Zha2022	FUJI	12.0	all	weight	12.0	NA	NA	79.3	NA	14.1	NA	64.0	111.0	kg	NA
+Zha2022	FUJI	12.0	all	height	12.0	NA	NA	175.0	NA	9.0	NA	162.0	194.0	cm	NA
+Zha2022	FUJI	12.0	all	bmi	12.0	NA	NA	25.9	NA	3.1	NA	20.3	29.4	kg/m^2	NA
+Zha2022	FUJI	12.0	all	overnight fast	12.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA

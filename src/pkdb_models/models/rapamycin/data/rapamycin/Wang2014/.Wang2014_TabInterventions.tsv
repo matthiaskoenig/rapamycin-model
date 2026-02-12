@@ -1,0 +1,3 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Wang2014	RAP	S-14T1R14	NA	day	oral	multiple dose	dosing	tablet	rapamycin	2.5	mg	doses of sirolimus were between 1-4mg so I use mean – 2.5mg, assuming 2 weeks for steady state
+Wang2014	CSA	S-14T1R14	NA	day	oral	multiple dose	dosing	tablet	cyclosporine	300.0	mg	Cyclosporine (CsA) levels were determined for patients who took concomitant CsA. CSA dose not reported

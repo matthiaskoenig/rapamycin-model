@@ -1,0 +1,73 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	1.0	hr	NA	52.5401062232469	NA	17.691480508376	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	2.0	hr	NA	72.9412712977254	NA	23.5576080552378	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	3.0	hr	NA	88.6175988600251	NA	28.6205412052623	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	4.0	hr	NA	99.1726875890025	NA	30.6369136543198	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	5.0	hr	NA	87.6473208083079	NA	21.2145182554145	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	7.0	hr	NA	50.3148356304782	NA	14.4561643015955	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	9.0	hr	NA	33.3493441984172	NA	9.5821075908636	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	11.0	hr	NA	22.3313993926975	NA	7.212300318579	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	13.0	hr	NA	15.7415041624422	NA	4.2900766481198	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	16.0	hr	NA	9.90757173004352	NA	3.46963550403849	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120	25.0	hr	NA	3.68642029854932	NA	1.81400957612027	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	1.0	hr	NA	47.904052665917	NA	31.3089063912345	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	2.0	hr	NA	85.0820239253398	NA	33.0811219406352	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	3.0	hr	NA	92.3316310442828	NA	35.8998740819092	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	4.0	hr	NA	99.1726875890025	NA	41.4163894214735	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	5.0	hr	NA	87.6473208083079	NA	26.8100663987821	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	7.0	hr	NA	56.3296116249122	NA	15.7346483459361	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	9.0	hr	NA	36.5768236537347	NA	11.1875874134382	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	11.0	hr	NA	24.4925853014699	NA	6.5215852846247	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	13.0	hr	NA	17.2649338580248	NA	5.2807471351921	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	16.0	hr	NA	11.2062114373752	NA	4.5177031868058	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	diltiazem	plasma	LC MS/MS	diltiazem_DIL120_RAP10	25.0	hr	NA	4.30000868451839	NA	2.66590436270256	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	1.0	hr	NA	16.6431732137208	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	2.0	hr	NA	24.8268683247484	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	3.0	hr	NA	30.7881685480188	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	4.0	hr	NA	31.7391214900294	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	5.0	hr	NA	32.0546237413572	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	7.0	hr	NA	26.6274514668296	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	9.0	hr	NA	20.79870111767	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	11.0	hr	NA	16.5822937130985	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	13.0	hr	NA	13.2210662082752	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	16.0	hr	NA	9.22069802913073	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120	25.0	hr	NA	4.25609879446844	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	1.0	hr	NA	13.1434867327053	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	2.0	hr	NA	27.2295604730935	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	3.0	hr	NA	30.4737726490872	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	4.0	hr	NA	32.7316424545426	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	5.0	hr	NA	32.3853291765565	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	7.0	hr	NA	26.6274514668296	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	9.0	hr	NA	21.0132799428716	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	11.0	hr	NA	17.455789993424	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	13.0	hr	NA	13.9172888624974	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	16.0	hr	NA	9.2209843935171	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desmethyldiltiazem	plasma	LC MS/MS	desmethyldiltiazem_DIL120_RAP10	25.0	hr	NA	4.96450765138866	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	1.0	hr	NA	2.18081186551174	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	2.0	hr	NA	3.95365729871426	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	3.0	hr	NA	5.37749019346883	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	4.0	hr	NA	6.73729690049697	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	5.0	hr	NA	7.23647825940483	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	7.0	hr	NA	6.52580334002399	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	9.0	hr	NA	5.88501326097997	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	11.0	hr	NA	4.83870039220811	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	13.0	hr	NA	4.06105405214516	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	16.0	hr	NA	2.83227937179306	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120	25.0	hr	NA	1.37617020738324	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	1.0	hr	NA	1.83163297256656	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	2.0	hr	NA	3.95365729871426	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	3.0	hr	NA	5.16118109740732	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	4.0	hr	NA	6.46628969267082	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	5.0	hr	NA	6.94549937251618	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	7.0	hr	NA	6.45916456597227	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	9.0	hr	NA	5.70656211707319	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	11.0	hr	NA	4.83870039220811	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	13.0	hr	NA	3.89769849044774	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	16.0	hr	NA	2.92084819543696	NA	NA	NA	ng/ml	NA
+Bottiger2001	NA	all	18.0	DIL120, RAP10	concentration	desacetyldiltiazem	plasma	LC MS/MS	desacetyldiltiazem_DIL120_RAP10	25.0	hr	NA	1.62178869140793	NA	NA	NA	ng/ml	NA

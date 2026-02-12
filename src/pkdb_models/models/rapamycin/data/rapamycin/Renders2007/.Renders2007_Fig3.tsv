@@ -1,0 +1,25 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	0.0	hr	6.87	NA	NA	2.2663963963964	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	0.5	hr	7.63339251660419	NA	NA	2.71171171171171	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	1.0	hr	10.2213947524166	NA	NA	4.85574077727358	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	2.0	hr	12.1185802590912	NA	NA	5.92792792792792	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	3.0	hr	11.8084434799763	NA	NA	5.04492996646279	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	4.0	hr	9.98502334451239	NA	NA	3.65765765765765	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	6.0	hr	8.67117117117117	NA	NA	3.34234234234235	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	8.0	hr	7.67263431314526	NA	NA	2.71171171171171	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	9.0	hr	7.23648648648648	NA	NA	2.71171171171171	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	10.0	hr	6.86340172289077	NA	NA	2.45945945945946	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	11.0	hr	6.86858025909121	NA	NA	2.45945945945946	NA	ng/ml	NA
+Renders2007	NA	TAC3_3	9.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC3_3	12.0	hr	6.87387387387388	NA	NA	2.39639639639641	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	0.0	hr	6.87375879529163	NA	NA	2.74964161241535	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	0.5	hr	12.8044486091931	NA	NA	9.1568488196225	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	1.0	hr	20.3745479055698	NA	NA	9.8380219635694	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	2.0	hr	19.6860327480765	NA	NA	9.8505655290327	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	3.0	hr	15.4662162162162	NA	NA	7.718872887486	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	4.0	hr	13.1380614190833	NA	NA	5.9657887814822	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	6.0	hr	10.4998849214177	NA	NA	5.2090550404419	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	8.0	hr	9.12296968501348	NA	NA	4.09930624054712	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	9.0	hr	8.56069573222858	NA	NA	3.83439534424932	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	10.0	hr	7.68310646412836	NA	NA	2.90101597948304	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	11.0	hr	6.93164332215427	NA	NA	2.44691589399619	NA	ng/ml	NA
+Renders2007	NA	TAC1_1_1_3	7.0	TAC	concentration	fujimycin	plasma	LC MS/MS	fujimycin_TAC1_1_1_3	12.0	hr	6.87387387387388	NA	NA	2.358581574275	NA	ng/ml	NA

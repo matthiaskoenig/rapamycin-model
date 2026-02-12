@@ -1,0 +1,25 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	unit	comments
+Wang2014	EM1	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	22.2007299270073	l/hr	NA
+Wang2014	EM2	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	15.8576642335766	l/hr	NA
+Wang2014	EM3	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	11.5620437956204	l/hr	NA
+Wang2014	PM1	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	4.21532846715328	l/hr	NA
+Wang2014	PM2	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	6.26277372262773	l/hr	NA
+Wang2014	PM3	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	7.22627737226277	l/hr	NA
+Wang2014	PM4	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	7.54744525547445	l/hr	NA
+Wang2014	PM5	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	12.8467153284671	l/hr	NA
+Wang2014	PM6	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	16.5401459854014	l/hr	NA
+Wang2014	PM7	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	11.441605839416	l/hr	NA
+Wang2014	PM8	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	9.47445255474452	l/hr	NA
+Wang2014	PM9	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	9.07299270072992	l/hr	NA
+Wang2014	PM10	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	7.82846715328467	l/hr	NA
+Wang2014	PM11	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	6.86496350364963	l/hr	NA
+Wang2014	PM12	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	3.13138686131386	l/hr	NA
+Wang2014	PM13	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	NA	l/hr	hard to read
+Wang2014	IM1	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	13.2481751824817	l/hr	NA
+Wang2014	IM2	NA	1.0	RAP, CSA	clearance	rapamycin	blood	LC MS/MS	NA	NA	10.7189781021897	l/hr	NA
+Wang2014	IM3	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	13.5291970802919	l/hr	NA
+Wang2014	IM4	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	11.1605839416058	l/hr	NA
+Wang2014	IM5	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	9.51459854014598	l/hr	NA
+Wang2014	IM6	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	7.62773722627737	l/hr	NA
+Wang2014	IM7	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	5.78102189781022	l/hr	NA
+Wang2014	IM8	NA	1.0	RAP	clearance	rapamycin	blood	LC MS/MS	NA	NA	NA	l/hr	hard to read

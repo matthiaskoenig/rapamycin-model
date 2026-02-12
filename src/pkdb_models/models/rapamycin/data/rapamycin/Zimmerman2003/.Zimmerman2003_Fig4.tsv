@@ -1,0 +1,64 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	unit	comments
+Zimmerman2003	CSA300_C1	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4272.23543660613	ng/ml*hr	new individuals needed
+Zimmerman2003	CSA300_C2	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4375.2792772983	ng/ml*hr	NA
+Zimmerman2003	CSA300_C3	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4718.268859969	ng/ml*hr	NA
+Zimmerman2003	CSA300_C4	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4774.83078594204	ng/ml*hr	NA
+Zimmerman2003	CSA300_C5	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5252.4314321281	ng/ml*hr	NA
+Zimmerman2003	CSA300_C6	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5357.7925365294	ng/ml*hr	NA
+Zimmerman2003	CSA300_C7	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5400.52640024711	ng/ml*hr	NA
+Zimmerman2003	CSA300_C8	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5608.21359599546	ng/ml*hr	NA
+Zimmerman2003	CSA300_C9	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5732.0846770406	ng/ml*hr	NA
+Zimmerman2003	CSA300_C10	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5777.80390258674	ng/ml*hr	NA
+Zimmerman2003	CSA300_C11	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5882.00987214458	ng/ml*hr	NA
+Zimmerman2003	CSA300_C12	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6011.92841199852	ng/ml*hr	NA
+Zimmerman2003	CSA300_C13	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6108.21340216601	ng/ml*hr	NA
+Zimmerman2003	CSA300_C14	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6666.01685316316	ng/ml*hr	NA
+Zimmerman2003	CSA300_C15	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6853.96857916029	ng/ml*hr	NA
+Zimmerman2003	CSA300_C16	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6949.92247367543	ng/ml*hr	NA
+Zimmerman2003	CSA300_C17	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	7813.94621904689	ng/ml*hr	NA
+Zimmerman2003	CSA300_C18	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	7954.87516983113	ng/ml*hr	NA
+Zimmerman2003	CSA300_C19	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	8179.16690974054	ng/ml*hr	NA
+Zimmerman2003	CSA300_C20	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	8443.2543588109	ng/ml*hr	NA
+Zimmerman2003	CSA300_C21	NA	1.0	CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	11149.7952228991	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D1	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4246.85592362109	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D2	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4357.93430762991	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D3	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4561.62239726002	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D4	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4598.00599153455	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D5	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5108.39757175243	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D6	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5476.13245746062	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D7	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5698.03282768656	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D8	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5905.42079934533	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D9	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6406.41996202875	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D10	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6470.35568831046	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D11	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6573.98269301427	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D12	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6936.13296506145	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D13	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	7019.28232575971	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D14	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	7289.22176394786	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D15	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	7782.96930270168	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D16	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	7876.27041516789	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D17	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	8393.09661661361	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D18	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	8733.19636055447	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D19	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	8943.83599122646	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D20	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_D21	NA	1.0	RAP10, CSA300	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E1	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	3883.76346290244	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E2	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4073.37107241753	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E3	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4204.89133450567	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E4	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4246.85592362109	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E5	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4306.31087451701	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E6	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	4870.61146417402	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E7	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5200.53041856176	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E8	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5519.81020282715	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E9	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5777.80390258674	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E10	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5835.46607444165	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E11	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	5964.35658095864	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E12	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6047.8561236849	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E13	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6230.74105784077	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E14	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6280.43757695955	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E15	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	6881.24798924812	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E16	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	7721.38338961633	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E17	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	9343.29216717821	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E18	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E19	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E20	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_E21	NA	1.0	RAP10, CSA300B	auc_end	cyclosporine	blood	HPLC MS	48.0	hr	NA	ng/ml*hr	NA

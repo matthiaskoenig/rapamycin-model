@@ -1,0 +1,9 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Zimmerman2005	all	36	NA	species	36	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman2005	all	36	NA	healthy	18	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman2005	all	36	NA	healthy	18	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman2005	all	36	NA	sex	8	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman2005	all	36	NA	sex	28	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman2005	all	36	NA	overnight fast	36	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman2005	all	36	NA	child-pugh score	13	NA	child-pugh class A	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman2005	all	36	NA	child-pugh score	5	NA	child-pugh class B	NA	NA	NA	NA	NA	NA	NA	NA

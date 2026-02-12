@@ -1,0 +1,19 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Zhang2017	CYP3A4_1_1	18.0	RAP5	cmax	rapamycin	blood	LC MS/MS	NA	NA	19.8	NA	NA	NA	7.5	NA	ng/ml	NA
+Zhang2017	CYP3A4_1_1	18.0	RAP5	tmax	rapamycin	blood	LC MS/MS	NA	NA	3.5	NA	NA	NA	2.9	NA	hr	NA
+Zhang2017	CYP3A4_1_1	18.0	RAP5	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	540.2	NA	NA	NA	150.6	NA	ng*hr/ml	NA
+Zhang2017	CYP3A4_1_1	18.0	RAP5	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	626.6	NA	NA	NA	166.9	NA	ng*hr/ml	NA
+Zhang2017	CYP3A4_1_1	18.0	RAP5	thalf	rapamycin	blood	LC MS/MS	NA	NA	53.9	NA	NA	NA	18.2	NA	hr	NA
+Zhang2017	CYP3A4_1_1	18.0	RAP5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	8.6	NA	NA	NA	2.6	NA	l/hr	NA
+Zhang2017	CYP3A4_1_1G	10.0	RAP5	cmax	rapamycin	blood	LC MS/MS	NA	NA	13.7	NA	NA	NA	4.3	NA	ng/ml	NA
+Zhang2017	CYP3A4_1_1G	10.0	RAP5	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.7	NA	NA	NA	4.3	NA	hr	NA
+Zhang2017	CYP3A4_1_1G	10.0	RAP5	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	440.8	NA	NA	NA	130.6	NA	ng*hr/ml	NA
+Zhang2017	CYP3A4_1_1G	10.0	RAP5	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	537.4	NA	NA	NA	167.5	NA	ng*hr/ml	NA
+Zhang2017	CYP3A4_1_1G	10.0	RAP5	thalf	rapamycin	blood	LC MS/MS	NA	NA	61.4	NA	NA	NA	13.6	NA	hr	NA
+Zhang2017	CYP3A4_1_1G	10.0	RAP5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	10.3	NA	NA	NA	3.5	NA	l/hr	NA
+Zhang2017	CYP3A4_1G_1G	3.0	RAP5	cmax	rapamycin	blood	LC MS/MS	NA	NA	10.2	NA	NA	NA	1.6	NA	ng/ml	NA
+Zhang2017	CYP3A4_1G_1G	3.0	RAP5	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.2	NA	NA	NA	0.6	NA	hr	NA
+Zhang2017	CYP3A4_1G_1G	3.0	RAP5	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	315.2	NA	NA	NA	91.5	NA	ng*hr/ml	NA
+Zhang2017	CYP3A4_1G_1G	3.0	RAP5	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	372.0	NA	NA	NA	108.2	NA	ng*hr/ml	NA
+Zhang2017	CYP3A4_1G_1G	3.0	RAP5	thalf	rapamycin	blood	LC MS/MS	NA	NA	47.5	NA	NA	NA	5.7	NA	hr	NA
+Zhang2017	CYP3A4_1G_1G	3.0	RAP5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	14.3	NA	NA	NA	4.7	NA	l/hr	NA

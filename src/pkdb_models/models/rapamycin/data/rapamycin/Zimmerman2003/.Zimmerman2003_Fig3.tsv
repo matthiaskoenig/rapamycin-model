@@ -1,0 +1,34 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	0.33	hr	21.929537224912	NA	NA	24.6862083736822	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	0.67	hr	521.285861882989	NA	NA	385.411859294607	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	1.0	hr	1254.85657630109	NA	NA	482.24540822776	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	2.0	hr	1420.49479924283	NA	NA	352.02172601367	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	3.0	hr	1083.91926983612	NA	NA	296.94737454951	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	5.0	hr	475.256940423128	NA	NA	155.862438419932	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	8.0	hr	221.64767830742	NA	NA	80.956576943793	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	12.0	hr	103.311521773677	NA	NA	30.139819101207	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	24.0	hr	38.1501079986712	NA	NA	26.8431378385977	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10	48.0	hr	14.0882721827924	NA	NA	5.9614237003419	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	0.33	hr	25.3581964343462	NA	NA	32.0090359841601	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	0.67	hr	624.005445087624	NA	NA	468.917719014616	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	1.0	hr	1441.14664735315	NA	NA	609.72414482903	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	2.0	hr	1470.4937611235	NA	NA	314.36956590179	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	3.0	hr	1018.5082102478	NA	NA	297.13678283833	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	5.0	hr	509.302190783063	NA	NA	144.046491808271	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	8.0	hr	206.831227806643	NA	NA	95.77302744457	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	12.0	hr	104.028770672564	NA	NA	28.502461018306	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	24.0	hr	42.0302215083094	NA	NA	22.0684229857423	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_CSA300_RAP10	48.0	hr	14.8900238963058	NA	NA	6.8948131401335	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	0.33	hr	25.0103006417425	NA	NA	25.6408279684191	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	0.67	hr	547.153145010506	NA	NA	365.839401090517	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	1.0	hr	1195.53181386555	NA	NA	529.59334466024	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	2.0	hr	1254.16567447136	NA	NA	518.35085078514	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	3.0	hr	918.087244637178	NA	NA	379.448516284142	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	5.0	hr	465.494275847811	NA	NA	127.539067950323	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	8.0	hr	199.798660278486	NA	NA	74.86370636146	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	12.0	hr	99.7987772958981	NA	NA	27.3435006600639	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	24.0	hr	37.625853174006	NA	NA	13.0368998095563	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	cyclosporine	blood	LC MS/MS	cyclosporine_RAP10_CSA_1	48.0	hr	13.2377862622527	NA	NA	4.1002123174974	NA	ng/ml	NA

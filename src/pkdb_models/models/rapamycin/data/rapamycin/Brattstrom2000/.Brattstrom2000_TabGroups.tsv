@@ -1,0 +1,31 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Brattstrom2000	all	45.0	NA	species	45.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Brattstrom2000	all	45.0	NA	healthy	45.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Brattstrom2000	all	45.0	NA	sex	45.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Brattstrom2000	all	45.0	NA	age	45.0	NA	NA	24.0	NA	5.0	NA	19.0	36.0	yr	mean value based on article 
+Brattstrom2000	all	45.0	NA	obesity index	45.0	NA	NA	NA	NA	NA	NA	90.0	110.0	percent	± 10% of ideal body weight for height and frame
+Brattstrom2000	all	45.0	NA	height	45.0	NA	NA	NA	NA	NA	NA	NA	NA	cm	NA
+Brattstrom2000	all	45.0	NA	bmi	45.0	NA	NA	NA	NA	NA	NA	NA	NA	kg/m^2	NA
+Brattstrom2000	all	45.0	NA	body surface area	45.0	NA	NA	1.97	NA	0.13	NA	1.67	2.39	m^2	NA
+Brattstrom2000	all	45.0	NA	weight	45.0	NA	NA	75.8	NA	7.7	NA	60.0	100.0	kg	NA
+Brattstrom2000	all	45.0	NA	overnight fast	45.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Brattstrom2000	all	45.0	NA	smoking	45.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Brattstrom2000	all	45.0	NA	medication	45.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Brattstrom2000	PLACEBO	15.0	all	age	15.0	NA	NA	22.0	NA	3.0	NA	NA	NA	year	NA
+Brattstrom2000	PLACEBO	15.0	all	weight	15.0	NA	NA	74.7	NA	7.4	NA	NA	NA	kg	NA
+Brattstrom2000	PLACEBO	15.0	all	body surface area	15.0	NA	NA	1.95	NA	0.14	NA	NA	NA	m^2	NA
+Brattstrom2000	RAP_D03	6.0	all	age	6.0	NA	NA	24.0	NA	6.0	NA	NA	NA	year	NA
+Brattstrom2000	RAP_D03	6.0	all	weight	6.0	NA	NA	74.2	NA	6.1	NA	NA	NA	kg	NA
+Brattstrom2000	RAP_D03	6.0	all	body surface area	6.0	NA	NA	1.95	NA	0.09	NA	NA	NA	m^2	NA
+Brattstrom2000	RAP_D1	6.0	all	age	6.0	NA	NA	30.0	NA	5.0	NA	NA	NA	year	NA
+Brattstrom2000	RAP_D1	6.0	all	weight	6.0	NA	NA	82.3	NA	8.8	NA	NA	NA	kg	NA
+Brattstrom2000	RAP_D1	6.0	all	body surface area	6.0	NA	NA	2.06	NA	0.17	NA	NA	NA	m^2	NA
+Brattstrom2000	RAP_D3	6.0	all	age	6.0	NA	NA	23.0	NA	4.0	NA	NA	NA	year	NA
+Brattstrom2000	RAP_D3	6.0	all	weight	6.0	NA	NA	74.5	NA	3.6	NA	NA	NA	kg	NA
+Brattstrom2000	RAP_D3	6.0	all	body surface area	6.0	NA	NA	1.94	NA	0.07	NA	NA	NA	m^2	NA
+Brattstrom2000	RAP_D5	6.0	all	age	6.0	NA	NA	27.0	NA	5.0	NA	NA	NA	year	NA
+Brattstrom2000	RAP_D5	6.0	all	weight	6.0	NA	NA	75.8	NA	7.7	NA	NA	NA	kg	NA
+Brattstrom2000	RAP_D5	6.0	all	body surface area	6.0	NA	NA	1.97	NA	0.13	NA	NA	NA	m^2	NA
+Brattstrom2000	RAP_D8	6.0	all	age	6.0	NA	NA	24.0	NA	4.0	NA	NA	NA	year	NA
+Brattstrom2000	RAP_D8	6.0	all	weight	6.0	NA	NA	74.8	NA	7.5	NA	NA	NA	kg	NA
+Brattstrom2000	RAP_D8	6.0	all	body surface area	6.0	NA	NA	1.98	NA	0.13	NA	NA	NA	m^2	NA

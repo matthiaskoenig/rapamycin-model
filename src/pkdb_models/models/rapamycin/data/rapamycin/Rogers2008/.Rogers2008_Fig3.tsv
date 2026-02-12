@@ -1,0 +1,81 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	unit	comments
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	0.5	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	1.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	2.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	3.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	4.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	6.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	8.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	12.0	hr	1.29629629629629	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	12.5	hr	1.69312169312169	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	13.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	14.0	hr	2.61904761904762	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	15.0	hr	3.01587301587301	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	16.0	hr	NA	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	18.0	hr	1.77248677248677	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	20.0	hr	2.46031746031746	mg/l	NA
+Rogers2008	NA	P6	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P6	24.0	hr	1.34920634920634	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	0.5	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	1.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	2.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	3.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	4.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	6.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	8.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	12.0	hr	0.555555555555557	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	12.5	hr	1.5079365079365	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	13.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	14.0	hr	1.03174603174603	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	15.0	hr	0.820105820105823	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	16.0	hr	NA	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	18.0	hr	0.449735449735451	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	20.0	hr	0.661375661375663	mg/l	NA
+Rogers2008	NA	P7	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P7	24.0	hr	0.23809523809524	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	0.5	hr	0.422224706262264	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	1.0	hr	0.606292073428223	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	2.0	hr	1.18612912040142	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	3.0	hr	0.813585214993667	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	4.0	hr	0.811287477954145	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	6.0	hr	0.4630871649651	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	8.0	hr	0.167672702883971	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	12.0	hr	0.0265171274560955	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	12.5	hr	3.22751322751322	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	13.0	hr	1.37566137566137	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	14.0	hr	1.13756613756613	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	15.0	hr	0.740740740740742	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	16.0	hr	NA	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	18.0	hr	0.423280423280424	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	20.0	hr	0.264550264550266	mg/l	NA
+Rogers2008	NA	P8	1.0	MMF2, TRL8, RAP6	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_P8	24.0	hr	0.502645502645505	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	0.5	hr	8.51251323825828	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	1.0	hr	6.58581997487104	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	2.0	hr	6.30494114431694	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	3.0	hr	4.60526265843206	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	4.0	hr	3.51357609483716	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	6.0	hr	2.26787022521172	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	8.0	hr	3.65717561047825	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	12.0	hr	4.38354318424239	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	12.5	hr	9.37786225835076	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	13.0	hr	3.96256407884168	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	14.0	hr	3.4543910039404	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	15.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	16.0	hr	3.65460715832679	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	18.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	20.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST2	1.0	MMF2000	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST2	24.0	hr	3.13104254540714	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	0.5	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	1.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	2.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	3.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	4.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	6.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	8.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	12.0	hr	4.81422785367501	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	12.5	hr	9.20067033091807	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	13.0	hr	3.78537215140899	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	14.0	hr	2.4425235393809	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	15.0	hr	2.4403157367963	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	16.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	18.0	hr	2.03117837783283	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	20.0	hr	NA	mg/l	NA
+Rogers2008	NA	PST3	1.0	MMF1500, TRL8	concentration	mycophenolic acid	blood	LC MS/MS	mycophenolic_acid_PST3	24.0	hr	1.99269953278692	mg/l	NA

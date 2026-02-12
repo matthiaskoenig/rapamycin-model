@@ -1,0 +1,27 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	0.0	hr	NA	5.21035598705501	NA	2.9126213592233	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	0.5	hr	NA	8.01510248112189	NA	3.72168284789641	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	1.0	hr	NA	11.6828478964401	NA	5.3937432578209	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	2.0	hr	NA	11.7367853290183	NA	6.2028047464941	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	3.0	hr	NA	10.0107874865156	NA	4.9622437971952	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	4.0	hr	NA	9.36353829557713	NA	4.74649406688237	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	6.0	hr	NA	8.12297734627831	NA	4.36893203883489	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	8.0	hr	NA	7.69147788565264	NA	4.58468176914776	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	9.0	hr	NA	7.4757281553398	NA	3.883495145631	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	10.0	hr	NA	7.04422869471412	NA	4.04530744336568	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	11.0	hr	NA	7.36785329018338	NA	4.58468176914772	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	12.0	hr	NA	6.45091693635382	NA	3.66774541531818	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP3_3	7.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_3_3	24.0	hr	NA	5.26429341963322	NA	3.29018338727077	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	0.0	hr	NA	4.0237324703344	NA	2.42718446601941	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	0.5	hr	NA	5.58791801510247	NA	4.20711974110032	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	1.0	hr	NA	7.79935275080906	NA	4.96224379719526	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	2.0	hr	NA	8.17691477885652	NA	5.28586839266451	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	3.0	hr	NA	8.01510248112189	NA	6.31067961165048	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	4.0	hr	NA	7.4757281553398	NA	5.50161812297735	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	6.0	hr	NA	6.39697950377561	NA	4.80043149946062	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	8.0	hr	NA	5.80366774541531	NA	4.20711974110032	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	9.0	hr	NA	6.12729234088457	NA	4.69255663430421	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	10.0	hr	NA	5.37216828478964	NA	3.77562028047465	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	11.0	hr	NA	4.29341963322545	NA	2.26537216828479	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	12.0	hr	NA	2.94498381877022	NA	1.61812297734628	NA	ng/ml	assay in blood, and numerical values seem for blood
+Renders2007	NA	RAP1_3	3.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_CYP3A5_1_3	24.0	hr	NA	2.56742179072275	NA	1.45631067961165	NA	ng/ml	assay in blood, and numerical values seem for blood

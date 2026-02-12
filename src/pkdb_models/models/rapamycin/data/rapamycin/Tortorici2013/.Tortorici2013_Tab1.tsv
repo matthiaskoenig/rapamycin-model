@@ -1,0 +1,19 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Tortorici2013	all	27.0	RAP15	cmax	rapamycin	blood	LC MS/MS	NA	NA	22.1	NA	NA	54.5	NA	NA	ng/ml	NA
+Tortorici2013	all	27.0	RAP15	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	1.0	5.0	NA	NA	NA	hr	NA
+Tortorici2013	all	27.0	RAP15	thalf	rapamycin	blood	LC MS/MS	NA	NA	64.9	NA	NA	15.7	NA	NA	hr	NA
+Tortorici2013	all	27.0	RAP15	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	796.0	NA	NA	36.7	NA	NA	ng*hr/ml	NA
+Tortorici2013	all	27.0	RAP15	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	298.0	NA	NA	33.8	NA	NA	mL/hr/kg	cl/f
+Tortorici2013	all	27.0	RAP15	vd	rapamycin	blood	LC MS/MS	NA	NA	22.6	NA	NA	29.9	NA	NA	L/kg	vss/f
+Tortorici2013	all	27.0	RAP15, TAC10	cmax	rapamycin	blood	LC MS/MS	NA	NA	19.8	NA	NA	29.3	NA	NA	ng/ml	NA
+Tortorici2013	all	27.0	RAP15, TAC10	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	0.67	12.0	NA	NA	NA	hr	NA
+Tortorici2013	all	27.0	RAP15, TAC10	thalf	rapamycin	blood	LC MS/MS	NA	NA	65.4	NA	NA	16.7	NA	NA	hr	NA
+Tortorici2013	all	27.0	RAP15, TAC10	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	754.0	NA	NA	27.6	NA	NA	ng*hr/ml	NA
+Tortorici2013	all	27.0	RAP15, TAC10	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	302.0	NA	NA	28.7	NA	NA	mL/hr/kg	cl/f
+Tortorici2013	all	27.0	RAP15, TAC10	vd	rapamycin	blood	LC MS/MS	NA	NA	22.5	NA	NA	23.5	NA	NA	L/kg	vss/f
+Tortorici2013	all	27.0	RAP15, TAC10_4H	cmax	rapamycin	blood	LC MS/MS	NA	NA	25.3	NA	NA	33.7	NA	NA	ng/ml	NA
+Tortorici2013	all	27.0	RAP15, TAC10_4H	tmax	rapamycin	blood	LC MS/MS	NA	NA	3.0	1.0	12.0	NA	NA	NA	hr	NA
+Tortorici2013	all	27.0	RAP15, TAC10_4H	thalf	rapamycin	blood	LC MS/MS	NA	NA	68.7	NA	NA	17.9	NA	NA	hr	NA
+Tortorici2013	all	27.0	RAP15, TAC10_4H	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	832.0	NA	NA	26.1	NA	NA	ng*hr/ml	NA
+Tortorici2013	all	27.0	RAP15, TAC10_4H	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	278.0	NA	NA	278.0	NA	NA	mL/hr/kg	cl/f
+Tortorici2013	all	27.0	RAP15, TAC10_4H	vd	rapamycin	blood	LC MS/MS	NA	NA	21.3	NA	NA	21.3	NA	NA	L/kg	vss/f

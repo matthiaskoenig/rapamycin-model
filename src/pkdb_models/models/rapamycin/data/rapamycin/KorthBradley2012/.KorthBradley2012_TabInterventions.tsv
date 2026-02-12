@@ -1,0 +1,4 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+KorthBradley2012	RAP_T5	0	NA	hr	oral	single dose	dosing	tablet	rapamycin	5	mg	Reference (n=26), 1mg sirolimus tablets, 5 × 1-mg reference tablets
+KorthBradley2012	RAP_NS5	0	NA	hr	oral	single dose	dosing	tablet	rapamycin	5	mg	non-shellac formulation (n=29), 10 × 0.5-mg test formulation 1 (no shellac)
+KorthBradley2012	RAP_S5	0	NA	hr	oral	single dose	dosing	tablet	rapamycin	5	mg	shellac formulation (n=25), and 10 × 0.5-mg test formulation 2 (shellac).

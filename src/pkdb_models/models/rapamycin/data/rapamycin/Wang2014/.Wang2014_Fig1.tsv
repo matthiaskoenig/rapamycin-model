@@ -1,0 +1,27 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	0.0	hr	NA	5.58648918607305	NA	1.23827392120075	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	0.5	hr	NA	6.52380486619303	NA	1.38836772983115	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	1.0	hr	NA	8.32421922469316	NA	1.50093808630394	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	1.5	hr	NA	9.78686323501952	NA	1.57598499061914	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	2.0	hr	NA	10.3864678457211	NA	1.50093808630393	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	2.5	hr	NA	10.8360379265476	NA	1.57598499061904	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	3.0	hr	NA	11.923447415298	NA	2.21388367729825	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	4.0	hr	NA	12.5973875852502	NA	3.18949343339581	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	5.0	hr	NA	11.3950958685671	NA	2.66416510318945	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	6.0	hr	NA	10.6431448565305	NA	2.43902439024381	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	8.0	hr	NA	8.7640083108815	NA	1.9512787909505	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	12.0	hr	NA	6.99435962642528	NA	1.53846153846154	NA	ng/ml	NA
+Wang2014	NA	all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	24.0	hr	NA	5.58797115495763	NA	1.27579737335835	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	0.0	hr	NA	6.48705203785541	NA	2.85178236397749	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	0.5	hr	NA	7.49941462229059	NA	2.92682926829261	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	1.0	hr	NA	9.90020421531229	NA	4.20262664165101	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	1.5	hr	NA	11.5504654864266	NA	4.9155722326454	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	2.0	hr	NA	13.200726757541	NA	5.4409005628517	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	2.5	hr	NA	13.1624919603188	NA	5.2532240233084	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	3.0	hr	NA	13.236768240814	NA	5.328330206379	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	4.0	hr	NA	12.897575202511	NA	5.4033771106942	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	5.0	hr	NA	12.2206118160343	NA	5.4033771106941	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	6.0	hr	NA	11.0183793781065	NA	4.765478424015	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	8.0	hr	NA	9.58946497959329	NA	4.12757973733581	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	12.0	hr	NA	8.42025080841403	NA	3.86491557223257	NA	ng/ml	NA
+Wang2014	NA	all	9.0	RAP, CSA	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP_CSA	24.0	hr	NA	6.78872162400078	NA	3.15191070248289	NA	ng/ml	NA

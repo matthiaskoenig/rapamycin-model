@@ -1,0 +1,11 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Leung2006	all	6	NA	species	6	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Leung2006	all	6	NA	healthy	6	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Leung2006	all	6	NA	sex	6	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Leung2006	all	6	NA	ethnicity	4	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	white
+Leung2006	all	6	NA	ethnicity	1	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Leung2006	all	6	NA	ethnicity	2	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Leung2006	all	6	NA	age	6	NA	NA	29.0	NA	NA	NA	19.0	42.0	years	NA
+Leung2006	all	6	NA	weight	6	NA	NA	73.0	NA	NA	NA	66.0	92.0	kg	NA
+Leung2006	all	6	NA	hematocrit	6	NA	NA	44.0	NA	NA	NA	41.0	48.0	percent	NA
+Leung2006	all	6	NA	overnight fast	6	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA

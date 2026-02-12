@@ -1,0 +1,11 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	sd	se	unit	comments
+Wang2014	all	15.0	RAP	cmax	rapamycin	blood	LC MS/MS	NA	NA	14.0	NA	NA	12.2	NA	ng/ml	NA
+Wang2014	all	15.0	RAP	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.5	1.5	6.0	NA	NA	hr	NA
+Wang2014	all	15.0	RAP	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	189.0	NA	NA	158.0	NA	ng*hr/ml	NA
+Wang2014	all	15.0	RAP	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	9.6	NA	NA	3.3	NA	l/h	NA
+Wang2014	all	15.0	RAP	cthrough	rapamycin	blood	LC MS/MS	NA	NA	5.6	NA	NA	4.8	NA	ng/ml	NA
+Wang2014	all	9.0	RAP, CSA	cmax	rapamycin	blood	LC MS/MS	NA	NA	14.3	NA	NA	16.0	NA	ng/ml	NA
+Wang2014	all	9.0	RAP, CSA	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.5	1.0	2.0	NA	NA	hr	NA
+Wang2014	all	9.0	RAP, CSA	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	217.0	NA	NA	287.0	NA	ng*hr/ml	NA
+Wang2014	all	9.0	RAP, CSA	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	11.1	NA	NA	5.8	NA	l/h	NA
+Wang2014	all	9.0	RAP, CSA	cthrough	rapamycin	blood	LC MS/MS	NA	NA	6.5	NA	NA	8.5	NA	ng/ml	NA

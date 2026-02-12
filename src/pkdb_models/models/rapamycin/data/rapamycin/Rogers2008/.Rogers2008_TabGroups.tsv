@@ -1,0 +1,43 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Rogers2008	all	6.0	NA	species	6.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Rogers2008	all	6.0	NA	healthy	6.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Rogers2008	all	6.0	NA	sex	6.0	NA	MF	NA	NA	NA	NA	NA	NA	NA	NA
+Rogers2008	all	6.0	NA	age	6.0	NA	NA	NA	NA	NA	NA	18.0	70.0	NA	NA
+Rogers2008	PRE_ALL	4.0	all	age	4.0	NA	NA	42.9	NA	NA	NA	NA	NA	years	NA
+Rogers2008	PRE_ALL	4.0	all	weight	4.0	NA	NA	31.1	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	PRE_ALL	4.0	all	bmi	4.0	NA	NA	2.1	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	PRE_ALL	4.0	all	body surface area	4.0	NA	NA	NA	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	PST_ALL	2.0	all	age	2.0	NA	NA	46.6	NA	NA	NA	NA	NA	years	NA
+Rogers2008	PST_ALL	2.0	all	weight	2.0	NA	NA	99.3	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	PST_ALL	2.0	all	bmi	2.0	NA	NA	36.8	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	PST_ALL	2.0	all	body surface area	2.0	NA	NA	2.0	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	PST_ALL	2.0	all	concentration	2.0	creatinine	NA	1.8	NA	NA	NA	NA	NA	mg/dl	NA
+Rogers2008	PST_ALL	2.0	all	gfr	2.0	NA	NA	67.5	NA	NA	NA	NA	NA	ml/min	NA
+Rogers2008	P5	1.0	PRE_ALL	age	1.0	NA	NA	36.6	NA	NA	NA	NA	NA	years	NA
+Rogers2008	P5	1.0	PRE_ALL	weight	1.0	NA	NA	99.0	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	P5	1.0	PRE_ALL	bmi	1.0	NA	NA	32.0	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	P5	1.0	PRE_ALL	body surface area	1.0	NA	NA	2.1	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	P6	1.0	PRE_ALL	age	1.0	NA	NA	54.2	NA	NA	NA	NA	NA	years	NA
+Rogers2008	P6	1.0	PRE_ALL	weight	1.0	NA	NA	93.0	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	P6	1.0	PRE_ALL	bmi	1.0	NA	NA	33.1	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	P6	1.0	PRE_ALL	body surface area	1.0	NA	NA	2.0	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	P7	1.0	PRE_ALL	age	1.0	NA	NA	46.3	NA	NA	NA	NA	NA	years	NA
+Rogers2008	P7	1.0	PRE_ALL	weight	1.0	NA	NA	92.2	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	P7	1.0	PRE_ALL	bmi	1.0	NA	NA	27.9	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	P7	1.0	PRE_ALL	body surface area	1.0	NA	NA	2.1	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	P8	1.0	PRE_ALL	age	1.0	NA	NA	34.8	NA	NA	NA	NA	NA	years	NA
+Rogers2008	P8	1.0	PRE_ALL	weight	1.0	NA	NA	91.0	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	P8	1.0	PRE_ALL	bmi	1.0	NA	NA	31.5	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	P8	1.0	PRE_ALL	body surface area	1.0	NA	NA	2.0	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	PST2	1.0	PST_ALL	age	1.0	NA	NA	47.6	NA	NA	NA	NA	NA	years	NA
+Rogers2008	PST2	1.0	PST_ALL	weight	1.0	NA	NA	60.0	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	PST2	1.0	PST_ALL	bmi	1.0	NA	NA	22.6	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	PST2	1.0	PST_ALL	body surface area	1.0	NA	NA	1.6	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	PST2	1.0	PST_ALL	concentration	1.0	creatinine	NA	1.0	NA	NA	NA	NA	NA	mg/dl	NA
+Rogers2008	PST2	1.0	PST_ALL	gfr	1.0	NA	NA	65.0	NA	NA	NA	NA	NA	ml/min	NA
+Rogers2008	PST3	1.0	PST_ALL	age	1.0	NA	NA	45.6	NA	NA	NA	NA	NA	years	NA
+Rogers2008	PST3	1.0	PST_ALL	weight	1.0	NA	NA	138.6	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	PST3	1.0	PST_ALL	bmi	1.0	NA	NA	51.0	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	PST3	1.0	PST_ALL	body surface area	1.0	NA	NA	2.4	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	PST3	1.0	PST_ALL	concentration	1.0	creatinine	NA	2.6	NA	NA	NA	NA	NA	mg/dl	NA
+Rogers2008	PST3	1.0	PST_ALL	gfr	1.0	NA	NA	70.0	NA	NA	NA	NA	NA	ml/min	NA

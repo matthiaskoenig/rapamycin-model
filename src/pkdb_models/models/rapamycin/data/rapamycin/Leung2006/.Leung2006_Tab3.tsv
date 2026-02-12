@@ -1,0 +1,25 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Leung2006	S1	NA	1.0	RAP42	cmax	rapamycin	blood	LC MS/MS	NA	NA	1.64	NA	NA	NA	NA	NA	ng/ml	NA
+Leung2006	S1	NA	1.0	RAP42	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Leung2006	S1	NA	1.0	RAP42	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	5.63	NA	NA	NA	NA	NA	ng*hr/ml	max 24
+Leung2006	S1	NA	1.0	RAP42	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	192.0	NA	NA	NA	NA	NA	dimensionless	NA
+Leung2006	S2	NA	1.0	RAP42	cmax	rapamycin	blood	LC MS/MS	NA	NA	2.14	NA	NA	NA	NA	NA	ng/ml	NA
+Leung2006	S2	NA	1.0	RAP42	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Leung2006	S2	NA	1.0	RAP42	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	4.62	NA	NA	NA	NA	NA	ng*hr/ml	NA
+Leung2006	S2	NA	1.0	RAP42	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	116.0	NA	NA	NA	NA	NA	dimensionless	NA
+Leung2006	S3	NA	1.0	RAP42	cmax	rapamycin	blood	LC MS/MS	NA	NA	1.09	NA	NA	NA	NA	NA	ng/ml	NA
+Leung2006	S3	NA	1.0	RAP42	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Leung2006	S3	NA	1.0	RAP42	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	2.22	NA	NA	NA	NA	NA	ng*hr/ml	NA
+Leung2006	S3	NA	1.0	RAP42	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	114.0	NA	NA	NA	NA	NA	dimensionless	NA
+Leung2006	S4	NA	1.0	RAP42	cmax	rapamycin	blood	LC MS/MS	NA	NA	1.28	NA	NA	NA	NA	NA	ng/ml	NA
+Leung2006	S4	NA	1.0	RAP42	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Leung2006	S4	NA	1.0	RAP42	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	3.0	NA	NA	NA	NA	NA	ng*hr/ml	NA
+Leung2006	S4	NA	1.0	RAP42	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	193.0	NA	NA	NA	NA	NA	dimensionless	NA
+Leung2006	S5	NA	1.0	RAP42	cmax	rapamycin	blood	LC MS/MS	NA	NA	4.19	NA	NA	NA	NA	NA	ng/ml	NA
+Leung2006	S5	NA	1.0	RAP42	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Leung2006	S5	NA	1.0	RAP42	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	12.03	NA	NA	NA	NA	NA	ng*hr/ml	NA
+Leung2006	S5	NA	1.0	RAP42	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	117.0	NA	NA	NA	NA	NA	dimensionless	NA
+Leung2006	S6	NA	1.0	RAP42	cmax	rapamycin	blood	LC MS/MS	NA	NA	2.43	NA	NA	NA	NA	NA	ng/ml	NA
+Leung2006	S6	NA	1.0	RAP42	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	NA	NA	NA	NA	NA	hr	NA
+Leung2006	S6	NA	1.0	RAP42	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	8.36	NA	NA	NA	NA	NA	ng*hr/ml	NA
+Leung2006	S6	NA	1.0	RAP42	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	122.0	NA	NA	NA	NA	NA	dimensionless	NA

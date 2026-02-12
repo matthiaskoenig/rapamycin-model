@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Leung2006	NA	all	6	RAP42	cmax	rapamycin	blood	LC MS/MS	NA	NA	2.13	NA	NA	53	1.13	NA	ng/ml	NA
+Leung2006	NA	all	6	RAP42	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.2	NA	NA	35	0.4	NA	hr	NA
+Leung2006	NA	all	6	RAP42	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	5.98	NA	NA	61	3.67	NA	ng*hr/ml	NA
+Leung2006	NA	all	6	RAP42	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	142.0	NA	NA	27	39.0	NA	dimensionless	NA

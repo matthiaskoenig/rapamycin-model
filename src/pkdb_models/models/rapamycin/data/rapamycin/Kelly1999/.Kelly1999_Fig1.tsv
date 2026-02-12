@@ -1,0 +1,49 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	0.0	hr	NA	8.97783485540334	NA	3.29623287671226	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	0.5	hr	NA	16.3967370624048	NA	10.621194824962	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	1.0	hr	NA	29.1226693302891	NA	15.5655441400305	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	2.0	hr	NA	30.5924181887366	NA	10.2549467275495	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	3.0	hr	NA	27.2973744292237	NA	11.5368150684931	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	5.0	hr	NA	20.710854261796	NA	8.9766457382039	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	8.0	hr	NA	16.5061358447488	NA	5.310597412481	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L2, CSA	12.0	hr	NA	11.1753234398782	NA	3.6624809741248	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	0.0	hr	NA	9.15739155251141	NA	2.37704528158295	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	0.5	hr	NA	12.9138127853881	NA	5.85996955859967	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	1.0	hr	NA	18.5014745053272	NA	6.7791571537291	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	2.0	hr	NA	22.7180840943683	NA	8.9730783866058	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	3.0	hr	NA	22.7192732115677	NA	7.1454052511416	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	5.0	hr	NA	18.3266742770167	NA	4.9443493150685	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	8.0	hr	NA	12.6605308219177	NA	4.39497716894968	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T2, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T2, CSA	12.0	hr	NA	11.17175608828	NA	5.30703006088277	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	0.0	hr	NA	9.05797101449273	NA	3.26086956521737	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	0.5	hr	NA	16.3043478260869	NA	10.6884057971014	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	1.0	hr	NA	29.3478260869565	NA	14.8550724637681	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	2.0	hr	NA	30.7971014492753	NA	10.1449275362319	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	3.0	hr	NA	27.8985507246376	NA	10.8695652173913	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	5.0	hr	NA	21.7391304347825	NA	7.608695652174	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	8.0	hr	NA	17.9347826086956	NA	5.2536231884058	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L4, CSA	12.0	hr	NA	13.4057971014492	NA	3.2608695652174	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	0.0	hr	NA	10.8695652173912	NA	5.07246376811586	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	0.5	hr	NA	11.4130434782608	NA	5.4347826086956	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	1.0	hr	NA	17.5724637681159	NA	7.97101449275361	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	2.0	hr	NA	22.6449275362318	NA	8.695652173913	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	3.0	hr	NA	23.3695652173912	NA	9.0579710144927	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	5.0	hr	NA	21.9202898550724	NA	9.6014492753623	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	8.0	hr	NA	17.9347826086956	NA	8.33333333333331	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	12.0	hr	NA	15.2173913043478	NA	6.52173913043477	NA	ng/ml	incorrect labeled as week 6 in plot
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	0.0	hr	NA	9.55882352941176	NA	3.49264705882354	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	0.5	hr	NA	16.9117647058823	NA	10.6617647058824	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	1.0	hr	NA	29.9632352941176	NA	14.889705882353	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	2.0	hr	NA	31.25	NA	10.2941176470588	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	3.0	hr	NA	28.3088235294117	NA	11.2132352941177	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	5.0	hr	NA	22.2426470588235	NA	7.9044117647059	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	8.0	hr	NA	17.6470588235294	NA	5.8823529411764	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_L8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_L8, CSA	12.0	hr	NA	13.7867647058823	NA	3.3088235294118	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	0.0	hr	NA	10.6617647058823	NA	4.04411764705877	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	0.5	hr	NA	13.235294117647	NA	5.51470588235289	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	1.0	hr	NA	17.2794117647058	NA	7.72058823529404	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	2.0	hr	NA	24.6323529411764	NA	11.5808823529411	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	3.0	hr	NA	24.4485294117646	NA	9.7426470588235	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	5.0	hr	NA	19.6691176470588	NA	7.5367647058824	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	8.0	hr	NA	18.1985294117647	NA	8.0882352941177	NA	ng/ml	NA
+Kelly1999	NA	all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	12.0	hr	NA	14.7058823529411	NA	6.43382352941171	NA	ng/ml	NA

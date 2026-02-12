@@ -1,0 +1,12 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Zimmerman1997	PLACEBO	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	0.0	mg/m^2	Doses were administered twice daily for 13 days and once on the morning of study day 14.
+Zimmerman1997	RAP05	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	0.5	mg/m^2	NA
+Zimmerman1997	RAP1	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	1.0	mg/m^2	NA
+Zimmerman1997	RAP1_5	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	1.5	mg/m^2	NA
+Zimmerman1997	RAP2_5	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	2.5	mg/m^2	NA
+Zimmerman1997	RAP2_5B	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	2.5	mg/m^2	NA
+Zimmerman1997	RAP3	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	3.0	mg/m^2	NA
+Zimmerman1997	RAP3_5	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	3.5	mg/m^2	NA
+Zimmerman1997	RAP4	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	4.0	mg/m^2	NA
+Zimmerman1997	RAP5	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	5.0	mg/m^2	NA
+Zimmerman1997	RAP6_5	0	NA	hr	oral	multiple dose	dosing	solution	rapamycin	6.5	mg/m^2	NA

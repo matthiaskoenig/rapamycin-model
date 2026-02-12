@@ -1,0 +1,13 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Wang2014	all	24	NA	species	24	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Wang2014	all	24	NA	healthy	24	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Wang2014	all	24	NA	sex	21	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Wang2014	all	24	NA	sex	3	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Wang2014	all	24	NA	overnight fast	24	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Wang2014	all	24	NA	age	24	NA	NA	39.7	NA	11.4	NA	23.0	61.0	years	NA
+Wang2014	all	24	NA	bmi	24	NA	NA	22.3	NA	1.7	NA	NA	NA	kg/m^2	NA
+Wang2014	all	24	NA	ethnicity	24	NA	chinese	NA	NA	NA	NA	NA	NA	NA	NA
+Wang2014	all	24	NA	medication	24	NA	Y	NA	NA	NA	NA	NA	NA	NA	All patients received concomitant medications during the study, with the most common being prednisone (23/24 patients).
+Wang2014	all	24	NA	cyp3a5 genotype	3	NA	*1/*1	NA	NA	NA	NA	NA	NA	NA	EM
+Wang2014	all	24	NA	cyp3a5 genotype	13	NA	*3/*3	NA	NA	NA	NA	NA	NA	NA	PM (6+CsA)
+Wang2014	all	24	NA	cyp3a5 genotype	8	NA	*1/*3	NA	NA	NA	NA	NA	NA	NA	IM (2+CsA)

@@ -1,0 +1,46 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	0.0	hr	NA	0.0399239609363618	NA	0.0847672968754062	NA	ng/ml	"""+SD"""
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	0.33	hr	NA	18.1888242698512	NA	12.3621704709842	NA	ng/ml	yellow hard to read or absent 
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	0.67	hr	NA	NA	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	1.0	hr	NA	40.6205012135301	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	2.0	hr	NA	30.5627014338628	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	3.0	hr	NA	20.3518311784754	NA	11.161584503402398	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	5.0	hr	NA	12.3703313259646	NA	3.1012737638691004	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	8.0	hr	NA	7.59752822270789	NA	2.09932488094673	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	12.0	hr	NA	5.01124098049437	NA	1.4502648440017696	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	24.0	hr	NA	3.1465240368071	NA	1.03628256141051	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	48.0	hr	NA	2.14811598694747	NA	0.6499778347015996	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	72.0	hr	NA	1.51188519290354	NA	0.5392845193754001	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	96.0	hr	NA	1.20226649197411	NA	0.41234274189903997	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	120.0	hr	NA	0.955962985388676	NA	0.34098888033020414	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10	144.0	hr	NA	0.807963667886352	NA	0.255230217032528	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	0.0	hr	NA	0.0199958245511643	NA	0.06218608054538799	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	0.33	hr	NA	19.931934966127	NA	10.931300210274902	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	0.67	hr	NA	62.8940459948173	NA	14.186583629669506	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	1.0	hr	NA	90.6961541172356	NA	33.61257058726041	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	2.0	hr	NA	81.950712168164	NA	24.793272836604004	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	3.0	hr	NA	72.5485849304621	NA	17.27014152071621	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	5.0	hr	NA	45.4626832357481	NA	14.970842199027395	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	8.0	hr	NA	27.9210784797558	NA	9.574927756063303	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	12.0	hr	NA	18.2306824944461	NA	6.755608962455099	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	24.0	hr	NA	12.2913997288877	NA	3.719648036580999	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	48.0	hr	NA	8.13916284956743	NA	3.13007914070897	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	72.0	hr	NA	5.67054409163511	NA	2.0226645908090104	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	96.0	hr	NA	3.95091290348527	NA	1.4092777522069801	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	120.0	hr	NA	3.01619595681181	NA	1.3334384600922	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300	144.0	hr	NA	2.47272543332787	NA	1.1293886299923197	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	0.0	hr	NA	0.0300319149947233	NA	0.0628165459420059	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	0.33	hr	NA	19.8882340977736	NA	5.917128193720702	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	0.67	hr	NA	39.7333445776288	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	1.0	hr	NA	55.3746176227581	NA	21.7900009331234	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	2.0	hr	NA	49.1205216720176	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	3.0	hr	NA	39.4703826967095	NA	NA	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	5.0	hr	NA	25.6663688095936	NA	12.9920832387049	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	8.0	hr	NA	16.811672179337	NA	8.154817275339102	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	12.0	hr	NA	11.2497856177237	NA	5.339362424743401	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	24.0	hr	NA	6.31992895812433	NA	2.3026808546057103	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	48.0	hr	NA	4.27560206410277	NA	0.8979567162025797	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	72.0	hr	NA	3.039131395672	NA	1.2564237472352304	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	96.0	hr	NA	2.31845073806523	NA	0.9126006151256498	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	120.0	hr	NA	1.74378745345566	NA	0.6862370374776201	NA	ng/ml	NA
+Zimmerman2003	NA	all	21.0	RAP10, CSA300B	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP10_CSA300B	144.0	hr	NA	1.53196089326422	NA	0.7269976368372799	NA	ng/ml	NA

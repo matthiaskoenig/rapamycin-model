@@ -25,7 +25,7 @@
           </ul>
           <p>The content of this model has been carefully created in a manual research effort.</p>
           <h2>Terms of use</h2>
-          <p>Copyright © 2025 <a href="https://livermetabolism.com" title="Matthias König" target="_blank">Matthias König</a>.</p>
+          <p>Copyright © 2026 <a href="https://livermetabolism.com" title="Matthias König" target="_blank">Matthias König</a>.</p>
           <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
             <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
           </a>
@@ -48,28 +48,60 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Bag>
               <rdf:li rdf:parseType="Resource">
                 <vCard4:hasName rdf:parseType="Resource">
-                  <vCard4:family-name>König</vCard4:family-name>
-                  <vCard4:given-name>Matthias</vCard4:given-name>
-                </vCard4:hasName>
-                <vCard4:hasEmail>koenigmx@hu-berlin.de</vCard4:hasEmail>
-                <vCard4:organization-name>Humboldt-University Berlin, Institute for Theoretical Biology</vCard4:organization-name>
-              </rdf:li>
-              <rdf:li rdf:parseType="Resource">
-                <vCard4:hasName rdf:parseType="Resource">
                   <vCard4:family-name>Jesionek</vCard4:family-name>
                   <vCard4:given-name>Monika</vCard4:given-name>
                 </vCard4:hasName>
                 <vCard4:hasEmail>monika.jesionek@student.uj.edu.pl</vCard4:hasEmail>
-                <vCard4:organization-name>Jagiellonian University Medical College in Krakow, Poland</vCard4:organization-name>
+                <vCard4:organization-name>Faculty of Pharmacy, Jagiellonian University Medical College, Krakow, Poland</vCard4:organization-name>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard4:hasName rdf:parseType="Resource">
+                  <vCard4:family-name>König</vCard4:family-name>
+                  <vCard4:given-name>Matthias</vCard4:given-name>
+                </vCard4:hasName>
+                <vCard4:hasEmail>koenigmx@hu-berlin.de</vCard4:hasEmail>
+                <vCard4:organization-name>Humboldt-Universität zu Berlin, Faculty of Life Sciences, Department of Biology, Institute of Theoretical Biology, Systems Medicine of the Liver; University of Stuttgart, Institute of Structural Mechanics and Dynamics in Aerospace Engineering</vCard4:organization-name>
               </rdf:li>
             </rdf:Bag>
           </dcterms:creator>
           <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>1900-01-01T00:00:00Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-02-12T15:12:03Z</dcterms:W3CDTF>
           </dcterms:created>
           <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>1900-01-01T00:00:00Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-02-12T15:12:03Z</dcterms:W3CDTF>
           </dcterms:modified>
+          <bqbiol:hasTaxon>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/taxonomy/9606"/>
+              <rdf:li rdf:resource="https://identifiers.org/snomedct/337915000"/>
+            </rdf:Bag>
+          </bqbiol:hasTaxon>
+          <bqbiol:hasProperty>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/mamo/MAMO_0000046"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C15261"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C15299"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C15342"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C79372"/>
+            </rdf:Bag>
+          </bqbiol:hasProperty>
+          <bqbiol:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C1212"/>
+            </rdf:Bag>
+          </bqbiol:is>
+          <bqbiol:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/doi/10.5281/zenodo.17091694"/>
+            </rdf:Bag>
+          </bqbiol:isDescribedBy>
+          <bqbiol:occursIn>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/FMA:7203"/>
+              <rdf:li rdf:resource="https://identifiers.org/BTO:0000671"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C12415"/>
+            </rdf:Bag>
+          </bqbiol:occursIn>
         </rdf:Description>
       </rdf:RDF>
     </annotation>
@@ -156,9 +188,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vext">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C13356"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0000131"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C13356"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000131"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -171,10 +203,10 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vki">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:7203"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0000671"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C12415"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:7203"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000671"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C12415"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -187,10 +219,10 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vmem">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C13735"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:63841"/>
-                  <rdf:li rdf:resource="http://identifiers.org/GO:0005886"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C13735"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:63841"/>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0005886"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -203,10 +235,10 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vurine">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:12274"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C13283"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0001419"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:12274"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C13283"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0001419"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -221,7 +253,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_ext">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -234,7 +266,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_urine">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -255,7 +287,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_f_renal_function">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -268,7 +300,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_RXEX_k">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -283,7 +315,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_RXEX">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>

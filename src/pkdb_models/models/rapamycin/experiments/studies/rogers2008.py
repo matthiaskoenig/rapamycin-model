@@ -1,0 +1,156 @@
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+
+from pkdb_models.models.rapamycin.experiments.base_experiment import (
+    RapamycinSimulationExperiment,
+)
+from pkdb_models.models.rapamycin.experiments.metadata import (
+    RapamycinMappingMetaData,
+    Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration
+)
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.rapamycin.helpers import run_experiments
+
+
+class Rogers2008(RapamycinSimulationExperiment):
+    """Simulation experiment of Rogers2008."""
+
+    groups = ["P5", "P6", "P7", "P8"]
+    # colors = {
+    #     "PRE5": "tab:blue",
+    #     "PRE6": "tab:red",
+    #     "PRE7": "tab:green",
+    #     "PRE8": "tab:orange",
+    # }
+    markers = {
+        "P5": "s",
+        "P6": "o",
+        "P7": "^",
+        "P8": "*",
+    }
+    bodyweights = {
+        "P5": 99,
+        "P6": 93,
+        "P7": 92.2,
+        "P8": 91,
+    }
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        for fig_id in ["Fig1"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+
+                # unit conversion
+                if label.startswith("rapamycin_"):
+                   dset.unit_conversion("value", 1 / self.Mr.rap)
+
+                dsets[label] = dset
+
+        # console.print(dsets)
+        #console.print(dsets.keys())
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        for group in self.groups:
+            tcsims[f"rap_{group}"] = TimecourseSim(
+                [Timecourse(
+                    start=0,
+                    end=24 * 60,  # [min]
+                    steps=2000,
+                    changes={
+
+                        **self.default_changes(),
+
+                        # physiological changes
+                        "BW": Q_(self.bodyweights[group], "kg"),
+
+                        # dose
+                        "PODOSE_rap": Q_(5, "mg"),
+
+                        # parameters pretransplant
+                        # endstage renal disease
+                        "KI__f_renal_function": Q_(self.renal_map["End stage renal disease"], "dimensionless"),
+                    },
+                )]
+            )
+
+
+        #console.print(tcsims.keys())
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+
+        mappings = {}
+        for group in self.groups:
+            mappings[f"fm_rap_{group}"] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=f"rapamycin_{group}",
+                    xid="time",
+                    yid="value",
+                    yid_sd=None,
+                    count="count"
+                ),
+                observable=FitData(
+                    self, task=f"task_rap_{group}", xid="time", yid=f"[Cveblood_rap]",
+                ),
+                metadata=RapamycinMappingMetaData(
+                    tissue=Tissue.BLOOD,
+                    route=Route.PO,
+                    application_form=ApplicationForm.SOLUTION,
+                    dosing=Dosing.SINGLE,
+                    health=Health.RENAL_IMPAIRMENT,
+                    fasting=Fasting.FED,
+                    coadministration=Coadministration.FUJIMYCIN_MPM
+                )
+            )
+
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+
+        fig1 = Figure(
+            experiment=self,
+            sid="Fig1",
+            name=f"{self.__class__.__name__}",
+        )
+        plots = fig1.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        plots[0].set_yaxis(self.label_rap_blood, unit=self.unit_rap, scale="linear")
+
+        color = self.renal_colors["End stage renal disease"]
+        for group in self.groups:
+            # simulation
+            plots[0].add_data(
+                task=f"task_rap_{group}",
+                xid="time",
+                yid="[Cveblood_rap]",
+                label=group,
+                color=color,
+            )
+                # data
+            plots[0].add_data(
+                dataset=f"rapamycin_{group}",
+                xid="time",
+                yid="value",
+                yid_sd=None,
+                count="count",
+                label=group,
+                color=color,
+                marker=self.markers[group],
+            )
+        return {
+            fig1.sid: fig1
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Rogers2008, output_dir=Rogers2008.__name__)

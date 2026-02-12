@@ -1,0 +1,73 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	unit	comments
+Bottiger2001	A1	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A1	NA	NA	312.58	ng/ml*hr	NA
+Bottiger2001	A2	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A2	NA	NA	657.8	ng/ml*hr	NA
+Bottiger2001	A3	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A3	NA	NA	555.7	ng/ml*hr	NA
+Bottiger2001	A4	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A4	NA	NA	871.84	ng/ml*hr	NA
+Bottiger2001	A5	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A5	NA	NA	697.3	ng/ml*hr	NA
+Bottiger2001	A6	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A6	NA	NA	585.34	ng/ml*hr	NA
+Bottiger2001	A7	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A7	NA	NA	1487.65	ng/ml*hr	NA
+Bottiger2001	A8	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A8	NA	NA	789.51	ng/ml*hr	NA
+Bottiger2001	A9	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A9	NA	NA	881.72	ng/ml*hr	NA
+Bottiger2001	A10	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A10	NA	NA	410.82	ng/ml*hr	NA
+Bottiger2001	A11	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A11	NA	NA	723.65	ng/ml*hr	NA
+Bottiger2001	A12	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A12	NA	NA	453.63	ng/ml*hr	NA
+Bottiger2001	A13	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A13	NA	NA	677.55	ng/ml*hr	NA
+Bottiger2001	A14	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A14	NA	NA	1487.65	ng/ml*hr	NA
+Bottiger2001	A15	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A15	NA	NA	717.08	ng/ml*hr	NA
+Bottiger2001	A16	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A16	NA	NA	667.71	ng/ml*hr	NA
+Bottiger2001	A17	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A17	NA	NA	924.54	ng/ml*hr	NA
+Bottiger2001	A18	NA	1.0	RAP10	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A18	NA	NA	1303.23	ng/ml*hr	NA
+Bottiger2001	A1	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A1	NA	NA	797.774	ng/ml*hr	NA
+Bottiger2001	A2	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A2	NA	NA	784.6	ng/ml*hr	NA
+Bottiger2001	A3	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A3	NA	NA	784.6	ng/ml*hr	NA
+Bottiger2001	A4	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A4	NA	NA	833.99	ng/ml*hr	NA
+Bottiger2001	A5	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A5	NA	NA	847.16	ng/ml*hr	NA
+Bottiger2001	A6	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A6	NA	NA	866.92	ng/ml*hr	NA
+Bottiger2001	A7	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A7	NA	NA	975.58	ng/ml*hr	NA
+Bottiger2001	A8	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A8	NA	NA	1044.75	ng/ml*hr	NA
+Bottiger2001	A9	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A9	NA	NA	1048.04	ng/ml*hr	NA
+Bottiger2001	A10	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A10	NA	NA	1156.71	ng/ml*hr	NA
+Bottiger2001	A11	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A11	NA	NA	1252.21	ng/ml*hr	NA
+Bottiger2001	A12	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A12	NA	NA	1334.54	ng/ml*hr	NA
+Bottiger2001	A13	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A13	NA	NA	1426.74	ng/ml*hr	NA
+Bottiger2001	A14	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A14	NA	NA	1512.36	ng/ml*hr	NA
+Bottiger2001	A15	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A15	NA	NA	1709.95	ng/ml*hr	NA
+Bottiger2001	A16	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A16	NA	NA	1739.6	ng/ml*hr	NA
+Bottiger2001	A17	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A17	NA	NA	1762.64	ng/ml*hr	NA
+Bottiger2001	A18	NA	1.0	RAP10, DIL120	auc_inf	rapamycin	blood	LC MS/MS	rapamycin_A18	NA	NA	2780.19	ng/ml*hr	NA
+Bottiger2001	C1	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C1	NA	NA	103.24	ng/ml	NA
+Bottiger2001	C2	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C2	NA	NA	162.71	ng/ml	NA
+Bottiger2001	C3	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C3	NA	NA	51.47	ng/ml	NA
+Bottiger2001	C4	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C4	NA	NA	95.93	ng/ml	NA
+Bottiger2001	C5	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C5	NA	NA	81.7	ng/ml	NA
+Bottiger2001	C6	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C6	NA	NA	32.31	ng/ml	NA
+Bottiger2001	C7	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C7	NA	NA	35.66	ng/ml	NA
+Bottiger2001	C8	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C8	NA	NA	75.38	ng/ml	NA
+Bottiger2001	C9	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C9	NA	NA	53.45	ng/ml	NA
+Bottiger2001	C10	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C10	NA	NA	41.4	ng/ml	NA
+Bottiger2001	C11	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C11	NA	NA	89.41	ng/ml	NA
+Bottiger2001	C12	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C12	NA	NA	112.13	ng/ml	NA
+Bottiger2001	C13	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C13	NA	NA	73.4	ng/ml	NA
+Bottiger2001	C14	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C14	NA	NA	91.19	ng/ml	NA
+Bottiger2001	C15	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C15	NA	NA	79.53	ng/ml	NA
+Bottiger2001	C16	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C16	NA	NA	54.44	ng/ml	NA
+Bottiger2001	C17	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C17	NA	NA	45.54	ng/ml	NA
+Bottiger2001	C18	NA	1.0	RAP10	cmax	rapamycin	blood	LC MS/MS	rapamycin_C18	NA	NA	65.5	ng/ml	NA
+Bottiger2001	C1	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C1	NA	NA	49.7	ng/ml	NA
+Bottiger2001	C2	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C2	NA	NA	58.98	ng/ml	NA
+Bottiger2001	C3	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C3	NA	NA	74.4	ng/ml	NA
+Bottiger2001	C4	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C4	NA	NA	76.17	ng/ml	NA
+Bottiger2001	C5	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C5	NA	NA	79.33	ng/ml	NA
+Bottiger2001	C6	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C6	NA	NA	79.92	ng/ml	NA
+Bottiger2001	C7	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C7	NA	NA	87.03	ng/ml	NA
+Bottiger2001	C8	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C8	NA	NA	93.56	ng/ml	NA
+Bottiger2001	C9	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C9	NA	NA	99.09	ng/ml	NA
+Bottiger2001	C10	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C10	NA	NA	104.03	ng/ml	NA
+Bottiger2001	C11	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C11	NA	NA	105.02	ng/ml	NA
+Bottiger2001	C12	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C12	NA	NA	113.12	ng/ml	NA
+Bottiger2001	C13	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C13	NA	NA	115.49	ng/ml	NA
+Bottiger2001	C14	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C14	NA	NA	118.85	ng/ml	NA
+Bottiger2001	C15	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C15	NA	NA	122.99	ng/ml	NA
+Bottiger2001	C16	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C16	NA	NA	132.09	ng/ml	NA
+Bottiger2001	C17	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C17	NA	NA	134.46	ng/ml	NA
+Bottiger2001	C18	NA	1.0	RAP10, DIL120	cmax	rapamycin	blood	LC MS/MS	rapamycin_C18	NA	NA	164.49	ng/ml	NA

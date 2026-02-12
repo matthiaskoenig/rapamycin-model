@@ -1,0 +1,3 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Zimmerman1999	FASTED	0	NA	hr	oral	single dose	dosing	solution	rapamycin	15	mg	NA
+Zimmerman1999	FED	0	NA	hr	oral	single dose	dosing	solution	rapamycin	15	mg	fed

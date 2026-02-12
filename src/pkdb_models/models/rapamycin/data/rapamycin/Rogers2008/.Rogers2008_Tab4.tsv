@@ -1,0 +1,28 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Rogers2008	PRE_ALL	4.0	MMF2, TRL8, RAP6	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	67.2	NA	NA	NA	16.6	NA	ug/l	sec
+Rogers2008	PRE_ALL	4.0	MMF2, TRL8, RAP6	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	6.7	NA	NA	NA	2.3	NA	hr	NA
+Rogers2008	PRE_ALL	4.0	MMF2, TRL8, RAP6	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	907.4	NA	NA	NA	231.3	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	MMF2, TRL8, RAP6	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	35.0	NA	NA	NA	NA	NA	ug/l	first
+Rogers2008	P8	1.0	MMF2, TRL8, RAP6	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	6.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P8	1.0	MMF2, TRL8, RAP6	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	319.0	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P6	1.0	MMF2, TRL8, RAP6	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	76.6	NA	NA	NA	NA	NA	ug/l	sec
+Rogers2008	P6	1.0	MMF2, TRL8, RAP6	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	8.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P6	1.0	MMF2, TRL8, RAP6	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	980.2	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P7	1.0	MMF2, TRL8, RAP6	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	48.0	NA	NA	NA	NA	NA	ug/l	sec
+Rogers2008	P7	1.0	MMF2, TRL8, RAP6	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	8.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P7	1.0	MMF2, TRL8, RAP6	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	648.5	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	MMF2, TRL8, RAP6	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	77.0	NA	NA	NA	NA	NA	ug/l	sec
+Rogers2008	P8	1.0	MMF2, TRL8, RAP6	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	4.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P8	1.0	MMF2, TRL8, RAP6	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	1093.5	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	PST_ALL	2.0	MMF2000, MMF1500, TRL8	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	69.8	NA	NA	NA	1.7	NA	ug/l	sec
+Rogers2008	PST_ALL	2.0	MMF2000, MMF1500, TRL8	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	2.5	NA	NA	NA	0.7	NA	hr	NA
+Rogers2008	PST_ALL	2.0	MMF2000, MMF1500, TRL8	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	903.9	NA	NA	NA	42.5	NA	hr*ug/l	NA
+Rogers2008	PST2	1.0	MMF2000	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	68.6	NA	NA	NA	NA	NA	ug/l	first
+Rogers2008	PST2	1.0	MMF2000	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	2.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	PST2	1.0	MMF2000	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	613.5	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	PST2	1.0	MMF2000	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	68.6	NA	NA	NA	NA	NA	ug/l	sec
+Rogers2008	PST2	1.0	MMF2000	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	3.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	PST2	1.0	MMF2000	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	873.9	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	PST3	1.0	MMF1500, TRL8	cmax	mycophenolic acid	blood	LC MS/MS	NA	NA	71.0	NA	NA	NA	NA	NA	ug/l	sec
+Rogers2008	PST3	1.0	MMF1500, TRL8	tmax	mycophenolic acid	blood	LC MS/MS	NA	NA	2.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	PST3	1.0	MMF1500, TRL8	auc_end	mycophenolic acid	blood	LC MS/MS	12.0	hr	934.0	NA	NA	NA	NA	NA	hr*ug/l	NA

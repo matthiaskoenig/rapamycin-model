@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+KorthBradley2012	NA	all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_T5	0.5	hr	NA	2.41883156074795	NA	2.09262073787255	0.41039669142158	ng/ml	NA
+KorthBradley2012	NA	all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_T5	1.0	hr	NA	7.41423156706203	NA	4.41816733171225	0.86647390148919	ng/ml	NA
+KorthBradley2012	NA	all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_T5	2.0	hr	NA	9.35613459392102	NA	3.02286588945009	0.59283277528	ng/ml	NA
+KorthBradley2012	NA	all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_T5	3.0	hr	NA	9.35993047082616	NA	3.02286588945014	0.59283277528001	ng/ml	NA
+KorthBradley2012	NA	all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_T5	5.0	hr	NA	7.79426124324253	NA	2.09275330808082	0.41042269057846	ng/ml	NA
+KorthBradley2012	NA	all	26.0	RAP_T5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_T5	8.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
+KorthBradley2012	NA	nonshellac	29.0	RAP_NS5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_NS5	0.5	hr	NA	3.376	NA	2.70335273318152	0.502	ng/ml	NA
+KorthBradley2012	NA	nonshellac	29.0	RAP_NS5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_NS5	1.0	hr	NA	8.303	NA	3.8073115186441	0.707000000000001	ng/ml	NA
+KorthBradley2012	NA	nonshellac	29.0	RAP_NS5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_NS5	2.0	hr	NA	10.359	NA	2.70335273318152	0.502000000000001	ng/ml	NA
+KorthBradley2012	NA	nonshellac	29.0	RAP_NS5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_NS5	3.0	hr	NA	9.633	NA	2.33177636148924	0.433	ng/ml	NA
+KorthBradley2012	NA	nonshellac	29.0	RAP_NS5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_NS5	5.0	hr	NA	7.976	NA	2.94568514950257	0.547	ng/ml	NA
+KorthBradley2012	NA	shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_S5	0.5	hr	NA	3.832	NA	2.735	0.547	ng/ml	NA
+KorthBradley2012	NA	shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_S5	1.0	hr	NA	9.42	NA	4.335	0.867000000000001	ng/ml	NA
+KorthBradley2012	NA	shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_S5	2.0	hr	NA	11.45	NA	3.55	0.710000000000001	ng/ml	NA
+KorthBradley2012	NA	shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_S5	3.0	hr	NA	9.95	NA	2.63500000000001	0.527000000000001	ng/ml	NA
+KorthBradley2012	NA	shellac	25.0	RAP_S5	concentration	rapamycin	blood	LC MS/MS	rapamycin2_RAP_S5	5.0	hr	NA	8.02	NA	2.405	0.481	ng/ml	NA

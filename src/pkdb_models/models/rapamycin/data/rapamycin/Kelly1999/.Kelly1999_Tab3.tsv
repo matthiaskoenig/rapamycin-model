@@ -1,0 +1,3 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Kelly1999	all	12	RAP_L, CSA	tmax	rapamycin	blood	HPLC	NA	NA	2.7	NA	NA	66.1	2.5	NA	hr	NA
+Kelly1999	all	12	RAP_T, CSA	tmax	rapamycin	blood	HPLC	NA	NA	3.0	NA	NA	42.9	1.5	NA	hr	NA

@@ -1,0 +1,89 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	sd	se	unit	comments
+Zimmerman1997	RAP05_6_5	3.0	RAP05	cmax	rapamycin	blood	LC MS/MS	NA	NA	10.1	NA	NA	2.0	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	3.0	RAP05	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.1	NA	NA	0.8	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP05	thalf	rapamycin	blood	LC MS/MS	NA	NA	62.5	NA	NA	23.2	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP05	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	70.2	NA	NA	11.2	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP05	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	166.0	NA	NA	6.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP05	vd	rapamycin	blood	LC MS/MS	NA	NA	11.6	NA	NA	0.8	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	3.0	RAP05	mrt	rapamycin	blood	LC MS/MS	NA	NA	70.3	NA	NA	7.4	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP05	cmin	rapamycin	blood	LC MS/MS	NA	NA	5.1	NA	NA	0.3	NA	ng/ml	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP1	cmax	rapamycin	blood	LC MS/MS	NA	NA	20.4	NA	NA	7.5	NA	ng/ml	steady state, sd for 3 people
+Zimmerman1997	RAP05_6_5	2.0	RAP1	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.8	NA	NA	0.2	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP1	thalf	rapamycin	blood	LC MS/MS	NA	NA	80.9	NA	NA	2.0	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP1	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	183.0	NA	NA	85.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP1	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	138.0	NA	NA	61.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP1	vd	rapamycin	blood	LC MS/MS	NA	NA	10.8	NA	NA	2.6	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	2.0	RAP1	mrt	rapamycin	blood	LC MS/MS	NA	NA	82.1	NA	NA	17.9	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP1	cmin	rapamycin	blood	LC MS/MS	NA	NA	9.4	NA	NA	3.8	NA	ng/ml	steady state, sd for 3 people
+Zimmerman1997	RAP05_6_5	2.0	RAP1	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	27.6	NA	NA	8.5	NA	dimensionless	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	cmax	rapamycin	blood	LC MS/MS	NA	NA	22.0	NA	NA	8.5	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.9	NA	NA	0.2	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	thalf	rapamycin	blood	LC MS/MS	NA	NA	50.3	NA	NA	13.4	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	131.0	NA	NA	41.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	282.0	NA	NA	110.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	vd	rapamycin	blood	LC MS/MS	NA	NA	13.1	NA	NA	2.5	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	mrt	rapamycin	blood	LC MS/MS	NA	NA	49.6	NA	NA	12.7	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	cmin	rapamycin	blood	LC MS/MS	NA	NA	9.5	NA	NA	3.1	NA	ng/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP1_5	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	27.6	NA	NA	5.6	NA	dimensionless	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	cmax	rapamycin	blood	LC MS/MS	NA	NA	40.5	NA	NA	22.2	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.7	NA	NA	2.1	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	thalf	rapamycin	blood	LC MS/MS	NA	NA	60.1	NA	NA	10.6	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	310.0	NA	NA	144.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	216.0	NA	NA	64.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	vd	rapamycin	blood	LC MS/MS	NA	NA	13.9	NA	NA	8.3	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	mrt	rapamycin	blood	LC MS/MS	NA	NA	61.6	NA	NA	20.9	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	cmin	rapamycin	blood	LC MS/MS	NA	NA	20.3	NA	NA	9.8	NA	ng/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	46.4	NA	NA	12.0	NA	dimensionless	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	cmax	rapamycin	blood	LC MS/MS	NA	NA	30.6	NA	NA	7.0	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.3	NA	NA	1.5	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	thalf	rapamycin	blood	LC MS/MS	NA	NA	61.0	NA	NA	3.4	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	211.0	NA	NA	32.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	304.0	NA	NA	83.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	vd	rapamycin	blood	LC MS/MS	NA	NA	16.7	NA	NA	5.7	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	mrt	rapamycin	blood	LC MS/MS	NA	NA	54.4	NA	NA	5.6	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP2_5B	cmin	rapamycin	blood	LC MS/MS	NA	NA	12.0	NA	NA	1.2	NA	ng/ml	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP3	cmax	rapamycin	blood	LC MS/MS	NA	NA	44.9	NA	NA	3.4	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	2.0	RAP3	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.8	NA	NA	0.2	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP3	thalf	rapamycin	blood	LC MS/MS	NA	NA	52.0	NA	NA	16.2	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP3	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	264.0	NA	NA	1.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP3	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	304.0	NA	NA	83.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP3	vd	rapamycin	blood	LC MS/MS	NA	NA	10.6	NA	NA	0.6	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	2.0	RAP3	mrt	rapamycin	blood	LC MS/MS	NA	NA	39.1	NA	NA	8.8	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP3	cmin	rapamycin	blood	LC MS/MS	NA	NA	18.7	NA	NA	1.7	NA	ng/ml	sd for 3 people
+Zimmerman1997	RAP05_6_5	2.0	RAP3	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	51.9	NA	NA	6.6	NA	dimensionless	sd for 3 people
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	cmax	rapamycin	blood	LC MS/MS	NA	NA	112.0	NA	NA	57.0	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.3	NA	NA	0.6	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	thalf	rapamycin	blood	LC MS/MS	NA	NA	68.3	NA	NA	19.3	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	708.0	NA	NA	266.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	116.0	NA	NA	48.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	vd	rapamycin	blood	LC MS/MS	NA	NA	7.87	NA	NA	3.78	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	mrt	rapamycin	blood	LC MS/MS	NA	NA	66.5	NA	NA	4.3	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	cmin	rapamycin	blood	LC MS/MS	NA	NA	52.1	NA	NA	24.1	NA	ng/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP3_5	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	35.6	NA	NA	14.7	NA	dimensionless	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP4	cmax	rapamycin	blood	LC MS/MS	NA	NA	93.6	NA	NA	32.7	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	3.0	RAP4	tmax	rapamycin	blood	LC MS/MS	NA	NA	3.0	NA	NA	1.7	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP4	thalf	rapamycin	blood	LC MS/MS	NA	NA	59.6	NA	NA	20.1	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP4	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	503.0	NA	NA	67.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP4	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	167.0	NA	NA	10.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP4	vd	rapamycin	blood	LC MS/MS	NA	NA	14.0	NA	NA	2.6	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	3.0	RAP4	mrt	rapamycin	blood	LC MS/MS	NA	NA	83.6	NA	NA	11.2	NA	hr	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP4	cmin	rapamycin	blood	LC MS/MS	NA	NA	37.5	NA	NA	18.9	NA	ng/ml	NA
+Zimmerman1997	RAP05_6_5	3.0	RAP4	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	45.6	NA	NA	4.8	NA	dimensionless	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP5	cmax	rapamycin	blood	LC MS/MS	NA	NA	110.0	NA	NA	89.0	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	2.0	RAP5	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	0.0	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP5	thalf	rapamycin	blood	LC MS/MS	NA	NA	83.3	NA	NA	16.2	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP5	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	455.0	NA	NA	250.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	310.0	NA	NA	150.0	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP5	vd	rapamycin	blood	LC MS/MS	NA	NA	12.9	NA	NA	5.2	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	2.0	RAP5	mrt	rapamycin	blood	LC MS/MS	NA	NA	42.6	NA	NA	3.7	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP5	cmin	rapamycin	blood	LC MS/MS	NA	NA	27.0	NA	NA	12.9	NA	ng/ml	sd for 3 people
+Zimmerman1997	RAP05_6_5	2.0	RAP5	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	36.1	NA	NA	20.4	NA	dimensionless	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	cmax	rapamycin	blood	LC MS/MS	NA	NA	210.0	NA	NA	12.0	NA	ng/ml	steady state
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.7	NA	NA	0.0	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	thalf	rapamycin	blood	LC MS/MS	NA	NA	50.8	NA	NA	12.3	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	auc_end	rapamycin	blood	LC MS/MS	12.0	hr	1428.0	NA	NA	83.0	NA	ng*hr/ml	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	96.7	NA	NA	9.9	NA	ml/hr/kg	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	vd	rapamycin	blood	LC MS/MS	NA	NA	5.6	NA	NA	0.6	NA	l/kg	po,ss
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	mrt	rapamycin	blood	LC MS/MS	NA	NA	57.3	NA	NA	0.7	NA	hr	NA
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	cmin	rapamycin	blood	LC MS/MS	NA	NA	101.0	NA	NA	30.8	NA	ng/ml	sd for 3 people
+Zimmerman1997	RAP05_6_5	2.0	RAP6_5	bp_ratio	rapamycin	blood	LC MS/MS	NA	NA	30.0	NA	NA	4.5	NA	dimensionless	NA

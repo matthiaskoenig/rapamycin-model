@@ -1,0 +1,4 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Zimmerman2003	RAP10	0	NA	hr	oral	single dose	dosing	solution	rapamycin	10	mg	NA
+Zimmerman2003	CSA300	0	NA	hr	oral	single dose	dosing	tablet	cyclosporine	300	mg	NA
+Zimmerman2003	CSA300B	-4	NA	hr	oral	single dose	dosing	tablet	cyclosporine	300	mg	NA

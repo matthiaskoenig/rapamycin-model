@@ -1,0 +1,11 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Zha2022	RAPA	11.0	RAP2	cmax	rapamycin	blood	LC MS/MS	NA	NA	6.66	NA	NA	33.0	NA	NA	ng/ml	NA
+Zha2022	RAPA	11.0	RAP2	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	178.0	NA	NA	33.0	NA	NA	ng*h/ml	NA
+Zha2022	RAPA	11.0	RAP2	concentration	rapamycin	blood	LC MS/MS	24.0	hr	1.14	NA	NA	29.0	NA	NA	ng/ml	NA
+Zha2022	RAPA	11.0	RAP2	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.5	1.5	4.0	NA	NA	NA	hr	NA
+Zha2022	RAPA	11.0	RAP2	thalf	rapamycin	blood	LC MS/MS	NA	NA	96.3	NA	NA	15.0	NA	NA	hr	NA
+Zha2022	RAPA	11.0	RAP05_3D	cmax	rapamycin	blood	LC MS/MS	NA	NA	10.7	NA	NA	7.0	NA	NA	ng/ml	NA
+Zha2022	RAPA	11.0	RAP05_3D	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	1700.0	NA	NA	8.0	NA	NA	ng*h/ml	NA
+Zha2022	RAPA	11.0	RAP05_3D	concentration	rapamycin	blood	LC MS/MS	24.0	hr	5.59	NA	NA	11.0	NA	NA	ng/ml	NA
+Zha2022	RAPA	11.0	RAP05_3D	tmax	rapamycin	blood	LC MS/MS	NA	NA	6.0	3.0	6.0	NA	NA	NA	hr	NA
+Zha2022	RAPA	11.0	RAP05_3D	thalf	rapamycin	blood	LC MS/MS	NA	NA	249.0	NA	NA	23.0	NA	NA	hr	NA

@@ -16,7 +16,7 @@
         </ul>
         <p>The content of this model has been carefully created in a manual research effort.</p>
         <h2>Terms of use</h2>
-        <p>Copyright © 2025 <a href="https://livermetabolism.com" title="Matthias König" target="_blank">Matthias König</a>.</p>
+        <p>Copyright © 2026 <a href="https://livermetabolism.com" title="Matthias König" target="_blank">Matthias König</a>.</p>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
         </a>
@@ -39,28 +39,62 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Bag>
               <rdf:li rdf:parseType="Resource">
                 <vCard4:hasName rdf:parseType="Resource">
-                  <vCard4:family-name>König</vCard4:family-name>
-                  <vCard4:given-name>Matthias</vCard4:given-name>
-                </vCard4:hasName>
-                <vCard4:hasEmail>koenigmx@hu-berlin.de</vCard4:hasEmail>
-                <vCard4:organization-name>Humboldt-University Berlin, Institute for Theoretical Biology</vCard4:organization-name>
-              </rdf:li>
-              <rdf:li rdf:parseType="Resource">
-                <vCard4:hasName rdf:parseType="Resource">
                   <vCard4:family-name>Jesionek</vCard4:family-name>
                   <vCard4:given-name>Monika</vCard4:given-name>
                 </vCard4:hasName>
                 <vCard4:hasEmail>monika.jesionek@student.uj.edu.pl</vCard4:hasEmail>
-                <vCard4:organization-name>Jagiellonian University Medical College in Krakow, Poland</vCard4:organization-name>
+                <vCard4:organization-name>Faculty of Pharmacy, Jagiellonian University Medical College, Krakow, Poland</vCard4:organization-name>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard4:hasName rdf:parseType="Resource">
+                  <vCard4:family-name>König</vCard4:family-name>
+                  <vCard4:given-name>Matthias</vCard4:given-name>
+                </vCard4:hasName>
+                <vCard4:hasEmail>koenigmx@hu-berlin.de</vCard4:hasEmail>
+                <vCard4:organization-name>Humboldt-Universität zu Berlin, Faculty of Life Sciences, Department of Biology, Institute of Theoretical Biology, Systems Medicine of the Liver; University of Stuttgart, Institute of Structural Mechanics and Dynamics in Aerospace Engineering</vCard4:organization-name>
               </rdf:li>
             </rdf:Bag>
           </dcterms:creator>
           <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>1900-01-01T00:00:00Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-02-12T15:12:03Z</dcterms:W3CDTF>
           </dcterms:created>
           <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>1900-01-01T00:00:00Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-02-12T15:12:03Z</dcterms:W3CDTF>
           </dcterms:modified>
+          <bqbiol:hasTaxon>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/taxonomy/9606"/>
+              <rdf:li rdf:resource="https://identifiers.org/snomedct/337915000"/>
+            </rdf:Bag>
+          </bqbiol:hasTaxon>
+          <bqbiol:hasProperty>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/mamo/MAMO_0000046"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C15261"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C15299"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C15342"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C79369"/>
+            </rdf:Bag>
+          </bqbiol:hasProperty>
+          <bqbiol:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C1212"/>
+            </rdf:Bag>
+          </bqbiol:is>
+          <bqbiol:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/doi/10.5281/zenodo.17091694"/>
+            </rdf:Bag>
+          </bqbiol:isDescribedBy>
+          <bqbiol:occursIn>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/FMA:45615"/>
+              <rdf:li rdf:resource="https://identifiers.org/BTO:0000545"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C12736"/>
+              <rdf:li rdf:resource="https://identifiers.org/FMA:7199"/>
+              <rdf:li rdf:resource="https://identifiers.org/BTO:0000648"/>
+            </rdf:Bag>
+          </bqbiol:occursIn>
         </rdf:Description>
       </rdf:RDF>
     </annotation>
@@ -158,9 +192,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vext">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C13356"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0000131"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C13356"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000131"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -173,12 +207,12 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vgu">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:45615"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0000545"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C12736"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:7199"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0000648"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:45615"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000545"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C12736"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:7199"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000648"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -191,9 +225,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vlumen">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:14586"/>
-                  <rdf:li rdf:resource="http://identifiers.org/UBERON:0018543"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -206,10 +240,10 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vfeces">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:64183"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C13234"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0000440"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:64183"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C13234"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000440"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -222,7 +256,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Ventero">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -235,9 +269,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vapical">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:84666"/>
-                  <rdf:li rdf:resource="http://identifiers.org/GO:0016324"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:84666"/>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0016324"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -250,9 +284,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vbaso">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:84669"/>
-                  <rdf:li rdf:resource="http://identifiers.org/GO:0016323"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:84669"/>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0016323"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -265,11 +299,11 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vstomach">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:7148"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C12391"/>
-                  <rdf:li rdf:resource="http://identifiers.org/UBERON:0000945"/>
-                  <rdf:li rdf:resource="http://identifiers.org/BTO:0001307"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:7148"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C12391"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0000945"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0001307"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -282,9 +316,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vint_0">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:14586"/>
-                  <rdf:li rdf:resource="http://identifiers.org/UBERON:0018543"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -297,9 +331,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vint_1">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:14586"/>
-                  <rdf:li rdf:resource="http://identifiers.org/UBERON:0018543"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -312,9 +346,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vint_2">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:14586"/>
-                  <rdf:li rdf:resource="http://identifiers.org/UBERON:0018543"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -327,9 +361,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vint_3">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:14586"/>
-                  <rdf:li rdf:resource="http://identifiers.org/UBERON:0018543"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -342,9 +376,9 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vint_4">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000290"/>
-                  <rdf:li rdf:resource="http://identifiers.org/FMA:14586"/>
-                  <rdf:li rdf:resource="http://identifiers.org/UBERON:0018543"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000290"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -359,11 +393,11 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_ali_stomach">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
-                  <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/5284616"/>
-                  <rdf:li rdf:resource="http://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
-                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:9168"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C1212"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C1212"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -376,11 +410,11 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rap_lumen">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
-                  <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/5284616"/>
-                  <rdf:li rdf:resource="http://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
-                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:9168"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C1212"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C1212"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -393,7 +427,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_lumen">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -406,11 +440,11 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rap_entero">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
-                  <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/5284616"/>
-                  <rdf:li rdf:resource="http://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
-                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:9168"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C1212"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C1212"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -423,7 +457,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_entero">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -436,11 +470,11 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rap_ext">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
-                  <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/5284616"/>
-                  <rdf:li rdf:resource="http://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
-                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:9168"/>
-                  <rdf:li rdf:resource="http://identifiers.org/ncit/C1212"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey/QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit/C1212"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -453,7 +487,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_feces">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -466,7 +500,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_int_0">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -479,7 +513,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_int_1">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -492,7 +526,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_int_2">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -505,7 +539,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_int_3">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -518,7 +552,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_rx_int_4">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000247"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -533,7 +567,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Vchain">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -546,7 +580,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_PODOSE_rap">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000002"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -559,7 +593,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Ka_dis_rap">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000002"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -572,7 +606,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             <rdf:Description rdf:about="#meta_Mr_rap">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000647"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000647"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -593,7 +627,7 @@ f_oatp &gt; 1: increased activity; activator of absorption</p>
             <rdf:Description rdf:about="#meta_f_oatp">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -606,54 +640,7 @@ f_oatp &gt; 1: increased activity; activator of absorption</p>
             <rdf:Description rdf:about="#meta_RAPIM_k">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </parameter>
-      <parameter metaid="meta_f_pg" sboTerm="SBO:0000009" id="f_pg" name="P-gp transporter activity" value="1" units="dimensionless" constant="true">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-            <p>Used for drug-drug interactions.
-f_pg = 1: normal activity;
-f_pg &lt; 1: reduced activity; activator of absorption
-f_pg &gt; 1: increased activity; inhibitor of absorption</p>
-          </body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_f_pg">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </parameter>
-      <parameter metaid="meta_RXPG_k" sboTerm="SBO:0000009" id="RXPG_k" name="rate of rapamycin metabolites PG export" value="0.1" units="per_min" constant="true">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_RXPG_k">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-      </parameter>
-      <parameter metaid="meta_RXEXC_k" sboTerm="SBO:0000009" id="RXEXC_k" name="rate of rapamycin metabolite fecal excretion" value="0.1" units="per_min" constant="true">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_RXEXC_k">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -666,7 +653,7 @@ f_pg &gt; 1: increased activity; inhibitor of absorption</p>
             <rdf:Description rdf:about="#meta_RAP2RX_k">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -687,7 +674,7 @@ f_cyp3a4 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_f_cyp3a4">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -708,20 +695,54 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_f_cyp3a5">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="meta_RAPABS_k" sboTerm="SBO:0000009" id="RAPABS_k" name="rate of rapamycin absorption" value="0.1" units="per_min" constant="true">
+      <parameter metaid="meta_f_pg" sboTerm="SBO:0000009" id="f_pg" name="P-gp transporter activity" value="1" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Used for drug-drug interactions.
+f_pg = 1: normal activity;
+f_pg &lt; 1: reduced activity; activator of absorption
+f_pg &gt; 1: increased activity; inhibitor of absorption</p>
+          </body>
+        </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_RAPABS_k">
+            <rdf:Description rdf:about="#meta_f_pg">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_RXPG_k" sboTerm="SBO:0000009" id="RXPG_k" name="rate of rapamycin metabolites PG export" value="0.1" units="per_min" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_RXPG_k">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_RXEXC_k" sboTerm="SBO:0000009" id="RXEXC_k" name="rate of rapamycin metabolite fecal excretion" value="0.1" units="per_min" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_RXEXC_k">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -775,7 +796,7 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_RAPIM">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -799,13 +820,73 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
           </math>
         </kineticLaw>
       </reaction>
+      <reaction metaid="meta_RAPABS" sboTerm="SBO:0000655" id="RAPABS" name="absorption rapamycin (plasma)" reversible="false" compartment="Ventero">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_RAPABS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rap_ext" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RAPIM_k </ci>
+              <ci> Ventero </ci>
+              <ci> rap_entero </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="meta_RAP2RX" sboTerm="SBO:0000655" id="RAP2RX" name="rapamycin metabolism via CYP3A4/5" reversible="false" compartment="Ventero">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_RAP2RX">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_entero" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> f_cyp3a4 </ci>
+              <ci> f_cyp3a5 </ci>
+              <ci> RAP2RX_k </ci>
+              <ci> Ventero </ci>
+              <ci> rap_entero </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
       <reaction metaid="meta_RXPG" sboTerm="SBO:0000655" id="RXPG" name="PG" reversible="false" compartment="Vapical">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_RXPG">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -835,7 +916,7 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_RXEXC">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -864,7 +945,7 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_RXEXC_0">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -893,7 +974,7 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_RXEXC_1">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -922,7 +1003,7 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_RXEXC_2">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -951,7 +1032,7 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_RXEXC_3">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -980,7 +1061,7 @@ f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
             <rdf:Description rdf:about="#meta_RXEXC_4">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000655"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -1030,66 +1111,6 @@ Overall process describing the rates of this processes.</p>
                 <ci> PODOSE_rap </ci>
               </apply>
               <ci> Mr_rap </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction metaid="meta_RAP2RX" sboTerm="SBO:0000655" id="RAP2RX" name="rapamycin metabolism via CYP3A4/5" reversible="false" compartment="Ventero">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_RAP2RX">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="rx_entero" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> f_cyp3a4 </ci>
-              <ci> f_cyp3a5 </ci>
-              <ci> RAP2RX_k </ci>
-              <ci> Ventero </ci>
-              <ci> rap_entero </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction metaid="meta_RAPABS" sboTerm="SBO:0000655" id="RAPABS" name="absorption rapamycin (plasma)" reversible="false" compartment="Ventero">
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#meta_RAPABS">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000655"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="rap_ext" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> RAPABS_k </ci>
-              <ci> Ventero </ci>
-              <ci> rap_entero </ci>
             </apply>
           </math>
         </kineticLaw>

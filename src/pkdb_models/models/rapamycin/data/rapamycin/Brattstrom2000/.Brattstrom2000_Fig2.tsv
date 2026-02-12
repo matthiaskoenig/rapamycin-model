@@ -1,0 +1,26 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	unit	comments
+Brattstrom2000	RAP_A03 _S1	NA	1	RAP03	auc_end	rapamycin	blood	HPLC MS	48	hr	164.241979685605	ng/ml*hr	NA
+Brattstrom2000	RAP_A1 _S1	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	171.230783336898	ng/ml*hr	NA
+Brattstrom2000	RAP_A1 _S2	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	192.984198783581	ng/ml*hr	NA
+Brattstrom2000	RAP_A1 _S3	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	214.737614230263	ng/ml*hr	NA
+Brattstrom2000	RAP_A1 _S4	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	129.397292093279	ng/ml*hr	NA
+Brattstrom2000	RAP_A1 _S5	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	104.297197347107	ng/ml*hr	NA
+Brattstrom2000	RAP_A1 _S6	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	80.87044225068	ng/ml*hr	NA
+Brattstrom2000	RAP_A3 _S1	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	495.025825972676	ng/ml*hr	NA
+Brattstrom2000	RAP_A3 _S2	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	456.539014028546	ng/ml*hr	NA
+Brattstrom2000	RAP_A3 _S3	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	414.705522784926	ng/ml*hr	NA
+Brattstrom2000	RAP_A3 _S4	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	257.406501828703	ng/ml*hr	NA
+Brattstrom2000	RAP_A3 _S5	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	213.899670935338	ng/ml*hr	NA
+Brattstrom2000	RAP_A3 _S6	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	173.739519341462	ng/ml*hr	NA
+Brattstrom2000	RAP_A5 _S1	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	879.061095999266	ng/ml*hr	NA
+Brattstrom2000	RAP_A5 _S2	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	663.195187301975	ng/ml*hr	NA
+Brattstrom2000	RAP_A5 _S3	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	636.421752906058	ng/ml*hr	NA
+Brattstrom2000	RAP_A5 _S4	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	490.841203378261	ng/ml*hr	NA
+Brattstrom2000	RAP_A5 _S5	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	403.827541591531	ng/ml*hr	NA
+Brattstrom2000	RAP_A5 _S6	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	315.135446274845	ng/ml*hr	NA
+Brattstrom2000	RAP_A8 _S1	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	1211.64562894138	ng/ml*hr	NA
+Brattstrom2000	RAP_A8 _S2	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	1134.67200505312	ng/ml*hr	NA
+Brattstrom2000	RAP_A8 _S3	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	1015.85979604103	ng/ml*hr	NA
+Brattstrom2000	RAP_A8 _S4	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	794.978962274723	ng/ml*hr	NA
+Brattstrom2000	RAP_A8 _S5	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	741.432093482889	ng/ml*hr	NA
+Brattstrom2000	RAP_A8 _S6	NA	1	RAP1	auc_end	rapamycin	blood	HPLC MS	144	hr	639.353280968244	ng/ml*hr	NA

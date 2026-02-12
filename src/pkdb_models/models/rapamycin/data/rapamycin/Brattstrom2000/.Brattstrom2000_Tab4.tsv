@@ -1,0 +1,13 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	sd	se	unit	comments
+Brattstrom2000	RAP_D1	6.0	RAP1	cmax	rapamycin	plasma	HPLC MS/MS	NA	NA	0.4	NA	NA	0.11	NA	ng/ml	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	tmax	rapamycin	plasma	HPLC MS/MS	NA	NA	0.67	NA	NA	0.21	NA	hr	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	bp_ratio	rapamycin	NA	HPLC MS/MS	NA	NA	29.3	NA	NA	4.5	NA	dimensionless	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	cmax	rapamycin	plasma	HPLC MS/MS	NA	NA	1.15	NA	NA	0.53	NA	ng/ml	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	tmax	rapamycin	plasma	HPLC MS/MS	NA	NA	1.0	NA	NA	0.0	NA	hr	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	bp_ratio	rapamycin	NA	HPLC MS/MS	NA	NA	28.0	NA	NA	8.0	NA	dimensionless	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	cmax	rapamycin	plasma	HPLC MS/MS	NA	NA	1.5	NA	NA	0.96	NA	ng/ml	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	tmax	rapamycin	plasma	HPLC MS/MS	NA	NA	0.89	NA	NA	0.58	NA	hr	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	bp_ratio	rapamycin	NA	HPLC MS/MS	NA	NA	46.9	NA	NA	14.4	NA	dimensionless	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	cmax	rapamycin	plasma	HPLC MS/MS	NA	NA	3.0	NA	NA	1.42	NA	ng/ml	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	tmax	rapamycin	plasma	HPLC MS/MS	NA	NA	1.0	NA	NA	0.52	NA	hr	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	bp_ratio	rapamycin	NA	HPLC MS/MS	NA	NA	38.4	NA	NA	7.5	NA	dimensionless	NA

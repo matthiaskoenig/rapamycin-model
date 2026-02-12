@@ -1,0 +1,10 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Kelly1999	all	21.0	NA	species	21.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Kelly1999	all	21.0	NA	healthy	21.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Kelly1999	all	21.0	NA	sex	13.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Kelly1999	all	21.0	NA	sex	8.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Kelly1999	all	21.0	NA	ethnicity	18.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Kelly1999	all	21.0	NA	ethnicity	3.0	NA	NR	NA	NA	NA	NA	NA	NA	NA	NA
+Kelly1999	all	21.0	NA	age	21.0	NA	NA	46.0	NA	13.8	NA	NA	NA	years	NA
+Kelly1999	all	21.0	NA	disease	5.0	NA	diabetes	NA	NA	NA	NA	NA	NA	NA	NA
+Kelly1999	all	21.0	NA	weight	21.0	NA	NA	75.8	NA	19.5	NA	NA	NA	kg	NA

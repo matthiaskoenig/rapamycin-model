@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	0.0	hr		1.1890067084091296e-05		5.548697972575901e-06		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	0.5	hr		1.2484570438295903e-05		5.945033542045648e-06		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	1.0	hr		1.9222275119281066e-05		8.719382528333686e-06		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	2.0	hr		2.4770973091857013e-05		9.51205366727308e-06		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	3.0	hr		2.5563644230796418e-05		9.908389236742783e-06		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	5.0	hr		2.397830195291761e-05		1.0502892590947391e-05		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	8.0	hr		1.9618610688750766e-05		9.115718097803388e-06		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T4, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T4, CSA	12.0	hr		1.6646093917727944e-05		7.134040250454832e-06		incorrect labeled as week 6 in plot	mole/meter^3	ng/ml

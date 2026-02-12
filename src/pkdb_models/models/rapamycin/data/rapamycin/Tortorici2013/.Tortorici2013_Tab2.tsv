@@ -1,0 +1,22 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Tortorici2013	all	27.0	TAC10	cmax	fujimycin	blood	LC MS/MS	NA	NA	61.5	NA	NA	27.7	NA	NA	ng/ml	NA
+Tortorici2013	all	27.0	TAC10	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	0.67	5.0	NA	NA	NA	hr	NA
+Tortorici2013	all	25.0	TAC10	thalf	fujimycin	blood	LC MS/MS	NA	NA	38.5	NA	NA	15.6	NA	NA	hr	NA
+Tortorici2013	all	25.0	TAC10	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	669.0	NA	NA	36.5	NA	NA	ng*hr/ml	NA
+Tortorici2013	all	25.0	TAC10	oral-clearance	fujimycin	blood	LC MS/MS	NA	NA	245.0	NA	NA	38.9	NA	NA	mL/hr/kg	cl/f
+Tortorici2013	all	25.0	TAC10	bp_ratio	fujimycin	blood	LC MS/MS	NA	NA	43.8	NA	NA	22.0	NA	NA	NA	NA
+Tortorici2013	all	25.0	TAC10	vd	fujimycin	blood	LC MS/MS	NA	NA	9.56	NA	NA	30.5	NA	NA	L/kg	vss/f
+Tortorici2013	all	27.0	RAP15, TAC10	cmax	fujimycin	blood	LC MS/MS	NA	NA	55.5	NA	NA	31.6	NA	NA	ng/ml	NA
+Tortorici2013	all	27.0	RAP15, TAC10	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	0.67	3.0	NA	NA	NA	hr	NA
+Tortorici2013	all	25.0	RAP15, TAC10	thalf	fujimycin	blood	LC MS/MS	NA	NA	37.7	NA	NA	11.4	NA	NA	hr	NA
+Tortorici2013	all	25.0	RAP15, TAC10	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	619.0	NA	NA	39.3	NA	NA	ng*hr/ml	NA
+Tortorici2013	all	25.0	RAP15, TAC10	oral-clearance	fujimycin	blood	LC MS/MS	NA	NA	271.0	NA	NA	42.9	NA	NA	mL/hr/kg	cl/f
+Tortorici2013	all	25.0	RAP15, TAC10	bp_ratio	fujimycin	blood	LC MS/MS	NA	NA	44.1	NA	NA	25.0	NA	NA	NA	NA
+Tortorici2013	all	25.0	RAP15, TAC10	vd	fujimycin	blood	LC MS/MS	NA	NA	10.4	NA	NA	35.4	NA	NA	L/kg	vss/f
+Tortorici2013	all	27.0	RAP15, TAC10_4H	cmax	fujimycin	blood	LC MS/MS	NA	NA	58.7	NA	NA	24.0	NA	NA	ng/ml	NA
+Tortorici2013	all	27.0	RAP15, TAC10_4H	tmax	fujimycin	blood	LC MS/MS	NA	NA	1.0	0.67	3.0	NA	NA	NA	hr	NA
+Tortorici2013	all	25.0	RAP15, TAC10_4H	thalf	fujimycin	blood	LC MS/MS	NA	NA	37.8	NA	NA	16.7	NA	NA	hr	NA
+Tortorici2013	all	25.0	RAP15, TAC10_4H	auc_inf	fujimycin	blood	LC MS/MS	NA	NA	615.0	NA	NA	31.0	NA	NA	ng*hr/ml	NA
+Tortorici2013	all	25.0	RAP15, TAC10_4H	oral-clearance	fujimycin	blood	LC MS/MS	NA	NA	259.0	NA	NA	38.7	NA	NA	mL/hr/kg	cl/f
+Tortorici2013	all	25.0	RAP15, TAC10_4H	bp_ratio	fujimycin	blood	LC MS/MS	NA	NA	45.4	NA	NA	23.0	NA	NA	NA	NA
+Tortorici2013	all	25.0	RAP15, TAC10_4H	vd	fujimycin	blood	LC MS/MS	NA	NA	10.1	NA	NA	29.8	NA	NA	L/kg	vss/f

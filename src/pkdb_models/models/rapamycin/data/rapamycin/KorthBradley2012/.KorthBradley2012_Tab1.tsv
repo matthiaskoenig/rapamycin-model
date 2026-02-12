@@ -1,0 +1,22 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+KorthBradley2012	all	26.0	RAP_T5	cmax	rapamycin	blood	LC MS/MS	NA	NA	10.3	NA	NA	31.0	3.17	NA	ng/ml	NA
+KorthBradley2012	all	26.0	RAP_T5	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	1.0	2.0	NA	NA	NA	hr	NA
+KorthBradley2012	all	26.0	RAP_T5	thalf	rapamycin	blood	LC MS/MS	NA	NA	73.3	NA	NA	32.0	23.6	NA	hr	NA
+KorthBradley2012	all	26.0	RAP_T5	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	269.0	NA	NA	26.0	69.0	NA	ng*hr/ml	AUC to the last measured concentration
+KorthBradley2012	all	26.0	RAP_T5	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	340.0	NA	NA	30.0	102.0	NA	ng*hr/ml	NA
+KorthBradley2012	all	26.0	RAP_T5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	16.0	NA	NA	30.0	4.7	NA	L/hr	cl/f
+KorthBradley2012	all	26.0	RAP_T5	vd	rapamycin	blood	LC MS/MS	NA	NA	1606.0	NA	NA	25.0	402.0	NA	L	v_gammaz/f
+KorthBradley2012	nonshellac	29.0	RAP_NS5	cmax	rapamycin	blood	LC MS/MS	NA	NA	11.1	NA	NA	28.0	3.1	NA	ng/ml	NA
+KorthBradley2012	nonshellac	29.0	RAP_NS5	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	1.0	5.0	NA	NA	NA	hr	NA
+KorthBradley2012	nonshellac	29.0	RAP_NS5	thalf	rapamycin	blood	LC MS/MS	NA	NA	79.4	NA	NA	26.0	20.3	NA	hr	NA
+KorthBradley2012	nonshellac	29.0	RAP_NS5	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	262.0	NA	NA	30.0	79.0	NA	ng*hr/ml	NA
+KorthBradley2012	nonshellac	29.0	RAP_NS5	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	334.0	NA	NA	31.0	102.0	NA	ng*hr/ml	NA
+KorthBradley2012	nonshellac	29.0	RAP_NS5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	16.3	NA	NA	29.0	4.7	NA	L/hr	NA
+KorthBradley2012	nonshellac	29.0	RAP_NS5	vd	rapamycin	blood	LC MS/MS	NA	NA	1829.0	NA	NA	31.0	569.0	NA	L	v_gammaz/f
+KorthBradley2012	shellac	25.0	RAP_S5	cmax	rapamycin	blood	LC MS/MS	NA	NA	12.0	NA	NA	29.0	3.4	NA	ng/ml	NA
+KorthBradley2012	shellac	25.0	RAP_S5	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	1.0	8.0	NA	NA	NA	hr	NA
+KorthBradley2012	shellac	25.0	RAP_S5	thalf	rapamycin	blood	LC MS/MS	NA	NA	80.5	NA	NA	33.0	26.7	NA	hr	NA
+KorthBradley2012	shellac	25.0	RAP_S5	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	273.0	NA	NA	25.0	69.0	NA	ng*hr/ml	NA
+KorthBradley2012	shellac	25.0	RAP_S5	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	352.0	NA	NA	30.0	104.0	NA	ng*hr/ml	NA
+KorthBradley2012	shellac	25.0	RAP_S5	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	15.3	NA	NA	26.0	4.0	NA	L/hr	NA
+KorthBradley2012	shellac	25.0	RAP_S5	vd	rapamycin	blood	LC MS/MS	NA	NA	1695.0	NA	NA	26.0	439.0	NA	L	v_gammaz/f

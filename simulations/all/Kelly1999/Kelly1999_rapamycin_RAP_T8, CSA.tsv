@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	0.0	hr		1.1662756978071957e-05		4.4238043709927746e-06			mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	0.5	hr		1.4477905214158299e-05		6.0324605058992615e-06			mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	1.0	hr		1.8901709585151106e-05		8.44544470825896e-06			mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	2.0	hr		2.6944990259683544e-05		1.2668167062388484e-05			mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	3.0	hr		2.6743908242820194e-05		1.0657346893755432e-05			mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	5.0	hr		2.151577580437421e-05		8.244362691395786e-06			mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	8.0	hr		1.9907119669467743e-05		8.847608741985725e-06			mole/meter^3	ng/ml
+Kelly1999		all	21.0	RAP_T8, CSA	concentration	rapamycin	blood	HPLC	rapamycin_RAP_T8, CSA	12.0	hr		1.6086561349064764e-05		7.037870590215812e-06			mole/meter^3	ng/ml

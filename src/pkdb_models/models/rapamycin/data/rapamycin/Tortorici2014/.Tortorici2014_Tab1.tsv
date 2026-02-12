@@ -1,0 +1,11 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Tortorici2014	all	14.0	RAP20	cmax	rapamycin	blood	LC MS/MS	NA	NA	87.9	NA	NA	21.0	18.459	4.93337526446144	ng/ml	NA
+Tortorici2014	all	14.0	RAP20	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.91	NA	NA	17.0	0.1547	0.0413453141238521	hr	NA
+Tortorici2014	all	14.0	RAP20	thalf	rapamycin	blood	LC MS/MS	NA	NA	65.0	NA	NA	17.0	11.05	2.95323672313229	hr	NA
+Tortorici2014	all	14.0	RAP20	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	1095.0	NA	NA	37.0	405.15	108.280892160819	ng*hr/ml	NA
+Tortorici2014	all	14.0	RAP20	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	261.0	NA	NA	42.0	109.62	29.29717733844	mL/hr/kg	cl/f
+Tortorici2014	all	14.0	RAP20, RIF600	cmax	rapamycin	blood	LC MS/MS	NA	NA	25.5	NA	NA	24.0	6.12	1.63563880050404	ng/ml	NA
+Tortorici2014	all	14.0	RAP20, RIF600	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.95	NA	NA	36.0	0.342	0.0914033447340491	hr	NA
+Tortorici2014	all	14.0	RAP20, RIF600	thalf	rapamycin	blood	LC MS/MS	NA	NA	59.4	NA	NA	13.0	7.722	2.06379131004774	hr	NA
+Tortorici2014	all	14.0	RAP20, RIF600	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	195.0	NA	NA	27.0	52.65	14.0713043866891	ng*hr/ml	NA
+Tortorici2014	all	14.0	RAP20, RIF600	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	1444.0	NA	NA	42.0	606.48	162.088597995047	mL/hr/kg	cl/f

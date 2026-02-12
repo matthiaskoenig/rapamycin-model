@@ -1,0 +1,11 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	sd	se	unit	comments
+Zimmerman1999	all	22.0	FASTED	cmax	rapamycin	blood	LC MS/MS	NA	NA	67.4	NA	NA	22.8	NA	ng/ml	NA
+Zimmerman1999	all	22.0	FASTED	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.81	NA	NA	0.17	NA	hr	NA
+Zimmerman1999	all	22.0	FASTED	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	635.0	NA	NA	225.0	NA	ng*hr/ml	NA
+Zimmerman1999	all	22.0	FASTED	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	768.0	NA	NA	272.0	NA	ng*hr/ml	NA
+Zimmerman1999	all	22.0	FASTED	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	323.0	NA	NA	175.0	NA	ml/hr/kg	cl/f
+Zimmerman1999	all	22.0	FED	cmax	rapamycin	blood	LC MS/MS	NA	NA	44.4	NA	NA	15.5	NA	ng/ml	NA
+Zimmerman1999	all	22.0	FED	tmax	rapamycin	blood	LC MS/MS	NA	NA	3.08	NA	NA	1.18	NA	hr	NA
+Zimmerman1999	all	22.0	FED	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	847.0	NA	NA	273.0	NA	ng*hr/ml	NA
+Zimmerman1999	all	22.0	FED	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	1027.0	NA	NA	335.0	NA	ng*hr/ml	NA
+Zimmerman1999	all	22.0	FED	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	229.0	NA	NA	92.0	NA	ml/hr/kg	cl/f

@@ -1,0 +1,19 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Zimmerman2003	all	21.0	RAP10	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.93	NA	NA	NA	0.38	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10	cmax	rapamycin	blood	LC MS/MS	NA	NA	46.0	NA	NA	NA	9.8	NA	ng/ml	NA
+Zimmerman2003	all	21.0	RAP10	thalf	rapamycin	blood	LC MS/MS	NA	NA	66.3	NA	NA	NA	18.8	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10	mrt	rapamycin	blood	LC MS/MS	NA	NA	67.9	NA	NA	NA	16.6	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	477.0	NA	NA	NA	135.0	NA	ng*hr/ml	NA
+Zimmerman2003	all	21.0	RAP10	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	306.0	NA	NA	NA	93.0	NA	ml/hr/kg	NA
+Zimmerman2003	all	21.0	RAP10, CSA300	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.73	NA	NA	NA	1.03	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10, CSA300	cmax	rapamycin	blood	LC MS/MS	NA	NA	99.2	NA	NA	NA	20.0	NA	ng/ml	NA
+Zimmerman2003	all	21.0	RAP10, CSA300	thalf	rapamycin	blood	LC MS/MS	NA	NA	66.0	NA	NA	NA	23.0	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10, CSA300	mrt	rapamycin	blood	LC MS/MS	NA	NA	67.3	NA	NA	NA	24.4	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10, CSA300	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	1580.0	NA	NA	NA	469.0	NA	ng*hr/ml	NA
+Zimmerman2003	all	21.0	RAP10, CSA300	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	93.1	NA	NA	NA	25.1	NA	ml/hr/kg	NA
+Zimmerman2003	all	21.0	RAP10, CSA300B	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.41	NA	NA	NA	0.71	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10, CSA300B	cmax	rapamycin	blood	LC MS/MS	NA	NA	64.8	NA	NA	NA	15.4	NA	ng/ml	NA
+Zimmerman2003	all	21.0	RAP10, CSA300B	thalf	rapamycin	blood	LC MS/MS	NA	NA	74.1	NA	NA	NA	31.9	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10, CSA300B	mrt	rapamycin	blood	LC MS/MS	NA	NA	76.6	NA	NA	NA	25.7	NA	hr	NA
+Zimmerman2003	all	21.0	RAP10, CSA300B	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	894.0	NA	NA	NA	309.0	NA	ng*hr/ml	NA
+Zimmerman2003	all	21.0	RAP10, CSA300B	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	170.0	NA	NA	NA	58.0	NA	ml/hr/kg	NA

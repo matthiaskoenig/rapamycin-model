@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Leung2006	NA	all	6	RAP40	cmax	rapamycin	plasma	HPLC	NA	NA	68	NA	NA	24	17.0	NA	ng/ml	NA
+Leung2006	NA	all	6	RAP40	tmax	rapamycin	plasma	HPLC	NA	NA	2	NA	NA	55	1.1	NA	hr	NA
+Leung2006	NA	all	6	RAP40	auc_end	rapamycin	plasma	HPLC	144.0	hr	2004	NA	NA	22	444.0	NA	ng*h/mL	NA

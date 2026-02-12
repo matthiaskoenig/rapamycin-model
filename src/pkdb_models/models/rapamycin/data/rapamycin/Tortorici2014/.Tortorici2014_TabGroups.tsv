@@ -1,0 +1,12 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Tortorici2014	all	16	NA	species	16	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2014	all	16	NA	healthy	16	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2014	all	16	NA	sex	16	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2014	all	16	NA	ethnicity	4	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	white
+Tortorici2014	all	16	NA	ethnicity	11	NA	hispanic 	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2014	all	16	NA	ethnicity	1	NA	black 	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2014	all	16	NA	age	16	NA	NA	34.6	NA	8.2	NA	22.0	45.0	years	NA
+Tortorici2014	all	16	NA	weight	16	NA	NA	77.1	NA	9.9	NA	56.0	92.0	kg	NA
+Tortorici2014	all	16	NA	obesity index	16	NA	NA	NA	NA	NA	NA	85.0	115.0	percent	NA
+Tortorici2014	all	16	NA	overnight fast	16	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Tortorici2014	all	16	NA	smoking	16	NA	N	NA	NA	NA	NA	NA	NA	NA	nonsmokers or subjects who were nicotine-free for at least 1 month before day 1 of treatment period I and throughout the study

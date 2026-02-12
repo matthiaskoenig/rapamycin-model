@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	sd	se	unit	comments
+Zimmerman2008	CONTROL	9.0	RAP15	cmax	rapamycin	blood	LC MS/MS	NA	NA	72.3	NA	NA	16.6	NA	ng/ml	NA
+Zimmerman2008	CONTROL	9.0	RAP15	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.78	NA	NA	0.16	NA	hr	NA
+Zimmerman2008	CONTROL	9.0	RAP15	thalf	rapamycin	blood	LC MS/MS	NA	NA	80.0	NA	NA	5.4	NA	hr	NA
+Zimmerman2008	CONTROL	9.0	RAP15	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	838.0	NA	NA	277.0	NA	ng*hr/ml	NA
+Zimmerman2008	CONTROL	9.0	RAP15	vd_ss	rapamycin	blood	LC MS/MS	NA	NA	34.5	NA	NA	7.2	NA	l/kg	Vss/F
+Zimmerman2008	CONTROL	9.0	RAP15	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	300.0	NA	NA	66.0	NA	ml/hr/kg	cl/f
+Zimmerman2008	CONTROL	9.0	RAP15	mrt	rapamycin	blood	LC MS/MS	NA	NA	77.5	NA	NA	6.4	NA	hr	NA
+Zimmerman2008	CONTROL	9.0	RAP15	cmax	rapamycin	plasma	LC MS/MS	NA	NA	1.15	NA	NA	0.56	NA	ng/ml	NA
+Zimmerman2008	CONTROL	9.0	RAP15	tmax	rapamycin	plasma	LC MS/MS	NA	NA	0.89	NA	NA	0.16	NA	hr	NA
+Zimmerman2008	CONTROL	9.0	RAP15	bp_ratio	rapamycin	plasma	LC MS/MS	NA	NA	84.5	NA	NA	5.4	NA	dimensionless	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	cmax	rapamycin	blood	LC MS/MS	NA	NA	56.2	NA	NA	23.1	NA	ng/ml	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.82	NA	NA	0.17	NA	hr	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	thalf	rapamycin	blood	LC MS/MS	NA	NA	214.0	NA	NA	69.0	NA	hr	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	2597.0	NA	NA	1092.0	NA	ng*hr/ml	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	vd_ss	rapamycin	blood	LC MS/MS	NA	NA	29.1	NA	NA	12.9	NA	l/kg	Vss/F
+Zimmerman2008	GRADE_C	9.0	RAP15	oral-clearance	rapamycin	blood	LC MS/MS	NA	NA	98.1	NA	NA	43.8	NA	ml/hr/kg	cl/f
+Zimmerman2008	GRADE_C	9.0	RAP15	mrt	rapamycin	blood	LC MS/MS	NA	NA	280.0	NA	NA	99.0	NA	hr	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	cmax	rapamycin	plasma	LC MS/MS	NA	NA	1.14	NA	NA	0.89	NA	ng/ml	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	tmax	rapamycin	plasma	LC MS/MS	NA	NA	0.85	NA	NA	0.17	NA	hr	NA
+Zimmerman2008	GRADE_C	9.0	RAP15	bp_ratio	rapamycin	plasma	LC MS/MS	NA	NA	65.5	NA	NA	21.0	NA	dimensionless	NA

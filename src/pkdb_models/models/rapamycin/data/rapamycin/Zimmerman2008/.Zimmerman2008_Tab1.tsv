@@ -1,0 +1,15 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	sd	se	unit	comments
+Zimmerman1999	all	22.0	RAP15	cmax	rapamycin	blood	LC MS/MS	NA	NA	67.4	NA	NA	22.8	NA	ng/ml	NA
+Zimmerman1999	all	22.0	RAP15	tmax	rapamycin	blood	LC MS/MS	NA	NA	0.81	NA	NA	0.17	NA	hr	NA
+Zimmerman1999	all	22.0	RAP15	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	635.0	NA	NA	225.0	NA	ng*hr/ml	NA
+Zimmerman1999	all	22.0	RAP15	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	768.0	NA	NA	272.0	NA	ng*h/ml	NA
+Zimmerman1999	all	22.0	RAP15	cmax/auc_inf	rapamycin	blood	LC MS/MS	NA	NA	0.098	NA	NA	0.054	NA	ng/ml/hr	add
+Zimmerman1999	all	22.0	RAP15	thalf_terminal	rapamycin	blood	LC MS/MS	NA	NA	68.3	NA	NA	9.3	NA	hr	add
+Zimmerman1999	all	22.0	RAP15	oral clearance	rapamycin	blood	LC MS/MS	NA	NA	323.0	NA	NA	175.0	NA	ml/hr/kg	cl/f
+Zimmerman1999	all	22.0	RAP15_FD	cmax	rapamycin	blood	LC MS/MS	NA	NA	44.4	NA	NA	15.5	NA	ng/ml	NA
+Zimmerman1999	all	22.0	RAP15_FD	tmax	rapamycin	blood	LC MS/MS	NA	NA	3.08	NA	NA	1.18	NA	hr	NA
+Zimmerman1999	all	22.0	RAP15_FD	auc_end	rapamycin	blood	LC MS/MS	144.0	hr	847.0	NA	NA	273.0	NA	ng*hr/ml	NA
+Zimmerman1999	all	22.0	RAP15_FD	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	1027.0	NA	NA	335.0	NA	ng*h/ml	NA
+Zimmerman1999	all	22.0	RAP15_FD	cmax/auc_inf	rapamycin	blood	LC MS/MS	NA	NA	0.045	NA	NA	0.012	NA	ng/ml/hr	add
+Zimmerman1999	all	22.0	RAP15_FD	thalf_terminal	rapamycin	blood	LC MS/MS	NA	NA	66.5	NA	NA	13.1	NA	hr	add
+Zimmerman1999	all	22.0	RAP15_FD	oral clearance	rapamycin	blood	LC MS/MS	NA	NA	229.0	NA	NA	92.0	NA	ml/hr/kg	cl/f

@@ -1,0 +1,4 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Zimmerman2005	RAP15_H	0	NA	hr	oral	single dose	dosing	solution	rapamycin	15	mg	healthy
+Zimmerman2005	RAP15_A	0	NA	hr	oral	single dose	dosing	solution	rapamycin	15	mg	grade A
+Zimmerman2005	RAP15_B	0	NA	hr	oral	single dose	dosing	solution	rapamycin	15	mg	grade B

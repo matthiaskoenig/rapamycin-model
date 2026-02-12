@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	0.33	hr		6.6741695106373975e-06		1.8025680061632064e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	0.67	hr		1.4772514535069277e-05		1.8033019507912023e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	1.0	hr		2.1743520611021183e-05		2.0278890069335974e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	2.0	hr		4.017947571965863e-05		2.9291730100151843e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	3.0	hr		4.487011583667371e-05		3.1544940107856084e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	4.0	hr		4.4829748882138357e-05		3.6051360123264564e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	5.0	hr		3.9832319910654114e-05		3.154494010785619e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	8.0	hr		2.1910859986186293e-05		1.8033019507912023e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	12.0	hr		1.4565764725553147e-05		7.783383756577948e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	18.0	hr		9.68637390687106e-06		5.892525316978897e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	24.0	hr		8.27976725435179e-06		6.247428670059428e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	48.0	hr		5.4204052529362905e-06		4.089921146362615e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	72.0	hr		4.054777440390073e-06		3.352452959738097e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	96.0	hr		3.129903196930949e-06		2.3616421049443763e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	120.0	hr		2.5126417109872552e-06		1.8958926477743407e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FED	144.0	hr		2.0490121531990753e-06		1.546064868486222e-07			mole/meter^3	ng/ml

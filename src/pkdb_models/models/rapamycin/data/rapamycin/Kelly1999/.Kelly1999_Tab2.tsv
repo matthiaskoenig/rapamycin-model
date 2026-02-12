@@ -1,0 +1,24 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Kelly1999	all	21.0	RAP_L,  CSA	auc_end	rapamycin	blood	HPLC	12.0	hr	256.5	NA	NA	NA	70.2	NA	ng*hr/ml	NA
+Kelly1999	all	21.0	RAP_L,  CSA	cmin	rapamycin	blood	HPLC	NA	NA	8.9	NA	NA	NA	3.5	NA	ng/ml	NA
+Kelly1999	all	21.0	RAP_L,  CSA	cmax	rapamycin	blood	HPLC	NA	NA	37.1	NA	NA	NA	13.3	NA	ng/ml	NA
+Kelly1999	all	21.0	RAP_L,  CSA	tmax	rapamycin	blood	HPLC	NA	NA	2.2	NA	NA	NA	1.6	NA	hr	NA
+Kelly1999	all	21.0	RAP_L,  CSA	auc_end	cyclosporine	blood	HPLC	12.0	hr	3118.0	NA	NA	NA	1141.0	NA	ng*hr/ml	monoclonal antibody-based fluorescence polarization immunoassay
+Kelly1999	all	12.0	RAP_T2, CSA	auc_end	rapamycin	blood	HPLC	12.0	hr	205.8	NA	NA	NA	59.2	NA	ng*hr/ml	NA
+Kelly1999	all	12.0	RAP_T2, CSA	cmin	rapamycin	blood	HPLC	NA	NA	9.3	NA	NA	NA	2.3	NA	ng/ml	NA
+Kelly1999	all	12.0	RAP_T2, CSA	cmax	rapamycin	blood	HPLC	NA	NA	25.3	NA	NA	NA	8.8	NA	ng/ml	NA
+Kelly1999	all	12.0	RAP_T2, CSA	tmax	rapamycin	blood	HPLC	NA	NA	2.8	NA	NA	NA	1.5	NA	hr	NA
+Kelly1999	all	12.0	RAP_T2, CSA	bioavailability	rapamycin	blood	HPLC	NA	NA	88.8	NA	NA	NA	28.9	NA	dimensionless	NA
+Kelly1999	all	12.0	RAP_T2, CSA	auc_end	cyclosporine	blood	HPLC	12.0	hr	2303.0	NA	NA	NA	714.0	NA	ng*hr/ml	NA
+Kelly1999	all	21.0	RAP_T4, CSA	auc_end	rapamycin	blood	HPLC	12.0	hr	226.1	NA	NA	NA	90.6	NA	ng*hr/ml	NA
+Kelly1999	all	21.0	RAP_T4, CSA	cmin	rapamycin	blood	HPLC	NA	NA	10.9	NA	NA	NA	5.3	NA	ng/ml	NA
+Kelly1999	all	21.0	RAP_T4, CSA	cmax	rapamycin	blood	HPLC	NA	NA	24.9	NA	NA	NA	9.7	NA	ng/ml	NA
+Kelly1999	all	21.0	RAP_T4, CSA	tmax	rapamycin	blood	HPLC	NA	NA	3.2	NA	NA	NA	1.5	NA	hr	NA
+Kelly1999	all	21.0	RAP_T4, CSA	bioavailability	rapamycin	blood	HPLC	NA	NA	91.7	NA	NA	NA	42.3	NA	dimensionless	NA
+Kelly1999	all	21.0	RAP_T4, CSA	auc_end	cyclosporine	blood	HPLC	12.0	hr	2838.0	NA	NA	NA	1222.0	NA	ng*h/ml	NA
+Kelly1999	all	21.0	RAP_T8, CSA	auc_end	rapamycin	blood	HPLC	12.0	hr	224.4	NA	NA	NA	89.0	NA	ng*h/ml	NA
+Kelly1999	all	21.0	RAP_T8, CSA	cmin	rapamycin	blood	HPLC	NA	NA	11.0	NA	NA	NA	4.7	NA	ng/ml	NA
+Kelly1999	all	21.0	RAP_T8, CSA	cmax	rapamycin	blood	HPLC	NA	NA	26.7	NA	NA	NA	11.3	NA	ng/ml	NA
+Kelly1999	all	21.0	RAP_T8, CSA	tmax	rapamycin	blood	HPLC	NA	NA	2.5	NA	NA	NA	1.2	NA	hr	NA
+Kelly1999	all	21.0	RAP_T8, CSA	bioavailability	rapamycin	blood	HPLC	NA	NA	91.6	NA	NA	NA	41.6	NA	dimensionless	NA
+Kelly1999	all	21.0	RAP_T8, CSA	auc_end	cyclosporine	blood	HPLC	12.0	hr	2902.0	NA	NA	NA	1018.0	NA	ng*hr/ml	NA

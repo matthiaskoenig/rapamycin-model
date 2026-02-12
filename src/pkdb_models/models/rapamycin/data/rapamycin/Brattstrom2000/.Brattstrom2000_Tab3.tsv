@@ -1,0 +1,36 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	sd	se	unit	comments
+Brattstrom2000	RAP_D03	6.0	RAP03	cmax	rapamycin	blood	HPLC MS	NA	NA	3.52	NA	NA	2.62	NA	ng/ml	NA
+Brattstrom2000	RAP_D03	6.0	RAP03	tmax	rapamycin	blood	HPLC MS	NA	NA	0.9	NA	NA	0.1	NA	hr	NA
+Brattstrom2000	RAP_D03	6.0	RAP03	auc_end	rapamycin	blood	HPLC MS	48.0	hr	34.5	NA	NA	41.2	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	cmax	rapamycin	blood	HPLC MS	NA	NA	11.7	NA	NA	4.7	NA	ng/ml	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	tmax	rapamycin	blood	HPLC MS	NA	NA	0.8	NA	NA	0.2	NA	hr	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	thalf	rapamycin	blood	HPLC MS	NA	NA	69.7	NA	NA	9.9	NA	hr	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	auc_end	rapamycin	blood	HPLC MS	144.0	hr	116.0	NA	NA	47.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	auc_inf	rapamycin	blood	HPLC MS	NA	NA	149.0	NA	NA	52.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D1	6.0	RAP1	oral-clearance	rapamycin	blood	HPLC MS	NA	NA	251.0	NA	NA	109.0	NA	ml/hr/kg	cl/f, units incorrect in table
+Brattstrom2000	RAP_D1	6.0	RAP1	vd	rapamycin	blood	HPLC MS	NA	NA	18.6	NA	NA	6.7	NA	l/kg	vss/f
+Brattstrom2000	RAP_D1	6.0	RAP1	mrt	rapamycin	blood	HPLC MS	NA	NA	76.2	NA	NA	14.6	NA	hr	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	cmax	rapamycin	blood	HPLC MS	NA	NA	32.2	NA	NA	8.89	NA	ng/ml	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	tmax	rapamycin	blood	HPLC MS	NA	NA	0.7	NA	NA	0.3	NA	hr	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	thalf	rapamycin	blood	HPLC MS	NA	NA	86.2	NA	NA	10.8	NA	hr	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	auc_end	rapamycin	blood	HPLC MS	144.0	hr	276.0	NA	NA	125.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	auc_inf	rapamycin	blood	HPLC MS	NA	NA	335.0	NA	NA	136.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	oral-clearance	rapamycin	blood	HPLC MS	NA	NA	342.0	NA	NA	158.0	NA	ml/hr/kg	units incorrect in table
+Brattstrom2000	RAP_D3	6.0	RAP3	vd	rapamycin	blood	HPLC MS	NA	NA	30.2	NA	NA	14.5	NA	l/kg	NA
+Brattstrom2000	RAP_D3	6.0	RAP3	mrt	rapamycin	blood	HPLC MS	NA	NA	88.2	NA	NA	11.7	NA	hr	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	cmax	rapamycin	blood	HPLC MS	NA	NA	47.6	NA	NA	14.2	NA	ng/ml	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	tmax	rapamycin	blood	HPLC MS	NA	NA	0.6	NA	NA	0.3	NA	hr	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	thalf	rapamycin	blood	HPLC MS	NA	NA	80.3	NA	NA	19.5	NA	hr	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	auc_end	rapamycin	blood	HPLC MS	144.0	hr	481.0	NA	NA	186.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	auc_inf	rapamycin	blood	HPLC MS	NA	NA	565.0	NA	NA	204.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	oral-clearance	rapamycin	blood	HPLC MS	NA	NA	299.0	NA	NA	95.0	NA	ml/hr/kg	units incorrect in table
+Brattstrom2000	RAP_D5	6.0	RAP5	vd	rapamycin	blood	HPLC MS	NA	NA	22.4	NA	NA	4.6	NA	l/kg	NA
+Brattstrom2000	RAP_D5	6.0	RAP5	mrt	rapamycin	blood	HPLC MS	NA	NA	78.9	NA	NA	19.8	NA	hr	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	cmax	rapamycin	blood	HPLC MS	NA	NA	83.6	NA	NA	27.13	NA	ng/ml	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	tmax	rapamycin	blood	HPLC MS	NA	NA	0.8	NA	NA	0.2	NA	hr	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	thalf	rapamycin	blood	HPLC MS	NA	NA	86.4	NA	NA	16.7	NA	hr	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	auc_end	rapamycin	blood	HPLC MS	312.0	hr	876.0	NA	NA	234.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	auc_inf	rapamycin	blood	HPLC MS	NA	NA	924.0	NA	NA	231.0	NA	ng*hr/ml	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	oral-clearance	rapamycin	blood	HPLC MS	NA	NA	256.0	NA	NA	67.0	NA	ml/hr/kg	units incorrect in table
+Brattstrom2000	RAP_D8	6.0	RAP8	vd	rapamycin	blood	HPLC MS	NA	NA	22.5	NA	NA	8.1	NA	l/kg	NA
+Brattstrom2000	RAP_D8	6.0	RAP8	mrt	rapamycin	blood	HPLC MS	NA	NA	85.9	NA	NA	12.2	NA	hr	NA

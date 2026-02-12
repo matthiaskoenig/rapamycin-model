@@ -1,0 +1,11 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Zimmerman1999	all	23	NA	species	23	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1999	all	23	NA	healthy	23	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1999	all	23	NA	sex	21	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1999	all	23	NA	sex	2	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1999	all	23	NA	overnight fast	23	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1999	all	23	NA	age	23	NA	NA	26.2	NA	NA	NA	19.0	43.0	years	NA
+Zimmerman1999	all	23	NA	weight	23	NA	NA	71.5	NA	NA	NA	60.0	102.0	kg	NA
+Zimmerman1999	all	23	NA	ethnicity	15	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1999	all	23	NA	ethnicity	4	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1999	all	23	NA	ethnicity	1	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA

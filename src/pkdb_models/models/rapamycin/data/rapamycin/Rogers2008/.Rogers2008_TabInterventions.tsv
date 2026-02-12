@@ -1,0 +1,6 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Rogers2008	RAP6	0	NA	hr	oral	single dose	dosing	solution	rapamycin	6	mg	NA
+Rogers2008	MMF2	0	NA	hr	oral	single dose	dosing	NR	mycophenolic acid	2	mg	1mg BID, motefil
+Rogers2008	TRL8	0	NA	hr	oral	single dose	dosing	solution	fujimycin	8	mg	4mg BID
+Rogers2008	MMF2000	0	NA	hr	oral	single dose	dosing	NR	mycophenolic acid	2000	mg	1g BID, motefil
+Rogers2008	MMF1500	0	NA	hr	oral	single dose	dosing	NR	mycophenolic acid	1500	mg	750mg BID, motefil

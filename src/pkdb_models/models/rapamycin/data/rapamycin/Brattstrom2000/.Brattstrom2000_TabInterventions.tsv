@@ -1,0 +1,7 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Brattstrom2000	PLACEBO	0	NA	hr	oral	single dose	dosing	solution	rapamycin	0.0	mg/m^2	Oral nonaqueous solutions containing 5 mg/mL siro- limus or placebo were supplied.
+Brattstrom2000	RAP03	0	NA	hr	oral	single dose	dosing	solution	rapamycin	0.3	mg/m^2	NA
+Brattstrom2000	RAP1	0	NA	hr	oral	single dose	dosing	solution	rapamycin	1.0	mg/m^2	NA
+Brattstrom2000	RAP3	0	NA	hr	oral	single dose	dosing	solution	rapamycin	3.0	mg/m^2	NA
+Brattstrom2000	RAP5	0	NA	hr	oral	single dose	dosing	solution	rapamycin	5.0	mg/m^2	NA
+Brattstrom2000	RAP8	0	NA	hr	oral	single dose	dosing	solution	rapamycin	8.0	mg/m^2	NA

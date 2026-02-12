@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	0.33	hr		3.123415859461093e-05		4.28109901463751e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	0.67	hr		6.929946277687828e-05		5.633025019260054e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	1.0	hr		6.59064367620197e-05		4.281099014637619e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	2.0	hr		4.49112167358371e-05		2.2539439523319407e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	3.0	hr		3.180149779199054e-05		2.2532100077040215e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	4.0	hr		2.5226821815113437e-05		2.0278890069335974e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	5.0	hr		2.0004071842858875e-05		1.5772470053928588e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	8.0	hr		1.2222056953059047e-05		1.1273389484799304e-06			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	12.0	hr		8.47694946122692e-06		8.21925073881072e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	18.0	hr		6.193746022299602e-06		5.564929416533476e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	24.0	hr		5.5494919092513995e-06		5.380787709513702e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	48.0	hr		3.8081126001523236e-06		3.6923462202339623e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	72.0	hr		2.8486890446426e-06		2.559477480350796e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	96.0	hr		2.2868869945307006e-06		2.0547120696154628e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	120.0	hr		1.807299189825666e-06		1.752357409840753e-07			mole/meter^3	ng/ml
+Zimmerman1999		all	22.0	FASTED	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_FASTED	144.0	hr		1.4854265369726197e-06		1.4402696650847613e-07			mole/meter^3	ng/ml

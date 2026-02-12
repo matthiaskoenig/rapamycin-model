@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	up	down	mean_unit	value_unit
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	0.0	hr									mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	0.33	hr		5.00890478038102e-05		1.2976558581559397e-05	5.2976578570257956e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	0.66	hr		4.2956909964088814e-05		6.524267631665637e-06	2.6635211071562132e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	1.0	hr		3.0639751670336837e-05		1.155424722530618e-05	4.717001677328083e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	2.0	hr		2.2227767009683847e-05		9.264741936361406e-06	3.7823150571084055e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	3.0	hr		1.8246021344563315e-05		2.775001085898298e-06	1.1328894493533438e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	4.0	hr									mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	6.0	hr		1.1704582037579583e-05		4.271297510555394e-06	1.7437499067467935e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	8.0	hr		8.772967097326005e-06		2.692349024385803e-06	1.0991468865375534e-06				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	12.0	hr		6.213273455462806e-06		2.293820511826198e-06	9.364483025839888e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	16.0	hr		4.933426634531207e-06		1.924074573416346e-06	7.855001553222097e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	24.0	hr		4.1348897291636285e-06		1.3568006317717336e-06	5.539115384210995e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	48.0	hr		2.8659817699493935e-06		1.0257869781593724e-06	4.187757802136559e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	72.0	hr		2.034628279429722e-06		7.207183568646073e-07	2.942320370959003e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	96.0	hr		1.586134949017794e-06		4.390415342331212e-07	1.792379557933033e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	120.0	hr		1.356418852953148e-06		6.315793988311603e-07	2.5784120986501554e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	144.0	hr		9.844975545627688e-07		4.844099193907098e-07	1.97759521474995e-07				mole/meter^3	ng/ml
+Brattstrom2000		RAP_D5	6.0	RAP5	concentration	rapamycin	blood	HPLC MS	rapamycin_RAP5	312.0	hr									mole/meter^3	ng/ml

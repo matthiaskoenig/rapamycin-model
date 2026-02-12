@@ -1,0 +1,5 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Zha2022	RAP2	0	NA	hr	NR	single dose	dosing	NR	rapamycin	2.0	mg	NA
+Zha2022	RAP05_3D	0	NA	hr	NR	single dose	dosing	NR	rapamycin	0.5	mg	3D regimen
+Zha2022	FUJI075	0	NA	hr	NR	single dose	dosing	NR	fujimycin	0.75	mg	NA
+Zha2022	FUJI075_3D	0	NA	hr	NR	single dose	dosing	NR	fujimycin	0.75	mg	NA

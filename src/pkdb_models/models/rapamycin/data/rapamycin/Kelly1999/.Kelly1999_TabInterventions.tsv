@@ -1,0 +1,10 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Kelly1999	CSA	S-56T1R56	NA	day	oral	multiple dose	dosing	solution	cyclosporine	240.5	mg	"""+/- 30.2"" - how to approach that?, dose per day"
+Kelly1999	RAP_L2	S-14T1R14	NA	day	oral	multiple dose	dosing	solution	rapamycin	3.6	mg	"Solution L-RAPA ""+/- 1.1"" per day, 2 weeks"
+Kelly1999	RAP_L4	S-28T1R28	NA	day	oral	multiple dose	dosing	solution	rapamycin	3.6	mg	4 weeks
+Kelly1999	RAP_L8	S-56T1R56	NA	day	oral	multiple dose	dosing	solution	rapamycin	3.6	mg	8 weeks
+Kelly1999	RAP_L	S-56T1R56	NA	day	oral	multiple dose	dosing	solution	rapamycin	3.6	mg	2, 4 or 8 weeks
+Kelly1999	RAP_T2	S-14T1R14	NA	day	oral	multiple dose	dosing	tablet	rapamycin	3.6	mg	NA
+Kelly1999	RAP_T4	S-28T1R28	NA	day	oral	multiple dose	dosing	tablet	rapamycin	3.6	mg	NA
+Kelly1999	RAP_T8	S-56T1R56	NA	day	oral	multiple dose	dosing	tablet	rapamycin	3.6	mg	NA
+Kelly1999	RAP_T	S-56T1R56	NA	day	oral	multiple dose	dosing	tablet	rapamycin	3.6	mg	NA

@@ -1,0 +1,19 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Zimmerman1997	all	40.0	NA	species	40.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1997	all	40.0	NA	healthy	40.0	NA	N	NA	NA	NA	NA	NA	NA	NA	renal transplant
+Zimmerman1997	all	40.0	NA	sex	26.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1997	all	40.0	NA	sex	14.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1997	all	40.0	NA	overnight fast	40.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	"""+athiorphine also"""
+Zimmerman1997	all	40.0	NA	medication	40.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	225 mg to 500mg, twice a day regimen: 75mg to 400mg
+Zimmerman1997	PLACEBO	10.0	all	sex	5.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1997	PLACEBO	10.0	all	sex	5.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1997	PLACEBO	10.0	all	age	10.0	NA	NA	43.9	NA	6.2	NA	34.0	53.0	years	NA
+Zimmerman1997	PLACEBO	10.0	all	weight	10.0	NA	NA	81.0	NA	15.9	NA	59.0	109.0	kg	NA
+Zimmerman1997	PLACEBO	10.0	all	body surface area	10.0	NA	NA	1.91	NA	0.19	NA	1.6	2.2	m^2	NA
+Zimmerman1997	PLACEBO	10.0	all	hematocrit	10.0	NA	NA	37.8	NA	6.8	NA	31.5	54.0	percent 	NA
+Zimmerman1997	RAP05_6_5	30.0	all	sex	21.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1997	RAP05_6_5	30.0	all	sex	9.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Zimmerman1997	RAP05_6_5	30.0	all	age	30.0	NA	NA	42.5	NA	10.3	NA	25.0	61.0	years	NA
+Zimmerman1997	RAP05_6_5	30.0	all	weight	10.0	NA	NA	83.2	NA	18.9	NA	48.0	130.0	kg	NA
+Zimmerman1997	RAP05_6_5	30.0	all	body surface area	10.0	NA	NA	1.89	NA	0.25	NA	1.4	2.45	m^2	NA
+Zimmerman1997	RAP05_6_5	30.0	all	hematocrit	10.0	NA	NA	38.9	NA	5.6	NA	27.3	48.5	percent 	NA

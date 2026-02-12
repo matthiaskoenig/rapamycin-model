@@ -1,0 +1,29 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	0.33	hr	NA	24.3076688596761	NA	5.1548877165953	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	0.67	hr	NA	65.1358060325122	NA	20.7437961610997	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	1.0	hr	NA	80.8700663898459	NA	21.9781340868041	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	2.0	hr	NA	52.4628384382997	NA	14.2578749992974	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	3.0	hr	NA	38.3813474074787	NA	12.8352702269862	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	5.0	hr	NA	25.2002382084299	NA	10.9422453812929	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	8.0	hr	NA	16.5458497071385	NA	7.1844061964834	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	12.0	hr	NA	11.2625009050276	NA	5.2833488021109	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	24.0	hr	NA	7.6662080751902	NA	3.0675810604026	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	48.0	hr	NA	4.73983045731293	NA	1.97686579798858	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	72.0	hr	NA	3.81763847956101	NA	1.46373416059502	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	96.0	hr	NA	3.00182867433467	NA	1.35549370972684	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	120.0	hr	NA	2.33215042516747	NA	1.13546750878456	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20	144.0	hr	NA	1.81187076134993	NA	0.8499662106384	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	0.33	hr	NA	8.64058932463315	NA	3.14299786757641	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	0.67	hr	NA	22.7234873991652	NA	8.465379367346	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	1.0	hr	NA	24.8742024132608	NA	8.7141957624685	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	2.0	hr	NA	15.6075983841565	NA	5.0356509011359	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	3.0	hr	NA	9.9303642747255	NA	3.15698824341961	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	5.0	hr	NA	5.23630370245119	NA	1.66468709206238	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	8.0	hr	NA	2.89889249827605	NA	0.93530152826447	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	12.0	hr	NA	1.84442588748134	NA	0.50508529094187	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	24.0	hr	NA	1.2066315342649	NA	0.336503013632802	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	48.0	hr	NA	0.806030369312784	NA	0.228813456841851	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	72.0	hr	NA	0.610249979860196	NA	0.17626537353833	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	96.0	hr	NA	0.446229921669691	NA	0.154304342727364	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	120.0	hr	NA	0.340201439968454	NA	0.112946735850707	NA	ng/ml	NA
+Tortorici2014	NA	all	14.0	RAP20, RIF600	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP20_RIF600	144.0	hr	NA	0.278051034129461	NA	0.074733221307591	NA	ng/ml	NA

@@ -1,9 +1,0 @@
-study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	0.0	hr		9.908389236742817e-06		3.567020125227399e-06			mole/meter^3	ng/ml
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	0.5	hr		1.7835100626137053e-05		1.1691899299356498e-05			mole/meter^3	ng/ml
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	1.0	hr		3.210318112704678e-05		1.624975834825824e-05			mole/meter^3	ng/ml
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	2.0	hr		3.368852340492559e-05		1.1097395945152e-05			mole/meter^3	ng/ml
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	3.0	hr		3.051783884916786e-05		1.1890067084091403e-05			mole/meter^3	ng/ml
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	5.0	hr		2.3780134168182697e-05		8.32304695886408e-06			mole/meter^3	ng/ml
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	8.0	hr		1.9618610688750766e-05		5.746865757310851e-06			mole/meter^3	ng/ml
-Kelly1999		all	21.0	RAP_S_6	concentration	rapamycin	blood	HPLC	rapamycin_RAP_S_6	12.0	hr		1.4664416070379324e-05		3.5670201252274325e-06			mole/meter^3	ng/ml

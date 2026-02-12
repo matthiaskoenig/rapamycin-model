@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	0.0	hr							mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	0.5	hr		1.7720955982129836e-05		3.380108270665506e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	1.0	hr		6.750371565785385e-05		6.7273999561789175e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	2.0	hr		6.968054913960931e-05		6.333600934353804e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	4.0	hr		5.451928679934266e-05		3.566068919860693e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	12.0	hr		2.6537678526325302e-05		1.958056247408172e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	24.0	hr		1.8738270121844694e-05		1.378296576387878e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	48.0	hr		1.5369100712896557e-05		1.8049121833650743e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	72.0	hr		1.3225083816293193e-05		2.144016896603364e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	96.0	hr		9.866853269062415e-06		2.2534055137770044e-06			mole/meter^3	ng/ml
+Leung2006		all	6.0	RAP40	concentration	rapamycin	plasma	HPLC	rapamycin_RAP40_P1	144.0	hr		6.639889062440007e-06		8.42292352237035e-07			mole/meter^3	ng/ml

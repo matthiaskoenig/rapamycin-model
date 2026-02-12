@@ -1,0 +1,11 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Zha2022	FUJI	12.0	FUJI075	cmax	rapamycin	blood	LC MS/MS	NA	NA	3.33	NA	NA	31.0	NA	NA	ng/ml	NA
+Zha2022	FUJI	12.0	FUJI075	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	41.9	NA	NA	31.0	NA	NA	ng*hr/ml	NA
+Zha2022	FUJI	12.0	FUJI075	concentration	rapamycin	blood	LC MS/MS	12.0	hr	0.513	NA	NA	31.0	NA	NA	ng/ml	NA
+Zha2022	FUJI	12.0	FUJI075	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	1.5	2.5	NA	NA	NA	hr	NA
+Zha2022	FUJI	12.0	FUJI075	thalf	rapamycin	blood	LC MS/MS	NA	NA	42.4	NA	NA	7.0	NA	NA	hr	NA
+Zha2022	FUJI	12.0	FUJI075_3D	cmax	rapamycin	blood	LC MS/MS	NA	NA	15.8	NA	NA	19.0	NA	NA	ng/ml	NA
+Zha2022	FUJI	12.0	FUJI075_3D	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	1130.0	NA	NA	19.0	NA	NA	ng*hr/ml	NA
+Zha2022	FUJI	12.0	FUJI075_3D	concentration	rapamycin	blood	LC MS/MS	12.0	hr	8.26	NA	NA	18.0	NA	NA	ng/ml	NA
+Zha2022	FUJI	12.0	FUJI075_3D	tmax	rapamycin	blood	LC MS/MS	NA	NA	3.0	2.0	4.0	NA	NA	NA	hr	NA
+Zha2022	FUJI	12.0	FUJI075_3D	thalf	rapamycin	blood	LC MS/MS	NA	NA	118.0	NA	NA	18.0	NA	NA	hr	NA

@@ -1,0 +1,64 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	unit	comments
+Zimmerman2003	RAP10_S1	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	845.558126480904	ng/ml*hr	NA
+Zimmerman2003	RAP10_S2	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	820.139880469934	ng/ml*hr	NA
+Zimmerman2003	RAP10_S3	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	563.824263672034	ng/ml*hr	NA
+Zimmerman2003	RAP10_S4	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	534.169643325902	ng/ml*hr	NA
+Zimmerman2003	RAP10_S5	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	489.695197567014	ng/ml*hr	NA
+Zimmerman2003	RAP10_S6	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	449.442156622669	ng/ml*hr	NA
+Zimmerman2003	RAP10_S7	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	411.314787606213	ng/ml*hr	NA
+Zimmerman2003	RAP10_S8	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	379.541980092501	ng/ml*hr	NA
+Zimmerman2003	RAP10_S9	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	322.343441807509	ng/ml*hr	NA
+Zimmerman2003	RAP10_S10	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	288.452447126216	ng/ml*hr	NA
+Zimmerman2003	RAP10_S11	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	214.315896260886	ng/ml*hr	NA
+Zimmerman2003	RAP10_S12	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S13	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S14	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S15	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S16	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S17	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S18	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S19	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S20	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_S21	NA	1.0	RAP10	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A1	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	877.473144440497	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A2	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	924.073262127275	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A3	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	974.909754149215	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A4	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1015.15531033325	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A5	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1133.77379171777	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A6	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1301.11806271697	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A7	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1339.24543173342	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A8	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1407.02742109601	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A9	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1479.04578479376	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A10	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1538.36251024633	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A11	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1584.96262793311	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A12	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1635.79911995505	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A13	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1684.51742480941	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A14	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1887.87087765748	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A15	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1947.18760311005	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A16	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	2014.96210771233	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A17	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	2231.03216832619	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A18	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	2269.15953734265	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A19	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	2728.82112222831	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A20	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300_A21	NA	1.0	RAP10, CSA300	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B1	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	381.907164350294	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B2	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	449.69663847319	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B3	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	583.134945270474	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B4	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	610.671378449025	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B5	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	686.933601242244	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B6	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	708.115472918053	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B7	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	742.006467599346	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B8	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	769.542900777897	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B9	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	790.732257214015	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B10	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	818.268690392566	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B11	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	841.576233996264	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B12	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	873.349041509977	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B13	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	907.24003619127	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B14	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	945.359920447416	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B15	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1040.67834298855	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B16	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1144.47699896032	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B17	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1324.530392965	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B18	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1371.13051065178	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B19	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	1638.02957852727	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B20	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA
+Zimmerman2003	RAP10_CSA300B_B21	NA	1.0	RAP10, CSA300B	auc_end	rapamycin	blood	HPLC MS	144.0	hr	NA	ng/ml*hr	NA

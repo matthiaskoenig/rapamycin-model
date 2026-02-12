@@ -1,0 +1,81 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	unit	comments
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	0.5	hr	4.90950226244343	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	1.0	hr	10.4524886877828	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	2.0	hr	NA	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	3.0	hr	4.75113122171946	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	4.0	hr	3.24660633484163	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	6.0	hr	2.13800904977375	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	8.0	hr	1.7420814479638	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	12.0	hr	1.34615384615384	ug/l	here second dose
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	12.5	hr	4.83031674208144	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	13.0	hr	2.92986425339366	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	14.0	hr	NA	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	15.0	hr	NA	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	16.0	hr	NA	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	18.0	hr	NA	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	20.0	hr	NA	ug/l	NA
+Rogers2008	NA	P5	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P5	24.0	hr	NA	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	0.5	hr	2.69230769230769	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	1.0	hr	6.65158371040724	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	2.0	hr	10.5316742081448	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	3.0	hr	3.4049773755656	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	4.0	hr	NA	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	6.0	hr	2.05882352941176	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	8.0	hr	1.7420814479638	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	12.0	hr	1.18778280542986	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	12.5	hr	2.13800904977375	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	13.0	hr	1.97963800904977	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	14.0	hr	NA	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	15.0	hr	1.90045248868778	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	16.0	hr	NA	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	18.0	hr	2.53393665158371	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	20.0	hr	3.4049773755656	ug/l	NA
+Rogers2008	NA	P6	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P6	24.0	hr	2.6131221719457	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	0.5	hr	4.98868778280543	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	1.0	hr	22.9638009049773	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	2.0	hr	12.9864253393665	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	3.0	hr	8.710407239819	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	4.0	hr	NA	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	6.0	hr	4.3552036199095	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	8.0	hr	3.16742081447964	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	12.0	hr	2.45475113122171	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	12.5	hr	21.0633484162895	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	13.0	hr	11.7194570135746	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	14.0	hr	7.91855203619909	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	15.0	hr	NA	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	16.0	hr	NA	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	18.0	hr	5.2262443438914	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	20.0	hr	4.90950226244343	ug/l	NA
+Rogers2008	NA	P7	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P7	24.0	hr	3.95927601809955	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	0.5	hr	NA	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	1.0	hr	19.7963800904977	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	2.0	hr	15.7579185520361	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	3.0	hr	9.10633484162896	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	4.0	hr	4.83031674208144	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	6.0	hr	5.38461538461539	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	8.0	hr	3.24660633484163	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	12.0	hr	1.97963800904977	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	12.5	hr	12.5113122171945	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	13.0	hr	9.34389140271493	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	14.0	hr	8.31447963800905	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	15.0	hr	7.76018099547511	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	16.0	hr	NA	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	18.0	hr	5.2262443438914	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	20.0	hr	5.06787330316742	ug/l	NA
+Rogers2008	NA	P8	1.0	TRL8, RAP6, MMF2	concentration	fujimycin	blood	LC MS/MS	fujimycin_P8	24.0	hr	NA	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	0.5	hr	19.5969498910675	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	1.0	hr	11.5141612200435	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	2.0	hr	6.25272331154684	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	3.0	hr	5.71895424836601	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	4.0	hr	4.57516339869282	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	6.0	hr	4.04139433551199	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	8.0	hr	3.96514161220044	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	12.0	hr	2.97385620915034	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	12.5	hr	15.8605664488017	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	13.0	hr	8.6165577342048	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	14.0	hr	6.17647058823529	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	15.0	hr	5.03267973856209	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	16.0	hr	NA	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	18.0	hr	3.81263616557734	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	20.0	hr	NA	ug/l	NA
+Rogers2008	NA	PST3	1.0	TRL8, MMF1500	concentration	fujimycin	blood	LC MS/MS	fujimycin_PST3	24.0	hr	3.43137254901961	ug/l	NA

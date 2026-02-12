@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	0.0	hr		6.110983269200299e-06		1.3545307192233211e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	0.5	hr		7.136299930235255e-06		1.5187162609473666e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	1.0	hr		9.105748300394224e-06		1.64185541724039e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	1.5	hr		1.0705714357463318e-05		1.7239481881024127e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	2.0	hr		1.1361613549619168e-05		1.641855417240379e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	2.5	hr		1.1853392044261697e-05		1.7239481881023032e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	3.0	hr		1.3042894247020719e-05		2.4217367404295074e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	4.0	hr		1.3780108079509117e-05		3.4889427616357602e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	5.0	hr		1.2464937796236245e-05		2.9142933656016443e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	6.0	hr		1.1642388982346208e-05		2.6680150530155325e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	8.0	hr		9.586827500256244e-06		2.134476886623293e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	12.0	hr		7.651033275498054e-06		1.6829018026714013e-06			mole/meter^3	ng/ml
+Wang2014		all	15.0	RAP	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP	24.0	hr		6.112604374470086e-06		1.3955771046543325e-06			mole/meter^3	ng/ml

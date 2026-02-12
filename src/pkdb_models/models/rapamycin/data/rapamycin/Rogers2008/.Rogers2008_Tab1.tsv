@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Rogers2008	PRE_ALL	4.0	RAP6, MMF2, TRL8	cmax	rapamycin	blood	LC MS/MS	NA	NA	18.2	NA	NA	NA	11.5	NA	ug/l	NA
+Rogers2008	PRE_ALL	4.0	RAP6, MMF2, TRL8	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.8	NA	NA	NA	0.5	NA	hr	NA
+Rogers2008	PRE_ALL	4.0	RAP6, MMF2, TRL8	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	145.7	NA	NA	NA	93.7	NA	hr*ug/l	NA
+Rogers2008	PRE_ALL	4.0	RAP6, MMF2, TRL8	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	181.1	NA	NA	NA	121.7	NA	hr*ug/l	NA
+Rogers2008	P5	1.0	RAP6, MMF2, TRL8	cmax	rapamycin	blood	LC MS/MS	NA	NA	14.0	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P5	1.0	RAP6, MMF2, TRL8	tmax	rapamycin	blood	LC MS/MS	NA	NA	1.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P5	1.0	RAP6, MMF2, TRL8	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	93.8	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P5	1.0	RAP6, MMF2, TRL8	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	99.9	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P6	1.0	RAP6, MMF2, TRL8	cmax	rapamycin	blood	LC MS/MS	NA	NA	34.7	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P6	1.0	RAP6, MMF2, TRL8	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P6	1.0	RAP6, MMF2, TRL8	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	261.6	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P6	1.0	RAP6, MMF2, TRL8	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	359.8	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P7	1.0	RAP6, MMF2, TRL8	cmax	rapamycin	blood	LC MS/MS	NA	NA	8.0	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P7	1.0	RAP6, MMF2, TRL8	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P7	1.0	RAP6, MMF2, TRL8	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	75.0	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P7	1.0	RAP6, MMF2, TRL8	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	108.3	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	RAP6, MMF2, TRL8	cmax	rapamycin	blood	LC MS/MS	NA	NA	16.2	NA	NA	NA	NA	NA	ug/l	NA
+Rogers2008	P8	1.0	RAP6, MMF2, TRL8	tmax	rapamycin	blood	LC MS/MS	NA	NA	2.0	NA	NA	NA	NA	NA	hr	NA
+Rogers2008	P8	1.0	RAP6, MMF2, TRL8	auc_end	rapamycin	blood	LC MS/MS	24.0	hr	132.3	NA	NA	NA	NA	NA	hr*ug/l	NA
+Rogers2008	P8	1.0	RAP6, MMF2, TRL8	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	156.4	NA	NA	NA	NA	NA	hr*ug/l	NA

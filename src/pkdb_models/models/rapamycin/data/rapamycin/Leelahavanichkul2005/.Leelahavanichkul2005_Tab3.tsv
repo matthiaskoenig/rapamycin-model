@@ -1,0 +1,6 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	min	max	cv	sd	se	unit	comments
+Leelahavanichkul2005	all	12	RAP6	cmax	rapamycin	blood	HPLC/UV	NA	NA	25.34	18.0	40.0	NA	6.19	NA	ng/ml	NA
+Leelahavanichkul2005	all	12	RAP6	tmax	rapamycin	blood	HPLC/UV	NA	NA	1.45	1.0	3.0	NA	0.5	NA	hr	average for CV
+Leelahavanichkul2005	all	12	RAP6	thalf	rapamycin	blood	HPLC/UV	NA	NA	46.05	18.63	142.71	NA	39.28	NA	hr	NA
+Leelahavanichkul2005	all	12	RAP6	auc_end	rapamycin	blood	HPLC/UV	24.0	hr	187.94	151.3	294.85	NA	48.26	NA	ng*hr/ml	NA
+Leelahavanichkul2005	all	12	RAP6	vd	rapamycin	blood	HPLC/UV	NA	NA	35.5	21.67	49.36	NA	0.75	NA	l/kg	NA

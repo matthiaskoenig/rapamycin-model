@@ -1,0 +1,1158 @@
+{
+  "experiment_id": "Leelahavanichkul2005",
+  "base_path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/rapamycin",
+  "data_path": "[PosixPath('/home/mkoenig/git/pkdb_data/studies/rapamycin')]",
+  "models": {
+    "model": {
+      "sid": null,
+      "name": null,
+      "language": "SBML",
+      "language_type": "SBML",
+      "source": {
+        "source": "/home/mkoenig/git/pkdb_models/pkdb_models/models/rapamycin/models/results/models/rapamycin_body_flat.xml",
+        "path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/rapamycin/models/results/models/rapamycin_body_flat.xml",
+        "content": "None"
+      },
+      "changes": {}
+    }
+  },
+  "tasks": {
+    "task_rap_RAP6": {
+      "model": "model",
+      "simulation": "rap_RAP6"
+    }
+  },
+  "simulations": {
+    "rap_RAP6": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": 0.0,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 1800,
+          "steps": 1000,
+          "changes": {
+            "ftissue_rap": {
+              "_magnitude": 6.385157332090921,
+              "_units": "l_per_min"
+            },
+            "Kp_rap": {
+              "_magnitude": 10.000004054918183,
+              "_units": "dimensionless"
+            },
+            "GU__RAPIM_k": {
+              "_magnitude": 0.010254172647171959,
+              "_units": "GU__per_min"
+            },
+            "GU__RAP2RX_k": {
+              "_magnitude": 0.43373578546152136,
+              "_units": "GU__per_min"
+            },
+            "GU__RXPG_k": {
+              "_magnitude": 0.010328378821077363,
+              "_units": "GU__per_min"
+            },
+            "GU__RXEXC_k": {
+              "_magnitude": 0.023347411187126337,
+              "_units": "GU__per_min"
+            },
+            "KI__RXEX_k": {
+              "_magnitude": 0.1693055659116988,
+              "_units": "KI__per_min"
+            },
+            "LI__RAP2RX_Vmax": {
+              "_magnitude": 0.002858932837010464,
+              "_units": "LI__mmole_per_min_l"
+            },
+            "LI__RXBEX_k": {
+              "_magnitude": 2.2698133102257085e-06,
+              "_units": "LI__per_min"
+            },
+            "BW": {
+              "_magnitude": 64.73,
+              "_units": "kilogram"
+            },
+            "PODOSE_rap": {
+              "_magnitude": 6,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    }
+  },
+  "data": {
+    "task_rap_RAP6__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__IVDOSE_rap": {
+      "type": "TASK",
+      "index": "IVDOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__PODOSE_rap": {
+      "type": "TASK",
+      "index": "PODOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__Cve_rap": {
+      "type": "TASK",
+      "index": "Cve_rap",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__Cve_rx": {
+      "type": "TASK",
+      "index": "Cve_rx",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__Cve_raptot": {
+      "type": "TASK",
+      "index": "Cve_raptot",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__Cveblood_rap": {
+      "type": "TASK",
+      "index": "Cveblood_rap",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__Cveblood_raptot": {
+      "type": "TASK",
+      "index": "Cveblood_raptot",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__Aurine_rx": {
+      "type": "TASK",
+      "index": "Aurine_rx",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__Afeces_rx": {
+      "type": "TASK",
+      "index": "Afeces_rx",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__f_cirrhosis": {
+      "type": "TASK",
+      "index": "f_cirrhosis",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__GU__f_oatp": {
+      "type": "TASK",
+      "index": "GU__f_oatp",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__GU__f_cyp3a4": {
+      "type": "TASK",
+      "index": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__GU__f_cyp3a5": {
+      "type": "TASK",
+      "index": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__LI__f_cyp3a4": {
+      "type": "TASK",
+      "index": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_rap_RAP6__LI__f_cyp3a5": {
+      "type": "TASK",
+      "index": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP6",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    }
+  },
+  "figures": {
+    "Fig1": {
+      "sid": "Fig1",
+      "name": "Leelahavanichkul2005",
+      "num_rows": 1,
+      "num_cols": 1,
+      "width": 7.0,
+      "height": 5.0,
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1__plot0_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1__plot0_yaxis",
+              "name": "rapamycin blood [nM]",
+              "label": "rapamycin blood",
+              "unit": "nM",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1__plot0_curve0",
+                "name": "RAP6",
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1__plot0_curve1",
+                "name": "S1 (n=1)",
+                "x": "rapamycin_RAP6_S1__time",
+                "y": "rapamycin_RAP6_S1__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1__plot0_curve2",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#1c120bff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#1c120bff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#1c120bff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1__plot0_curve3",
+                "name": "S2 (n=1)",
+                "x": "rapamycin_RAP6_S2__time",
+                "y": "rapamycin_RAP6_S2__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#1c120bff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#1c120bff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#1c120bff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1__plot0_curve4",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#392417ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#392417ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#392417ff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1__plot0_curve5",
+                "name": "S3 (n=1)",
+                "x": "rapamycin_RAP6_S3__time",
+                "y": "rapamycin_RAP6_S3__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#392417ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#392417ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#392417ff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              },
+              {
+                "sid": "Fig1__plot0_curve6",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#553622ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#553622ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#553622ff",
+                    "second_color": null
+                  }
+                },
+                "order": 6
+              },
+              {
+                "sid": "Fig1__plot0_curve7",
+                "name": "S4 (n=1)",
+                "x": "rapamycin_RAP6_S4__time",
+                "y": "rapamycin_RAP6_S4__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#553622ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#553622ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#553622ff",
+                    "second_color": null
+                  }
+                },
+                "order": 7
+              },
+              {
+                "sid": "Fig1__plot0_curve8",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#73492eff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#73492eff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#73492eff",
+                    "second_color": null
+                  }
+                },
+                "order": 8
+              },
+              {
+                "sid": "Fig1__plot0_curve9",
+                "name": "S5 (n=1)",
+                "x": "rapamycin_RAP6_S5__time",
+                "y": "rapamycin_RAP6_S5__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#73492eff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#73492eff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#73492eff",
+                    "second_color": null
+                  }
+                },
+                "order": 9
+              },
+              {
+                "sid": "Fig1__plot0_curve10",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#8f5b3aff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#8f5b3aff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#8f5b3aff",
+                    "second_color": null
+                  }
+                },
+                "order": 10
+              },
+              {
+                "sid": "Fig1__plot0_curve11",
+                "name": "S6 (n=1)",
+                "x": "rapamycin_RAP6_S6__time",
+                "y": "rapamycin_RAP6_S6__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#8f5b3aff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#8f5b3aff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#8f5b3aff",
+                    "second_color": null
+                  }
+                },
+                "order": 11
+              },
+              {
+                "sid": "Fig1__plot0_curve12",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#ac6d45ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#ac6d45ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ac6d45ff",
+                    "second_color": null
+                  }
+                },
+                "order": 12
+              },
+              {
+                "sid": "Fig1__plot0_curve13",
+                "name": "S7 (n=1)",
+                "x": "rapamycin_RAP6_S7__time",
+                "y": "rapamycin_RAP6_S7__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#ac6d45ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#ac6d45ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ac6d45ff",
+                    "second_color": null
+                  }
+                },
+                "order": 13
+              },
+              {
+                "sid": "Fig1__plot0_curve14",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#c87f51ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#c87f51ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#c87f51ff",
+                    "second_color": null
+                  }
+                },
+                "order": 14
+              },
+              {
+                "sid": "Fig1__plot0_curve15",
+                "name": "S8 (n=1)",
+                "x": "rapamycin_RAP6_S8__time",
+                "y": "rapamycin_RAP6_S8__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#c87f51ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#c87f51ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#c87f51ff",
+                    "second_color": null
+                  }
+                },
+                "order": 15
+              },
+              {
+                "sid": "Fig1__plot0_curve16",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#e6915dff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#e6915dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#e6915dff",
+                    "second_color": null
+                  }
+                },
+                "order": 16
+              },
+              {
+                "sid": "Fig1__plot0_curve17",
+                "name": "S9 (n=1)",
+                "x": "rapamycin_RAP6_S9__time",
+                "y": "rapamycin_RAP6_S9__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#e6915dff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#e6915dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#e6915dff",
+                    "second_color": null
+                  }
+                },
+                "order": 17
+              },
+              {
+                "sid": "Fig1__plot0_curve18",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#ffa368ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#ffa368ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ffa368ff",
+                    "second_color": null
+                  }
+                },
+                "order": 18
+              },
+              {
+                "sid": "Fig1__plot0_curve19",
+                "name": "S10 (n=1)",
+                "x": "rapamycin_RAP6_S10__time",
+                "y": "rapamycin_RAP6_S10__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#ffa368ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#ffa368ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ffa368ff",
+                    "second_color": null
+                  }
+                },
+                "order": 19
+              },
+              {
+                "sid": "Fig1__plot0_curve20",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#ffb573ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#ffb573ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ffb573ff",
+                    "second_color": null
+                  }
+                },
+                "order": 20
+              },
+              {
+                "sid": "Fig1__plot0_curve21",
+                "name": "S11 (n=1)",
+                "x": "rapamycin_RAP6_S11__time",
+                "y": "rapamycin_RAP6_S11__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#ffb573ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#ffb573ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ffb573ff",
+                    "second_color": null
+                  }
+                },
+                "order": 21
+              },
+              {
+                "sid": "Fig1__plot0_curve22",
+                "name": null,
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#ffc77fff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#ffc77fff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ffc77fff",
+                    "second_color": null
+                  }
+                },
+                "order": 22
+              },
+              {
+                "sid": "Fig1__plot0_curve23",
+                "name": "S12 (n=1)",
+                "x": "rapamycin_RAP6_S12__time",
+                "y": "rapamycin_RAP6_S12__value",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#ffc77fff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#ffc77fff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ffc77fff",
+                    "second_color": null
+                  }
+                },
+                "order": 23
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    },
+    "Tab3A": {
+      "sid": "Tab3A",
+      "name": "Leelahavanichkul2005",
+      "num_rows": 1,
+      "num_cols": 1,
+      "width": 7.0,
+      "height": 5.0,
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Tab3A__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Tab3A__plot0_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Tab3A__plot0_yaxis",
+              "name": "rapamycin blood [nM]",
+              "label": "rapamycin blood",
+              "unit": "nM",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Tab3A__plot0_curve0",
+                "name": "RAP6",
+                "x": "task_rap_RAP6__time",
+                "y": "task_rap_RAP6__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Tab3A__plot0_curve1",
+                "name": "RAP6\u00b1SD (n=12)",
+                "x": "rapamycin_RAP6__time",
+                "y": "rapamycin_RAP6__mean",
+                "xerr": null,
+                "yerr": "rapamycin_RAP6__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    }
+  }
+}

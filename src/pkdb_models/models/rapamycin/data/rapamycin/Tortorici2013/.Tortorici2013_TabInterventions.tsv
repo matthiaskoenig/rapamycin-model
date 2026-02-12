@@ -1,0 +1,4 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Tortorici2013	RAP15	0	NA	hr	oral	single dose	dosing	NR	rapamycin	15	mg	NA
+Tortorici2013	TAC10	0	NA	hr	oral	single dose	dosing	NR	fujimycin	10	mg	NA
+Tortorici2013	TAC10_4H	-4	NA	hr	oral	single dose	dosing	NR	fujimycin	10	mg	NA
