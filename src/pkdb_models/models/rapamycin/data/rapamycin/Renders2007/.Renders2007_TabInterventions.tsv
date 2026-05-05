@@ -1,3 +1,4 @@
 study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
-Renders2007	TAC	0	NA	hr	oral	single dose	dosing	NR	fujimycin	6.13	mg	"""+/- 2.79mg"" - how to approach that?"
-Renders2007	RAP	0	NA	hr	oral	single dose	dosing	NR	rapamycin	2.9	mg	"""+/-"" 2.26mg"
+Renders2007	TAC	S-14T1R14	NA	hr	oral	single dose	dosing	NR	fujimycin	6.13	mg	"""+/- 2.79mg"" - how to approach that (markedly different dose between groups, assuming 14 days treatment"
+Renders2007	RAP1_3	S-14T1R14	NA	day	oral	multiple dose	dosing	NR	rapamycin	6.5	mg	6.5 +- 4.5 mg in CYP3A5 expressors, assuming 14 days treatment
+Renders2007	RAP3_3	S-14T1R14	NA	day	oral	multiple dose	dosing	NR	rapamycin	2.31	mg	2.31 +- 1.06 mg in CYP3A5 non-expressors, assuming 14 days treatment
