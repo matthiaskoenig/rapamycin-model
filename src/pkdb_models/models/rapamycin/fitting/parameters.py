@@ -30,11 +30,11 @@ parameters_pharmacokinetics = [
         unit="1/min",
     ),
     FitParameter(
-        pid="GU__RAP2RX_k",
+        pid="GU__RAP2RX_Vmax",
         lower_bound=1E-4,
-        start_value=0.1,
+        start_value=0.02,
         upper_bound=1,
-        unit="1/min",
+        unit="mmole/min/l",
     ),
     FitParameter(
         pid="GU__RXPG_k",

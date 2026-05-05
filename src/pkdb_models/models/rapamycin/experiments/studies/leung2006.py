@@ -116,7 +116,7 @@ class Leung2006(RapamycinSimulationExperiment):
         fig = Figure(
             experiment=self,
             sid="Fig1_2",
-            name=f"{self.__class__.__name__} (healthy)",
+            name=f"{self.__class__.__name__}",
         )
         plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time, max=48), legend=True)
         plots[0].set_yaxis(self.label_rap, unit=self.unit_rap)

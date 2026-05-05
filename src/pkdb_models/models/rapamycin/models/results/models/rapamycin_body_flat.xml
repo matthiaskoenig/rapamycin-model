@@ -56,10 +56,10 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             </rdf:Bag>
           </dcterms:creator>
           <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>2026-02-12T15:32:06Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-05-05T10:44:44Z</dcterms:W3CDTF>
           </dcterms:created>
           <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>2026-02-12T15:32:06Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-05-05T10:44:44Z</dcterms:W3CDTF>
           </dcterms:modified>
           <bqbiol:hasTaxon>
             <rdf:Bag>
@@ -84,11 +84,6 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
               <rdf:li rdf:resource="https://identifiers.org/ncit/C1212"/>
             </rdf:Bag>
           </bqbiol:is>
-          <bqbiol:isDescribedBy>
-            <rdf:Bag>
-              <rdf:li rdf:resource="https://identifiers.org/doi/10.5281/zenodo.17091694"/>
-            </rdf:Bag>
-          </bqbiol:isDescribedBy>
           <bqbiol:occursIn>
             <rdf:Bag>
               <rdf:li rdf:resource="https://identifiers.org/BTO:0001489"/>
@@ -2243,7 +2238,7 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="meta_ftissue_rap" sboTerm="SBO:0000002" id="ftissue_rap" name="tissue distribution rap" value="1" units="l_per_min" constant="true">
+      <parameter metaid="meta_ftissue_rap" sboTerm="SBO:0000002" id="ftissue_rap" name="tissue distribution rap" value="2.91969887446416" units="l_per_min" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_ftissue_rap">
@@ -2256,7 +2251,7 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="meta_Kp_rap" sboTerm="SBO:0000002" id="Kp_rap" name="tissue/plasma partition coefficient rap" value="1000" units="dimensionless" constant="true">
+      <parameter metaid="meta_Kp_rap" sboTerm="SBO:0000002" id="Kp_rap" name="tissue/plasma partition coefficient rap" value="10.0355369460204" units="dimensionless" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_Kp_rap">
@@ -2361,7 +2356,7 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="KI__meta_RXEX_k" sboTerm="SBO:0000009" id="KI__RXEX_k" name="rate urinary excretion of rapamycin metabolites" value="1" units="KI__per_min" constant="true">
+      <parameter metaid="KI__meta_RXEX_k" sboTerm="SBO:0000009" id="KI__RXEX_k" name="rate urinary excretion of rapamycin metabolites" value="0.10688066610367" units="KI__per_min" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#KI__meta_RXEX_k">
@@ -2374,7 +2369,7 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="LI__meta_RXBEX_k" sboTerm="SBO:0000009" id="LI__RXBEX_k" name="rate for rapamycin metabolites export in bile" value="0.0001" units="LI__per_min" constant="true">
+      <parameter metaid="LI__meta_RXBEX_k" sboTerm="SBO:0000009" id="LI__RXBEX_k" name="rate for rapamycin metabolites export in bile" value="3.27035825901478e-06" units="LI__per_min" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#LI__meta_RXBEX_k">
@@ -2400,7 +2395,7 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="LI__meta_RAP2RX_Vmax" sboTerm="SBO:0000186" id="LI__RAP2RX_Vmax" name="Vmax rapamycin metabolism" value="0.02" units="LI__mmole_per_min_l" constant="true">
+      <parameter metaid="LI__meta_RAP2RX_Vmax" sboTerm="SBO:0000186" id="LI__RAP2RX_Vmax" name="Vmax rapamycin metabolism" value="0.00960718202137472" units="LI__mmole_per_min_l" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#LI__meta_RAP2RX_Vmax">
@@ -2413,12 +2408,13 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="LI__meta_RAP2RX_Km_rap" sboTerm="SBO:0000027" id="LI__RAP2RX_Km_rap" name="Km rapamycin metabolism" value="0.0029" units="LI__mM" constant="true">
+      <parameter metaid="LI__meta_RAP2RX_Km_rap" sboTerm="SBO:0000027" id="LI__RAP2RX_Km_rap" name="Km rapamycin metabolism" value="0.00807" units="LI__mM" constant="true">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <p>Michaelis-Menten constant for rapamycin metabolism from in vitro studies.</p>
             <pre>
               <code>            Km value in the range of approximately 1.1μM to 4.7μM for sirolimus. [perplexity]
+            Km: 8.07 +- 2.11 µm [Sattler1992]; human liver microsomes
 </code>
             </pre>
           </body>
@@ -2435,11 +2431,13 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="LI__meta_f_cyp3a4" sboTerm="SBO:0000002" id="LI__f_cyp3a4" name="scaling factor cyp3a4 activity" value="1" units="dimensionless" constant="true">
+      <parameter metaid="LI__meta_f_cyp3a4" sboTerm="SBO:0000009" id="LI__f_cyp3a4" name="CYP3A4 activity" value="1" units="dimensionless" constant="true">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
-            <p>Scaling factor to vary CYP3A4 activity.
-1.0: unchanged activity; &lt; 1.0 decreased activity; &gt;1.0 increased activity.</p>
+            <p>Used for drug-drug interactions.
+f_cyp3a4 = 1: normal activity;
+f_cyp3a4 &lt; 1: reduced activity; inhibitor of CYP3A4
+f_cyp3a4 &gt; 1: increased activity; activator of CYP3A4</p>
           </body>
         </notes>
         <annotation>
@@ -2447,18 +2445,20 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
             <rdf:Description rdf:about="#LI__meta_f_cyp3a4">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="LI__meta_f_cyp3a5" sboTerm="SBO:0000002" id="LI__f_cyp3a5" name="scaling factor cyp3a5 activity" value="1" units="dimensionless" constant="true">
+      <parameter metaid="LI__meta_f_cyp3a5" sboTerm="SBO:0000009" id="LI__f_cyp3a5" name="CYP3A5 activity" value="1" units="dimensionless" constant="true">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
-            <p>Scaling factor to vary CYP3A5 activity.
-1.0: unchanged activity; &lt; 1.0 decreased activity; &gt;1.0 increased activity.</p>
+            <p>Used for drug-drug interactions.
+f_cyp3a5 = 1: normal activity;
+f_cyp3a5 &lt; 1: reduced activity; inhibitor of CYP3A4
+f_cyp3a5 &gt; 1: increased activity; activator of CYP3A4</p>
           </body>
         </notes>
         <annotation>
@@ -2466,7 +2466,7 @@ with FQgu=0.146, FQsp=0.017, FQpa=0.017</p>
             <rdf:Description rdf:about="#LI__meta_f_cyp3a5">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -2533,7 +2533,7 @@ f_oatp &gt; 1: increased activity; activator of absorption</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="GU__meta_RAPIM_k" sboTerm="SBO:0000009" id="GU__RAPIM_k" name="rate of rapamycin import enterocytes" value="0.1" units="GU__per_min" constant="true">
+      <parameter metaid="GU__meta_RAPIM_k" sboTerm="SBO:0000009" id="GU__RAPIM_k" name="rate of rapamycin import enterocytes" value="0.0107073772698656" units="GU__per_min" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#GU__meta_RAPIM_k">
@@ -2546,13 +2546,36 @@ f_oatp &gt; 1: increased activity; activator of absorption</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="GU__meta_RAP2RX_k" sboTerm="SBO:0000009" id="GU__RAP2RX_k" name="rate of rapamycin metabolism" value="0.02" units="GU__per_min" constant="true">
+      <parameter metaid="GU__meta_RAP2RX_Vmax" sboTerm="SBO:0000186" id="GU__RAP2RX_Vmax" name="Vmax rapamycin metabolism" value="0.00413208968651814" units="GU__mmole_per_min_l" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#GU__meta_RAP2RX_k">
+            <rdf:Description rdf:about="#GU__meta_RAP2RX_Vmax">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000186"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="GU__meta_RAP2RX_Km_rap" sboTerm="SBO:0000027" id="GU__RAP2RX_Km_rap" name="Km rapamycin metabolism" value="0.00807" units="GU__mM" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Michaelis-Menten constant for rapamycin metabolism from in vitro studies.</p>
+            <pre>
+              <code>            Km value in the range of approximately 1.1μM to 4.7μM for sirolimus. [perplexity]
+            Km: 8.07 +- 2.11 µm [Sattler1992]; human liver microsomes
+</code>
+            </pre>
+          </body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#GU__meta_RAP2RX_Km_rap">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000027"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -2622,7 +2645,7 @@ f_pg &gt; 1: increased activity; inhibitor of absorption</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="GU__meta_RXPG_k" sboTerm="SBO:0000009" id="GU__RXPG_k" name="rate of rapamycin metabolites PG export" value="0.1" units="GU__per_min" constant="true">
+      <parameter metaid="GU__meta_RXPG_k" sboTerm="SBO:0000009" id="GU__RXPG_k" name="rate of rapamycin metabolites PG export" value="0.404252305371351" units="GU__per_min" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#GU__meta_RXPG_k">
@@ -2635,7 +2658,7 @@ f_pg &gt; 1: increased activity; inhibitor of absorption</p>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="GU__meta_RXEXC_k" sboTerm="SBO:0000009" id="GU__RXEXC_k" name="rate of rapamycin metabolite fecal excretion" value="0.1" units="GU__per_min" constant="true">
+      <parameter metaid="GU__meta_RXEXC_k" sboTerm="SBO:0000009" id="GU__RXEXC_k" name="rate of rapamycin metabolite fecal excretion" value="0.0942322583646361" units="GU__per_min" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#GU__meta_RXEXC_k">
@@ -4494,12 +4517,20 @@ injection rate.</p>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
-              <times/>
-              <ci> GU__f_cyp3a4 </ci>
-              <ci> GU__f_cyp3a5 </ci>
-              <ci> GU__RAP2RX_k </ci>
-              <ci> GU__Ventero </ci>
-              <ci> GU__rap_entero </ci>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> GU__f_cyp3a4 </ci>
+                <ci> GU__f_cyp3a5 </ci>
+                <ci> GU__RAP2RX_Vmax </ci>
+                <ci> GU__Ventero </ci>
+                <ci> GU__rap_entero </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> GU__rap_entero </ci>
+                <ci> GU__RAP2RX_Km_rap </ci>
+              </apply>
             </apply>
           </math>
         </kineticLaw>

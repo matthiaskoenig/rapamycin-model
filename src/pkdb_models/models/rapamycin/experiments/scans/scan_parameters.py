@@ -68,7 +68,8 @@ class RapamycinParameterScan(RapamycinSimulationExperiment):
             "units": "dimensionless",
             "label": "renal function [-]",
         },
-        "cyp3a4_gu_scan": {
+        # FIXME: identical effect; single scan sufficient
+        "cyp3a4a5_gu_scan": {
             "parameter": "GU__f_cyp3a4",
             "default": 1.0,
             "range": np.sort(
@@ -77,20 +78,9 @@ class RapamycinParameterScan(RapamycinSimulationExperiment):
             "scale": "log",
             "colormap": "seismic_r",
             "units": "dimensionless",
-            "label": "CYP3A4 gut activity [-]",
+            "label": "CYP3A4/A5 gut activity [-]",
         },
-        "cyp3a5_gu_scan": {
-            "parameter": "GU__f_cyp3a5",
-            "default": 1.0,
-            "range": np.sort(
-                np.append(np.logspace(-1, 1, num=num_points), [1.0])
-            ),  # [10^-1=0.1, 10^1=10]
-            "scale": "log",
-            "colormap": "seismic_r",
-            "units": "dimensionless",
-            "label": "CYP3A5 gut activity [-]",
-        },
-        "cyp3a4_li_scan": {
+        "cyp3a4a5_li_scan": {
             "parameter": "LI__f_cyp3a4",
             "default": 1.0,
             "range": np.sort(
@@ -99,19 +89,53 @@ class RapamycinParameterScan(RapamycinSimulationExperiment):
             "scale": "log",
             "colormap": "seismic_r",
             "units": "dimensionless",
-            "label": "CYP3A4 liver activity [-]",
+            "label": "CYP3A4/A5 liver activity [-]",
         },
-        "cyp3a5_li_scan": {
-            "parameter": "LI__f_cyp3a5",
-            "default": 1.0,
-            "range": np.sort(
-                np.append(np.logspace(-1, 1, num=num_points), [1.0])
-            ),  # [10^-1=0.1, 10^1=10]
-            "scale": "log",
-            "colormap": "seismic_r",
-            "units": "dimensionless",
-            "label": "CYP3A5 liver activity [-]",
-        },
+
+        # "cyp3a4_gu_scan": {
+        #     "parameter": "GU__f_cyp3a4",
+        #     "default": 1.0,
+        #     "range": np.sort(
+        #         np.append(np.logspace(-1, 1, num=num_points), [1.0])
+        #     ),  # [10^-1=0.1, 10^1=10]
+        #     "scale": "log",
+        #     "colormap": "seismic_r",
+        #     "units": "dimensionless",
+        #     "label": "CYP3A4 gut activity [-]",
+        # },
+        # "cyp3a5_gu_scan": {
+        #     "parameter": "GU__f_cyp3a5",
+        #     "default": 1.0,
+        #     "range": np.sort(
+        #         np.append(np.logspace(-1, 1, num=num_points), [1.0])
+        #     ),  # [10^-1=0.1, 10^1=10]
+        #     "scale": "log",
+        #     "colormap": "seismic_r",
+        #     "units": "dimensionless",
+        #     "label": "CYP3A5 gut activity [-]",
+        # },
+        # "cyp3a4_li_scan": {
+        #     "parameter": "LI__f_cyp3a4",
+        #     "default": 1.0,
+        #     "range": np.sort(
+        #         np.append(np.logspace(-1, 1, num=num_points), [1.0])
+        #     ),  # [10^-1=0.1, 10^1=10]
+        #     "scale": "log",
+        #     "colormap": "seismic_r",
+        #     "units": "dimensionless",
+        #     "label": "CYP3A4 liver activity [-]",
+        # },
+        # "cyp3a5_li_scan": {
+        #     "parameter": "LI__f_cyp3a5",
+        #     "default": 1.0,
+        #     "range": np.sort(
+        #         np.append(np.logspace(-1, 1, num=num_points), [1.0])
+        #     ),  # [10^-1=0.1, 10^1=10]
+        #     "scale": "log",
+        #     "colormap": "seismic_r",
+        #     "units": "dimensionless",
+        #     "label": "CYP3A5 liver activity [-]",
+        # },
     }
 
     def simulations(self) -> Dict[str, ScanSim]:

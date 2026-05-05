@@ -11,7 +11,7 @@ length: [m]
 
 ## Parameters `p`
 ```
-RXEX_k = 1.0  # [1/min] rate urinary excretion of rapamycin metabolites  
+RXEX_k = 0.10688066610367  # [1/min] rate urinary excretion of rapamycin metabolites  
 Vext = 1.5  # [l] plasma  
 Vki = 0.3  # [l] kidney  
 Vmem = nan  # [m^2] plasma membrane  

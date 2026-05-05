@@ -95,11 +95,11 @@ SUBSTANCES_BODY = {
         "PODOSE": 0,  # dose
 
         # tissue distribution
-        'ftissue': 1.0,  # [litre_per_min] distribution in tissues
+        'ftissue': 2.919698874464165,  # [litre_per_min] distribution in tissues
         # logP: 4.63: P = 10^4.63 = 42657, https://go.drugbank.com/drugs/DB00877, https://pfe-pfizercom-prod.s3.amazonaws.com/products/material_safety_data/sirolimus_tablets_21-march-2018.pdf
         # logP: 4.85: ALOGPS, P = 70794
         # logP: 7.45: Chemaxon, P = 10^7.45 = 28183829
-        "Kp": 1000.0,  # [-] tissue/plasma partition coefficient
+        "Kp": 10.035536946020404,  # [-] tissue/plasma partition coefficient
 
         # protein binding and blood concentrations
         "BP": 142,  # blood to plasma ration (BP); 142 ± 39 [Leung2006]

@@ -62,7 +62,7 @@ class Wang2014(RapamycinSimulationExperiment):
                     "BW": Q_(70, "kg"),  # no weight, only bmi
 
                     # dose
-                    "PODOSE_rap": Q_(2.5, "mg"),
+                    "PODOSE_rap": Q_(2.5, "mg"), # 1 - 4 [mg]
 
                     # endstage renal disease
                     #"KI__f_renal_function": Q_(self.renal_map["Mild renal impairment"], "dimensionless"),
@@ -75,7 +75,7 @@ class Wang2014(RapamycinSimulationExperiment):
             tc1 = Timecourse(
                 start=0,
                 end=24* 60,  # [min]
-                steps=50,
+                steps=100,
                 changes={
                     "PODOSE_rap": Q_(2.5, "mg"),
                 },

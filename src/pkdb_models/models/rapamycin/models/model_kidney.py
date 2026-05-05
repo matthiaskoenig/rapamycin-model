@@ -138,7 +138,7 @@ _m.reactions = [
         pars=[
             Parameter(
                 "RXEX_k",
-                1.0,
+                0.10688066610367004,
                 U.per_min,
                 name="rate urinary excretion of rapamycin metabolites",
                 sboTerm=SBO.KINETIC_CONSTANT,

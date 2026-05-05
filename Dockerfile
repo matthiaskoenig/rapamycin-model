@@ -2,14 +2,14 @@
 # Dockerfile
 # -----------------------
 # Build and push image
-#   docker build -f Dockerfile -t matthiaskoenig/rapamycin:0.3.0 -t matthiaskoenig/rapamycin:latest .
+#   docker build -f Dockerfile -t matthiaskoenig/rapamycin:0.5.0 -t matthiaskoenig/rapamycin:latest .
 #   docker login
 #   docker push --all-tags matthiaskoenig/rapamycin
 
 FROM python:3.14-slim
 
 # install uv
-COPY --from=ghcr.io/astral-sh/uv:0.10.2 /uv /bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.11.9 /uv /bin/uv
 ENV UV_SYSTEM_PYTHON=1
 
 # install git

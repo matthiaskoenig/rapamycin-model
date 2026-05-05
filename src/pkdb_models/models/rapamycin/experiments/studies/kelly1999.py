@@ -19,7 +19,6 @@ from pkdb_models.models.rapamycin.helpers import run_experiments
 class Kelly1999(RapamycinSimulationExperiment):
     """Simulation experiment of Kelly1999."""
 
-    # FIXME: different times after transplantation
     interventions = [
         "RAP_L2, CSA",
         "RAP_L4, CSA",
@@ -65,7 +64,7 @@ class Kelly1999(RapamycinSimulationExperiment):
         tc0 = Timecourse(
             start=0,
             end=24*60,
-            steps=100,
+            steps=200,
             changes={
                 **self.default_changes(),
                 "BW": Q_(75.8, "kg"),
@@ -79,7 +78,7 @@ class Kelly1999(RapamycinSimulationExperiment):
         tc1 = Timecourse(
             start=0,
             end=24 * 60,
-            steps=50,
+            steps=200,
             changes={
                 "PODOSE_rap": Q_(3.6, "mg")
             }
@@ -87,7 +86,7 @@ class Kelly1999(RapamycinSimulationExperiment):
         tc2 = Timecourse(
             start=0,
             end=14 * 60,
-            steps=200,
+            steps=500,
             changes={
                 "PODOSE_rap": Q_(3.6, "mg")
             }

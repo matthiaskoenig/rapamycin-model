@@ -13,10 +13,11 @@ length: [m]
 ```
 Ka_dis_rap = 2.0  # [1/hr] Ka_dis [1/hr] dissolution rapamycin  
 Mr_rap = 914.1719  # [g/mol] Molecular weight rapamycin [g/mole]  
-RAP2RX_k = 0.02  # [1/min] rate of rapamycin metabolism  
-RAPIM_k = 0.1  # [1/min] rate of rapamycin import enterocytes  
-RXEXC_k = 0.1  # [1/min] rate of rapamycin metabolite fecal excretion  
-RXPG_k = 0.1  # [1/min] rate of rapamycin metabolites PG export  
+RAP2RX_Km_rap = 0.00807  # [mmol/l] Km rapamycin metabolism  
+RAP2RX_Vmax = 0.00413208968651814  # [mmol/min/l] Vmax rapamycin metabolism  
+RAPIM_k = 0.0107073772698656  # [1/min] rate of rapamycin import enterocytes  
+RXEXC_k = 0.0942322583646361  # [1/min] rate of rapamycin metabolite fecal excretion  
+RXPG_k = 0.404252305371351  # [1/min] rate of rapamycin metabolites PG export  
 Vapical = nan  # [m^2] apical membrane (intestinal membrane enterocytes)  
 Vbaso = nan  # [m^2] basolateral membrane (intestinal membrane enterocytes)  
 Vchain = 0.1  # [l] volume of chain compartment  
@@ -52,7 +53,7 @@ rx_lumen = 0.0  # [mmol/l] rapamycin metabolites (intestinal volume) in Vlumen
 ## ODE system
 ```
 # y
-RAP2RX = f_cyp3a4 * f_cyp3a5 * RAP2RX_k * Ventero * rap_entero  # [mmol/min] rapamycin metabolism via CYP3A4/5  
+RAP2RX = f_cyp3a4 * f_cyp3a5 * RAP2RX_Vmax * Ventero * rap_entero / (rap_entero + RAP2RX_Km_rap)  # [mmol/min] rapamycin metabolism via CYP3A4/5  
 RAPABS = RAPIM_k * Ventero * rap_entero  # [mmol/min] absorption rapamycin (plasma)  
 RAPIM = f_oatp * RAPIM_k * Vgu * rap_lumen  # [mmol/min] RAPIM  
 RXEXC = RXEXC_k * Vgu * rx_lumen  # [mmol/min] excretion rapamycin metabolites (feces)  

@@ -7,12 +7,15 @@ from sbmlutils.console import console
 from pkdb_models.models.rapamycin.helpers import run_experiments
 from pkdb_models.models.rapamycin.experiments.studies import *
 from pkdb_models.models.rapamycin.experiments.misc import *
+from pkdb_models.models.rapamycin.experiments.scans import *
 import pkdb_models.models.rapamycin as rapamycin
 
 from sbmlutils import log
 from sbmlutils.console import console
+from sbmlsim.plot import Figure
 
-
+Figure.legend_fontsize = 8
+Figure.fig_dpi = 300
 logger = log.get_logger(__name__)
 
 EXPERIMENTS = {
@@ -63,10 +66,12 @@ EXPERIMENTS = {
         DoseDependencyExperiment,
     ],
     "scan": [
+        RapamycinParameterScan,
+
     ]
 
 }
-EXPERIMENTS["all"] = EXPERIMENTS["studies"] + EXPERIMENTS["misc"]
+EXPERIMENTS["all"] = EXPERIMENTS["studies"] + EXPERIMENTS["misc"] + EXPERIMENTS["scan"]
 
 
 def run_simulation_experiments(

@@ -19,7 +19,7 @@ model = [
     (BQB.HAS_PROPERTY, "NCIT:C15342"),  # transplantation
 
     # model reference
-    (BQB.IS_DESCRIBED_BY, "doi/10.5281/zenodo.17091694"),
+    # (BQB.IS_DESCRIBED_BY, "doi/10.5281/zenodo.17091694"),
     # model
     # (BQM.IS, "biomodels.db/MODEL2510140001"),
 ]

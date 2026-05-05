@@ -33,6 +33,11 @@ class Renders2007(RapamycinSimulationExperiment):
         "CYP3A5_1_3": RapamycinSimulationExperiment.cyp3a5_activity["*1/*3"],
         "CYP3A5_3_3": RapamycinSimulationExperiment.cyp3a5_activity["*3/*3"],
     }
+    doses = {
+        "CYP3A5_1_1": 6.5, # assumed same as expressors
+        "CYP3A5_1_3": 6.5,
+        "CYP3A5_3_3": 2.31
+    }
 
     def datasets(self) -> Dict[str, DataSet]:
         dsets = {}
@@ -53,21 +58,41 @@ class Renders2007(RapamycinSimulationExperiment):
         Q_ = self.Q_
         tcsims = {}
         for group in self.groups:
-            tcsims[f"rap_{group}"] = TimecourseSim(
-                [Timecourse(
-                    start=0,
-                    end=25 * 60,  # [min]
-                    steps=2000,
-                    changes={
-                        **self.default_changes(),
-                        "BW": Q_(70, "kg"),  # FIXME: no bodyweight in article
-                        "PODOSE_rap": Q_(2.9, "mg"),
 
-                        # CYP3A5 activity
-                        "GU__f_cyp3a5": Q_(self.f_cyp3a5[group], "dimensionless"),
-                        "LI__f_cyp3a5": Q_(self.f_cyp3a5[group], "dimensionless"),
-                    },
-                )]
+            tc0 = Timecourse(
+                start=0,
+                end=24 * 60,  # [min]
+                steps=100,
+                changes={
+                    **self.default_changes(),
+                    "BW": Q_(70, "kg"),  # no bodyweight in article
+                    "PODOSE_rap": Q_(self.doses[group], "mg"),
+
+                    # CYP3A5 activity
+                    "GU__f_cyp3a5": Q_(self.f_cyp3a5[group], "dimensionless"),
+                    "LI__f_cyp3a5": Q_(self.f_cyp3a5[group], "dimensionless"),
+                },
+            )
+            tc1 = Timecourse(
+                start=0,
+                end=24 * 60,  # [min]
+                steps=100,
+                changes={
+                    "PODOSE_rap": Q_(self.doses[group], "mg"),
+                },
+            )
+            tc2 = Timecourse(
+                start=0,
+                end=25 * 60,  # [min]
+                steps=500,
+                changes={
+                    "PODOSE_rap": Q_(self.doses[group], "mg"),
+                },
+            )
+
+            tcsims[f"rap_{group}"] = TimecourseSim(
+                [tc0] + [tc1 for _ in range(12)] + [tc2],
+                time_offset=-24*60*13,
             )
 
         #console.print(tcsims.keys())
@@ -119,7 +144,7 @@ class Renders2007(RapamycinSimulationExperiment):
             name=f"{self.__class__.__name__}",
         )
         plots = fig.create_plots(
-            xaxis=Axis(self.label_time, unit=self.unit_time),
+            xaxis=Axis(self.label_time, unit=self.unit_time, min=-5, max=25),
             legend=True
         )
         plots[0].set_yaxis(self.label_rap_blood, unit=self.unit_rap, scale="linear")

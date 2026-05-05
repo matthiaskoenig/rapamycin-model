@@ -33,6 +33,11 @@ class Tortorici2013(RapamycinSimulationExperiment):
         "TAC10": "#e3256b",
         "TAC10_4H": "#d65282",
     }
+    f_cyp3a4 = {
+        "RAP15": 1.0,  # no change in activity
+        "TAC10": 1.0, # no change in activity
+        "TAC10_4H": 1.0  # no change in activity
+    }
 
     def datasets(self) -> Dict[str, DataSet]:
         dsets = {}
@@ -63,7 +68,8 @@ class Tortorici2013(RapamycinSimulationExperiment):
                         "BW": Q_(71.4, "kg"),
                         "PODOSE_rap": Q_(15, "mg"),
 
-                        # FIXME: add tacrolimus effect on parameters
+                        "GU__f_cyp3a4": Q_(self.f_cyp3a4[intervention], "dimensionless"),
+                        "LI__f_cyp3a4": Q_(self.f_cyp3a4[intervention], "dimensionless"),
                     },
                 )]
             )

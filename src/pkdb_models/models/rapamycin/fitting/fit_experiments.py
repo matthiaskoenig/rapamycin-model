@@ -47,16 +47,23 @@ def filter_baseline(fit_mapping_key: str, fit_mapping: FitMapping) -> bool:
 
     metadata: RapamycinMappingMetaData = fit_mapping.metadata
 
-    # filter co-administration
-    if metadata.coadministration != Coadministration.NONE:
+    # filter co-administration (not filtering, predisone and famotidine)
+    if metadata.coadministration in {
+        Coadministration.CYCLOSPORINE,
+        Coadministration.DILTIAZEM,
+        Coadministration.FUJIMYCIN,
+        Coadministration.FUJIMYCIN_MPM,
+        Coadministration.RIFAMPIN,
+        Coadministration.RITONAVIR,
+    }:
         return False
 
     # filter health (no renal, cardiac impairment, ...)
-    if metadata.health not in {Health.HEALTHY}:
+    if metadata.health not in {Health.HEALTHY, Health.RENAL_TRANSPLANT}:
         return False
 
-    if metadata.dosing not in {Dosing.SINGLE}:
-        return False
+    # if metadata.dosing not in {Dosing.SINGLE}:
+    #    return False
 
     # filter genotype
     if metadata.genotype not in {Genotype.CYP3A4_1_1, Genotype.CYP3A5_1_1, Genotype.NR}:

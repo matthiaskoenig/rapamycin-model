@@ -34,6 +34,7 @@ class Zimmerman1997(RapamycinSimulationExperiment):
         "RAP3_5": 3.5,
         "RAP6_5": 6.5,
     }
+    bsa = 1.89 # [m^2]
 
     f_cyp3a4_cyclosporine = 0.6
 
@@ -69,7 +70,7 @@ class Zimmerman1997(RapamycinSimulationExperiment):
                     # physiological changes
                     "BW": Q_(83.2, "kg"),
                     # dose
-                    "PODOSE_rap": Q_(dose, "mg"),
+                    "PODOSE_rap": Q_(dose, "mg/m^2") * Q_(self.bsa, "m^2"),
 
                     # CYP3A4 activity (inhibition by cyclosporine)
                     "GU__f_cyp3a4": Q_(self.f_cyp3a4_cyclosporine, "dimensionless"),
@@ -81,7 +82,7 @@ class Zimmerman1997(RapamycinSimulationExperiment):
                 end=12 * 60,
                 steps=200,
                 changes={
-                    "PODOSE_rap": Q_(dose, "mg"),
+                    "PODOSE_rap": Q_(dose, "mg/m^2") * Q_(self.bsa, "m^2"),
                 },
             )
             tc2 = Timecourse(
@@ -89,7 +90,7 @@ class Zimmerman1997(RapamycinSimulationExperiment):
                 end=200 * 60,
                 steps=2000,
                 changes={
-                    "PODOSE_rap": Q_(dose, "mg"),
+                    "PODOSE_rap": Q_(dose, "mg/m^2") * Q_(self.bsa, "m^2"),
                 },
             )
             # Doses were administered twice daily for 13 days and once on the morning of study day 14.

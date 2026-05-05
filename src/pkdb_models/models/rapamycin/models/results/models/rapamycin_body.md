@@ -32,7 +32,7 @@ HCT = 0.51  # [-] hematocrit
 HEIGHT = 170.0  # [cm] height [cm]  
 HR = 70.0  # [1/min] heart rate [1/min]  
 HRrest = 70.0  # [1/min] heart rate [1/min]  
-Kp_rap = 1000.0  # [-] tissue/plasma partition coefficient rap  
+Kp_rap = 10.0355369460204  # [-] tissue/plasma partition coefficient rap  
 MAP = 100.0  # [133.32239 N/m^2] mean arterial pressure [mmHg]  
 Mr_rap = 914.1719  # [g/mol] Molecular weight rap [g/mole]  
 Mr_rx = 914.1719  # [g/mol] Molecular weight rx [g/mole]  
@@ -45,7 +45,7 @@ conversion_min_per_day = 1440.0  # [min/day] Conversion factor min to hours
 f_cardiac_function = 1.0  # [-] heart function  
 f_cirrhosis = 0.0  # [-] severity of cirrhosis [0, 0.95]  
 f_lumen = 0.9  # [-] fraction lumen of intestine  
-ftissue_rap = 1.0  # [l/min] tissue distribution rap  
+ftissue_rap = 2.91969887446416  # [l/min] tissue distribution rap  
 ti_rap = 10.0  # [s] injection time rap [s]  
 ```
 

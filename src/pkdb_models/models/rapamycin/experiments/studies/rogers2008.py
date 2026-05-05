@@ -73,7 +73,7 @@ class Rogers2008(RapamycinSimulationExperiment):
                         "BW": Q_(self.bodyweights[group], "kg"),
 
                         # dose
-                        "PODOSE_rap": Q_(5, "mg"),
+                        "PODOSE_rap": Q_(6, "mg"),
 
                         # parameters pretransplant
                         # endstage renal disease

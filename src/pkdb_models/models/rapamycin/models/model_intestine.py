@@ -28,11 +28,11 @@ _m = Model(
     model_units=templates.model_units,
     annotations=annotations.model + [
         # tissue
-        (BQB.OCCURS_IN, "fma/FMA:45615"),  # gut
-        (BQB.OCCURS_IN, "bto/BTO:0000545"),  # gut
+        (BQB.OCCURS_IN, "FMA:45615"),  # gut
+        (BQB.OCCURS_IN, "BTO:0000545"),  # gut
         (BQB.OCCURS_IN, "NCIT:C12736"),  # intestine
-        (BQB.OCCURS_IN, "fma/FMA:7199"),  # intestine
-        (BQB.OCCURS_IN, "bto/BTO:0000648"),  # intestine
+        (BQB.OCCURS_IN, "FMA:7199"),  # intestine
+        (BQB.OCCURS_IN, "BTO:0000648"),  # intestine
 
         (BQB.HAS_PROPERTY, "NCIT:C79369"),  # Pharmacokinetics: Absorption
         # (BQB.HAS_PROPERTY, "NCIT:C79372"),  # Pharmacokinetics: Excretion
@@ -266,7 +266,7 @@ _m.reactions = [
             ),
             Parameter(
                 "RAPIM_k",
-                0.10,
+                0.010707377269865587,
                 unit=U.per_min,
                 name="rate of rapamycin import enterocytes",
                 sboTerm=SBO.KINETIC_CONSTANT,
@@ -292,11 +292,23 @@ _m.reactions = [
         sboTerm=SBO.TRANSPORT_REACTION,
         pars=[
             Parameter(
-                "RAP2RX_k",
-                0.02,
-                unit=U.per_min,
-                name="rate of rapamycin metabolism",
-                sboTerm=SBO.KINETIC_CONSTANT,
+                "RAP2RX_Vmax",
+                0.0041320896865181395,
+                U.mmole_per_min_l,
+                name="Vmax rapamycin metabolism",
+                sboTerm=SBO.MAXIMAL_VELOCITY,
+            ),
+            Parameter(
+                "RAP2RX_Km_rap",
+                8.07E-3,  # 8.07 [μM]
+                U.mM,
+                name="Km rapamycin metabolism",
+                sboTerm=SBO.MICHAELIS_CONSTANT,
+                notes="""Michaelis-Menten constant for rapamycin metabolism from in vitro studies.
+
+                Km value in the range of approximately 1.1μM to 4.7μM for sirolimus. [perplexity]
+                Km: 8.07 +- 2.11 µm [Sattler1992]; human liver microsomes
+                """
             ),
             Parameter(
                 "f_cyp3a4",
@@ -324,8 +336,9 @@ _m.reactions = [
             ),
         ],
         formula=(
-            f"f_cyp3a4 * f_cyp3a5 * RAP2RX_k * Ventero * rap_entero",
-            U.mmole_per_min),
+            f"f_cyp3a4 * f_cyp3a5 * RAP2RX_Vmax * Ventero * rap_entero/(rap_entero + RAP2RX_Km_rap)",
+            U.mmole_per_min
+        ),
     ),
     Reaction(
         "RXPG",
@@ -348,7 +361,7 @@ _m.reactions = [
             ),
             Parameter(
                 "RXPG_k",
-                0.10,
+                0.40425230537135143,
                 unit=U.per_min,
                 name="rate of rapamycin metabolites PG export",
                 sboTerm=SBO.KINETIC_CONSTANT,
@@ -365,7 +378,7 @@ _m.reactions = [
         pars=[
             Parameter(
                 "RXEXC_k",
-                0.10,
+                0.09423225836463608,
                 unit=U.per_min,
                 name="rate of rapamycin metabolite fecal excretion",
                 sboTerm=SBO.KINETIC_CONSTANT,

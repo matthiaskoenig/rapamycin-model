@@ -31,8 +31,8 @@ class Bottiger2001(RapamycinSimulationExperiment):
     }
 
     f_cyp3a4 = {
-        "RAP10": 1.0,  # no change in activity
-        "RAP10_DIL120": 0.5,  # inhibition CYP3A4 by diltiazem
+        "RAP10": 1,  # no change in activity
+        "RAP10_DIL120": 0.62,  # inhibition CYP3A4 by diltiazem
     }
 
     def datasets(self) -> Dict[str, DataSet]:

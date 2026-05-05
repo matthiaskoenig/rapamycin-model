@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "rapamycin-model"
-version = "0.3.0"
+version = "0.5.0"
 description = "Python utilities for computational models in SBML."
 readme = "README.md"
 requires-python = ">=3.14"
@@ -37,7 +37,7 @@ keywords = [
 ]
 dependencies = [
     "sbmlutils>=0.9.6",
-    "sbmlsim @ git+https://github.com/matthiaskoenig/sbmlsim.git@e6c4c405f4785e5d0d8d481c5f28712682b53be7"
+    "sbmlsim @ git+https://github.com/matthiaskoenig/sbmlsim.git@67d7a76f0534c025a143876df2845df08b407bcc"
 ]
 
 [project.scripts]

@@ -9,7 +9,7 @@
     },
     {
       "orcid": "0000-0003-1725-179X",
-      "affiliation": "Humboldt-Universität zu Berlin, Faculty of Life Sciences, Department of Biology, Institute of Theoretical Biology, Systems Medicine of the Liver; University of Stuttgart, Institute of Structural Mechanics and Dynamics in Aerospace Engineering",
+      "affiliation": "Humboldt-Universität zu Berlin, Faculty of Life Sciences, Department of Biology, Institute of Theoretical Biology, Systems Medicine of the Liver; University of Stuttgart, Institute of Structural Mechanics and Dynamics in Aerospace Engineering; University of Southern Denmark, Clinical Pharmacology, Pharmacy and Environmental Medicine, Department of Public Health",
       "name": "König, Matthias"
     }
   ],
@@ -21,7 +21,7 @@
     "rapamycin",
     "pharmacokinetics",
     "PBPK",
-    "physiologically based pharamacokinetic model",
+    "physiologically based pharmacokinetic model",
     "SBML"
   ],
   "contributors": [],

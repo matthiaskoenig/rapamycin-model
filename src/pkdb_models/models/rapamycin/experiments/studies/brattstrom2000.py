@@ -27,14 +27,21 @@ class Brattstrom2000(RapamycinSimulationExperiment):
         "RAP5": "#FF944D",
         "RAP8": "#D2691E",
     }
-    doses = {  # [mg]
+    doses = {  # [mg/m^2]
         "RAP03": 0.3,
         "RAP1": 1,
         "RAP3": 3,
         "RAP5": 5,
         "RAP8": 8,
     }
-    bodyweights = {  # [mg]
+    bsas = {  # [m^2]
+        "RAP03": 1.95,
+        "RAP1": 2.06,
+        "RAP3": 1.94,
+        "RAP5": 1.95,
+        "RAP8": 1.98,
+    }
+    bodyweights = {  # [kg]
         "RAP03": 74.2,
         "RAP1": 82.3,
         "RAP3": 74.5,
@@ -64,7 +71,6 @@ class Brattstrom2000(RapamycinSimulationExperiment):
         Q_ = self.Q_
         tcsims = {}
         for intervention in self.interventions:
-            dose = self.doses[intervention]
             tcsims[f"rap_{intervention}"] = TimecourseSim(
                 [Timecourse(
                     start=0,
@@ -75,7 +81,7 @@ class Brattstrom2000(RapamycinSimulationExperiment):
                         # physiological changes
                         "BW": Q_(self.bodyweights[intervention], "kg"),
                         # dose
-                        "PODOSE_rap": Q_(dose, "mg"),
+                        "PODOSE_rap": Q_(self.doses[intervention], "mg/m^2") * Q_(self.bsas[intervention], "m^2"),
                     },
                 )]
             )

@@ -171,7 +171,7 @@ _m.species = [
 _m.parameters = [
     Parameter(
         "RXBEX_k",
-        0.0001,
+        3.2703582590147807e-06,
         unit=U.per_min,
         name="rate for rapamycin metabolites export in bile",
         sboTerm=SBO.KINETIC_CONSTANT,
@@ -208,40 +208,45 @@ _m.reactions = [
         pars=[
             Parameter(
                 "RAP2RX_Vmax",
-                0.02,
+                0.00960718202137472,
                 U.mmole_per_min_l,
                 name="Vmax rapamycin metabolism",
                 sboTerm=SBO.MAXIMAL_VELOCITY,
             ),
             Parameter(
                 "RAP2RX_Km_rap",
-                2.9E-3,     # 2.9 [μM]
+                8.07E-3,     # 8.07 [μM]
                 U.mM,
                 name="Km rapamycin metabolism",
                 sboTerm=SBO.MICHAELIS_CONSTANT,
                 notes="""Michaelis-Menten constant for rapamycin metabolism from in vitro studies.
                 
                 Km value in the range of approximately 1.1μM to 4.7μM for sirolimus. [perplexity]
+                Km: 8.07 +- 2.11 µm [Sattler1992]; human liver microsomes
                 """
             ),
             Parameter(
                 "f_cyp3a4",
-                1,
-                U.dimensionless,
-                name="scaling factor cyp3a4 activity",
-                sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-                notes="""Scaling factor to vary CYP3A4 activity.
-                1.0: unchanged activity; < 1.0 decreased activity; >1.0 increased activity.
+                1.0,
+                unit=U.dimensionless,
+                name="CYP3A4 activity",
+                sboTerm=SBO.KINETIC_CONSTANT,
+                notes="""Used for drug-drug interactions.
+                f_cyp3a4 = 1: normal activity;
+                f_cyp3a4 < 1: reduced activity; inhibitor of CYP3A4
+                f_cyp3a4 > 1: increased activity; activator of CYP3A4
                 """
             ),
             Parameter(
                 "f_cyp3a5",
-                1,
-                U.dimensionless,
-                name="scaling factor cyp3a5 activity",
-                sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-                notes="""Scaling factor to vary CYP3A5 activity.
-                1.0: unchanged activity; < 1.0 decreased activity; >1.0 increased activity.
+                1.0,
+                unit=U.dimensionless,
+                name="CYP3A5 activity",
+                sboTerm=SBO.KINETIC_CONSTANT,
+                notes="""Used for drug-drug interactions.
+                f_cyp3a5 = 1: normal activity;
+                f_cyp3a5 < 1: reduced activity; inhibitor of CYP3A4
+                f_cyp3a5 > 1: increased activity; activator of CYP3A4
                 """
             ),
         ],

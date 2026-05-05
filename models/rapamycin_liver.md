@@ -11,10 +11,10 @@ length: [m]
 
 ## Parameters `p`
 ```
-RAP2RX_Km_rap = 0.0029  # [mmol/l] Km rapamycin metabolism  
-RAP2RX_Vmax = 0.02  # [mmol/min/l] Vmax rapamycin metabolism  
+RAP2RX_Km_rap = 0.00807  # [mmol/l] Km rapamycin metabolism  
+RAP2RX_Vmax = 0.00960718202137472  # [mmol/min/l] Vmax rapamycin metabolism  
 RAPIM_k = 100.0  # [1/min] rate rapamycin import  
-RXBEX_k = 0.0001  # [1/min] rate for rapamycin metabolites export in bile  
+RXBEX_k = 3.27035825901478e-06  # [1/min] rate for rapamycin metabolites export in bile  
 RXEX_k = 100.0  # [1/min] rate rapamycin metabolites export  
 Vapical = nan  # [m^2] apical membrane  
 Vbi = 1.0  # [l] bile  
@@ -22,8 +22,8 @@ Vext = 1.5  # [l] plasma
 Vli = 1.5  # [l] liver  
 Vlumen = 1.15425  # [l] intestinal lumen (inner part of intestine)  
 Vmem = nan  # [m^2] plasma membrane  
-f_cyp3a4 = 1.0  # [-] scaling factor cyp3a4 activity  
-f_cyp3a5 = 1.0  # [-] scaling factor cyp3a5 activity  
+f_cyp3a4 = 1.0  # [-] CYP3A4 activity  
+f_cyp3a5 = 1.0  # [-] CYP3A5 activity  
 ```
 
 ## Initial conditions `x0`

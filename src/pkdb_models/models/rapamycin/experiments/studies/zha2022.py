@@ -36,7 +36,7 @@ class Zha2022(RapamycinSimulationExperiment):
     }
     f_cyp3a4 = {
         "RAP2": 1,
-        "RAP05_3D": 0.08, #changed, effect was correct, but more inhibiting - lower decrease probably cause of the bounding
+        "RAP05_3D": 0.15, #changed, effect was correct, but more inhibiting - lower decrease probably cause of the bounding
     }
 
     def datasets(self) -> Dict[str, DataSet]:
@@ -100,7 +100,7 @@ class Zha2022(RapamycinSimulationExperiment):
                     application_form=ApplicationForm.NR,
                     dosing=Dosing.SINGLE,
                     health=Health.HEALTHY,
-                    fasting=Fasting.FASTED,
+                    fasting=Fasting.FED,
                     coadministration=Coadministration.NONE if intervention == "RAP2" else Coadministration.RITONAVIR
                 )
             )

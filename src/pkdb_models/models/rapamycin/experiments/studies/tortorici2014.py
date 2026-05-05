@@ -32,8 +32,8 @@ class Tortorici2014(RapamycinSimulationExperiment):
         "RAP20_RIF600":"#e3256b",
     }
     f_cyp3a4 = {
-        "RAP20": 1.0,  # no change in activity
-        "RAP20_RIF600": 2.0  # speed up the metabolism (example value)
+        "RAP20": 1,  # no change in activity
+        "RAP20_RIF600": 2  # speed up the metabolism (example value)
     }
 
     def datasets(self) -> Dict[str, DataSet]:

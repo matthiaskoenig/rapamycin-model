@@ -90,7 +90,7 @@ class RapamycinSimulationExperiment(SimulationExperiment):
     # ----------- Variant activities --------------
     cyp3a4_allele_activity = {
         "*1": 1.0,
-        "*1G": 1.2,  # increased activity
+        "*1G": 1.2,  # increased activity (?)
     }
     cyp3a4_activity = {
         "*1/*1": (cyp3a4_allele_activity["*1"] + cyp3a4_allele_activity["*1"]) / 2,
@@ -99,7 +99,7 @@ class RapamycinSimulationExperiment(SimulationExperiment):
     }
     cyp3a5_allele_activity = {
         "*1": 1.0,
-        "*3": 0.5,  # decreased activity
+        "*3": 0.5,  # decreased activity (?)
     }
     cyp3a5_activity = {
         "*1/*1": (cyp3a5_allele_activity["*1"] + cyp3a5_allele_activity["*1"]) / 2,
@@ -153,15 +153,15 @@ class RapamycinSimulationExperiment(SimulationExperiment):
 
         changes = {
             #>>> !Optimal parameter 'Kp_rap' within 5% of lower bound! <<<
-            'ftissue_rap': Q_(6.385157332090921, 'l/min'),  # [0.01 - 10]
-            'Kp_rap': Q_(10.000004054918183, 'dimensionless'),  # [10 - 10000]
-            'GU__RAPIM_k': Q_(0.010254172647171959, '1/min'),  # [0.0001 - 1]
-            'GU__RAP2RX_k': Q_(0.43373578546152136, '1/min'),  # [0.0001 - 1]
-            'GU__RXPG_k': Q_(0.010328378821077363, '1/min'),  # [0.0001 - 1]
-            'GU__RXEXC_k': Q_(0.023347411187126337, '1/min'),  # [0.0001 - 1]
-            'KI__RXEX_k': Q_(0.1693055659116988, '1/min'),  # [0.1 - 10]
-            'LI__RAP2RX_Vmax': Q_(0.002858932837010464, 'mmole/min/l'),  # [0.0001 - 1]
-            'LI__RXBEX_k': Q_(2.2698133102257085e-06, '1/min'),  # [1e-07 - 0.001]
+            # 'ftissue_rap': Q_(2.919698874464165, 'l/min'),  # [0.01 - 10]
+            # 'Kp_rap': Q_(10.035536946020404, 'dimensionless'),  # [10 - 10000]
+            # 'GU__RAPIM_k': Q_(0.010707377269865587, '1/min'),  # [0.0001 - 1]
+            # 'GU__RAP2RX_Vmax': Q_(0.0041320896865181395, 'mmole/min/l'),  # [0.0001 - 1]
+            # 'GU__RXPG_k': Q_(0.40425230537135143, '1/min'),  # [0.0001 - 1]
+            # 'GU__RXEXC_k': Q_(0.09423225836463608, '1/min'),  # [0.0001 - 1]
+            # 'KI__RXEX_k': Q_(0.10688066610367004, '1/min'),  # [0.1 - 10]
+            # 'LI__RAP2RX_Vmax': Q_(0.00960718202137472, 'mmole/min/l'),  # [0.0001 - 1]
+            # 'LI__RXBEX_k': Q_(3.2703582590147807e-06, '1/min'),  # [1e-07 - 0.001]
         }
 
         return changes
