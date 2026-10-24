@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit	count_unit
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	1.0	hr	1.345042436767089e-05		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	2.0	hr	1.772423764064504e-05		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	3.0	hr	1.593682763602775e-05		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	4.0	hr	1.003203008099461e-05		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	6.0	hr	1.1675047110942698e-05		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	8.0	hr	6.713179435946345e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	12.0	hr	4.560411449969091e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	12.5	hr	4.892952846176959e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	13.0	hr	4.704804424638297e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	14.0	hr	3.6502981550843986e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	15.0	hr	4.015656136444359e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	16.0	hr	3.827507714905697e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	18.0	hr	3.394328790898079e-06		mole/meter^3	dimensionless
+Rogers2008		P8	1.0	RAP6, MMF1000_D1, MMF1000_D2, TAC4_D1, TAC4_D2	concentration	rapamycin	blood	LC MS/MS	rapamycin_P8	20.0	hr	2.406549577820101e-06		mole/meter^3	dimensionless

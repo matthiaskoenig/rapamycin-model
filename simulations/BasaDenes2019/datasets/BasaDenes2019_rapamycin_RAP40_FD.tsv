@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	0.25	hr		7.318907964683666e-05		2.969638423583136e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	0.5	hr		0.00014635671912470728		4.1025872705122524e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	0.75	hr		0.00015378901932995313		4.124443116223546e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	1.0	hr		0.00014949223444737252		3.9035656204265305e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	2.0	hr		0.00013444933059088775		2.3204497972427288e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	3.0	hr		0.0001235107970393752		2.1526039030514938e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	4.0	hr		0.00010497019214876327		1.7556326113283505e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	5.0	hr		8.921265245628312e-05		2.5231687825889198e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	6.0	hr		6.916193770558906e-05		1.921214161144091e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	8.0	hr		5.175241111655259e-05		1.1003729167348066e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	10.0	hr		4.398702257201299e-05		1.051716859815971e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	12.0	hr		3.845545897877631e-05		1.0313377604365218e-05			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	24.0	hr		2.7973622903963685e-05		8.56939488076586e-06			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP40	8.0	RAP40_FD	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP40_FD	48.0	hr		2.0786462589803953e-05		6.809660196293498e-06			mole/meter^3	ng/ml	dimensionless

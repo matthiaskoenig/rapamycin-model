@@ -1,51 +1,49 @@
 """Kidney model rapamycin."""
 
-import numpy as np
-from sbmlutils.factory import *
-from sbmlutils.metadata import *
+from sbmlutils.factory import (
+    Compartment,
+    FactoryResult,
+    Model,
+    Parameter,
+    Reaction,
+    Species,
+    create_model,
+)
+from sbmlutils.metadata import (
+    BQB,
+    SBO,
+)
 
-from pkdb_models.models.rapamycin.models import annotations
-from pkdb_models.models.rapamycin.models import templates
+from pkdb_models.models.rapamycin.models import annotations, templates
 
 
 class U(templates.U):
-    """UnitDefinitions"""
-
-    pass
+    """Units of the kidney model."""
 
 
 mid = "rapamycin_kidney"
-version = 1
-
 _m = Model(
     sid=mid,
     name="Model for renal rapamycin excretion.",
-    notes=f"""
-    Model for renal rapamycin  excretion.
-    
-    - ~2.2% of dose mainly as metabolites [Leung2006]
+    notes="""
+    # Model for the renal excretion of the rapamycin metabolites
 
-    **version** {version}
-    
-    ## Changelog
-    
-    **version 1**
-    
-    - initial model
-        
-    """ + templates.terms_of_use,
+    Rapamycin is not excreted by the kidneys; its metabolites are excreted in
+    the urine: 2.2 % of the radioactivity of an oral dose of 14C-rapamycin is
+    recovered in the urine (Leung2006).
+    """
+    + templates.terms_of_use,
     creators=templates.creators,
     units=U,
     model_units=templates.model_units,
-    annotations=annotations.model + [
+    annotations=[
+        *annotations.model,
         # tissue
         (BQB.OCCURS_IN, "fma/FMA:7203"),  # kidney
         (BQB.OCCURS_IN, "bto/BTO:0000671"),  # kidney
-        (BQB.OCCURS_IN, "NCIT:C12415"),  # kidney
-
-        (BQB.HAS_PROPERTY, "NCIT:C79372"),  # Pharmacokinetics: Excretion
-        # (BQB.HAS_PROPERTY, "NCIT:C79371"),  # Pharmacokinetics: Metabolism
-    ]
+        (BQB.OCCURS_IN, "ncit/C12415"),  # kidney
+        (BQB.HAS_PROPERTY, "ncit/C79372"),  # Pharmacokinetics: Excretion
+    ],
 )
 
 _m.compartments = [
@@ -53,11 +51,11 @@ _m.compartments = [
         "Vext",
         value=1.5,
         unit=U.liter,
-        name="plasma",
+        name="blood",
         constant=True,
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
-        annotations=annotations.compartments["plasma"],
-        port=True
+        annotations=annotations.compartments["blood"],
+        port=True,
     ),
     Compartment(
         "Vki",
@@ -67,17 +65,7 @@ _m.compartments = [
         constant=True,
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
         annotations=annotations.compartments["ki"],
-        port=True
-    ),
-    Compartment(
-        "Vmem",
-        value=np.nan,
-        unit=U.m2,
-        name="plasma membrane",
-        constant=True,
-        sboTerm=SBO.PHYSICAL_COMPARTMENT,
-        annotations=annotations.compartments["plasma membrane"],
-        spatialDimensions=2,
+        port=True,
     ),
     Compartment(
         "Vurine",
@@ -93,14 +81,14 @@ _m.compartments = [
 _m.species = [
     Species(
         "rx_ext",
-        name="rapamycin metabolites (plasma)",
+        name="rapamycin metabolites (blood)",
         initialConcentration=0.0,
         compartment="Vext",
         substanceUnit=U.mmole,
         hasOnlySubstanceUnits=False,  # this is a concentration
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["rx"],
-        port=True
+        port=True,
     ),
     Species(
         "rx_urine",
@@ -111,7 +99,7 @@ _m.species = [
         hasOnlySubstanceUnits=True,
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["rx"],
-        port=True
+        port=True,
     ),
 ]
 
@@ -121,10 +109,10 @@ _m.parameters.append(
         name="parameter for renal function",
         value=1.0,
         unit=U.dimensionless,
-        sboTerm=SBO.KINETIC_CONSTANT,
-        notes="""scaling factor for renal function. 1.0: normal renal function; 
+        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        notes="""scaling factor for renal function. 1.0: normal renal function;
         <1.0: reduced renal function
-        """
+        """,
     )
 )
 
@@ -138,66 +126,17 @@ _m.reactions = [
         pars=[
             Parameter(
                 "RXEX_k",
-                0.10688066610367004,
+                0.12,
                 U.per_min,
                 name="rate urinary excretion of rapamycin metabolites",
                 sboTerm=SBO.KINETIC_CONSTANT,
             ),
         ],
-        formula=(
-            "f_renal_function * RXEX_k * Vki * rx_ext"
-        )
+        formula=("f_renal_function * RXEX_k * Vki * rx_ext", U.mmole_per_min),
     ),
 ]
 
 model_kidney = _m
-
-
-# def layout(dx=200, dy=200) -> pd.DataFrame:
-#     """Layout definition."""
-#
-#     delta_x = 0.5 * dx
-#     delta_y = 0.4 * dy
-#
-#     positions = [
-#         ["ali_ext", 0, 0],
-#         ["ALIEX", 0, 1.2 * delta_y],
-#         ["ali_urine", 0, 2 * delta_y],
-#     ]
-#
-#     df = pd.DataFrame(positions, columns=["id", "x", "y"])
-#     df.set_index("id", inplace=True)
-#     return df
-#
-# def annotations(dx=200, dy=200) -> list:
-#
-#     delta_x = 0.5 * dx
-#     delta_y = 0.4 * dy
-#
-#     kwargs = {
-#         "type": cyviz.AnnotationShapeType.ROUND_RECTANGLE,
-#         "opacity": 20,
-#         "border_color": "#000000",
-#         "border_thickness": 2,
-#     }
-#     annotations = [
-#         # kidney
-#         cyviz.AnnotationShape(
-#             x_pos=-delta_x, y_pos=-0.5 * delta_y, width=2 * delta_x, height=1* delta_y,
-#             fill_color="#FF0000", **kwargs
-#         ),
-#         #plasma
-#         cyviz.AnnotationShape(
-#             x_pos=-delta_x, y_pos=0.5 * delta_y, width=2 * delta_x, height=1 * delta_y,
-#             fill_color="#FFFFFF", **kwargs
-#         ),
-#         #urine
-#         cyviz.AnnotationShape(
-#             x_pos=-delta_x, y_pos=1.5 * delta_y, width=2 * delta_x, height=1 * delta_y,
-#             fill_color="#000000", **kwargs
-#         ),
-#     ]
-#     return annotations
 
 
 if __name__ == "__main__":
@@ -207,15 +146,6 @@ if __name__ == "__main__":
     results: FactoryResult = create_model(
         model=model_kidney,
         filepath=MODEL_BASE_PATH / f"{model_kidney.sid}.xml",
-        sbml_level=3, sbml_version=2,
+        sbml_level=3,
+        sbml_version=2,
     )
-
-    # visualization
-    from sbmlutils import cytoscape as cyviz
-    cyviz.visualize_sbml(results.sbml_path, delete_session=True)
-    # cyviz.apply_layout(layout=layout())
-    # cyviz.add_annotations(annotations=annotations())
-    # cyviz.export_image(
-    #     MODEL_BASE_PATH / f"{model_kidney.sid}.png",
-    #     fit_content=True,
-    # )

@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" xmlns:comp="http://www.sbml.org/sbml/level3/version1/comp/version1" xmlns:distrib="http://www.sbml.org/sbml/level3/version1/distrib/version1" level="3" version="2" comp:required="true" distrib:required="true">
+  <notes>
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <p>Created with <a href="https://github.com/matthiaskoenig/sbmlutils">https://github.com/matthiaskoenig/sbmlutils</a>.
+<a href="https://doi.org/10.5281/zenodo.5525390">
+        <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5525390.svg" alt="DOI"/></a></p>
+      </body>
+    </notes>
+  <model metaid="meta_rapamycin_intestine" id="rapamycin_intestine" name="Model for rapamycin absorption in the small intestine" substanceUnits="mmole" timeUnits="min" volumeUnits="litre" areaUnits="m2" lengthUnits="metre" extentUnits="mmole">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <h1>Model for rapamycin absorption</h1>
+        <p>The dose dissolves in the stomach and passes into the lumen of the
+intestine (<code>dissolution_rap</code>). A fraction <code>F_rap_abs</code> of the rapamycin
+which leaves the lumen is absorbed into the enterocytes, the rest is
+excreted with the feces (<code>RAPEXC</code>). In the enterocytes rapamycin is
+metabolized by CYP3A4 and CYP3A5 (<code>RAP2RX</code>), pumped back into the lumen by
+P-glycoprotein (<code>RAPPG</code>) or transported into the blood (<code>RAPBASO</code>); the
+metabolites formed in the enterocytes are released into the lumen and
+excreted with the feces after the transit through the colon.</p>
+        <p>The fraction absorbed and the metabolism of the gut wall set the oral
+bioavailability of about 14 % (oral solution, Rapamune label); the
+radioactivity of an oral dose of 14C-rapamycin is recovered to 91 % in the
+feces, mainly as metabolites (Leung2006).</p>
+        <p>Food (<code>fed</code>) slows the dissolution and the gastric emptying
+(<code>FED_f_dissolution</code>) and increases the fraction absorbed
+(<code>FED_f_absorption</code>): a high fat meal increases the AUC of rapamycin by
+35 % and delays its tmax from 0.8 to 3.1 hr (Zimmerman1999).</p>
+        <p>The content of this model has been carefully created in a manual research effort.</p>
+        <h2>Terms of use</h2>
+        <p>Copyright © 2026 <a href="https://livermetabolism.com" title="Matthias König" target="_blank">Matthias König</a>.</p>
+        <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png"/>
+        </a>
+        <br/>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<p>Redistribution and use of any part of this model, with or without modification, are permitted provided
+that the following conditions are met:</p>
+        <ul>
+          <li>Redistributions of this SBML file must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+          <li>Redistributions in a different form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials provided
+with the distribution.</li>
+        </ul>
+        <p>This model is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></body>
+      </notes>
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#meta_rapamycin_intestine">
+          <dcterms:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard4:hasName rdf:parseType="Resource">
+                  <vCard4:family-name>Jesionek</vCard4:family-name>
+                  <vCard4:given-name>Monika</vCard4:given-name>
+                </vCard4:hasName>
+                <vCard4:hasEmail>monika.jesionek@student.uj.edu.pl</vCard4:hasEmail>
+                <vCard4:organization-name>Faculty of Pharmacy, Jagiellonian University Medical College, Krakow, Poland</vCard4:organization-name>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard4:hasName rdf:parseType="Resource">
+                  <vCard4:family-name>König</vCard4:family-name>
+                  <vCard4:given-name>Matthias</vCard4:given-name>
+                </vCard4:hasName>
+                <vCard4:hasEmail>koenigmx@hu-berlin.de</vCard4:hasEmail>
+                <vCard4:organization-name>Humboldt-Universität zu Berlin, Faculty of Life Sciences, Department of Biology, Institute of Theoretical Biology, Systems Medicine of the Liver; University of Stuttgart, Institute of Structural Mechanics and Dynamics in Aerospace Engineering</vCard4:organization-name>
+              </rdf:li>
+            </rdf:Bag>
+          </dcterms:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2026-10-24T11:59:46Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2026-10-24T11:59:46Z</dcterms:W3CDTF>
+          </dcterms:modified>
+          <bqbiol:hasTaxon>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/taxonomy:9606"/>
+              <rdf:li rdf:resource="https://identifiers.org/snomedct:337915000"/>
+            </rdf:Bag>
+          </bqbiol:hasTaxon>
+          <bqbiol:hasProperty>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/mamo:MAMO_0000046"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit:C15261"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit:C15299"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit:C15342"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit:C79369"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit:C79372"/>
+            </rdf:Bag>
+          </bqbiol:hasProperty>
+          <bqbiol:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/ncit:C1212"/>
+            </rdf:Bag>
+          </bqbiol:is>
+          <bqbiol:occursIn>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/BTO:0000545"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit:C12736"/>
+              <rdf:li rdf:resource="https://identifiers.org/FMA:7199"/>
+              <rdf:li rdf:resource="https://identifiers.org/BTO:0000648"/>
+            </rdf:Bag>
+          </bqbiol:occursIn>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfUnitDefinitions>
+      <unitDefinition id="g_per_mole" name="g/mole">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="1"/>
+          <unit kind="mole" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="l_per_min" name="l/min">
+        <listOfUnits>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="m2" name="meter^2">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mM" name="mmole/liter">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="0" multiplier="0.001"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mg" name="mg">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="0.001"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mg_per_min" name="mg/min">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="0.001"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mg_per_s_l" name="mg/s/l">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="0.001"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="min" name="min">
+        <listOfUnits>
+          <unit kind="second" exponent="1" scale="0" multiplier="60"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="min_per_hr" name="min/hour">
+        <listOfUnits>
+          <unit kind="second" exponent="1" scale="0" multiplier="60"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mmole" name="mmole">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="0" multiplier="0.001"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mmole_per_min" name="mmole/min">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="0" multiplier="0.001"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mmole_per_min_l" name="mmole/min/l">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="0" multiplier="0.001"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_hr" name="1/hr">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_min" name="1/min">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_mmole" name="1/mmole">
+        <listOfUnits>
+          <unit kind="mole" exponent="-1" scale="0" multiplier="0.001"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment metaid="meta_Vext" sboTerm="SBO:0000290" id="Vext" name="blood" size="1" units="litre" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vext">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:9670"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C12434"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000089"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vgu" sboTerm="SBO:0000290" id="Vgu" name="intestine" size="1.2825" units="litre" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vgu">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000545"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C12736"/>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:7199"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000648"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vlumen" sboTerm="SBO:0000290" id="Vlumen" name="intestinal lumen (inner part of intestine)" size="1.15425" units="litre" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vlumen">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vfeces" sboTerm="SBO:0000290" id="Vfeces" name="feces" size="1" units="litre" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vfeces">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:64183"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C13234"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0000440"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment sboTerm="SBO:0000290" id="Ventero" name="intestinal lining (enterocytes)" size="0.12825" units="litre" constant="false"/>
+      <compartment metaid="meta_Vapical" sboTerm="SBO:0000290" id="Vapical" name="apical membrane (intestinal membrane enterocytes)" spatialDimensions="2" size="NaN" units="m2" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vapical">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:84666"/>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0016324"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vbaso" sboTerm="SBO:0000290" id="Vbaso" name="basolateral membrane (intestinal membrane enterocytes)" spatialDimensions="2" size="NaN" units="m2" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vbaso">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:84669"/>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0016323"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vstomach" sboTerm="SBO:0000290" id="Vstomach" name="stomach" size="1" units="litre" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vstomach">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:7148"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C12391"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0000945"/>
+                  <rdf:li rdf:resource="https://identifiers.org/BTO:0001307"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vint_0" sboTerm="SBO:0000290" id="Vint_0" name="intestinal lumen 0 (inner part of intestine)" units="litre" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vint_0">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vint_1" sboTerm="SBO:0000290" id="Vint_1" name="intestinal lumen 1 (inner part of intestine)" units="litre" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vint_1">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vint_2" sboTerm="SBO:0000290" id="Vint_2" name="intestinal lumen 2 (inner part of intestine)" units="litre" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vint_2">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vint_3" sboTerm="SBO:0000290" id="Vint_3" name="intestinal lumen 3 (inner part of intestine)" units="litre" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vint_3">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment metaid="meta_Vint_4" sboTerm="SBO:0000290" id="Vint_4" name="intestinal lumen 4 (inner part of intestine)" units="litre" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Vint_4">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/FMA:14586"/>
+                  <rdf:li rdf:resource="https://identifiers.org/UBERON:0018543"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="meta_rap_stomach" sboTerm="SBO:0000247" id="rap_stomach" name="rapamycin (stomach)" compartment="Vstomach" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="true" boundaryCondition="true" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_rap_stomach">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound:5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey:QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C1212"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_rap_lumen" sboTerm="SBO:0000247" id="rap_lumen" name="rapamycin (intestinal volume)" compartment="Vlumen" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_rap_lumen">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound:5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey:QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C1212"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species sboTerm="SBO:0000247" id="rx_lumen" name="rapamycin metabolites (intestinal volume)" compartment="Vlumen" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="meta_rap_entero" sboTerm="SBO:0000247" id="rap_entero" name="rapamycin (enterocytes)" compartment="Ventero" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_rap_entero">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound:5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey:QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C1212"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species sboTerm="SBO:0000247" id="rx_entero" name="rapamycin metabolites (enterocytes)" compartment="Ventero" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="meta_rap_ext" sboTerm="SBO:0000247" id="rap_ext" name="rapamycin (blood)" compartment="Vext" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_rap_ext">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound:5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey:QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C1212"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_rap_colon" sboTerm="SBO:0000247" id="rap_colon" name="rapamycin (colon)" compartment="Vlumen" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_rap_colon">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound:5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey:QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C1212"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_rap_feces" sboTerm="SBO:0000247" id="rap_feces" name="rapamycin (feces)" compartment="Vfeces" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_rap_feces">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound:5284616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/inchikey:QFJCIRLUMZQUOT-HPLJOQBZSA-N"/>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:9168"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ncit:C1212"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species sboTerm="SBO:0000247" id="rx_feces" name="rapamycin metabolites (feces)" compartment="Vfeces" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species sboTerm="SBO:0000247" id="rx_int_0" name="rapamycin metabolites (intestine) 0" compartment="Vint_0" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species sboTerm="SBO:0000247" id="rx_int_1" name="rapamycin metabolites (intestine) 1" compartment="Vint_1" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species sboTerm="SBO:0000247" id="rx_int_2" name="rapamycin metabolites (intestine) 2" compartment="Vint_2" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species sboTerm="SBO:0000247" id="rx_int_3" name="rapamycin metabolites (intestine) 3" compartment="Vint_3" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species sboTerm="SBO:0000247" id="rx_int_4" name="rapamycin metabolites (intestine) 4" compartment="Vint_4" initialConcentration="0" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter sboTerm="SBO:0000002" id="f_entero" name="fraction of the enterocytes of the intestine volume" value="0.1" units="dimensionless" constant="true"/>
+      <parameter sboTerm="SBO:0000002" id="Vchain" name="volume of chain compartment" value="0.1" units="litre" constant="true"/>
+      <parameter sboTerm="SBO:0000002" id="F_rap_abs" name="fraction absorbed rapamycin (fasted)" value="0.5" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Fraction of the rapamycin leaving the lumen which is absorbed into
+the enterocytes, the rest is excreted with the feces. Together with
+the metabolism of the gut wall it sets the oral bioavailability of
+about 14 % (Rapamune label); the split between the fraction
+absorbed and the gut wall cannot be identified from oral data and
+is assumed.</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000009" id="RAPABS_k" name="rate of rapamycin absorption" value="0.05" units="per_min" constant="true"/>
+      <parameter sboTerm="SBO:0000002" id="fed" name="fed state (0 fasted, 1 fed)" value="0" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>The dose is taken in the fasted state (0) or with a high fat meal
+(1). The effects of food on the dissolution and gastric emptying
+and on the fraction absorbed are <code>FED_f_dissolution</code> and
+<code>FED_f_absorption</code>.</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000002" id="FED_f_absorption" name="fed effect on the fraction absorbed" value="1.20035322885454" units="dimensionless" constant="true">
+        <distrib:listOfUncertainties>
+          <distrib:uncertainty distrib:name="fit PK_20261017_094949__24b18">
+            <notes>
+              <body xmlns="http://www.w3.org/1999/xhtml">
+                <p>The value of <code>GU__FED_f_absorption</code> is the result of the fit <code>PK_20261017_094949__24b18</code>, its uncertainty is the profile likelihood of the fit.</p>
+                <p>| | |
+|---|---|
+| fit | <code>PK_20261017_094949__24b18</code> |
+| record | <code>PK_20261017_094949__24b18/</code> |
+| cost | 149.756 |
+| data points | 308 |
+| value | 1.20035 dimensionless |
+| bounds | [1, 1.9] |
+| scale | LOG10 |
+| method | profile likelihood |
+| identifiability | identifiable |
+| 95 % confidence interval | [1.06938, 1.35089] |
+| Fisher confidence interval | [1.05725, 1.36283] |
+| distribution of the draws | <code>lognormal(0.18261587085810524, 0.05961336275831929, 1.0, 1.9)</code> |</p>
+              </body>
+            </notes>
+            <distrib:uncertSpan distrib:name="95 % confidence interval (profile likelihood)" distrib:units="dimensionless" distrib:type="confidenceInterval" distrib:valueLower="1.06938161768347" distrib:valueUpper="1.35088595750062"/>
+            <distrib:uncertParameter distrib:name="standard error (Fisher information)" distrib:value="0.0774305576892758" distrib:units="dimensionless" distrib:type="standardError"/>
+            <distrib:uncertParameter distrib:name="distribution of the draws" distrib:type="distribution">
+              <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <apply>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/distrib/lognormal"> lognormal </csymbol>
+                  <cn> 0.182615870858105 </cn>
+                  <cn> 0.0596133627583193 </cn>
+                  <cn> 1 </cn>
+                  <cn> 1.9 </cn>
+                </apply>
+              </math>
+            </distrib:uncertParameter>
+          </distrib:uncertainty>
+        </distrib:listOfUncertainties>
+      </parameter>
+      <parameter sboTerm="SBO:0000002" id="FED_f_dissolution" name="fed effect on the dissolution and gastric emptying" value="0.171348443283468" units="dimensionless" constant="true">
+        <distrib:listOfUncertainties>
+          <distrib:uncertainty distrib:name="fit PK_20261017_094949__24b18">
+            <notes>
+              <body xmlns="http://www.w3.org/1999/xhtml">
+                <p>The value of <code>GU__FED_f_dissolution</code> is the result of the fit <code>PK_20261017_094949__24b18</code>, its uncertainty is the profile likelihood of the fit.</p>
+                <p>| | |
+|---|---|
+| fit | <code>PK_20261017_094949__24b18</code> |
+| record | <code>PK_20261017_094949__24b18/</code> |
+| cost | 149.756 |
+| data points | 308 |
+| value | 0.171348 dimensionless |
+| bounds | [0.01, 1] |
+| scale | LOG10 |
+| method | profile likelihood |
+| identifiability | identifiable |
+| 95 % confidence interval | [0.0820429, 0.278234] |
+| Fisher confidence interval | [0.0893588, 0.328566] |
+| distribution of the draws | <code>lognormal(-1.7640561157131867, 0.3115413326613474, 0.01, 1.0)</code> |</p>
+              </body>
+            </notes>
+            <distrib:uncertSpan distrib:name="95 % confidence interval (profile likelihood)" distrib:units="dimensionless" distrib:type="confidenceInterval" distrib:valueLower="0.0820429415425245" distrib:valueUpper="0.278233967921996"/>
+            <distrib:uncertParameter distrib:name="standard error (Fisher information)" distrib:value="0.0566862261922454" distrib:units="dimensionless" distrib:type="standardError"/>
+            <distrib:uncertParameter distrib:name="distribution of the draws" distrib:type="distribution">
+              <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <apply>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/distrib/lognormal"> lognormal </csymbol>
+                  <apply>
+                    <minus/>
+                    <cn> 1.76405611571319 </cn>
+                  </apply>
+                  <cn> 0.311541332661347 </cn>
+                  <cn> 0.01 </cn>
+                  <cn> 1 </cn>
+                </apply>
+              </math>
+            </distrib:uncertParameter>
+          </distrib:uncertainty>
+        </distrib:listOfUncertainties>
+      </parameter>
+      <parameter sboTerm="SBO:0000002" id="f_absorption" name="factor of the fraction absorbed" value="NaN" units="dimensionless" constant="false"/>
+      <parameter sboTerm="SBO:0000002" id="f_dissolution" name="factor of the dissolution and gastric emptying" value="NaN" units="dimensionless" constant="false"/>
+      <parameter sboTerm="SBO:0000002" id="absorption" name="rapamycin leaving the lumen" value="NaN" units="mmole_per_min" constant="false"/>
+      <parameter sboTerm="SBO:0000009" id="RAPBASO_k" name="rate of rapamycin transport from the enterocytes into the blood" value="0.05" units="per_min" constant="true"/>
+      <parameter sboTerm="SBO:0000009" id="RAP2RX_k" name="rate of rapamycin metabolism by CYP3A4 (gut wall)" value="0.1" units="per_min" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Intrinsic clearance of CYP3A4 per volume of the enterocytes. The
+metabolism is linear: the Km of the microsomes (8.07 µM,
+Sattler1992) is above the concentrations of the enterocytes after
+the therapeutic doses.</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000002" id="r_cyp3a5" name="capacity of CYP3A5 relative to CYP3A4" value="1" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Metabolism of rapamycin by CYP3A5 of the genotype *1/*1 relative
+to the one by CYP3A4.</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000002" id="f_cyp3a4" name="CYP3A4 activity" value="1" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Activity of CYP3A4 relative to the reference (*1/*1), changed by
+the genotype and by inhibitors and inducers:
+f_cyp3a4 = 1: normal activity;
+f_cyp3a4 &lt; 1: reduced activity, inhibition of CYP3A4;
+f_cyp3a4 &gt; 1: increased activity, induction of CYP3A4.</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000002" id="f_cyp3a5" name="CYP3A5 activity" value="0" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>The fraction of functional CYP3A5 alleles: *3/*3 = 0 (no
+functional CYP3A5, the reference, most Caucasians), *1/*3 = 0.5,
+*1/*1 = 1.</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000009" id="RAPPG_k" name="rate of rapamycin efflux by P-glycoprotein" value="0.02" units="per_min" constant="true"/>
+      <parameter sboTerm="SBO:0000002" id="f_pg" name="P-glycoprotein activity" value="1" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Activity of P-glycoprotein relative to the reference:
+f_pg = 1: normal activity;
+f_pg &lt; 1: reduced activity, inhibition of the efflux;
+f_pg &gt; 1: increased activity, induction of the efflux.</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000009" id="RXEFF_k" name="rate of the release of the metabolites into the lumen" value="1" units="per_min" constant="true"/>
+      <parameter sboTerm="SBO:0000009" id="RXEXC_k" name="rate of the transit of the metabolites to the feces" value="0.0033" units="per_min" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>The metabolites pass the lumen and the chain of the colon in
+(n_chain + 1)/RXEXC_k, about 30 hr; the fecal radioactivity of
+14C-rapamycin is excreted within 24-72 hr (Leung2006).</p>
+          </body>
+        </notes>
+      </parameter>
+      <parameter sboTerm="SBO:0000002" id="PODOSE_rap" name="oral dose rapamycin [mg]" value="0" units="mg" constant="false"/>
+      <parameter sboTerm="SBO:0000002" id="Ka_dis_rap" name="Ka_dis [1/hr] dissolution rapamycin" value="3.64645771834172" units="per_hr" constant="true">
+        <distrib:listOfUncertainties>
+          <distrib:uncertainty distrib:name="fit PK_20261017_094949__24b18">
+            <notes>
+              <body xmlns="http://www.w3.org/1999/xhtml">
+                <p>The value of <code>GU__Ka_dis_rap</code> is the result of the fit <code>PK_20261017_094949__24b18</code>, its uncertainty is the profile likelihood of the fit.</p>
+                <p>| | |
+|---|---|
+| fit | <code>PK_20261017_094949__24b18</code> |
+| record | <code>PK_20261017_094949__24b18/</code> |
+| cost | 149.756 |
+| data points | 308 |
+| value | 3.64646 1/hr |
+| bounds | [0.1, 20] |
+| scale | LOG10 |
+| method | profile likelihood |
+| identifiability | identifiable |
+| 95 % confidence interval | [2.131, 7.8795] |
+| Fisher confidence interval | [1.71796, 7.73981] |
+| distribution of the draws | <code>lognormal(1.293756208240337, 0.33359590106273546, 0.1, 20.0)</code> |</p>
+              </body>
+            </notes>
+            <distrib:uncertSpan distrib:name="95 % confidence interval (profile likelihood)" distrib:units="per_hr" distrib:type="confidenceInterval" distrib:valueLower="2.13100349313304" distrib:valueUpper="7.87950350779998"/>
+            <distrib:uncertParameter distrib:name="standard error (Fisher information)" distrib:value="1.39456305142241" distrib:units="per_hr" distrib:type="standardError"/>
+            <distrib:uncertParameter distrib:name="distribution of the draws" distrib:type="distribution">
+              <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <apply>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/distrib/lognormal"> lognormal </csymbol>
+                  <cn> 1.29375620824034 </cn>
+                  <cn> 0.333595901062735 </cn>
+                  <cn> 0.1 </cn>
+                  <cn> 20 </cn>
+                </apply>
+              </math>
+            </distrib:uncertParameter>
+          </distrib:uncertainty>
+        </distrib:listOfUncertainties>
+      </parameter>
+      <parameter sboTerm="SBO:0000647" id="Mr_rap" name="Molecular weight rapamycin [g/mole]" value="914.1719" units="g_per_mole" constant="true"/>
+    </listOfParameters>
+    <listOfRules>
+      <assignmentRule variable="Vint_0">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> Vchain </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="Vint_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> Vchain </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="Vint_2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> Vchain </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="Vint_3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> Vchain </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="Vint_4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> Vchain </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule name="volume of the enterocytes" variable="Ventero">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> f_entero </ci>
+            <ci> Vgu </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="f_absorption">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:sbml="http://www.sbml.org/sbml/level3/version2/core">
+          <apply>
+            <plus/>
+            <cn sbml:units="dimensionless" type="integer"> 1 </cn>
+            <apply>
+              <times/>
+              <ci> fed </ci>
+              <apply>
+                <minus/>
+                <ci> FED_f_absorption </ci>
+                <cn sbml:units="dimensionless" type="integer"> 1 </cn>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="f_dissolution">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:sbml="http://www.sbml.org/sbml/level3/version2/core">
+          <apply>
+            <plus/>
+            <cn sbml:units="dimensionless" type="integer"> 1 </cn>
+            <apply>
+              <times/>
+              <ci> fed </ci>
+              <apply>
+                <minus/>
+                <ci> FED_f_dissolution </ci>
+                <cn sbml:units="dimensionless" type="integer"> 1 </cn>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="absorption">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> RAPABS_k </ci>
+            <ci> Vlumen </ci>
+            <ci> rap_lumen </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <rateRule variable="PODOSE_rap">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <minus/>
+              <ci> dissolution_rap </ci>
+            </apply>
+            <ci> Mr_rap </ci>
+          </apply>
+        </math>
+      </rateRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction sboTerm="SBO:0000655" id="RAPABS" name="absorption rapamycin (enterocytes)" reversible="false" compartment="Vapical">
+        <listOfReactants>
+          <speciesReference species="rap_lumen" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> F_rap_abs </ci>
+              <ci> f_absorption </ci>
+              <ci> absorption </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RAPEXC" name="excretion rapamycin (colon)" reversible="false" compartment="Vlumen">
+        <listOfReactants>
+          <speciesReference species="rap_lumen" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rap_colon" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:sbml="http://www.sbml.org/sbml/level3/version2/core">
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn sbml:units="dimensionless" type="integer"> 1 </cn>
+                <apply>
+                  <times/>
+                  <ci> F_rap_abs </ci>
+                  <ci> f_absorption </ci>
+                </apply>
+              </apply>
+              <ci> absorption </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RAPFEC" name="excretion rapamycin (feces)" reversible="false" compartment="Vlumen">
+        <listOfReactants>
+          <speciesReference species="rap_colon" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rap_feces" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:sbml="http://www.sbml.org/sbml/level3/version2/core">
+            <apply>
+              <times/>
+              <apply>
+                <divide/>
+                <ci> RXEXC_k </ci>
+                <cn sbml:units="dimensionless" type="integer"> 6 </cn>
+              </apply>
+              <ci> Vlumen </ci>
+              <ci> rap_colon </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RAPBASO" name="transport rapamycin (blood)" reversible="false" compartment="Vbaso">
+        <listOfReactants>
+          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rap_ext" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RAPBASO_k </ci>
+              <ci> Ventero </ci>
+              <ci> rap_entero </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000176" id="RAP2RX" name="rapamycin metabolism via CYP3A4/5" reversible="false" compartment="Ventero">
+        <listOfReactants>
+          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_entero" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <plus/>
+                <ci> f_cyp3a4 </ci>
+                <apply>
+                  <times/>
+                  <ci> r_cyp3a5 </ci>
+                  <ci> f_cyp3a5 </ci>
+                </apply>
+              </apply>
+              <ci> RAP2RX_k </ci>
+              <ci> Ventero </ci>
+              <ci> rap_entero </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RAPPG" name="efflux rapamycin by P-glycoprotein" reversible="false" compartment="Vapical">
+        <listOfReactants>
+          <speciesReference species="rap_entero" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rap_lumen" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> f_pg </ci>
+              <ci> RAPPG_k </ci>
+              <ci> Ventero </ci>
+              <ci> rap_entero </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RXEFF" name="release rapamycin metabolites (lumen)" reversible="false" compartment="Vapical">
+        <listOfReactants>
+          <speciesReference species="rx_entero" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_lumen" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RXEFF_k </ci>
+              <ci> Ventero </ci>
+              <ci> rx_entero </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RXEXC" name="excretion rapamycin metabolites (feces)" reversible="false" compartment="Vlumen">
+        <listOfReactants>
+          <speciesReference species="rx_lumen" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_int_0" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RXEXC_k </ci>
+              <ci> Vlumen </ci>
+              <ci> rx_lumen </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RXEXC_0" name="excretion rapamycin metabolites 0" reversible="false" compartment="Vint_0">
+        <listOfReactants>
+          <speciesReference species="rx_int_0" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_int_1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RXEXC_k </ci>
+              <ci> Vint_0 </ci>
+              <ci> rx_int_0 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RXEXC_1" name="excretion rapamycin metabolites 1" reversible="false" compartment="Vint_1">
+        <listOfReactants>
+          <speciesReference species="rx_int_1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_int_2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RXEXC_k </ci>
+              <ci> Vint_1 </ci>
+              <ci> rx_int_1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RXEXC_2" name="excretion rapamycin metabolites 2" reversible="false" compartment="Vint_2">
+        <listOfReactants>
+          <speciesReference species="rx_int_2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_int_3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RXEXC_k </ci>
+              <ci> Vint_2 </ci>
+              <ci> rx_int_2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RXEXC_3" name="excretion rapamycin metabolites 3" reversible="false" compartment="Vint_3">
+        <listOfReactants>
+          <speciesReference species="rx_int_3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_int_4" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RXEXC_k </ci>
+              <ci> Vint_3 </ci>
+              <ci> rx_int_3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction sboTerm="SBO:0000655" id="RXEXC_4" name="excretion rapamycin metabolites 4" reversible="false" compartment="Vint_4">
+        <listOfReactants>
+          <speciesReference species="rx_int_4" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rx_feces" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> RXEXC_k </ci>
+              <ci> Vint_4 </ci>
+              <ci> rx_int_4 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="dissolution_rap" name="dissolution rapamycin" reversible="false" compartment="Vgu">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>Swallowing, dissolution of tablet, and transport into intestine.
+Overall process describing the rates of this processes.</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="rap_stomach" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rap_lumen" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:sbml="http://www.sbml.org/sbml/level3/version2/core">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> f_dissolution </ci>
+                    <ci> Ka_dis_rap </ci>
+                  </apply>
+                  <cn sbml:units="min_per_hr" type="integer"> 60 </cn>
+                </apply>
+                <ci> PODOSE_rap </ci>
+              </apply>
+              <ci> Mr_rap </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+    <comp:listOfPorts>
+      <comp:port metaid="r_cyp3a5_port" sboTerm="SBO:0000599" comp:idRef="r_cyp3a5" comp:id="r_cyp3a5_port" comp:name="Port of r_cyp3a5"/>
+      <comp:port metaid="PODOSE_rap_port" sboTerm="SBO:0000599" comp:idRef="PODOSE_rap" comp:id="PODOSE_rap_port" comp:name="Port of PODOSE_rap"/>
+      <comp:port metaid="Ka_dis_rap_port" sboTerm="SBO:0000599" comp:idRef="Ka_dis_rap" comp:id="Ka_dis_rap_port" comp:name="Port of Ka_dis_rap"/>
+      <comp:port metaid="Mr_rap_port" sboTerm="SBO:0000599" comp:idRef="Mr_rap" comp:id="Mr_rap_port" comp:name="Port of Mr_rap"/>
+      <comp:port metaid="Vext_port" sboTerm="SBO:0000599" comp:idRef="Vext" comp:id="Vext_port" comp:name="Port of Vext"/>
+      <comp:port metaid="Vgu_port" sboTerm="SBO:0000599" comp:idRef="Vgu" comp:id="Vgu_port" comp:name="Port of Vgu"/>
+      <comp:port metaid="Vlumen_port" sboTerm="SBO:0000599" comp:idRef="Vlumen" comp:id="Vlumen_port" comp:name="Port of Vlumen"/>
+      <comp:port metaid="Vfeces_port" sboTerm="SBO:0000599" comp:idRef="Vfeces" comp:id="Vfeces_port" comp:name="Port of Vfeces"/>
+      <comp:port metaid="Vstomach_port" sboTerm="SBO:0000599" comp:idRef="Vstomach" comp:id="Vstomach_port" comp:name="Port of Vstomach"/>
+      <comp:port metaid="rap_lumen_port" sboTerm="SBO:0000599" comp:idRef="rap_lumen" comp:id="rap_lumen_port" comp:name="Port of rap_lumen"/>
+      <comp:port metaid="rx_lumen_port" sboTerm="SBO:0000599" comp:idRef="rx_lumen" comp:id="rx_lumen_port" comp:name="Port of rx_lumen"/>
+      <comp:port metaid="rap_ext_port" sboTerm="SBO:0000599" comp:idRef="rap_ext" comp:id="rap_ext_port" comp:name="Port of rap_ext"/>
+      <comp:port metaid="rap_feces_port" sboTerm="SBO:0000599" comp:idRef="rap_feces" comp:id="rap_feces_port" comp:name="Port of rap_feces"/>
+      <comp:port metaid="rx_feces_port" sboTerm="SBO:0000599" comp:idRef="rx_feces" comp:id="rx_feces_port" comp:name="Port of rx_feces"/>
+    </comp:listOfPorts>
+  </model>
+</sbml>

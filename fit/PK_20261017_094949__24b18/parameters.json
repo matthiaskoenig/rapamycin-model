@@ -1,0 +1,31 @@
+{
+  "sets": [
+    {
+      "sid": "PK_20261017_094949__24b18_0",
+      "values": {
+        "GU__Ka_dis_rap": 3.6464577183417197,
+        "LI__RAP2RX_k": 0.026150504562382288,
+        "Kp_rap": 0.6481355564328245,
+        "ftissue_rap": 3.715703198093926,
+        "Kpdeep_rap": 3.5021154443406233,
+        "kdeep_rap": 0.0006484108664485607,
+        "GU__FED_f_absorption": 1.2003532288545409,
+        "GU__FED_f_dissolution": 0.17134844328346824,
+        "r_cyp3a5": 0.45762893802923926
+      },
+      "units": {
+        "GU__Ka_dis_rap": "1/hr",
+        "LI__RAP2RX_k": "1/(min)",
+        "Kp_rap": "dimensionless",
+        "ftissue_rap": "l/(min)",
+        "Kpdeep_rap": "dimensionless",
+        "kdeep_rap": "1/(min)",
+        "GU__FED_f_absorption": "dimensionless",
+        "GU__FED_f_dissolution": "dimensionless",
+        "r_cyp3a5": "dimensionless"
+      },
+      "cost": 149.75605187335285,
+      "provenance": "optimization 'PK_20261017_094949__24b18', run '0'"
+    }
+  ]
+}

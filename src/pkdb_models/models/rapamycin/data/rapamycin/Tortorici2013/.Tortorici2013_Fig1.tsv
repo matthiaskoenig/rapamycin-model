@@ -1,19 +1,19 @@
 study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
 Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	0.33	hr	NA	2.48	NA	0.5800000000000001	NA	ng/ml	not all SE readable from the plot
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	0.67	hr	NA	12.57	NA	3.0700000000000003	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	1.0	hr	NA	18.45	NA	4.52	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	0.33	hr	NA	2.48	NA	3.013768405169847	0.5800000000000001	ng/ml	not all SE readable from the plot
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	0.67	hr	NA	12.57	NA	15.952187937709361	3.0700000000000003	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	1.0	hr	NA	18.45	NA	23.486608950633975	4.52	ng/ml	NA
 Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	2.0	hr	NA	24.27	NA	NA	NA	ng/ml	NA
 Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	3.0	hr	NA	23.059	NA	NA	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	5.0	hr	NA	20.82	NA	6.470000000000001	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	8.0	hr	NA	16.63	NA	3.9499999999999993	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	12.0	hr	NA	13.077	NA	1.3569999999999993	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	24.0	hr	NA	7.66	NA	0.5099999999999998	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	36.0	hr	NA	5.36	NA	0.35999999999999943	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	48.0	hr	NA	4.36	NA	0.3099999999999996	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	72.0	hr	NA	3.29	NA	0.29000000000000004	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	96.0	hr	NA	2.35	NA	0.16999999999999993	NA	ng/ml	NA
-Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	120.0	hr	NA	1.85	NA	0.11999999999999988	NA	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	5.0	hr	NA	20.82	NA	33.61910617491191	6.470000000000001	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	8.0	hr	NA	16.63	NA	20.524802069691194	3.9499999999999993	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	12.0	hr	NA	13.077	NA	7.0511788376128965	1.3569999999999993	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	24.0	hr	NA	7.66	NA	2.6500377355803812	0.5099999999999998	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	36.0	hr	NA	5.36	NA	1.8706148721743845	0.35999999999999943	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	48.0	hr	NA	4.36	NA	1.6108072510390539	0.3099999999999996	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	72.0	hr	NA	3.29	NA	1.5068842025849234	0.29000000000000004	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	96.0	hr	NA	2.35	NA	0.8833459118601271	0.16999999999999993	ng/ml	NA
+Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	120.0	hr	NA	1.85	NA	0.6235382907247953	0.11999999999999988	ng/ml	NA
 Tortorici2013	NA	all	27.0	RAP15	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15	144.0	hr	NA	1.41	NA	NA	NA	ng/ml	NA
 Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10	0.0	hr	NA	NA	NA	NA	NA	ng/ml	NA
 Tortorici2013	NA	all	27.0	RAP15, TAC10	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10	0.33	hr	NA	3.657	NA	NA	NA	ng/ml	no SE

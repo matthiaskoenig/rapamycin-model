@@ -1,0 +1,2011 @@
+{
+  "experiment_id": "RapamycinParameterScan",
+  "base_path": "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin",
+  "data_path": [
+    "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin/data/rapamycin"
+  ],
+  "models": {
+    "model": {
+      "sid": null,
+      "name": null,
+      "language": "SBML",
+      "language_type": "SBML",
+      "source": {
+        "source": "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin/models/output/models/rapamycin_body_flat.xml",
+        "path": "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin/models/output/models/rapamycin_body_flat.xml",
+        "content": null
+      },
+      "base_path": null,
+      "changes": {},
+      "selections": [
+        "Afeces_rap",
+        "Afeces_rx",
+        "Aurine_rx",
+        "GU__f_cyp3a4",
+        "GU__f_cyp3a5",
+        "GU__f_pg",
+        "GU__fed",
+        "KI__f_renal_function",
+        "LI__f_cyp3a4",
+        "LI__f_cyp3a5",
+        "PODOSE_rap",
+        "[Cve_rx]",
+        "[Cveblood_rap]",
+        "[Cveplasma_rap]",
+        "f_cirrhosis",
+        "time"
+      ],
+      "parameters": {}
+    }
+  },
+  "tasks": {
+    "task_scan_po_dose_scan": {
+      "sid": "model__scan_po_dose_scan",
+      "name": null,
+      "model": "model",
+      "simulation": "scan_po_dose_scan",
+      "observables": []
+    },
+    "task_scan_po_food_scan": {
+      "sid": "model__scan_po_food_scan",
+      "name": null,
+      "model": "model",
+      "simulation": "scan_po_food_scan",
+      "observables": []
+    },
+    "task_scan_po_hepatic_scan": {
+      "sid": "model__scan_po_hepatic_scan",
+      "name": null,
+      "model": "model",
+      "simulation": "scan_po_hepatic_scan",
+      "observables": []
+    },
+    "task_scan_po_renal_scan": {
+      "sid": "model__scan_po_renal_scan",
+      "name": null,
+      "model": "model",
+      "simulation": "scan_po_renal_scan",
+      "observables": []
+    },
+    "task_scan_po_cyp3a4_scan": {
+      "sid": "model__scan_po_cyp3a4_scan",
+      "name": null,
+      "model": "model",
+      "simulation": "scan_po_cyp3a4_scan",
+      "observables": []
+    },
+    "task_scan_po_cyp3a5_scan": {
+      "sid": "model__scan_po_cyp3a5_scan",
+      "name": null,
+      "model": "model",
+      "simulation": "scan_po_cyp3a5_scan",
+      "observables": []
+    },
+    "task_scan_po_pgp_scan": {
+      "sid": "model__scan_po_pgp_scan",
+      "name": null,
+      "model": "model",
+      "simulation": "scan_po_pgp_scan",
+      "observables": []
+    }
+  },
+  "observables": {},
+  "simulations": {
+    "scan_po_dose_scan": {
+      "type": "Scan",
+      "simulation": {
+        "type": "Simulation",
+        "time_unit": "hr",
+        "start": 0.0,
+        "end": 672,
+        "preinit_changes": {},
+        "changes": [],
+        "presimulation": null,
+        "times": null,
+        "steps": null,
+        "time_shift": 0.0
+      },
+      "dimensions": [
+        {
+          "id": "dim_scan",
+          "kind": "values",
+          "labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "values": {
+            "PODOSE_rap": {
+              "value": [
+                1.0,
+                2.0,
+                3.0,
+                5.0,
+                7.5,
+                10.0,
+                15.0,
+                20.0,
+                25.0,
+                30.0,
+                40.0
+              ],
+              "unit": "milligram"
+            }
+          },
+          "simulations": {},
+          "models": {},
+          "at": null,
+          "design": null,
+          "coordinates": {}
+        }
+      ]
+    },
+    "scan_po_food_scan": {
+      "type": "Scan",
+      "simulation": {
+        "type": "Simulation",
+        "time_unit": "hr",
+        "start": 0.0,
+        "end": 672,
+        "preinit_changes": {
+          "PODOSE_rap": {
+            "value": 5,
+            "unit": "milligram"
+          }
+        },
+        "changes": [],
+        "presimulation": null,
+        "times": null,
+        "steps": null,
+        "time_shift": 0.0
+      },
+      "dimensions": [
+        {
+          "id": "dim_scan",
+          "kind": "values",
+          "labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "values": {
+            "GU__fed": {
+              "value": [
+                0.0,
+                0.1,
+                0.2,
+                0.30000000000000004,
+                0.4,
+                0.5,
+                0.6000000000000001,
+                0.7000000000000001,
+                0.8,
+                0.9,
+                1.0
+              ],
+              "unit": "dimensionless"
+            }
+          },
+          "simulations": {},
+          "models": {},
+          "at": null,
+          "design": null,
+          "coordinates": {}
+        }
+      ]
+    },
+    "scan_po_hepatic_scan": {
+      "type": "Scan",
+      "simulation": {
+        "type": "Simulation",
+        "time_unit": "hr",
+        "start": 0.0,
+        "end": 672,
+        "preinit_changes": {
+          "PODOSE_rap": {
+            "value": 5,
+            "unit": "milligram"
+          }
+        },
+        "changes": [],
+        "presimulation": null,
+        "times": null,
+        "steps": null,
+        "time_shift": 0.0
+      },
+      "dimensions": [
+        {
+          "id": "dim_scan",
+          "kind": "values",
+          "labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "values": {
+            "f_cirrhosis": {
+              "value": [
+                0.0,
+                0.1,
+                0.2,
+                0.3,
+                0.3994897959183674,
+                0.5,
+                0.6,
+                0.6979591836734694,
+                0.8127551020408164,
+                0.9
+              ],
+              "unit": "dimensionless"
+            }
+          },
+          "simulations": {},
+          "models": {},
+          "at": null,
+          "design": null,
+          "coordinates": {}
+        }
+      ]
+    },
+    "scan_po_renal_scan": {
+      "type": "Scan",
+      "simulation": {
+        "type": "Simulation",
+        "time_unit": "hr",
+        "start": 0.0,
+        "end": 672,
+        "preinit_changes": {
+          "PODOSE_rap": {
+            "value": 5,
+            "unit": "milligram"
+          }
+        },
+        "changes": [],
+        "presimulation": null,
+        "times": null,
+        "steps": null,
+        "time_shift": 0.0
+      },
+      "dimensions": [
+        {
+          "id": "dim_scan",
+          "kind": "values",
+          "labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "values": {
+            "KI__f_renal_function": {
+              "value": [
+                0.1,
+                0.14,
+                0.19801980198019803,
+                0.27,
+                0.3465346534653465,
+                0.49504950495049505,
+                0.7,
+                1.0,
+                1.4,
+                2.0
+              ],
+              "unit": "dimensionless"
+            }
+          },
+          "simulations": {},
+          "models": {},
+          "at": null,
+          "design": null,
+          "coordinates": {}
+        }
+      ]
+    },
+    "scan_po_cyp3a4_scan": {
+      "type": "Scan",
+      "simulation": {
+        "type": "Simulation",
+        "time_unit": "hr",
+        "start": 0.0,
+        "end": 672,
+        "preinit_changes": {
+          "PODOSE_rap": {
+            "value": 5,
+            "unit": "milligram"
+          }
+        },
+        "changes": [],
+        "presimulation": null,
+        "times": null,
+        "steps": null,
+        "time_shift": 0.0
+      },
+      "dimensions": [
+        {
+          "id": "dim_scan",
+          "kind": "values",
+          "labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "values": {
+            "GU__f_cyp3a4": {
+              "value": [
+                0.1,
+                0.16681005372000587,
+                0.2782559402207124,
+                0.46415888336127786,
+                0.774263682681127,
+                1.0,
+                1.291549665014884,
+                2.1544346900318834,
+                3.593813663804626,
+                5.994842503189409,
+                10.0
+              ],
+              "unit": "dimensionless"
+            },
+            "LI__f_cyp3a4": {
+              "value": [
+                0.1,
+                0.16681005372000587,
+                0.2782559402207124,
+                0.46415888336127786,
+                0.774263682681127,
+                1.0,
+                1.291549665014884,
+                2.1544346900318834,
+                3.593813663804626,
+                5.994842503189409,
+                10.0
+              ],
+              "unit": "dimensionless"
+            }
+          },
+          "simulations": {},
+          "models": {},
+          "at": null,
+          "design": null,
+          "coordinates": {}
+        }
+      ]
+    },
+    "scan_po_cyp3a5_scan": {
+      "type": "Scan",
+      "simulation": {
+        "type": "Simulation",
+        "time_unit": "hr",
+        "start": 0.0,
+        "end": 672,
+        "preinit_changes": {
+          "PODOSE_rap": {
+            "value": 5,
+            "unit": "milligram"
+          }
+        },
+        "changes": [],
+        "presimulation": null,
+        "times": null,
+        "steps": null,
+        "time_shift": 0.0
+      },
+      "dimensions": [
+        {
+          "id": "dim_scan",
+          "kind": "values",
+          "labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "values": {
+            "GU__f_cyp3a5": {
+              "value": [
+                0.0,
+                0.1,
+                0.2,
+                0.30000000000000004,
+                0.4,
+                0.5,
+                0.6000000000000001,
+                0.7000000000000001,
+                0.8,
+                0.9,
+                1.0
+              ],
+              "unit": "dimensionless"
+            },
+            "LI__f_cyp3a5": {
+              "value": [
+                0.0,
+                0.1,
+                0.2,
+                0.30000000000000004,
+                0.4,
+                0.5,
+                0.6000000000000001,
+                0.7000000000000001,
+                0.8,
+                0.9,
+                1.0
+              ],
+              "unit": "dimensionless"
+            }
+          },
+          "simulations": {},
+          "models": {},
+          "at": null,
+          "design": null,
+          "coordinates": {}
+        }
+      ]
+    },
+    "scan_po_pgp_scan": {
+      "type": "Scan",
+      "simulation": {
+        "type": "Simulation",
+        "time_unit": "hr",
+        "start": 0.0,
+        "end": 672,
+        "preinit_changes": {
+          "PODOSE_rap": {
+            "value": 5,
+            "unit": "milligram"
+          }
+        },
+        "changes": [],
+        "presimulation": null,
+        "times": null,
+        "steps": null,
+        "time_shift": 0.0
+      },
+      "dimensions": [
+        {
+          "id": "dim_scan",
+          "kind": "values",
+          "labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "values": {
+            "GU__f_pg": {
+              "value": [
+                0.1,
+                0.16681005372000587,
+                0.2782559402207124,
+                0.46415888336127786,
+                0.774263682681127,
+                1.0,
+                1.291549665014884,
+                2.1544346900318834,
+                3.593813663804626,
+                5.994842503189409,
+                10.0
+              ],
+              "unit": "dimensionless"
+            }
+          },
+          "simulations": {},
+          "models": {},
+          "at": null,
+          "design": null,
+          "coordinates": {}
+        }
+      ]
+    }
+  },
+  "data": {
+    "task_scan_po_dose_scan__time": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__GU__fed": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_dose_scan__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_dose_scan__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_dose_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__time": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__GU__fed": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_food_scan__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_food_scan__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_food_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__time": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__GU__fed": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_hepatic_scan__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_hepatic_scan__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_hepatic_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__time": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__GU__fed": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_renal_scan__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_renal_scan__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_renal_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__time": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__GU__fed": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a4_scan__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a4_scan__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_cyp3a4_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__time": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__GU__fed": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_cyp3a5_scan__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_cyp3a5_scan__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_cyp3a5_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__time": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__GU__fed": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_scan_po_pgp_scan__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_scan_po_pgp_scan__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_scan_po_pgp_scan",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    }
+  },
+  "figures": {}
+}

@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	0.25	hr		1.5674294954811016e-06		6.919923922404528e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	0.5	hr		4.592462314800969e-06		1.171223924078174e-06			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	0.75	hr		6.1371389779099534e-06		1.4891072455847744e-06			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	1.0	hr		6.494402201599065e-06		1.420739359851249e-06			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	2.0	hr		4.757639126733167e-06		1.3839847844809056e-06			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	3.0	hr		3.6110276415190622e-06		1.0668671832945203e-06			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	4.0	hr		2.759984199908135e-06		9.267403646950862e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	5.0	hr		2.3292118254783374e-06		6.716461094461555e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	6.0	hr		1.924364553318692e-06		6.552378168701094e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	8.0	hr		1.4708393465167765e-06		3.8537609830273715e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	10.0	hr		1.276893328267911e-06		3.255405247087555e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	12.0	hr		1.0255182860028842e-06		2.6154818366217556e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	24.0	hr		6.340164251384231e-07		1.8114755003954943e-07			mole/meter^3	ng/ml	dimensionless
+BasaDenes2019		RAP05	8.0	RAP05	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP05	48.0	hr		4.579007514888611e-07		1.180303179303586e-07			mole/meter^3	ng/ml	dimensionless

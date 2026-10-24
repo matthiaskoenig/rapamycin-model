@@ -1,103 +1,107 @@
-from typing import Dict
+"""Simulation experiment of the study Wang2014."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
+from typing import ClassVar, override
 
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Simulation
+
+from pkdb_models.models.rapamycin import MODEL
 from pkdb_models.models.rapamycin.experiments.base_experiment import (
     RapamycinSimulationExperiment,
 )
-from pkdb_models.models.rapamycin.experiments.metadata import (
-    RapamycinMappingMetaData,
-    Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration
-)
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
-from pkdb_models.models.rapamycin.helpers import run_experiments
 
 
 class Wang2014(RapamycinSimulationExperiment):
-    """Simulation experiment of Wang2014."""
+    """Simulation experiment of Wang2014.
 
-    interventions = ["RAP", "RAP_CSA"]
-    colors = {
+    Steady state profiles of rapamycin in whole blood of Chinese renal
+    transplant recipients (1 mg tablets once daily, individual doses of 1 to
+    4 mg), without (n = 15) and with cyclosporine (n = 9) (Fig1, mean and SE).
+    The comedication was prednisone (23 of 24), mycophenolate mofetil (21 of
+    24) and partly tacrolimus; the CYP3A5 genotypes are mixed (3 *1/*1, 8
+    *1/*3, 13 *3/*3). The dose was taken with or without food as usual.
+    Cyclosporine (low doses, mostly 4 to 6 h apart) shows no effect on
+    rapamycin (dose normalised Cmax 15.9 vs 18.3 ng/ml, AUCtau 231 vs 246
+    ng*h/ml, CL/F 11.1 vs 9.6 L/h), so no interaction is simulated.
+    """
+
+    interventions: ClassVar[list[str]] = ["RAP", "RAP_CSA"]
+    names: ClassVar[dict[str, str]] = {
+        "RAP": "without cyclosporine",
+        "RAP_CSA": "with cyclosporine",
+    }
+    colors: ClassVar[dict[str, str]] = {
         "RAP": "black",
         "RAP_CSA": "#e3256b",
     }
-    f_cyp3a4 = {
-        "RAP": 1.0,
-        "RAP_CSA": 0.6,
+    #: the mean dose [mg] is not reported; the dose normalised (to 2 mg)
+    #: values of Tab1 give it as value / normalised value * 2 mg (a ratio of
+    #: means): without cyclosporine 1.53 (Cmax), 1.54 (AUCtau) and 1.53 mg
+    #: (Ctrough), with cyclosporine 1.80, 1.88 and 1.86 mg
+    doses: ClassVar[dict[str, float]] = {
+        "RAP": 1.5,
+        "RAP_CSA": 1.85,
     }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig1"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 dset = DataSet.from_df(df_label, self.ureg)
 
                 # unit conversion
                 if label.startswith("rapamycin_"):
-                   dset.unit_conversion("mean", 1 / self.Mr.rap)
+                    dset.unit_conversion("mean", 1 / self.Mr.rap)
 
                 dsets[label] = dset
 
-        # console.print(dsets)
-        #console.print(dsets.keys())
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
+        # 15 doses, every 24 hours, the data is reported from the last dose
+        dose_times = [24 * k for k in range(15)]
         for intervention in self.interventions:
-
-            tc0 = Timecourse(
-                start=0,
-                end=24* 60,  # [min]
-                steps=50,
-                changes={
+            simulations[f"rap_{intervention}"] = Simulation(
+                time_unit="hr",
+                end=24 * 14 + 25,
+                # every 10 min
+                time_shift=-24 * 14,
+                preinit_changes={
                     **self.default_changes(),
-
                     # physiological changes
-                    "BW": Q_(70, "kg"),  # no weight, only bmi
-
+                    "BW": Q(70, "kg"),  # no weight, only bmi
+                },
+                changes=[
                     # dose
-                    "PODOSE_rap": Q_(2.5, "mg"), # 1 - 4 [mg]
-
-                    # endstage renal disease
-                    #"KI__f_renal_function": Q_(self.renal_map["Mild renal impairment"], "dimensionless"),
-
-                    # CYP3A4 activity (inhibition by cyclosporine)
-                    "GU__f_cyp3a4": Q_(self.f_cyp3a4[intervention], "dimensionless"),
-                    "LI__f_cyp3a4": Q_(self.f_cyp3a4[intervention], "dimensionless"),
-                },
-            )
-            tc1 = Timecourse(
-                start=0,
-                end=24* 60,  # [min]
-                steps=100,
-                changes={
-                    "PODOSE_rap": Q_(2.5, "mg"),
-                },
-            )
-            tc2 = Timecourse(
-                start=0,
-                end=25 * 60,  # [min]
-                steps=300,
-                changes={
-                    "PODOSE_rap": Q_(2.5, "mg"),
-                },
+                    self.add_doses(
+                        dose_times,
+                        {"PODOSE_rap": Q(self.doses[intervention], "mg")},
+                    ),
+                ],
             )
 
-            tcsims[f"rap_{intervention}"] = TimecourseSim(
-                [tc0] + [tc1]*13 + [tc2],
-                time_offset=-24*60*14
-            )
+        return simulations
 
-        #console.print(tcsims.keys())
-        return tcsims
-
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
 
         mappings = {}
         for intervention in self.interventions:
@@ -109,32 +113,43 @@ class Wang2014(RapamycinSimulationExperiment):
                     xid="time",
                     yid="mean",
                     yid_sd="mean_sd",
-                    count="count"
+                    count="count",
                 ),
                 observable=FitData(
-                    self, task=f"task_rap_{intervention}", xid="time", yid="[Cveblood_rap]",
+                    self,
+                    task=f"task_rap_{intervention}",
+                    xid="time",
+                    yid="[Cveblood_rap]",
                 ),
-                metadata=RapamycinMappingMetaData(
+                metadata=PKPDMappingMetaData(
                     tissue=Tissue.BLOOD,
                     route=Route.PO,
                     application_form=ApplicationForm.TABLET,
                     dosing=Dosing.MULTIPLE,
                     health=Health.RENAL_TRANSPLANT,
-                    fasting=Fasting.FED,
-                    coadministration=Coadministration.CYCLOSPORINE if "CSA" in intervention else Coadministration.NONE
-                )
+                    # with or without food
+                    fasting=Fasting.NR,
+                    # prednisone, mycophenolate mofetil, partly tacrolimus
+                    coadministration=Coadministration.CYCLOSPORINE
+                    if intervention == "RAP_CSA"
+                    else Coadministration.COMEDICATION,
+                ),
             )
 
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
 
         fig1 = Figure(
             experiment=self,
             sid="Fig1",
             name=f"{self.__class__.__name__}",
         )
-        plots = fig1.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time, min=-25, max=25), legend=True)
+        plots = fig1.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time, min=-25, max=25),
+            legend=True,
+        )
         plots[0].set_yaxis(self.label_rap_blood, unit=self.unit_rap, scale="linear")
 
         for intervention in self.interventions:
@@ -143,7 +158,7 @@ class Wang2014(RapamycinSimulationExperiment):
                 task=f"task_rap_{intervention}",
                 xid="time",
                 yid="[Cveblood_rap]",
-                label=intervention,
+                label=f"{self.names[intervention]} ({self.doses[intervention]:g} mg)",
                 color=self.colors[intervention],
             )
             # data
@@ -153,13 +168,11 @@ class Wang2014(RapamycinSimulationExperiment):
                 yid="mean",
                 yid_sd="mean_sd",
                 count="count",
-                label=intervention,
+                label=f"{self.names[intervention]} ({self.doses[intervention]:g} mg)",
                 color=self.colors[intervention],
             )
-        return {
-            fig1.sid: fig1
-        }
+        return self.figures_by_sid(fig1)
 
 
 if __name__ == "__main__":
-    run_experiments(Wang2014, output_dir=Wang2014.__name__)
+    MODEL.run_experiments(Wang2014, output_dir=Wang2014.__name__)

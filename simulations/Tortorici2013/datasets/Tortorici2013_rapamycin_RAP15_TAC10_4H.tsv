@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	0.0	hr						no SE	mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	0.33	hr		3.139453312883496e-06					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	0.67	hr		1.4340847711464332e-05					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	1.0	hr		2.2304339041705394e-05					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	2.0	hr		2.97974593180998e-05					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	3.0	hr		3.230245865137618e-05					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	5.0	hr		2.672363917552049e-05					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	8.0	hr		2.0783837262991784e-05					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	12.0	hr		1.6542840575169723e-05					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	24.0	hr		8.291657181761984e-06					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	36.0	hr		5.644452646159874e-06					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	48.0	hr		4.5396276127061006e-06					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	72.0	hr		3.2816585152092292e-06					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	96.0	hr		2.494060471559014e-06					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	120.0	hr		1.9580562474081735e-06					mole/meter^3	ng/ml	dimensionless
+Tortorici2013		all	27.0	RAP15, TAC10_4H	concentration	rapamycin	blood	LC MS/MS	rapamycin_RAP15_TAC10_4H	144.0	hr		1.6298903958872505e-06					mole/meter^3	ng/ml	dimensionless

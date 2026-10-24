@@ -1,49 +1,76 @@
-from typing import Dict
+"""Simulation experiment of the study Renders2007."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
+from typing import ClassVar, override
 
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Genotype,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Simulation
+
+from pkdb_models.models.rapamycin import MODEL
 from pkdb_models.models.rapamycin.experiments.base_experiment import (
     RapamycinSimulationExperiment,
 )
-from pkdb_models.models.rapamycin.experiments.metadata import (
-    RapamycinMappingMetaData,
-    Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration,
-    Genotype
-)
 
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
-from pkdb_models.models.rapamycin.helpers import run_experiments
 
 class Renders2007(RapamycinSimulationExperiment):
-    """Simulation experiment of Renders2007."""
+    """Simulation experiment of Renders2007.
 
+    Steady state profiles of rapamycin in whole blood of stable kidney
+    transplant recipients by CYP3A5 genotype (Fig4, 7 *3/*3 and 3 *1/*3, no
+    *1/*1 in the profile cohort). The assay is described for plasma, but the
+    concentrations are whole blood levels. The patients received
+    mycophenolate mofetil and/or prednisolone, some verapamil or diltiazem
+    (CYP3A inhibitors), which is not reported per patient and not simulated.
+    """
 
-    groups = ["CYP3A5_1_1", "CYP3A5_1_3", "CYP3A5_3_3"]
-    colors = {
-        "CYP3A5_1_1": "black",
-        "CYP3A5_1_3": "#CC3333",
-        "CYP3A5_3_3": "#FF6666",
-
+    groups: ClassVar[list[str]] = ["CYP3A5_1_3", "CYP3A5_3_3"]
+    colors: ClassVar[dict[str, str]] = {
+        "CYP3A5_1_3": "#a50f15",
+        "CYP3A5_3_3": "#fb6a4a",
     }
-    f_cyp3a5 = {
-        "CYP3A5_1_1": RapamycinSimulationExperiment.cyp3a5_activity["*1/*1"],
+    genotypes: ClassVar[dict[str, Genotype]] = {
+        "CYP3A5_1_3": Genotype.CYP3A5_1_3,
+        "CYP3A5_3_3": Genotype.CYP3A5_3_3,
+    }
+    f_cyp3a5: ClassVar[dict[str, float]] = {
         "CYP3A5_1_3": RapamycinSimulationExperiment.cyp3a5_activity["*1/*3"],
         "CYP3A5_3_3": RapamycinSimulationExperiment.cyp3a5_activity["*3/*3"],
     }
-    doses = {
-        "CYP3A5_1_1": 6.5, # assumed same as expressors
-        "CYP3A5_1_3": 6.5,
-        "CYP3A5_3_3": 2.31
+    #: legend names of the groups
+    legends: ClassVar[dict[str, str]] = {
+        "CYP3A5_1_3": "CYP3A5 *1/*3",
+        "CYP3A5_3_3": "CYP3A5 *3/*3",
+    }
+    #: the once daily dose of the profile cohort is not reported per genotype
+    #: (2.9 +- 2.26 mg overall; 6.5 and 2.31 mg are the doses of the trough
+    #: cohort of 20 patients); it is estimated as clearance times AUC0-24 of
+    #: Tab3, read as L/h (13.6 L/h * 163.4 ng*h/ml = 2.2 mg for *3/*3,
+    #: 17.92 L/h * 95.2 ng*h/ml = 1.7 mg for *1/*3)
+    doses: ClassVar[dict[str, float]] = {
+        "CYP3A5_1_3": 1.7,
+        "CYP3A5_3_3": 2.2,
     }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig4"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 if not label.startswith("rapamycin_"):
                     continue
                 dset = DataSet.from_df(df_label, self.ureg)
@@ -51,64 +78,41 @@ class Renders2007(RapamycinSimulationExperiment):
                 dset.unit_conversion("mean", 1 / self.Mr.rap)
                 dsets[label] = dset
 
-        #console.print(dsets.keys())
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
+        # 14 doses, every 24 hours, the data is reported from the last dose
+        dose_times = [24 * k for k in range(14)]
         for group in self.groups:
-
-            tc0 = Timecourse(
-                start=0,
-                end=24 * 60,  # [min]
-                steps=100,
-                changes={
+            simulations[f"rap_{group}"] = Simulation(
+                time_unit="hr",
+                end=24 * 13 + 25,
+                # every 6 min
+                time_shift=-24 * 13,
+                preinit_changes={
                     **self.default_changes(),
-                    "BW": Q_(70, "kg"),  # no bodyweight in article
-                    "PODOSE_rap": Q_(self.doses[group], "mg"),
-
+                    "BW": Q(70, "kg"),  # no bodyweight in article
                     # CYP3A5 activity
-                    "GU__f_cyp3a5": Q_(self.f_cyp3a5[group], "dimensionless"),
-                    "LI__f_cyp3a5": Q_(self.f_cyp3a5[group], "dimensionless"),
+                    "GU__f_cyp3a5": Q(self.f_cyp3a5[group], "dimensionless"),
+                    "LI__f_cyp3a5": Q(self.f_cyp3a5[group], "dimensionless"),
                 },
-            )
-            tc1 = Timecourse(
-                start=0,
-                end=24 * 60,  # [min]
-                steps=100,
-                changes={
-                    "PODOSE_rap": Q_(self.doses[group], "mg"),
-                },
-            )
-            tc2 = Timecourse(
-                start=0,
-                end=25 * 60,  # [min]
-                steps=500,
-                changes={
-                    "PODOSE_rap": Q_(self.doses[group], "mg"),
-                },
+                changes=[
+                    self.add_doses(
+                        dose_times, {"PODOSE_rap": Q(self.doses[group], "mg")}
+                    ),
+                ],
             )
 
-            tcsims[f"rap_{group}"] = TimecourseSim(
-                [tc0] + [tc1 for _ in range(12)] + [tc2],
-                time_offset=-24*60*13,
-            )
+        return simulations
 
-        #console.print(tcsims.keys())
-        return tcsims
-
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
 
         mappings = {}
 
         for group in self.groups:
-            if group == "CYP3A5_1_1":
-                continue
-
-            genotype_tokens = group.split("_")
-            genotype = Genotype(f"{genotype_tokens[0]} *{genotype_tokens[1]}/*{genotype_tokens[2]}")
-
             mappings[f"fm_rap_{group}"] = FitMapping(
                 self,
                 reference=FitData(
@@ -120,24 +124,29 @@ class Renders2007(RapamycinSimulationExperiment):
                     count="count",
                 ),
                 observable=FitData(
-                    self, task=f"task_rap_{group}", xid="time", yid="[Cveblood_rap]",
+                    self,
+                    task=f"task_rap_{group}",
+                    xid="time",
+                    yid="[Cveblood_rap]",
                 ),
-                metadata=RapamycinMappingMetaData(
+                metadata=PKPDMappingMetaData(
                     tissue=Tissue.BLOOD,
                     route=Route.PO,
                     application_form=ApplicationForm.NR,
-                    dosing=Dosing.SINGLE,
+                    dosing=Dosing.MULTIPLE,
                     health=Health.RENAL_TRANSPLANT,
                     fasting=Fasting.NR,
-                    coadministration=Coadministration.NONE,
-                    genotype=genotype,
-                )
+                    # mycophenolate mofetil, prednisolone, partly verapamil or
+                    # diltiazem
+                    coadministration=Coadministration.COMEDICATION,
+                    genotype=self.genotypes[group],
+                ),
             )
 
         return mappings
 
-
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
         fig = Figure(
             experiment=self,
             sid="Fig4",
@@ -145,7 +154,7 @@ class Renders2007(RapamycinSimulationExperiment):
         )
         plots = fig.create_plots(
             xaxis=Axis(self.label_time, unit=self.unit_time, min=-5, max=25),
-            legend=True
+            legend=True,
         )
         plots[0].set_yaxis(self.label_rap_blood, unit=self.unit_rap, scale="linear")
 
@@ -155,24 +164,22 @@ class Renders2007(RapamycinSimulationExperiment):
                 task=f"task_rap_{group}",
                 xid="time",
                 yid="[Cveblood_rap]",
-                label=group,
+                label=f"{self.legends[group]} ({self.doses[group]:g} mg)",
                 color=self.colors[group],
             )
             # data
-            if group == "CYP3A5_1_1":
-                continue
             plots[0].add_data(
                 dataset=f"rapamycin_{group}",
                 xid="time",
                 yid="mean",
                 yid_sd="mean_sd",
                 count="count",
-                label=group,
+                label=f"{self.legends[group]} ({self.doses[group]:g} mg)",
                 color=self.colors[group],
-                )
+            )
 
-        return {fig.sid: fig}
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    run_experiments(Renders2007, output_dir=Renders2007.__name__)
+    MODEL.run_experiments(Renders2007, output_dir=Renders2007.__name__)

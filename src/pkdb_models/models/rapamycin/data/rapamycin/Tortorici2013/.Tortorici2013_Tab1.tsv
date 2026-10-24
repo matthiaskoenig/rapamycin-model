@@ -15,5 +15,5 @@ Tortorici2013	all	27.0	RAP15, TAC10_4H	cmax	rapamycin	blood	LC MS/MS	NA	NA	25.3	
 Tortorici2013	all	27.0	RAP15, TAC10_4H	tmax	rapamycin	blood	LC MS/MS	NA	NA	3.0	1.0	12.0	NA	NA	NA	hr	NA
 Tortorici2013	all	27.0	RAP15, TAC10_4H	thalf	rapamycin	blood	LC MS/MS	NA	NA	68.7	NA	NA	17.9	NA	NA	hr	NA
 Tortorici2013	all	27.0	RAP15, TAC10_4H	auc_inf	rapamycin	blood	LC MS/MS	NA	NA	832.0	NA	NA	26.1	NA	NA	ng*hr/ml	NA
-Tortorici2013	all	27.0	RAP15, TAC10_4H	oral clearance	rapamycin	blood	LC MS/MS	NA	NA	278.0	NA	NA	278.0	NA	NA	mL/hr/kg	cl/f
-Tortorici2013	all	27.0	RAP15, TAC10_4H	vd	rapamycin	blood	LC MS/MS	NA	NA	21.3	NA	NA	21.3	NA	NA	L/kg	vss/f
+Tortorici2013	all	27.0	RAP15, TAC10_4H	oral clearance	rapamycin	blood	LC MS/MS	NA	NA	278.0	NA	NA	35.9	NA	NA	mL/hr/kg	cl/f
+Tortorici2013	all	27.0	RAP15, TAC10_4H	vd	rapamycin	blood	LC MS/MS	NA	NA	21.3	NA	NA	32.9	NA	NA	L/kg	vss/f

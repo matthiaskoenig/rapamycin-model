@@ -4,9 +4,9 @@ Rogers2008	all	6.0	NA	healthy	6.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
 Rogers2008	all	6.0	NA	sex	6.0	NA	MF	NA	NA	NA	NA	NA	NA	NA	NA
 Rogers2008	all	6.0	NA	age	6.0	NA	NA	NA	NA	NA	NA	18.0	70.0	NA	NA
 Rogers2008	PRE_ALL	4.0	all	age	4.0	NA	NA	42.9	NA	NA	NA	NA	NA	years	NA
-Rogers2008	PRE_ALL	4.0	all	weight	4.0	NA	NA	31.1	NA	NA	NA	NA	NA	kg	NA
-Rogers2008	PRE_ALL	4.0	all	bmi	4.0	NA	NA	2.1	NA	NA	NA	NA	NA	kg/m^2	NA
-Rogers2008	PRE_ALL	4.0	all	body surface area	4.0	NA	NA	NA	NA	NA	NA	NA	NA	m^2	NA
+Rogers2008	PRE_ALL	4.0	all	weight	4.0	NA	NA	93.8	NA	NA	NA	NA	NA	kg	NA
+Rogers2008	PRE_ALL	4.0	all	bmi	4.0	NA	NA	31.1	NA	NA	NA	NA	NA	kg/m^2	NA
+Rogers2008	PRE_ALL	4.0	all	body surface area	4.0	NA	NA	2.1	NA	NA	NA	NA	NA	m^2	NA
 Rogers2008	PST_ALL	2.0	all	age	2.0	NA	NA	46.6	NA	NA	NA	NA	NA	years	NA
 Rogers2008	PST_ALL	2.0	all	weight	2.0	NA	NA	99.3	NA	NA	NA	NA	NA	kg	NA
 Rogers2008	PST_ALL	2.0	all	bmi	2.0	NA	NA	36.8	NA	NA	NA	NA	NA	kg/m^2	NA

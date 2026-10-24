@@ -1,26 +1,58 @@
-"""
-Reusable functionality for multiple simulation experiments.
-"""
+"""Base class of the rapamycin simulation experiments."""
 
-from collections import namedtuple
-from typing import Dict
+from collections.abc import Iterable, Mapping
+from typing import Any, ClassVar, NamedTuple
+
 import pandas as pd
+from pkpdsim.experiment import PKPDSimulationExperiment
+from pkpdsim.impairment import RENAL_COLORS_END_STAGE, RENAL_FUNCTION_GFR
+from sbmlsim import Q
+from sbmlsim.units import Quantity
 
-from pkdb_models.models.rapamycin.pk import calculate_rapamycin_pk
-from pkdb_models.models.rapamycin import MODEL_PATH
-from sbmlsim.experiment import SimulationExperiment
-from sbmlsim.model import AbstractModel
-from sbmlsim.task import Task
-
-# Constants for conversion
-MolecularWeights = namedtuple("MolecularWeights", "rap fuj")
+from pkdb_models.models.rapamycin import MODEL
+from pkdb_models.models.rapamycin.rapamycin_pk import calculate_rapamycin_pk
 
 
-class RapamycinSimulationExperiment(SimulationExperiment):
-    """Base class for all SimulationExperiments with rapamycin."""
+class MolecularWeights(NamedTuple):
+    """Molecular weights for the conversion of the data."""
 
-    font = {"weight": "bold", "size": 22}
-    scan_font = {"weight": "bold", "size": 15}
+    rap: Quantity
+
+
+class RapamycinSimulationExperiment(PKPDSimulationExperiment):
+    """Base class of the rapamycin simulation experiments."""
+
+    pkpd_model = MODEL
+    selections = (
+        "time",
+        # dosing
+        "IVDOSE_rap",
+        "PODOSE_rap",
+        # venous blood and plasma
+        "[Cveblood_rap]",
+        "[Cveplasma_rap]",
+        "[Cve_rx]",
+        "[Cveblood_raptot]",
+        "[Cveplasma_raptot]",
+        # urine
+        "Aurine_rx",
+        # feces
+        "Afeces_rap",
+        "Afeces_rx",
+        "Afeces_raptot",
+        # cases
+        "KI__f_renal_function",
+        "f_cirrhosis",
+        "GU__fed",
+        "GU__f_pg",
+        "GU__f_cyp3a4",
+        "GU__f_cyp3a5",
+        "LI__f_cyp3a4",
+        "LI__f_cyp3a5",
+    )
+
+    font: ClassVar[dict[str, Any]] = {"weight": "bold", "size": 22}
+    scan_font: ClassVar[dict[str, Any]] = {"weight": "bold", "size": 15}
     tick_font_size = 15
     legend_font_size = 9
     suptitle_font_size = 25
@@ -28,7 +60,7 @@ class RapamycinSimulationExperiment(SimulationExperiment):
     # labels
     label_time = "time"
 
-    #rapamycin
+    # rapamycin
     label_rap = "rapamycin"
     label_rx = "rapamycin metabolites \n"
     label_raptot = "rapamycin and metabolites \n"
@@ -39,19 +71,21 @@ class RapamycinSimulationExperiment(SimulationExperiment):
 
     label_rx_urine = label_rx + "urine"
     label_rx_feces = label_rx + "feces"
+    label_rap_feces = label_rap + " feces"
+    label_raptot_feces = label_raptot + "feces"
 
-    labels: Dict[str, str] = {
+    labels: ClassVar[Mapping[str, str]] = {
         "time": "time",
-        #rapamycin
-        "[Cve_rap]": label_rap_plasma,
-        "[Cve_rx]": label_rx + " plasma",
-        "[Cve_raptot]": label_raptot_plasma,
-
+        # rapamycin
+        "[Cveplasma_rap]": label_rap_plasma,
+        "[Cve_rx]": label_rx + " blood",
+        "[Cveplasma_raptot]": label_raptot_plasma,
         "[Cveblood_rap]": label_rap_blood,
         "[Cveblood_raptot]": label_raptot_blood,
-
         "Aurine_rx": label_rx_urine,
+        "Afeces_rap": label_rap_feces,
         "Afeces_rx": label_rx_feces,
+        "Afeces_raptot": label_raptot_feces,
     }
 
     # units
@@ -65,196 +99,83 @@ class RapamycinSimulationExperiment(SimulationExperiment):
     unit_rx_urine = unit_metabolite_urine
     unit_rx_feces = unit_metabolite_feces
 
-    units: Dict[str, str] = {
+    units: ClassVar[Mapping[str, str]] = {
         "time": unit_time,
-        "[Cve_rap]": unit_rap,
+        "[Cveplasma_rap]": unit_rap,
         "[Cve_rx]": unit_rx,
-        "[Cve_raptot]": unit_raptot,
+        "[Cveplasma_raptot]": unit_raptot,
         "[Cveblood_rap]": unit_rap,
         "[Cveblood_raptot]": unit_raptot,
         "Aurine_rx": unit_rx_urine,
+        "Afeces_rap": unit_rx_feces,
         "Afeces_rx": unit_rx_feces,
+        "Afeces_raptot": unit_rx_feces,
     }
     # ----------- Food effect --------------
-    # ----------- Fasting/food -----
-    fasting_map = {
-        "not reported": 1.0,  # assuming fasted state if nothing is reported
-        "fasted": 1.0,
-        "fed": 0.7,
-    }
-    fasting_colors = {
-        "fasted": "black",
-        "fed": "tab:red",
+    #: the fed state of the intestine (`GU__fed`): the effects of a high fat
+    #: meal on the dissolution and the fraction absorbed are parameters of the
+    #: model (`GU__FED_f_dissolution`, `GU__FED_f_absorption`); a light
+    #: breakfast is assumed to have half the effect
+    fasting_map: ClassVar[dict[str, float]] = {
+        "not reported": 0.0,  # assuming fasted state if nothing is reported
+        "fasted": 0.0,
+        "light breakfast": 0.5,
+        "fed": 1.0,
     }
 
     # ----------- Variant activities --------------
-    cyp3a4_allele_activity = {
+    #: the activity of CYP3A4 per allele (`f_cyp3a4`, *1/*1 = 1): *1G has an
+    #: increased activity, CL/F of *1G/*1G is 1.66 times the one of *1/*1
+    #: (Zhang2017)
+    cyp3a4_allele_activity: ClassVar[dict[str, float]] = {
         "*1": 1.0,
-        "*1G": 1.2,  # increased activity (?)
+        "*1G": 1.66,
     }
-    cyp3a4_activity = {
+    #: the functional CYP3A5 per allele (`f_cyp3a5`): *3 is a null allele (a
+    #: splicing defect, no functional protein), *3/*3 is the reference of the
+    #: model (0); the capacity of CYP3A5 *1/*1 relative to CYP3A4 is the model
+    #: parameter `r_cyp3a5`
+    cyp3a5_allele_activity: ClassVar[dict[str, float]] = {
+        "*1": 1.0,
+        "*3": 0.0,
+    }
+    cyp3a4_activity: ClassVar[dict[str, float]] = {
         "*1/*1": (cyp3a4_allele_activity["*1"] + cyp3a4_allele_activity["*1"]) / 2,
         "*1/*1G": (cyp3a4_allele_activity["*1"] + cyp3a4_allele_activity["*1G"]) / 2,
         "*1G/*1G": (cyp3a4_allele_activity["*1G"] + cyp3a4_allele_activity["*1G"]) / 2,
     }
-    cyp3a5_allele_activity = {
-        "*1": 1.0,
-        "*3": 0.5,  # decreased activity (?)
-    }
-    cyp3a5_activity = {
+
+    cyp3a5_activity: ClassVar[dict[str, float]] = {
         "*1/*1": (cyp3a5_allele_activity["*1"] + cyp3a5_allele_activity["*1"]) / 2,
         "*1/*3": (cyp3a5_allele_activity["*1"] + cyp3a5_allele_activity["*3"]) / 2,
         "*3/*3": (cyp3a5_allele_activity["*3"] + cyp3a5_allele_activity["*3"]) / 2,
     }
 
     # ----------- Renal map --------------
-    renal_map = {
-        "Normal renal function": 101.0 / 101.0,  # 1.0,
-        "Mild renal impairment": 50.0 / 101.0,  # 0.5
-        "Moderate renal impairment": 35.0 / 101.0,  # 0.35
-        "Severe renal impairment": 20.0 / 101.0,  # 0.20
-        "End stage renal disease": 10.5 / 101.0,  # 0.1
-    }
-    renal_colors = {
-        "Normal renal function": "black",
-        "Mild renal impairment": "#66c2a4",
-        "Moderate renal impairment": "#2ca25f",
-        "Severe renal impairment": "#006d2c",
-        "End stage renal disease": "#006d5e"
-    }
+    renal_map = RENAL_FUNCTION_GFR
+    renal_colors = RENAL_COLORS_END_STAGE
 
-    # ----------- Cirrhosis map --------------
-    cirrhosis_map = {
-        "Control": 0,
-        "Mild cirrhosis": 0.3994897959183674,  # CPT A
-        "Moderate cirrhosis": 0.6979591836734694,  # CPT B
-        "Severe cirrhosis": 0.8127551020408164,  # CPT C
-    }
-    cirrhosis_colors = {
-        "Control": "black",
-        "Mild cirrhosis": "#74a9cf",  # CPT A
-        "Moderate cirrhosis": "#2b8cbe",  # CPT B
-        "Severe cirrhosis": "#045a8d",  # CPT C
-    }
+    # molecular weights of rapamycin
+    Mr: ClassVar[MolecularWeights] = MolecularWeights(rap=Q(914.1719, "g/mole"))
 
-    def models(self) -> Dict[str, AbstractModel]:
-        Q_ = self.Q_
+    # --- Pharmacokinetic parameters ---
+    def calculate_rapamycin_pk(
+        self, scans: Iterable[str] | None = None
+    ) -> dict[str, pd.DataFrame]:
+        """Calculate the pharmacokinetic parameters of the scans.
+
+        Args:
+            scans: keys of the simulations, all simulations by default.
+
+        Returns:
+            The parameters of every scan by simulation key, per draw of the
+            fitted parameters in a run over them (`uncertainty`).
+        """
+        keys = self._simulations if scans is None else scans
+        across = None if self.uncertainty is None else self.uncertainty.id
         return {
-            "model": AbstractModel(
-                source=MODEL_PATH,
-                language_type=AbstractModel.LanguageType.SBML,
-                changes={},
+            key: calculate_rapamycin_pk(
+                experiment=self, res=self.results[f"task_{key}"], across=across
             )
+            for key in keys
         }
-
-    @staticmethod
-    def _default_changes(Q_):
-        """Default changes to simulations."""
-
-        changes = {
-            #>>> !Optimal parameter 'Kp_rap' within 5% of lower bound! <<<
-            # 'ftissue_rap': Q_(2.919698874464165, 'l/min'),  # [0.01 - 10]
-            # 'Kp_rap': Q_(10.035536946020404, 'dimensionless'),  # [10 - 10000]
-            # 'GU__RAPIM_k': Q_(0.010707377269865587, '1/min'),  # [0.0001 - 1]
-            # 'GU__RAP2RX_Vmax': Q_(0.0041320896865181395, 'mmole/min/l'),  # [0.0001 - 1]
-            # 'GU__RXPG_k': Q_(0.40425230537135143, '1/min'),  # [0.0001 - 1]
-            # 'GU__RXEXC_k': Q_(0.09423225836463608, '1/min'),  # [0.0001 - 1]
-            # 'KI__RXEX_k': Q_(0.10688066610367004, '1/min'),  # [0.1 - 10]
-            # 'LI__RAP2RX_Vmax': Q_(0.00960718202137472, 'mmole/min/l'),  # [0.0001 - 1]
-            # 'LI__RXBEX_k': Q_(3.2703582590147807e-06, '1/min'),  # [1e-07 - 0.001]
-        }
-
-        return changes
-
-    def default_changes(self: SimulationExperiment) -> Dict:
-        """Default changes to simulations."""
-        return RapamycinSimulationExperiment._default_changes(Q_=self.Q_)
-
-    def tasks(self) -> Dict[str, Task]:
-        if self.simulations():
-            return {
-                f"task_{key}": Task(model="model", simulation=key)
-                for key in self.simulations()
-            }
-        return {}
-
-    def data(self) -> Dict:
-        self.add_selections_data(
-            selections=[
-                "time",
-
-                # dosing
-                "IVDOSE_rap",
-                "PODOSE_rap",
-
-                # venous plasma
-                "[Cve_rap]",
-                "[Cve_rx]",
-                "[Cve_raptot]",
-                "[Cveblood_rap]",
-                "[Cveblood_raptot]",
-
-                # urine
-                "Aurine_rx",
-
-                # feces
-                "Afeces_rx",
-
-                # cases
-                'KI__f_renal_function',
-                'f_cirrhosis',
-                "GU__f_oatp",
-                "GU__f_cyp3a4",
-                "GU__f_cyp3a5",
-                "LI__f_cyp3a4",
-                "LI__f_cyp3a5",
-            ]
-        )
-        return {}
-
-    @property
-    def Mr(self):
-        return MolecularWeights(
-            rap=self.Q_(914.1719, "g/mole"),
-            fuj=self.Q_(804, "g/mole")
-        )
-
-# --- Pharmacokinetic parameters ---
-    pk_labels = {
-        "auc": "AUCend",
-        "aucinf": "AUC",
-        "cl": "Total clearance",
-        "cl_renal": "Renal clearance",
-        "cl_hepatic": "Hepatic clearance",
-        "cmax": "Cmax",
-        "thalf": "Half-life",
-        "kel": "kel",
-        "vd": "vd",
-    }
-
-    pk_units = {
-        "auc": "µmole/l*hr",
-        "aucinf": "µmole/l*hr",
-        "cl": "ml/min",
-        "cl_renal": "ml/min",
-        "cl_hepatic": "ml/min",
-        "cmax": "µmole/l",
-        "thalf": "hr",
-        "kel": "1/hr",
-        "vd": "l",
-    }
-
-    def calculate_rapamycin_pk(self, scans: list = []) -> Dict[str, pd.DataFrame]:
-       """Calculate pk parameters for simulations (scans)"""
-       pk_dfs = {}
-       if scans:
-           for sim_key in scans:
-               xres = self.results[f"task_{sim_key}"]
-               df = calculate_rapamycin_pk(experiment=self, xres=xres)
-               pk_dfs[sim_key] = df
-       else:
-           for sim_key in self._simulations.keys():
-               xres = self.results[f"task_{sim_key}"]
-               df = calculate_rapamycin_pk(experiment=self, xres=xres)
-               pk_dfs[sim_key] = df
-       return pk_dfs

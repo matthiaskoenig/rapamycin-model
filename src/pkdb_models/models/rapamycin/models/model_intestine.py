@@ -1,14 +1,29 @@
 """Rapamycin intestine model."""
-import numpy as np
-from sbmlutils.factory import *
-from sbmlutils.metadata import *
 
-from pkdb_models.models.rapamycin.models import annotations
-from pkdb_models.models.rapamycin.models import templates
+import numpy as np
+from sbmlutils.factory import (
+    AssignmentRule,
+    Compartment,
+    FactoryResult,
+    Model,
+    Parameter,
+    RateRule,
+    Reaction,
+    Species,
+    UnitDefinition,
+    create_model,
+)
+from sbmlutils.metadata import (
+    BQB,
+    SBO,
+)
+
+from pkdb_models.models.rapamycin.models import annotations, templates
+from pkdb_models.models.rapamycin.models.fits import FITS
 
 
 class U(templates.U):
-    """UnitDefinitions"""
+    """Units of the intestine model."""
 
     per_hr = UnitDefinition("per_hr", "1/hr")
     mg_per_min = UnitDefinition("mg_per_min", "mg/min")
@@ -20,34 +35,50 @@ _m = Model(
     notes="""
     # Model for rapamycin absorption
 
-    - large amount of radioactivity in feces: ~91.0% (mainly rapamycin metabolites)
+    The dose dissolves in the stomach and passes into the lumen of the
+    intestine (`dissolution_rap`). A fraction `F_rap_abs` of the rapamycin
+    which leaves the lumen is absorbed into the enterocytes, the rest is
+    excreted with the feces (`RAPEXC`). In the enterocytes rapamycin is
+    metabolized by CYP3A4 and CYP3A5 (`RAP2RX`), pumped back into the lumen by
+    P-glycoprotein (`RAPPG`) or transported into the blood (`RAPBASO`); the
+    metabolites formed in the enterocytes are released into the lumen and
+    excreted with the feces after the transit through the colon.
+
+    The fraction absorbed and the metabolism of the gut wall set the oral
+    bioavailability of about 14 % (oral solution, Rapamune label); the
+    radioactivity of an oral dose of 14C-rapamycin is recovered to 91 % in the
+    feces, mainly as metabolites (Leung2006).
+
+    Food (`fed`) slows the dissolution and the gastric emptying
+    (`FED_f_dissolution`) and increases the fraction absorbed
+    (`FED_f_absorption`): a high fat meal increases the AUC of rapamycin by
+    35 % and delays its tmax from 0.8 to 3.1 hr (Zimmerman1999).
     """
     + templates.terms_of_use,
     creators=templates.creators,
     units=U,
     model_units=templates.model_units,
-    annotations=annotations.model + [
+    annotations=[
+        *annotations.model,
         # tissue
-        (BQB.OCCURS_IN, "FMA:45615"),  # gut
-        (BQB.OCCURS_IN, "BTO:0000545"),  # gut
-        (BQB.OCCURS_IN, "NCIT:C12736"),  # intestine
-        (BQB.OCCURS_IN, "FMA:7199"),  # intestine
-        (BQB.OCCURS_IN, "BTO:0000648"),  # intestine
-
-        (BQB.HAS_PROPERTY, "NCIT:C79369"),  # Pharmacokinetics: Absorption
-        # (BQB.HAS_PROPERTY, "NCIT:C79372"),  # Pharmacokinetics: Excretion
-    ]
+        (BQB.OCCURS_IN, "bto/BTO:0000545"),  # gut
+        (BQB.OCCURS_IN, "ncit/C12736"),  # intestine
+        (BQB.OCCURS_IN, "fma/FMA:7199"),  # intestine
+        (BQB.OCCURS_IN, "bto/BTO:0000648"),  # intestine
+        (BQB.HAS_PROPERTY, "ncit/C79369"),  # Pharmacokinetics: Absorption
+        (BQB.HAS_PROPERTY, "ncit/C79372"),  # Pharmacokinetics: Excretion
+    ],
 )
 
 _m.compartments = [
     Compartment(
         "Vext",
         1.0,
-        name="plasma",
+        name="blood",
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
         unit=U.liter,
         port=True,
-        annotations=annotations.compartments["plasma"],
+        annotations=annotations.compartments["blood"],
     ),
     Compartment(
         "Vgu",
@@ -81,7 +112,7 @@ _m.compartments = [
     ),
     Compartment(
         "Ventero",
-        1.2825 * 0.1,  # 0.0171 [l/kg] * 75 kg * 0.9,
+        1.2825 * 0.1,  # 0.0171 [l/kg] * 75 kg * 0.1,
         name="intestinal lining (enterocytes)",
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
         unit=U.liter,
@@ -118,17 +149,32 @@ _m.compartments = [
     ),
 ]
 
+#: the compartments of the transit of the metabolites through the colon
 n_chain = 5
 
 _m.parameters = [
+    Parameter(
+        "f_entero",
+        0.1,
+        unit=U.dimensionless,
+        name="fraction of the enterocytes of the intestine volume",
+        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+    ),
     Parameter(
         "Vchain",
         0.1,
         unit=U.liter,
         name="volume of chain compartment",
-        sboTerm=SBO.KINETIC_CONSTANT,
+        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
     ),
-
+]
+_m.rules = [
+    AssignmentRule(
+        "Ventero",
+        "f_entero * Vgu",
+        unit=U.liter,
+        name="volume of the enterocytes",
+    ),
 ]
 
 for k in range(n_chain):
@@ -137,23 +183,23 @@ for k in range(n_chain):
         Compartment(
             f"Vint_{k}",
             "Vchain",
-            name="intestinal lumen (inner part of intestine)",
+            name=f"intestinal lumen {k} (inner part of intestine)",
             sboTerm=SBO.PHYSICAL_COMPARTMENT,
             unit=U.liter,
             annotations=annotations.compartments["gu_lumen"],
-            constant=False
+            constant=False,
         ),
     )
 
 
 _m.species = [
     Species(
-        f"rap_stomach",
-        metaId=f"meta_ali_stomach",
+        "rap_stomach",
+        metaId="meta_rap_stomach",
         initialConcentration=0.0,
         compartment="Vstomach",
         substanceUnit=U.mmole,
-        name=f"rapamycin (stomach)",
+        name="rapamycin (stomach)",
         hasOnlySubstanceUnits=True,
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["rap"],
@@ -190,26 +236,45 @@ _m.species = [
         hasOnlySubstanceUnits=False,
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["rap"],
-        port=True,
     ),
     Species(
         "rx_entero",
         initialConcentration=0.0,
-        name="rapamycin metabolite (enterocytes)",
+        name="rapamycin metabolites (enterocytes)",
         compartment="Ventero",
         substanceUnit=U.mmole,
         hasOnlySubstanceUnits=False,
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["rx"],
-        port=True,
     ),
     Species(
         "rap_ext",
         initialConcentration=0.0,
-        name="rapamycin (plasma)",
+        name="rapamycin (blood)",
         compartment="Vext",
         substanceUnit=U.mmole,
         hasOnlySubstanceUnits=False,
+        sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["rap"],
+        port=True,
+    ),
+    Species(
+        "rap_colon",
+        initialConcentration=0.0,
+        name="rapamycin (colon)",
+        compartment="Vlumen",
+        substanceUnit=U.mmole,
+        hasOnlySubstanceUnits=False,
+        sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["rap"],
+    ),
+    Species(
+        "rap_feces",
+        initialConcentration=0.0,
+        name="rapamycin (feces)",
+        compartment="Vfeces",
+        substanceUnit=U.mmole,
+        hasOnlySubstanceUnits=True,
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["rap"],
         port=True,
@@ -225,7 +290,6 @@ _m.species = [
         annotations=annotations.species["rx"],
         port=True,
     ),
-
 ]
 
 for k in range(n_chain):
@@ -243,162 +307,295 @@ for k in range(n_chain):
         ),
     )
 
+# -------------------------------------
+# Absorption
+# -------------------------------------
+_m.parameters.extend(
+    [
+        Parameter(
+            "F_rap_abs",
+            0.5,
+            unit=U.dimensionless,
+            name="fraction absorbed rapamycin (fasted)",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            notes="""
+            Fraction of the rapamycin leaving the lumen which is absorbed into
+            the enterocytes, the rest is excreted with the feces. Together with
+            the metabolism of the gut wall it sets the oral bioavailability of
+            about 14 % (Rapamune label); the split between the fraction
+            absorbed and the gut wall cannot be identified from oral data and
+            is assumed.
+            """,
+        ),
+        Parameter(
+            "RAPABS_k",
+            0.05,
+            unit=U.per_min,
+            name="rate of rapamycin absorption",
+            sboTerm=SBO.KINETIC_CONSTANT,
+        ),
+        Parameter(
+            "fed",
+            0.0,
+            unit=U.dimensionless,
+            name="fed state (0 fasted, 1 fed)",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            notes="""
+            The dose is taken in the fasted state (0) or with a high fat meal
+            (1). The effects of food on the dissolution and gastric emptying
+            and on the fraction absorbed are `FED_f_dissolution` and
+            `FED_f_absorption`.
+            """,
+        ),
+        Parameter(
+            "FED_f_absorption",
+            **FITS.parameter("GU__FED_f_absorption", unit=U.dimensionless),
+            name="fed effect on the fraction absorbed",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        ),
+        Parameter(
+            "FED_f_dissolution",
+            **FITS.parameter("GU__FED_f_dissolution", unit=U.dimensionless),
+            name="fed effect on the dissolution and gastric emptying",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        ),
+        Parameter(
+            "f_absorption",
+            np.nan,
+            unit=U.dimensionless,
+            constant=False,
+            name="factor of the fraction absorbed",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        ),
+        Parameter(
+            "f_dissolution",
+            np.nan,
+            unit=U.dimensionless,
+            constant=False,
+            name="factor of the dissolution and gastric emptying",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        ),
+        Parameter(
+            "absorption",
+            np.nan,
+            unit=U.mmole_per_min,
+            constant=False,
+            name="rapamycin leaving the lumen",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        ),
+    ]
+)
+_m.rules.extend(
+    [
+        AssignmentRule(
+            "f_absorption",
+            "1 dimensionless + fed * (FED_f_absorption - 1 dimensionless)",
+            unit=U.dimensionless,
+        ),
+        AssignmentRule(
+            "f_dissolution",
+            "1 dimensionless + fed * (FED_f_dissolution - 1 dimensionless)",
+            unit=U.dimensionless,
+        ),
+        AssignmentRule(
+            "absorption",
+            "RAPABS_k * Vlumen * rap_lumen",
+            unit=U.mmole_per_min,
+        ),
+    ]
+)
+
+# -------------------------------------
+# Gut wall
+# -------------------------------------
+_m.parameters.extend(
+    [
+        Parameter(
+            "RAPBASO_k",
+            0.05,
+            unit=U.per_min,
+            name="rate of rapamycin transport from the enterocytes into the blood",
+            sboTerm=SBO.KINETIC_CONSTANT,
+        ),
+        Parameter(
+            "RAP2RX_k",
+            0.1,
+            unit=U.per_min,
+            name="rate of rapamycin metabolism by CYP3A4 (gut wall)",
+            sboTerm=SBO.KINETIC_CONSTANT,
+            notes="""
+            Intrinsic clearance of CYP3A4 per volume of the enterocytes. The
+            metabolism is linear: the Km of the microsomes (8.07 µM,
+            Sattler1992) is above the concentrations of the enterocytes after
+            the therapeutic doses.
+            """,
+        ),
+        Parameter(
+            "r_cyp3a5",
+            1.0,
+            unit=U.dimensionless,
+            name="capacity of CYP3A5 relative to CYP3A4",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            port=True,
+            notes="""
+            Metabolism of rapamycin by CYP3A5 of the genotype *1/*1 relative
+            to the one by CYP3A4.
+            """,
+        ),
+        Parameter(
+            "f_cyp3a4",
+            1.0,
+            unit=U.dimensionless,
+            name="CYP3A4 activity",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            notes="""
+            Activity of CYP3A4 relative to the reference (*1/*1), changed by
+            the genotype and by inhibitors and inducers:
+            f_cyp3a4 = 1: normal activity;
+            f_cyp3a4 < 1: reduced activity, inhibition of CYP3A4;
+            f_cyp3a4 > 1: increased activity, induction of CYP3A4.
+            """,
+        ),
+        Parameter(
+            "f_cyp3a5",
+            0.0,
+            unit=U.dimensionless,
+            name="CYP3A5 activity",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            notes="""
+            The fraction of functional CYP3A5 alleles: *3/*3 = 0 (no
+            functional CYP3A5, the reference, most Caucasians), *1/*3 = 0.5,
+            *1/*1 = 1.
+            """,
+        ),
+        Parameter(
+            "RAPPG_k",
+            0.02,
+            unit=U.per_min,
+            name="rate of rapamycin efflux by P-glycoprotein",
+            sboTerm=SBO.KINETIC_CONSTANT,
+        ),
+        Parameter(
+            "f_pg",
+            1.0,
+            unit=U.dimensionless,
+            name="P-glycoprotein activity",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            notes="""
+            Activity of P-glycoprotein relative to the reference:
+            f_pg = 1: normal activity;
+            f_pg < 1: reduced activity, inhibition of the efflux;
+            f_pg > 1: increased activity, induction of the efflux.
+            """,
+        ),
+        Parameter(
+            "RXEFF_k",
+            1.0,
+            unit=U.per_min,
+            name="rate of the release of the metabolites into the lumen",
+            sboTerm=SBO.KINETIC_CONSTANT,
+        ),
+        Parameter(
+            "RXEXC_k",
+            0.0033,
+            unit=U.per_min,
+            name="rate of the transit of the metabolites to the feces",
+            sboTerm=SBO.KINETIC_CONSTANT,
+            notes="""
+            The metabolites pass the lumen and the chain of the colon in
+            (n_chain + 1)/RXEXC_k, about 30 hr; the fecal radioactivity of
+            14C-rapamycin is excreted within 24-72 hr (Leung2006).
+            """,
+        ),
+    ]
+)
 
 _m.reactions = [
     Reaction(
-        "RAPIM",
-        name="RAPIM",
+        "RAPABS",
+        name="absorption rapamycin (enterocytes)",
         equation="rap_lumen -> rap_entero",
         sboTerm=SBO.TRANSPORT_REACTION,
         compartment="Vapical",
-        pars=[
-            Parameter(
-                "f_oatp",
-                1.0,
-                unit=U.dimensionless,
-                name="OATP transporter activity",
-                sboTerm=SBO.KINETIC_CONSTANT,
-                notes="""Used for drug-drug interactions.
-                f_oatp = 1: normal activity;
-                f_oatp < 1: reduced activity; inhibitor of absorption
-                f_oatp > 1: increased activity; activator of absorption
-                """
-            ),
-            Parameter(
-                "RAPIM_k",
-                0.010707377269865587,
-                unit=U.per_min,
-                name="rate of rapamycin import enterocytes",
-                sboTerm=SBO.KINETIC_CONSTANT,
-            ),
-        ],
-        formula=("f_oatp * RAPIM_k * Vgu * rap_lumen", U.mmole_per_min),
+        formula=("F_rap_abs * f_absorption * absorption", U.mmole_per_min),
     ),
     Reaction(
-        sid="RAPABS",
-        name=f"absorption rapamycin (plasma)",
-        compartment="Ventero",
-        equation=f"rap_entero -> rap_ext",
+        "RAPEXC",
+        name="excretion rapamycin (colon)",
+        equation="rap_lumen -> rap_colon",
         sboTerm=SBO.TRANSPORT_REACTION,
+        compartment="Vlumen",
         formula=(
-            f"RAPIM_k * Ventero * rap_entero",
-            U.mmole_per_min),
-    ),
-    Reaction(
-        sid="RAP2RX",
-        name=f"rapamycin metabolism via CYP3A4/5",
-        compartment="Ventero",
-        equation=f"rap_entero -> rx_entero",
-        sboTerm=SBO.TRANSPORT_REACTION,
-        pars=[
-            Parameter(
-                "RAP2RX_Vmax",
-                0.0041320896865181395,
-                U.mmole_per_min_l,
-                name="Vmax rapamycin metabolism",
-                sboTerm=SBO.MAXIMAL_VELOCITY,
-            ),
-            Parameter(
-                "RAP2RX_Km_rap",
-                8.07E-3,  # 8.07 [μM]
-                U.mM,
-                name="Km rapamycin metabolism",
-                sboTerm=SBO.MICHAELIS_CONSTANT,
-                notes="""Michaelis-Menten constant for rapamycin metabolism from in vitro studies.
-
-                Km value in the range of approximately 1.1μM to 4.7μM for sirolimus. [perplexity]
-                Km: 8.07 +- 2.11 µm [Sattler1992]; human liver microsomes
-                """
-            ),
-            Parameter(
-                "f_cyp3a4",
-                1.0,
-                unit=U.dimensionless,
-                name="CYP3A4 activity",
-                sboTerm=SBO.KINETIC_CONSTANT,
-                notes="""Used for drug-drug interactions.
-                f_cyp3a4 = 1: normal activity;
-                f_cyp3a4 < 1: reduced activity; inhibitor of CYP3A4
-                f_cyp3a4 > 1: increased activity; activator of CYP3A4
-                """
-            ),
-            Parameter(
-                "f_cyp3a5",
-                1.0,
-                unit=U.dimensionless,
-                name="CYP3A5 activity",
-                sboTerm=SBO.KINETIC_CONSTANT,
-                notes="""Used for drug-drug interactions.
-                f_cyp3a5 = 1: normal activity;
-                f_cyp3a5 < 1: reduced activity; inhibitor of CYP3A4
-                f_cyp3a5 > 1: increased activity; activator of CYP3A4
-                """
-            ),
-        ],
-        formula=(
-            f"f_cyp3a4 * f_cyp3a5 * RAP2RX_Vmax * Ventero * rap_entero/(rap_entero + RAP2RX_Km_rap)",
-            U.mmole_per_min
+            "(1 dimensionless - F_rap_abs * f_absorption) * absorption",
+            U.mmole_per_min,
         ),
     ),
     Reaction(
-        "RXPG",
-        name="PG",
+        "RAPFEC",
+        name="excretion rapamycin (feces)",
+        equation="rap_colon -> rap_feces",
+        sboTerm=SBO.TRANSPORT_REACTION,
+        compartment="Vlumen",
+        # the mean transit of the metabolites, (n_chain + 1)/RXEXC_k
+        formula=(
+            f"RXEXC_k/{n_chain + 1} dimensionless * Vlumen * rap_colon",
+            U.mmole_per_min,
+        ),
+    ),
+    Reaction(
+        sid="RAPBASO",
+        name="transport rapamycin (blood)",
+        compartment="Vbaso",
+        equation="rap_entero -> rap_ext",
+        sboTerm=SBO.TRANSPORT_REACTION,
+        formula=("RAPBASO_k * Ventero * rap_entero", U.mmole_per_min),
+    ),
+    Reaction(
+        sid="RAP2RX",
+        name="rapamycin metabolism via CYP3A4/5",
+        compartment="Ventero",
+        equation="rap_entero -> rx_entero",
+        sboTerm=SBO.BIOCHEMICAL_REACTION,
+        formula=(
+            "(f_cyp3a4 + r_cyp3a5 * f_cyp3a5) * RAP2RX_k * Ventero * rap_entero",
+            U.mmole_per_min,
+        ),
+    ),
+    Reaction(
+        "RAPPG",
+        name="efflux rapamycin by P-glycoprotein",
+        equation="rap_entero -> rap_lumen",
+        sboTerm=SBO.TRANSPORT_REACTION,
+        compartment="Vapical",
+        formula=("f_pg * RAPPG_k * Ventero * rap_entero", U.mmole_per_min),
+    ),
+    Reaction(
+        "RXEFF",
+        name="release rapamycin metabolites (lumen)",
         equation="rx_entero -> rx_lumen",
         sboTerm=SBO.TRANSPORT_REACTION,
         compartment="Vapical",
-        pars=[
-            Parameter(
-                "f_pg",
-                1.0,
-                unit=U.dimensionless,
-                name="P-gp transporter activity",
-                sboTerm=SBO.KINETIC_CONSTANT,
-                notes="""Used for drug-drug interactions.
-               f_pg = 1: normal activity;
-               f_pg < 1: reduced activity; activator of absorption
-               f_pg > 1: increased activity; inhibitor of absorption
-               """
-            ),
-            Parameter(
-                "RXPG_k",
-                0.40425230537135143,
-                unit=U.per_min,
-                name="rate of rapamycin metabolites PG export",
-                sboTerm=SBO.KINETIC_CONSTANT,
-            ),
-        ],
-        formula=("f_pg * RXPG_k * Ventero * rx_entero", U.mmole_per_min),
+        formula=("RXEFF_k * Ventero * rx_entero", U.mmole_per_min),
     ),
     Reaction(
         sid="RXEXC",
-        name=f"excretion rapamycin metabolites (feces)",
+        name="excretion rapamycin metabolites (feces)",
         compartment="Vlumen",
-        equation=f"rx_lumen -> rx_int_0",
+        equation="rx_lumen -> rx_int_0",
         sboTerm=SBO.TRANSPORT_REACTION,
-        pars=[
-            Parameter(
-                "RXEXC_k",
-                0.09423225836463608,
-                unit=U.per_min,
-                name="rate of rapamycin metabolite fecal excretion",
-                sboTerm=SBO.KINETIC_CONSTANT,
-            ),
-        ],
-        formula=(
-            f"RXEXC_k * Vgu  * rx_lumen",
-            U.mmole_per_min),
+        formula=("RXEXC_k * Vlumen * rx_lumen", U.mmole_per_min),
     ),
 ]
 
 for k in range(n_chain):
     # reactions for chain
     source = f"rx_int_{k}"
-    target = f"rx_int_{k+1}" if k < n_chain - 1 else f"rx_feces"
+    target = f"rx_int_{k + 1}" if k < n_chain - 1 else "rx_feces"
     _m.reactions.append(
         Reaction(
             sid=f"RXEXC_{k}",
             name=f"excretion rapamycin metabolites {k}",
-            compartment="Vlumen",
+            compartment=f"Vint_{k}",
             equation=f"{source} -> {target}",
             sboTerm=SBO.TRANSPORT_REACTION,
             formula=(
@@ -409,35 +606,36 @@ for k in range(n_chain):
     )
 
 
-_m.parameters.extend([
-    Parameter(
-        f"PODOSE_rap",
-        0,
-        U.mg,
-        constant=False,
-        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        name=f"oral dose rapamycin [mg]",
-        port=True,
-    ),
-    Parameter(
-        f"Ka_dis_rap",
-        2.0,
-        U.per_hr,
-        constant=True,
-        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        name=f"Ka_dis [1/hr] dissolution rapamycin",
-        port=True
-    ),
-    Parameter(
-        f"Mr_rap",
-        914.1719,
-        U.g_per_mole,
-        constant=True,
-        name=f"Molecular weight rapamycin [g/mole]",
-        sboTerm=SBO.MOLECULAR_MASS,
-        port=True,
-    ),
-])
+_m.parameters.extend(
+    [
+        Parameter(
+            "PODOSE_rap",
+            0,
+            U.mg,
+            constant=False,
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            name="oral dose rapamycin [mg]",
+            port=True,
+        ),
+        Parameter(
+            "Ka_dis_rap",
+            **FITS.parameter("GU__Ka_dis_rap", unit=U.per_hr),
+            constant=True,
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            name="Ka_dis [1/hr] dissolution rapamycin",
+            port=True,
+        ),
+        Parameter(
+            "Mr_rap",
+            914.1719,
+            U.g_per_mole,
+            constant=True,
+            name="Molecular weight rapamycin [g/mole]",
+            sboTerm=SBO.MOLECULAR_MASS,
+            port=True,
+        ),
+    ]
+)
 
 # -------------------------------------
 # Dissolution of tablet/dose in stomach
@@ -446,104 +644,26 @@ _m.reactions.extend(
     [
         # fraction dose available for absorption from stomach
         Reaction(
-            sid=f"dissolution_rap",
-            name=f"dissolution rapamycin",
+            sid="dissolution_rap",
+            name="dissolution rapamycin",
             formula=(
-                f"Ka_dis_rap/60 min_per_hr * PODOSE_rap/Mr_rap",
+                "f_dissolution * Ka_dis_rap/60 min_per_hr * PODOSE_rap/Mr_rap",
                 U.mmole_per_min,
             ),
-            equation=f"rap_stomach -> rap_lumen",
+            equation="rap_stomach -> rap_lumen",
             compartment="Vgu",
             notes="""Swallowing, dissolution of tablet, and transport into intestine.
             Overall process describing the rates of this processes.
-            """
+            """,
         ),
     ]
 )
 _m.rate_rules.append(
-    RateRule(f"PODOSE_rap", f"-dissolution_rap * Mr_rap", U.mg_per_min),
+    RateRule("PODOSE_rap", "-dissolution_rap * Mr_rap", U.mg_per_min),
 )
 
 
 model_intestine = _m
-
-# def layout(dx=200, dy=200) -> pd.DataFrame:
-#     """Layout definition."""
-#
-#     delta_x = 0.5 * dx
-#     delta_y = 0.4 * dy
-#
-#     positions = [
-#         ["ali_stomach", 0, 0],
-#         ["dissolution_ali", 0 * delta_x, 1 * delta_y],
-#         ["ali_lumen", 0 * delta_x, 3 * delta_y],
-#         ["ALIPG", 2 * delta_x, 2 * delta_y],
-#         ["ALIIM", 2 * delta_x, 4 * delta_y],
-#         ["ali_entero", 4 * delta_x, 3 * delta_y],
-#         ["ALIMET", 5 * delta_x, 2 * delta_y],
-#         ["ALIABS", 5 * delta_x, 4 * delta_y],
-#         ["alm_entero", 7 * delta_x, 2 * delta_y],
-#         ["ali_ext", 7 * delta_x, 4 * delta_y],
-#
-#         [f"ALIEXC", 0 * delta_x, 4 * delta_y],
-#         ["ali_int_0", 0 * delta_x, 5 * delta_y],
-#         ["ALIEXC_0", 0 * delta_x, 6 * delta_y],
-#         ["ali_int_1", 1 * delta_x, 6 * delta_y],
-#         ["ALIEXC_1", 2 * delta_x, 6 * delta_y],
-#         ["ali_int_2", 3 * delta_x, 6 * delta_y],
-#         ["ALIEXC_2", 3 * delta_x, 7 * delta_y],
-#         ["ali_int_3", 3 * delta_x, 8 * delta_y],
-#         ["ALIEXC_3", 2 * delta_x, 8 * delta_y],
-#         ["ali_int_4", 1 * delta_x, 8 * delta_y],
-#         ["ALIEXC_4", 0 * delta_x, 8 * delta_y],
-#         ["ali_feces", 0 * delta_x, 9 * delta_y],
-#     ]
-#
-#     df = pd.DataFrame(positions, columns=["id", "x", "y"])
-#     df.set_index("id", inplace=True)
-#     return df
-#
-# def annotations(dx=200, dy=200) -> list:
-#
-#     delta_x = 0.5 * dx
-#     delta_y = 0.4 * dy
-#
-#     kwargs = {
-#         "type": cyviz.AnnotationShapeType.ROUND_RECTANGLE,
-#         "opacity": 20,
-#         "border_color": "#000000",
-#         "border_thickness": 2,
-#     }
-#     annotations = [
-#         # intestine lumen (PG and OATP are at the apical side (it is near to the enterocytes)
-#         cyviz.AnnotationShape(
-#             x_pos=-1* delta_x, y_pos=- 0.5 * delta_y, width= 3 * delta_x, height=5 * delta_y,
-#             fill_color="#FFFFFF", **kwargs
-#         ),
-#         #enterocytes
-#         cyviz.AnnotationShape(
-#             x_pos=3.5 * delta_x, y_pos= 1.25 * delta_y, width=4.5 * delta_x, height=2.25 * delta_y,
-#             fill_color="#00FF00", **kwargs
-#         ),
-#         #plasma
-#         cyviz.AnnotationShape(
-#             x_pos=6 * delta_x, y_pos=3.5 * delta_y, width=2* delta_x, height=1 * delta_y,
-#             fill_color="#FF0000", **kwargs
-#         ),
-#         # chain
-#         cyviz.AnnotationShape(
-#             x_pos=-1 * delta_x, y_pos=4.5 * delta_y, width=5* delta_x, height=4 * delta_y,
-#             fill_color="#0000FF", **kwargs
-#         ),
-#         #feces
-#         cyviz.AnnotationShape(
-#             x_pos=-1 * delta_x, y_pos=8.5 * delta_y, width=2 * delta_x, height=1 * delta_y,
-#             fill_color="#000000", **kwargs
-#         ),
-#
-#     ]
-#     return annotations
-
 
 if __name__ == "__main__":
     from pkdb_models.models.rapamycin import MODEL_BASE_PATH
@@ -552,15 +672,6 @@ if __name__ == "__main__":
     results: FactoryResult = create_model(
         model=model_intestine,
         filepath=MODEL_BASE_PATH / f"{model_intestine.sid}.xml",
-        sbml_level=3, sbml_version=2,
+        sbml_level=3,
+        sbml_version=2,
     )
-
-    # visualization
-    from sbmlutils import cytoscape as cyviz
-    cyviz.visualize_sbml(results.sbml_path, delete_session=True)
-    # cyviz.apply_layout(layout=layout())
-    # cyviz.add_annotations(annotations=annotations())
-    # cyviz.export_image(
-    #     MODEL_BASE_PATH / f"{model_intestine.sid}.png",
-    #     fit_content=True,
-    # )

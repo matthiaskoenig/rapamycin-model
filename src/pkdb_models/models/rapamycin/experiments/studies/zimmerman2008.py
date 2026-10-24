@@ -1,85 +1,107 @@
-from typing import Dict
+"""Simulation experiment of the study Zimmerman2008."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
+from typing import ClassVar, override
 
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Simulation
+
+from pkdb_models.models.rapamycin import MODEL
 from pkdb_models.models.rapamycin.experiments.base_experiment import (
     RapamycinSimulationExperiment,
 )
-from pkdb_models.models.rapamycin.experiments.metadata import (
-    RapamycinMappingMetaData,
-    Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration
-)
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
-from pkdb_models.models.rapamycin.helpers import run_experiments
 
 
 class Zimmerman2008(RapamycinSimulationExperiment):
-    """Simulation experiment of Zimmerman2008."""
+    """Simulation experiment of Zimmerman2008.
 
-    interventions = ["RAP15"]
-    groups = [
+    Nine subjects with hepatic impairment of Child-Pugh grade C and nine
+    matched healthy controls took 15 mg of the oral solution after an overnight
+    fast of at least 10 h. Fig1 shows the mean and the standard error (n=9,
+    "Mean ± SE"). Child-Pugh C is simulated as severe cirrhosis.
+    """
+
+    interventions: ClassVar[list[str]] = ["RAP15"]
+    groups: ClassVar[list[str]] = [
         "CONTROL",
         "GRADE_C",
     ]
-    colors = {
+    colors: ClassVar[dict[str, str]] = {
         "CONTROL": "black",
         "GRADE_C": RapamycinSimulationExperiment.cirrhosis_colors["Severe cirrhosis"],
     }
-    bodyweights = {
+    labels_group: ClassVar[dict[str, str]] = {
+        "CONTROL": "15 mg healthy",
+        "GRADE_C": "15 mg Child-Pugh C",
+    }
+    bodyweights: ClassVar[dict[str, float]] = {  # [kg]
         "CONTROL": 64.3,
         "GRADE_C": 69.2,
     }
-    f_cirrhosis = {
+    heights: ClassVar[dict[str, float]] = {  # [cm]
+        "CONTROL": 167,
+        "GRADE_C": 169,
+    }
+    f_cirrhosis: ClassVar[dict[str, float]] = {
         "CONTROL": RapamycinSimulationExperiment.cirrhosis_map["Control"],
         "GRADE_C": RapamycinSimulationExperiment.cirrhosis_map["Severe cirrhosis"],
     }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig1"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 dset = DataSet.from_df(df_label, self.ureg)
 
                 # unit conversion
                 if label.startswith("rapamycin_"):
-                   dset.unit_conversion("mean", 1 / self.Mr.rap)
+                    dset.unit_conversion("mean", 1 / self.Mr.rap)
 
-                dsets[label] = dset
+                dsets[self.to_sid(label)] = dset
 
-        # console.print(dsets)
-
-        #console.print(dsets.keys())
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
         for group in self.groups:
-            tcsims[f"rap_RAP15_{group}"] = TimecourseSim(
-                [Timecourse(
-                    start=0,
-                    end=320 * 60,  # [min]
-                    steps=200,
-                    changes={
-                        **self.default_changes(),
-                        # physiological changes
-                        "BW": Q_(self.bodyweights[group], "kg"),
-                        # dose
-                        "PODOSE_rap": Q_(15, "mg"),
-                        # hepatic impairment
-                        "f_cirrhosis": Q_(self.f_cirrhosis[group], "dimensionless"),
-                    },
-                )]
+            simulations[f"rap_RAP15_{group}"] = Simulation(
+                time_unit="hr",
+                end=320,
+                # every 6 min, the absorption peak is within the first hour
+                preinit_changes={
+                    **self.default_changes(),
+                    # physiological changes
+                    "BW": Q(self.bodyweights[group], "kg"),
+                    "HEIGHT": Q(self.heights[group], "cm"),
+                    # dose
+                    "PODOSE_rap": Q(15, "mg"),
+                    # fasted
+                    "GU__fed": Q(self.fasting_map["fasted"], "dimensionless"),
+                    # hepatic impairment
+                    "f_cirrhosis": Q(self.f_cirrhosis[group], "dimensionless"),
+                },
             )
 
-        #console.print(tcsims.keys())
-        return tcsims
+        return simulations
 
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
 
         mappings = {}
 
@@ -91,32 +113,40 @@ class Zimmerman2008(RapamycinSimulationExperiment):
                     dataset=f"rapamycin_RAP15_{group}",
                     xid="time",
                     yid="mean",
-                    yid_sd="mean_sd",
-                    count="count"
+                    yid_se="mean_se",
+                    count="count",
                 ),
                 observable=FitData(
-                    self, task=f"task_rap_RAP15_{group}", xid="time",yid="[Cveblood_rap]",
+                    self,
+                    task=f"task_rap_RAP15_{group}",
+                    xid="time",
+                    yid="[Cveblood_rap]",
                 ),
-                metadata=RapamycinMappingMetaData(
+                metadata=PKPDMappingMetaData(
                     tissue=Tissue.BLOOD,
                     route=Route.PO,
                     application_form=ApplicationForm.SOLUTION,
                     dosing=Dosing.SINGLE,
-                    health=Health.HEPATIC_IMPAIRMENT if group == "GRADE_C" else Health.HEALTHY,
-                    fasting=Fasting.NR,
-                    coadministration=Coadministration.NONE
-                )
+                    health=Health.HEPATIC_IMPAIRMENT
+                    if group == "GRADE_C"
+                    else Health.HEALTHY,
+                    fasting=Fasting.FASTED,
+                    coadministration=Coadministration.NONE,
+                ),
             )
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
 
         fig = Figure(
             experiment=self,
             sid="Fig1",
             name=f"{self.__class__.__name__}",
         )
-        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        plots = fig.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
+        )
         plots[0].set_yaxis(self.label_rap_blood, unit=self.unit_rap, scale="linear")
 
         for group in self.groups:
@@ -125,7 +155,7 @@ class Zimmerman2008(RapamycinSimulationExperiment):
                 task=f"task_rap_RAP15_{group}",
                 xid="time",
                 yid="[Cveblood_rap]",
-                label=group,
+                label=self.labels_group[group],
                 color=self.colors[group],
             )
             # data
@@ -133,16 +163,14 @@ class Zimmerman2008(RapamycinSimulationExperiment):
                 dataset=f"rapamycin_RAP15_{group}",
                 xid="time",
                 yid="mean",
-                yid_sd="mean_sd",
+                yid_se="mean_se",
                 count="count",
-                label=group,
+                label=self.labels_group[group],
                 color=self.colors[group],
             )
 
-        return {
-            fig.sid: fig,
-        }
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    run_experiments(Zimmerman2008, output_dir=Zimmerman2008.__name__)
+    MODEL.run_experiments(Zimmerman2008, output_dir=Zimmerman2008.__name__)

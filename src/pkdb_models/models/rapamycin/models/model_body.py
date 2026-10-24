@@ -1,10 +1,29 @@
 """Rapamycin body model."""
 
-from sbmlutils.cytoscape import visualize_sbml
-from sbmlutils.factory import *
-from sbmlutils.metadata import *
-from pkdb_models.models.rapamycin.models import annotations
-from pkdb_models.models.rapamycin.models import templates
+from typing import NotRequired, TypedDict
+
+from sbmlutils.factory import (
+    PORT_SUFFIX,
+    AssignmentRule,
+    Compartment,
+    ExternalModelDefinition,
+    Model,
+    Parameter,
+    RateRule,
+    Reaction,
+    ReplacedElement,
+    Species,
+    Submodel,
+    UnitDefinition,
+    create_model,
+)
+from sbmlutils.metadata import (
+    BQB,
+    SBO,
+)
+
+from pkdb_models.models.rapamycin.models import annotations, templates
+from pkdb_models.models.rapamycin.models.fits import FITS
 
 
 # -----------------------------------------------------------------------------
@@ -14,43 +33,18 @@ class U(templates.U):
     """UnitsDefinitions."""
 
     cm = UnitDefinition("cm")
-    hr = UnitDefinition("hr")
     kg = UnitDefinition("kg")
 
-    l_per_hr = UnitDefinition("l_per_hr", "l/hr")
     l_per_kg = UnitDefinition("l_per_kg", "l/kg")
-    l_per_min_kg = UnitDefinition("l_per_min_kg", "l/min/kg")
-    l_per_ml = UnitDefinition("l_per_ml", "l/ml")
 
-    m2_per_kg = UnitDefinition("m2_per_kg", "meter^2/kg")
-
-    mg_per_day = UnitDefinition("mg_per_day", "mg/day")
-    mg_per_g = UnitDefinition("mg_per_g", "mg/g")
-    mg_per_hr = UnitDefinition("mg_per_hr", "mg/hr")
-    mg_per_l = UnitDefinition("mg_per_l", "mg/l")
     mg_per_min = UnitDefinition("mg_per_min", "mg/min")
-
-    min_per_day = UnitDefinition("min_per_day", "min/day")
-    min_per_hr = UnitDefinition("min_per_hr", "min/hr")
 
     ml = UnitDefinition("ml")
     ml_per_l = UnitDefinition("ml_per_l", "ml/l")
     ml_per_s = UnitDefinition("ml_per_s", "ml/s")
     ml_per_s_kg = UnitDefinition("ml_per_s_kg", "ml/s/kg")
 
-    mmole_per_hr = UnitDefinition("mmole_per_hr", "mmole/hr")
-    mmole_per_l = UnitDefinition("mmole_per_l", "mmole/l")
-    mmole_per_min_kg = UnitDefinition("mmole_per_min_kg", "mmole/min/kg")
-    mmole_per_hr_ml = UnitDefinition("mmole_per_hr_ml", "mmole/hr/ml")
-
-    mul_per_g = UnitDefinition("mulitre_per_g", "microlitre/g")
-    mul_per_min_mg = UnitDefinition("mul_per_min_mg", "microliter/min/mg")
-
-    per_hr = UnitDefinition("per_hr", "1/hr")
-    per_min_kg = UnitDefinition("per_min_kg", "1/min/kg")
-
     s_per_min = UnitDefinition("s_per_min", "s/min")
-    mmHg = UnitDefinition("mmHg", "133.32239 N/m^2")
 
 
 _m = Model(
@@ -58,30 +52,54 @@ _m = Model(
     name="Rapamycin body model",
     notes="""
     # Rapamycin body model
-    
-    - whole-body model (blood circulation)
+
+    Whole-body model of rapamycin (sirolimus) with the blood circulation, the
+    tissue distribution and the submodels of the intestine, the liver and the
+    kidneys.
+
+    The circulating species are whole blood concentrations: rapamycin is
+    bound in the erythrocytes (FKBP12, blood to plasma ratio 36-142), nearly
+    all studies measure whole blood. The blood flows transport the blood
+    concentrations, the plasma concentration is the blood concentration over
+    the blood to plasma ratio `BP_rap`.
     """
     + templates.terms_of_use,
     units=U,
     model_units=templates.model_units,
     creators=templates.creators,
-    annotations = annotations.model + [
+    annotations=[
+        *annotations.model,
         # tissue
         (BQB.OCCURS_IN, "BTO:0001489"),  # whole body
         (BQB.OCCURS_IN, "FMA:256135"),  # body
-
         (BQB.HAS_PROPERTY, "NCIT:C79369"),  # Pharmacokinetics: Absorption
         (BQB.HAS_PROPERTY, "NCIT:C79371"),  # Pharmacokinetics: Metabolism
         (BQB.HAS_PROPERTY, "NCIT:C79372"),  # Pharmacokinetics: Excretion
         (BQB.HAS_PROPERTY, "NCIT:C79370"),  # Pharmacokinetics: Distribution
-    ]
+    ],
 )
 
 _m.ports = []
 _m.deletions = []
 _m.replaced_elements = []
 
-SUBSTANCES_BODY = {
+
+class SubstanceBody(TypedDict):
+    """Definition of a substance transported in the whole-body model."""
+
+    name: str
+    unit: UnitDefinition
+    cinit: float  # initial concentration [mmole/l]
+    Mr: NotRequired[float]  # molecular weight [g/mole]
+    IVDOSE: NotRequired[float]  # intravenous dose [mg]
+    PODOSE: NotRequired[float]  # oral dose [mg]
+    #: distribution into the tissues (`ftissue_<sid>`, `Kp_<sid>`) and slow
+    #: binding in the tissue (`Kpdeep_<sid>`, `kdeep_<sid>`), fitted
+    tissue_distribution: NotRequired[bool]
+    BP: NotRequired[float]  # blood to plasma ratio [-]
+
+
+SUBSTANCES_BODY: dict[str, SubstanceBody] = {
     "rap": {
         "name": "rapamycin",
         "unit": U.mmole,
@@ -90,35 +108,27 @@ SUBSTANCES_BODY = {
         # Molecular weight
         "Mr": 914.1719,  # [g/mole]
         # iv doses [mg]
-        "IVDOSE": 0,  # venous plasma
+        "IVDOSE": 0,  # venous blood
         # oral absorption
         "PODOSE": 0,  # dose
-
         # tissue distribution
-        'ftissue': 2.919698874464165,  # [litre_per_min] distribution in tissues
-        # logP: 4.63: P = 10^4.63 = 42657, https://go.drugbank.com/drugs/DB00877, https://pfe-pfizercom-prod.s3.amazonaws.com/products/material_safety_data/sirolimus_tablets_21-march-2018.pdf
-        # logP: 4.85: ALOGPS, P = 70794
-        # logP: 7.45: Chemaxon, P = 10^7.45 = 28183829
-        "Kp": 10.035536946020404,  # [-] tissue/plasma partition coefficient
-
-        # protein binding and blood concentrations
-        "BP": 142,  # blood to plasma ration (BP); 142 ± 39 [Leung2006]
+        # the distribution in tissues (ftissue, Kp) and the slow binding in
+        # the tissue (Kpdeep, kdeep) are fitted, see `fits.FITS`
+        # logP: 4.63, https://go.drugbank.com/drugs/DB00877
+        "tissue_distribution": True,
+        # blood to plasma ratio: 142 ± 39 in healthy subjects (Leung2006),
+        # 84.5-117 (Zimmerman2008), 36 ± 12 in transplant patients
+        # (Brattstrom2000)
+        "BP": 142,
     },
     "rx": {
         "name": "rapamycin metabolites",
         "unit": U.mmole,
         # initial concentration
         "cinit": 0.0,  # [mmole/l]
-        # Molecular weight
-        "Mr": 914.1719,  # [g/mole]  # FIXME: unknown
-        # 'ftissue': 1.0,  # [litre_per_min] distribution in tissues
-
-        # logP: 2.45: P = 10^2.45 = 282, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3103912/ [https://go.drugbank.com/drugs/DB09026]
-        # logP: 3.87: ALOGPS, P = 10^3.87 = 7413
-        # logP: 3.12: Chemaxon, P = 10^3.12 = 1318
-        # "Kp": 100.0,  # [-] tissue/plasma partition coefficient
+        # the metabolites are not dosed, i.e., no molecular weight, and are
+        # not distributed into the tissues
     },
-
 }
 
 # -----------------------------------------------------------------------------
@@ -160,7 +170,7 @@ _m.external_model_definitions = [
         modelRef=liver_id,
     ),
     ExternalModelDefinition(
-         sid="gut", name="gut model definition", source=f"{gut_id}.xml", modelRef=gut_id
+        sid="gut", name="gut model definition", source=f"{gut_id}.xml", modelRef=gut_id
     ),
 ]
 
@@ -280,7 +290,7 @@ _m.compartments = [
         value=1,
         unit=U.liter,
         constant=False,
-        name="portal plasma",
+        name="portal blood",
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
         annotations=annotations.compartments["po"],
     ),
@@ -290,14 +300,14 @@ _m.compartments = [
         value=1,
         unit=U.liter,
         constant=False,
-        name="hepatic venous plasma",
+        name="hepatic venous blood",
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
         annotations=annotations.compartments["hv"],
     ),
 ]
 
-# create plasma and tissue compartments (for correct blood volume)
-for cid in COMPARTMENTS_BODY.keys():
+# create blood and tissue compartments (for correct blood volume)
+for cid in COMPARTMENTS_BODY:
     if cid not in ["ar", "ve", "po", "hv"]:
         _m.compartments.extend(
             [
@@ -317,14 +327,14 @@ for cid in COMPARTMENTS_BODY.keys():
                     sboTerm=SBO.PHYSICAL_COMPARTMENT,
                 ),
                 Compartment(
-                    f"V{cid}_plasma",
+                    f"V{cid}_blood",
                     value=1,
                     unit=U.liter,
                     constant=False,
-                    name=f"{cid} plasma",
-                    metaId=f"meta_V{cid}_plasma",
+                    name=f"{cid} blood",
+                    metaId=f"meta_V{cid}_blood",
                     port=True,
-                    annotations=annotations.compartments["plasma"]
+                    annotations=annotations.compartments["blood"]
                     + [
                         (BQB.IS_PART_OF, aid[1])
                         for aid in annotations.compartments[cid]
@@ -350,7 +360,7 @@ _m.parameters = [
     Parameter("f_lumen", 0.9, name="fraction lumen of intestine", unit=U.dimensionless)
 ]
 _m.rules = [
-    AssignmentRule("Vgulumen", "f_lumen * Vgu", unit=U.dimensionless),
+    AssignmentRule("Vgulumen", "f_lumen * Vgu", unit=U.liter),
 ]
 
 
@@ -366,9 +376,9 @@ _m.replaced_elements.extend(
             portRef=f"Vki{PORT_SUFFIX}",
         ),
         ReplacedElement(
-            sid="Vki_plasma_RE",
-            metaId="Vki_plasma_RE",
-            elementRef="Vki_plasma",
+            sid="Vki_blood_RE",
+            metaId="Vki_blood_RE",
+            elementRef="Vki_blood",
             submodelRef=SUBMODEL_SID_DICT["ki"],
             portRef=f"Vext{PORT_SUFFIX}",
         ),
@@ -388,9 +398,9 @@ _m.replaced_elements.extend(
             portRef=f"Vli{PORT_SUFFIX}",
         ),
         ReplacedElement(
-            sid="Vli_plasma_RE",
-            metaId="Vli_plasma_RE",
-            elementRef="Vli_plasma",
+            sid="Vli_blood_RE",
+            metaId="Vli_blood_RE",
+            elementRef="Vli_blood",
             submodelRef=SUBMODEL_SID_DICT["li"],
             portRef=f"Vext{PORT_SUFFIX}",
         ),
@@ -403,9 +413,16 @@ _m.replaced_elements.extend(
         ),
         # intestine
         ReplacedElement(
-            sid="Vgu_plasma_RE",
-            metaId="Vgu_plasma_RE",
-            elementRef="Vgu_plasma",
+            sid="Vstomach_RE",
+            metaId="Vstomach_RE",
+            elementRef="Vstomach",
+            submodelRef=SUBMODEL_SID_DICT["gu"],
+            portRef=f"Vstomach{PORT_SUFFIX}",
+        ),
+        ReplacedElement(
+            sid="Vgu_blood_RE",
+            metaId="Vgu_blood_RE",
+            elementRef="Vgu_blood",
             submodelRef=SUBMODEL_SID_DICT["gu"],
             portRef=f"Vext{PORT_SUFFIX}",
         ),
@@ -415,15 +432,6 @@ _m.replaced_elements.extend(
             elementRef="Vgu",
             submodelRef=SUBMODEL_SID_DICT["gu"],
             portRef=f"Vgu{PORT_SUFFIX}",
-
-
-
-
-
-
-
-
-
         ),
         ReplacedElement(
             sid="Vgulumen_RE2",
@@ -452,9 +460,9 @@ for sid, sdict in SUBSTANCES_BODY.items():
             sid_ex = f"C{cid}_{sid}"
             cid_ex = f"V{cid}"
         else:
-            # plasma compartment
-            sid_ex = f"C{cid}_plasma_{sid}"
-            cid_ex = f"V{cid}_plasma"
+            # blood compartment
+            sid_ex = f"C{cid}_blood_{sid}"
+            cid_ex = f"V{cid}_blood"
 
         _m.species.append(
             Species(
@@ -463,7 +471,7 @@ for sid, sdict in SUBSTANCES_BODY.items():
                 initialConcentration=sdict["cinit"],
                 compartment=cid_ex,
                 substanceUnit=sdict["unit"],
-                name=f"{sdict['name']} ({cname} plasma)",
+                name=f"{sdict['name']} ({cname} blood)",
                 hasOnlySubstanceUnits=False,
                 port=True,
                 sboTerm=SBO.SIMPLE_CHEMICAL,
@@ -473,64 +481,70 @@ for sid, sdict in SUBSTANCES_BODY.items():
 
     # tissue species
     for cid, cname in COMPARTMENTS_BODY.items():
-        if "ftissue" in sdict:
-            if cid not in ["ve", "ar", "li", "ki", "gu", "po", "hv"]:
-                sid_ex = f"C{cid}_{sid}"
-                cid_ex = f"V{cid}_tissue"
+        if sdict.get("tissue_distribution") and cid not in [
+            "ve",
+            "ar",
+            "li",
+            "ki",
+            "gu",
+            "po",
+            "hv",
+        ]:
+            sid_ex = f"C{cid}_{sid}"
+            cid_ex = f"V{cid}_tissue"
 
-                _m.species.extend(
-                    [
-
-
-
-
-
-
-
-
-
-                        Species(
-                            sid_ex,
-                            metaId=f"meta_{sid_ex}",
-                            initialConcentration=sdict["cinit"],
-                            compartment=cid_ex,
-                            substanceUnit=sdict["unit"],
-                            name=f"{sdict['name']} ({cname})",
-                            hasOnlySubstanceUnits=False,
-
-
-
-
-
-
-
-
-
-                            port=True,
-                            sboTerm=SBO.SIMPLE_CHEMICAL,
-                            annotations=annotations.species[sid],
-                        )
-                    ]
+            _m.species.extend(
+                [
+                    Species(
+                        sid_ex,
+                        metaId=f"meta_{sid_ex}",
+                        initialConcentration=sdict["cinit"],
+                        compartment=cid_ex,
+                        substanceUnit=sdict["unit"],
+                        name=f"{sdict['name']} ({cname})",
+                        hasOnlySubstanceUnits=False,
+                        port=True,
+                        sboTerm=SBO.SIMPLE_CHEMICAL,
+                        annotations=annotations.species[sid],
+                    )
+                ]
+            )
+            if cid == "re":
+                # the slow binding of rapamycin in the tissue
+                _m.species.append(
+                    Species(
+                        f"C{cid}_deep_{sid}",
+                        metaId=f"meta_C{cid}_deep_{sid}",
+                        initialConcentration=sdict["cinit"],
+                        compartment=cid_ex,
+                        substanceUnit=sdict["unit"],
+                        name=f"{sdict['name']} bound ({cname})",
+                        hasOnlySubstanceUnits=False,
+                        sboTerm=SBO.SIMPLE_CHEMICAL,
+                        annotations=annotations.species[sid],
+                    )
                 )
 
     # urine metabolites dummy species
     if sid in ["rx"]:
-        _m.species.extend([
-            Species(
-                f"Aurine_{sid}",
-                metaId=f"meta_Aurine_{sid}",
-                initialConcentration=0,
-                compartment="Vurine",
-                substanceUnit=sdict["unit"],
-                name=f"{sdict['name']} (urine)",
-                hasOnlySubstanceUnits=True,
-                sboTerm=SBO.SIMPLE_CHEMICAL,
-                annotations=annotations.species[sid],
-            ),
-        ])
+        _m.species.extend(
+            [
+                Species(
+                    f"Aurine_{sid}",
+                    metaId=f"meta_Aurine_{sid}",
+                    initialConcentration=0,
+                    compartment="Vurine",
+                    substanceUnit=sdict["unit"],
+                    name=f"{sdict['name']} (urine)",
+                    hasOnlySubstanceUnits=True,
+                    sboTerm=SBO.SIMPLE_CHEMICAL,
+                    annotations=annotations.species[sid],
+                ),
+            ]
+        )
 
-    # feces metabolites
-    if sid in ["rx"]:
+    # feces
+    if sid in ["rap", "rx"]:
         _m.species.append(
             Species(
                 f"Afeces_{sid}",
@@ -572,9 +586,9 @@ for tkey, skey_list in replaced_species.items():
         _m.replaced_elements.extend(
             [
                 ReplacedElement(
-                    sid=f"C{tkey}_plasma_{skey}_RE",
-                    metaId=f"C{tkey}_plasma_{skey}_RE",
-                    elementRef=f"C{tkey}_plasma_{skey}",
+                    sid=f"C{tkey}_blood_{skey}_RE",
+                    metaId=f"C{tkey}_blood_{skey}_RE",
+                    elementRef=f"C{tkey}_blood_{skey}",
                     submodelRef=SUBMODEL_SID_DICT[tkey],
                     portRef=f"{skey}_ext{PORT_SUFFIX}",
                 ),
@@ -594,7 +608,7 @@ for skey in ["rx"]:
     )
 
 # feces species replacements
-for skey in ["rx"]:
+for skey in ["rap", "rx"]:
     _m.replaced_elements.append(
         ReplacedElement(
             sid=f"Afeces_{skey}_RE",
@@ -607,26 +621,30 @@ for skey in ["rx"]:
 
 # intestine species replacements
 for skey in ["rap", "rx"]:
-    _m.replaced_elements.extend([
-        ReplacedElement(
-            sid=f"Clumen_{skey}_RE1",
-            metaId=f"Clumen_{skey}_RE1",
-            elementRef=f"Clumen_{skey}",
-            submodelRef=SUBMODEL_SID_DICT["gu"],
-            portRef=f"{skey}_lumen{PORT_SUFFIX}",
-        )
-    ])
+    _m.replaced_elements.extend(
+        [
+            ReplacedElement(
+                sid=f"Clumen_{skey}_RE1",
+                metaId=f"Clumen_{skey}_RE1",
+                elementRef=f"Clumen_{skey}",
+                submodelRef=SUBMODEL_SID_DICT["gu"],
+                portRef=f"{skey}_lumen{PORT_SUFFIX}",
+            )
+        ]
+    )
 
 for skey in ["rx"]:
-    _m.replaced_elements.extend([
-        ReplacedElement(
-            sid=f"Clumen_{skey}_RE2",
-            metaId=f"Clumen_{skey}_RE2",
-            elementRef=f"Clumen_{skey}",
-            submodelRef=SUBMODEL_SID_DICT["li"],
-            portRef=f"{skey}_lumen{PORT_SUFFIX}",
-        ),
-    ])
+    _m.replaced_elements.extend(
+        [
+            ReplacedElement(
+                sid=f"Clumen_{skey}_RE2",
+                metaId=f"Clumen_{skey}_RE2",
+                elementRef=f"Clumen_{skey}",
+                submodelRef=SUBMODEL_SID_DICT["li"],
+                portRef=f"{skey}_lumen{PORT_SUFFIX}",
+            ),
+        ]
+    )
 
 # -------------------------------------------------------------------------------------------------
 # Parameters
@@ -641,6 +659,20 @@ _m.parameters.extend(
             constant=True,
             name="body weight [kg]",
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        ),
+        Parameter(
+            "BW_ref",
+            75,
+            U.kg,
+            constant=True,
+            name="reference body weight [kg]",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            notes=(
+                "Body weight at which the exchange flows of the tissue "
+                "distribution (`ftissue_<sid>`) are given; they scale with the "
+                "body weight as the volumes, the blood flows and the renal "
+                "clearance do."
+            ),
         ),
         Parameter(
             "HEIGHT",
@@ -663,15 +695,7 @@ _m.parameters.extend(
             70,
             U.per_min,
             constant=True,
-            name="heart rate [1/min]",
-            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        ),
-        Parameter(
-            "MAP",
-            100,
-            U.mmHg,
-            constant=True,
-            name="mean arterial pressure [mmHg]",
+            name="resting heart rate [1/min]",
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
         ),
         Parameter(
@@ -700,7 +724,7 @@ _m.parameters.extend(
             notes="""
             1.0: normal function;
             <1.0: reduced function as reduced cardiac output;
-            """
+            """,
         ),
         Parameter(
             "CO",
@@ -712,10 +736,10 @@ _m.parameters.extend(
         ),
         Parameter(
             "QC",
-            108.33 * 1000 * 60,
+            108.33 / 1000 * 60,
             U.l_per_min,
             constant=False,
-            name="cardiac output [L/hr]",
+            name="cardiac output [l/min]",
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
         ),
         Parameter(
@@ -723,7 +747,7 @@ _m.parameters.extend(
             150,
             U.ml,
             constant=True,
-            name="increase of cardiac output per heartbeat [ml/min*min]",
+            name="increase of cardiac output per heartbeat [ml]",
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
         ),
         # fractional tissue volumes
@@ -733,15 +757,6 @@ _m.parameters.extend(
             U.dimensionless,
             constant=False,
             name="blood fraction of organ volume",
-            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        ),
-        Parameter(
-            "HCT",
-            0.51,
-            U.dimensionless,
-            constant=True,
-            metaId="meta_HCT",
-            name="hematocrit",
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
         ),
         # fractional tissue volumes
@@ -828,7 +843,7 @@ _m.parameters.extend(
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
             notes="""
         Assumed FQgu is the sum of FQgu + FQsp + FQpa for correct portal blood flow.
-        with FQgu=0.146, FQsp=0.017, FQpa=0.017 
+        with FQgu=0.146, FQsp=0.017, FQpa=0.017
         """,
         ),
         Parameter(
@@ -864,14 +879,6 @@ _m.parameters.extend(
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
         ),
         Parameter(
-            "conversion_min_per_day",
-            1440,
-            U.min_per_day,
-            constant=True,
-            name="Conversion factor min to hours",
-            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        ),
-        Parameter(
             "f_cirrhosis",
             0,
             U.dimensionless,
@@ -891,7 +898,10 @@ _m.parameters.extend(
             name="fraction of portal venous blood shunted by the liver",
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
             annotations=[
-                (BQB.IS, "hp/HP:0002629"),  # Gastrointestinal arteriovenous malformation
+                (
+                    BQB.IS,
+                    "hp/HP:0002629",
+                ),  # Gastrointestinal arteriovenous malformation
             ],
         ),
         Parameter(
@@ -902,6 +912,19 @@ _m.parameters.extend(
             name="fraction of lost parenchymal liver volume",
             sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
         ),
+        Parameter(
+            "r_cyp3a5",
+            **FITS.parameter("r_cyp3a5", unit=U.dimensionless),
+            constant=True,
+            name="capacity of CYP3A5 relative to CYP3A4",
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            notes="""
+            Metabolism of rapamycin by CYP3A5 of the genotype *1/*1 relative
+            to the one by CYP3A4, in the gut wall and the liver. The reference
+            genotype is CYP3A5 *3/*3 (no functional CYP3A5, `f_cyp3a5` = 0),
+            the genotype of most Caucasians.
+            """,
+        ),
     ]
 )
 
@@ -909,36 +932,39 @@ _m.parameters.extend(
 for sid, sdict in SUBSTANCES_BODY.items():
     if "PODOSE" in sdict:
         # Parameter for intestine model
-        _m.parameters.extend([
-            Parameter(
-                f"PODOSE_{sid}",
-                sdict["PODOSE"],
-                U.mg,
-                constant=False,
-                sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-                name=f"oral dose {sid} [mg]",
-            ),
+        _m.parameters.extend(
+            [
+                Parameter(
+                    f"PODOSE_{sid}",
+                    sdict["PODOSE"],
+                    U.mg,
+                    constant=False,
+                    sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+                    name=f"oral dose {sid} [mg]",
+                ),
             ]
         )
-        _m.replaced_elements.extend([
-            ReplacedElement(
-                sid=f"PODOSE_{sid}_RE",
-                metaId=f"PODOSE_{sid}_RE",
-                elementRef=f"PODOSE_{sid}",
-                submodelRef=SUBMODEL_SID_DICT["gu"],
-                portRef=f"PODOSE_{sid}{PORT_SUFFIX}",
-            ),
+        _m.replaced_elements.extend(
+            [
+                ReplacedElement(
+                    sid=f"PODOSE_{sid}_RE",
+                    metaId=f"PODOSE_{sid}_RE",
+                    elementRef=f"PODOSE_{sid}",
+                    submodelRef=SUBMODEL_SID_DICT["gu"],
+                    portRef=f"PODOSE_{sid}{PORT_SUFFIX}",
+                ),
             ]
         )
 
-_m.rules = _m.rules + [
+_m.rules = [
+    *_m.rules,
     AssignmentRule("f_shunts", "f_cirrhosis", unit=U.dimensionless),
     AssignmentRule("f_tissue_loss", "f_cirrhosis", unit=U.dimensionless),
 ]
 
 replaced_parameters = {
-    "li": [],
-    "gu": ["Mr_rap"],
+    "li": ["r_cyp3a5"],
+    "gu": ["Mr_rap", "r_cyp3a5"],
     "ki": [],
 }
 
@@ -956,9 +982,8 @@ for ckey, pids in replaced_parameters.items():
 
 # species specific parameters
 for sid, sdict in SUBSTANCES_BODY.items():
-    _m.parameters.extend(
-        [
-            # molecular weights
+    if "Mr" in sdict:
+        _m.parameters.append(
             Parameter(
                 f"Mr_{sid}",
                 sdict["Mr"],
@@ -966,38 +991,69 @@ for sid, sdict in SUBSTANCES_BODY.items():
                 constant=True,
                 name=f"Molecular weight {sid} [g/mole]",
                 sboTerm=SBO.MOLECULAR_MASS,
-            ),
-        ]
-    )
+            )
+        )
 
     # tissue distribution
-    if "ftissue" in sdict:
-        _m.parameters.extend([
-            Parameter(
-                f"ftissue_{sid}",
-                sdict["ftissue"],
-                U.l_per_min,
-                constant=True,
-                sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-                name=f"tissue distribution {sid}",
-            ),
-            Parameter(
-                f"Kp_{sid}",
-                sdict["Kp"],
-                U.dimensionless,
-                constant=True,
-                sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-                name=f"tissue/plasma partition coefficient {sid}",
-            ),
-            # plasma ratio
-            Parameter(
-                f"BP_{sid}",
-                sdict["BP"],
-                U.dimensionless,
-                constant=True,
-                name=f"blood to plasma ratio {sid}",
-            ),
-        ])
+    if sdict.get("tissue_distribution"):
+        _m.parameters.extend(
+            [
+                Parameter(
+                    f"ftissue_{sid}",
+                    **FITS.parameter(f"ftissue_{sid}", unit=U.l_per_min),
+                    constant=True,
+                    sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+                    name=f"tissue distribution {sid}",
+                    notes="Exchange flow at the reference body weight `BW_ref`.",
+                ),
+                Parameter(
+                    f"Kp_{sid}",
+                    **FITS.parameter(f"Kp_{sid}", unit=U.dimensionless),
+                    constant=True,
+                    sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+                    name=f"tissue/blood partition coefficient {sid}",
+                    notes="""
+                    Partition coefficient between the tissue and whole blood;
+                    with the exchange flow `ftissue` it sets the volume of
+                    distribution (about 12 l/kg of whole blood) and the long
+                    terminal half-life of about 60 hr.
+                    """,
+                ),
+                Parameter(
+                    f"Kpdeep_{sid}",
+                    **FITS.parameter(f"Kpdeep_{sid}", unit=U.dimensionless),
+                    constant=True,
+                    sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+                    name=f"bound/free partition coefficient {sid} (tissue)",
+                    notes="""
+                    Ratio of the bound to the free rapamycin of the tissue in
+                    the equilibrium of the slow binding (FKBP12): the volume of
+                    distribution of the terminal phase.
+                    """,
+                ),
+                Parameter(
+                    f"kdeep_{sid}",
+                    **FITS.parameter(f"kdeep_{sid}", unit=U.per_min),
+                    constant=True,
+                    sboTerm=SBO.KINETIC_CONSTANT,
+                    name=f"rate of the slow binding {sid} (tissue)",
+                    notes="""
+                    The release of the bound rapamycin of the tissue limits the
+                    terminal phase: the concentrations fall by a factor of about
+                    10 in the first day after a dose (distribution) and with a
+                    half-life of about 60 hr after it.
+                    """,
+                ),
+                # blood to plasma ratio, for the plasma concentrations
+                Parameter(
+                    f"BP_{sid}",
+                    sdict["BP"],
+                    U.dimensionless,
+                    constant=True,
+                    name=f"blood to plasma ratio {sid}",
+                ),
+            ]
+        )
 
     # dosing
     if "IVDOSE" in sdict:
@@ -1043,7 +1099,8 @@ for sid, sdict in SUBSTANCES_BODY.items():
 # -------------------------------------------------------------------------------------------------
 # AssignmentRules
 # -------------------------------------------------------------------------------------------------
-_m.rules = _m.rules + [
+_m.rules = [
+    *_m.rules,
     # Rest body volume
     AssignmentRule(
         "FVre",
@@ -1057,7 +1114,11 @@ _m.rules = _m.rules + [
         "BSA", "0.024265 m2 * power(BW/1 kg, 0.5378) * power(HEIGHT/1 cm, 0.3964)", U.m2
     ),
     # cardiac output (depending on heart rate and bodyweight)
-    AssignmentRule("CO", "f_cardiac_function*BW*COBW + (HR-HRrest)*COHRI / 60 s_per_min", U.ml_per_s),
+    AssignmentRule(
+        "CO",
+        "f_cardiac_function*BW*COBW + (HR-HRrest)*COHRI / 60 s_per_min",
+        U.ml_per_s,
+    ),
     # cardiac output (depending on bodyweight)
     AssignmentRule("QC", "CO/1000 ml_per_l * 60 s_per_min", U.l_per_min),
     # volumes
@@ -1079,14 +1140,14 @@ _m.rules = _m.rules + [
     ),
     AssignmentRule(
         "Vpo",
-        "(1 dimensionless - HCT) * (BW*FVpo - FVpo/(FVar+FVve+FVpo+FVhv) "
-        "* BW * Fblood * (1 l_per_kg - (FVar+FVve+FVpo+FVhv)))",
+        "BW*FVpo - FVpo/(FVar+FVve+FVpo+FVhv) "
+        "* BW * Fblood * (1 l_per_kg - (FVar+FVve+FVpo+FVhv))",
         U.liter,
     ),
     AssignmentRule(
         "Vhv",
-        "(1 dimensionless - HCT) * (BW*FVhv - FVhv/(FVar+FVve+FVpo+FVhv) "
-        "* BW * Fblood * (1 l_per_kg - (FVar+FVve+FVpo+FVhv)))",
+        "BW*FVhv - FVhv/(FVar+FVve+FVpo+FVhv) "
+        "* BW * Fblood * (1 l_per_kg - (FVar+FVve+FVpo+FVhv))",
         U.liter,
     ),
     # blood flows
@@ -1104,14 +1165,13 @@ _m.rules = _m.rules + [
 # Volumes for explicit tissue models
 for cid, cname in COMPARTMENTS_BODY.items():
     if cid not in ["ve", "ar", "po", "hv"]:
-
         _m.rules.append(
-            # plasma volume associated with tissue
+            # blood volume associated with tissue
             AssignmentRule(
-                f"V{cid}_plasma",
-                value=f"V{cid} * Fblood * (1 dimensionless - HCT)",
+                f"V{cid}_blood",
+                value=f"V{cid} * Fblood",
                 unit=U.liter,
-                name=f"plasma volume of {cname}",
+                name=f"blood volume of {cname}",
             ),
         )
 
@@ -1166,22 +1226,37 @@ for sid, sdict in SUBSTANCES_BODY.items():
     # --------------------
     # tissue distribution
     # --------------------
-    if "ftissue" in sdict:
-        for cid in COMPARTMENTS_BODY.keys():
+    if sdict.get("tissue_distribution"):
+        for cid in COMPARTMENTS_BODY:
             if cid not in ["ve", "ar", "li", "gu", "ki", "po", "hv"]:
                 _m.reactions.append(
                     Reaction(
                         sid=f"transport_{cid}_{sid}",
                         name=f"transport {sname}",
                         formula=(
-                            f"ftissue_{sid} * (C{cid}_plasma_{sid}*Kp_{sid} - C{cid}_{sid})",
+                            f"ftissue_{sid} * BW/BW_ref * (C{cid}_blood_{sid}*Kp_{sid} - C{cid}_{sid})",
                             U.mmole_per_min,
                         ),
-                        equation=f"C{cid}_plasma_{sid} <-> C{cid}_{sid}",
+                        equation=f"C{cid}_blood_{sid} <-> C{cid}_{sid}",
                         compartment=f"V{cid}_tissue",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                 )
+                if cid == "re":
+                    _m.reactions.append(
+                        Reaction(
+                            sid=f"deep_{cid}_{sid}",
+                            name=f"slow binding {sname} (tissue)",
+                            formula=(
+                                f"kdeep_{sid} * V{cid}_tissue * "
+                                f"(Kpdeep_{sid} * C{cid}_{sid} - C{cid}_deep_{sid})",
+                                U.mmole_per_min,
+                            ),
+                            equation=f"C{cid}_{sid} <-> C{cid}_deep_{sid}",
+                            compartment=f"V{cid}_tissue",
+                            sboTerm=SBO.BIOCHEMICAL_REACTION,
+                        ),
+                    )
 
     if "IVDOSE" in sdict:
         _m.reactions.extend(
@@ -1220,17 +1295,17 @@ for sid, sdict in SUBSTANCES_BODY.items():
                         sid=rid_in,
                         name=name_in,
                         formula=(f"Q{cid}*Cve_{sid}", U.mmole_per_min),
-                        equation=f"Cve_{sid} -> C{cid}_plasma_{sid}",
+                        equation=f"Cve_{sid} -> C{cid}_blood_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                     Reaction(
                         sid=rid_out,
                         name=name_out,
                         formula=(
-                            f"Q{cid}*C{cid}_plasma_{sid}",
+                            f"Q{cid}*C{cid}_blood_{sid}",
                             U.mmole_per_min,
                         ),
-                        equation=f"C{cid}_plasma_{sid} -> Car_{sid}",
+                        equation=f"C{cid}_blood_{sid} -> Car_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                 ]
@@ -1244,24 +1319,24 @@ for sid, sdict in SUBSTANCES_BODY.items():
             rid_out = f"Flow_{cid}_ve_{sid}"
             name_out = f"outflow {cname} {sname}"
 
-            # only distribution in plasma volume
+            # only distribution in blood volume
             _m.reactions.extend(
                 [
                     Reaction(
                         sid=rid_in,
                         name=name_in,
                         formula=(f"Q{cid}*Car_{sid}", U.mmole_per_min),
-                        equation=f"Car_{sid} -> C{cid}_plasma_{sid}",
+                        equation=f"Car_{sid} -> C{cid}_blood_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                     Reaction(
                         sid=rid_out,
                         name=name_out,
                         formula=(
-                            f"Q{cid}*C{cid}_plasma_{sid}",
+                            f"Q{cid}*C{cid}_blood_{sid}",
                             U.mmole_per_min,
                         ),
-                        equation=f"C{cid}_plasma_{sid} -> Cve_{sid}",
+                        equation=f"C{cid}_blood_{sid} -> Cve_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                 ]
@@ -1277,22 +1352,22 @@ for sid, sdict in SUBSTANCES_BODY.items():
 
             _m.reactions.extend(
                 [
-                    # only distribution in plasma volume
+                    # only distribution in blood volume
                     Reaction(
                         sid=rid_in,
                         name=name_in,
                         formula=(f"Q{cid}*Car_{sid}", U.mmole_per_min),
-                        equation=f"Car_{sid} -> C{cid}_plasma_{sid}",
+                        equation=f"Car_{sid} -> C{cid}_blood_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                     Reaction(
                         sid=rid_out,
                         name=name_out,
                         formula=(
-                            f"Q{cid}*C{cid}_plasma_{sid}",
+                            f"Q{cid}*C{cid}_blood_{sid}",
                             U.mmole_per_min,
                         ),
-                        equation=f"C{cid}_plasma_{sid} -> Cpo_{sid}",
+                        equation=f"C{cid}_blood_{sid} -> Cpo_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                 ]
@@ -1313,18 +1388,17 @@ for sid, sdict in SUBSTANCES_BODY.items():
                             f"(1 dimensionless - f_shunts)*Qha*Car_{sid}",
                             U.mmole_per_min,
                         ),
-                        equation=f"Car_{sid} -> Cli_plasma_{sid}",
+                        equation=f"Car_{sid} -> Cli_blood_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                     # shunted arterial flow
                     Reaction(
                         sid=f"Flow_arli_hv_{sid}",
-                        name=f"flow arterial shunts",
+                        name="flow arterial shunts",
                         formula=(f"f_shunts*Qha*Car_{sid}", U.mmole_per_min),
                         equation=f"Car_{sid} -> Chv_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
-
                     # (unshunted) portal flow
                     Reaction(
                         sid=f"Flow_po_li_{sid}",
@@ -1333,13 +1407,13 @@ for sid, sdict in SUBSTANCES_BODY.items():
                             f"(1 dimensionless - f_shunts)*Qpo*Cpo_{sid}",
                             U.mmole_per_min,
                         ),
-                        equation=f"Cpo_{sid} -> Cli_plasma_{sid}",
+                        equation=f"Cpo_{sid} -> Cli_blood_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                     # portal shunts
                     Reaction(
                         sid=f"Flow_po_hv_{sid}",
-                        name=f"flow portal shunts",
+                        name="flow portal shunts",
                         formula=(f"f_shunts*Qpo*Cpo_{sid}", U.mmole_per_min),
                         equation=f"Cpo_{sid} -> Chv_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
@@ -1348,10 +1422,10 @@ for sid, sdict in SUBSTANCES_BODY.items():
                         sid=f"Flow_li_hv_{sid}",
                         name=f"outflow liver {sname}",
                         formula=(
-                            f"(1 dimensionless - f_shunts)*(Qpo+Qha)*Cli_plasma_{sid}",
+                            f"(1 dimensionless - f_shunts)*(Qpo+Qha)*Cli_blood_{sid}",
                             U.mmole_per_min,
                         ),
-                        equation=f"Cli_plasma_{sid} -> Chv_{sid}",
+                        equation=f"Cli_blood_{sid} -> Chv_{sid}",
                         sboTerm=SBO.TRANSPORT_REACTION,
                     ),
                     Reaction(
@@ -1381,75 +1455,112 @@ for sid, sdict in SUBSTANCES_BODY.items():
         )
 
 # --------------------------------------------------------------------------------------------------
-# Total rapamycin metabolites
+# Blood and plasma concentrations
 # --------------------------------------------------------------------------------------------------
+# The circulating species are whole blood concentrations, the measured matrix of
+# nearly all studies. Rapamycin is bound in the erythrocytes (FKBP12), its
+# plasma concentration is the blood concentration over the blood to plasma
+# ratio `BP_rap`. The metabolites are much less bound in the erythrocytes (the
+# blood to plasma ratio of the total radioactivity is 2.7 against 142 of
+# rapamycin, Leung2006); their plasma concentration is taken as their blood
+# concentration.
 _m.species.extend(
     [
         Species(
-            f"Cve_raptot",
-            metaId=f"meta_Cve_raptot",
+            "Cveblood_rap",
+            metaId="meta_Cveblood_rap",
             initialConcentration=0,
             compartment="Vve",
             substanceUnit=U.mmole,
-            name=f"total rapamycin (plasma)",
-            hasOnlySubstanceUnits=False,
-            sboTerm=SBO.SIMPLE_CHEMICAL,
-            annotations=annotations.species["raptot"],
-        ),
-        Species(
-            f"Cveblood_rap",
-            metaId=f"meta_Cveblood_rap",
-            initialConcentration=0,
-            compartment="Vve",
-            substanceUnit=U.mmole,
-            name=f"rapamycin (blood)",
+            name="rapamycin (venous blood)",
             hasOnlySubstanceUnits=False,
             sboTerm=SBO.SIMPLE_CHEMICAL,
             annotations=annotations.species["rap"],
         ),
         Species(
-            f"Cveblood_raptot",
-            metaId=f"meta_Cveblood_raptot",
+            "Cveplasma_rap",
+            metaId="meta_Cveplasma_rap",
             initialConcentration=0,
             compartment="Vve",
             substanceUnit=U.mmole,
-            name=f"total rapamycin (blood)",
+            name="rapamycin (venous plasma)",
             hasOnlySubstanceUnits=False,
+            sboTerm=SBO.SIMPLE_CHEMICAL,
+            annotations=annotations.species["rap"],
+        ),
+        Species(
+            "Cveblood_raptot",
+            metaId="meta_Cveblood_raptot",
+            initialConcentration=0,
+            compartment="Vve",
+            substanceUnit=U.mmole,
+            name="rapamycin and metabolites (venous blood)",
+            hasOnlySubstanceUnits=False,
+            sboTerm=SBO.SIMPLE_CHEMICAL,
+            annotations=annotations.species["raptot"],
+        ),
+        Species(
+            "Cveplasma_raptot",
+            metaId="meta_Cveplasma_raptot",
+            initialConcentration=0,
+            compartment="Vve",
+            substanceUnit=U.mmole,
+            name="rapamycin and metabolites (venous plasma)",
+            hasOnlySubstanceUnits=False,
+            sboTerm=SBO.SIMPLE_CHEMICAL,
+            annotations=annotations.species["raptot"],
+        ),
+        Species(
+            "Afeces_raptot",
+            metaId="meta_Afeces_raptot",
+            initialConcentration=0,
+            compartment="Vfeces",
+            substanceUnit=U.mmole,
+            name="rapamycin and metabolites (feces)",
+            hasOnlySubstanceUnits=True,
             sboTerm=SBO.SIMPLE_CHEMICAL,
             annotations=annotations.species["raptot"],
         ),
     ]
 )
 
-_m.rules.extend([
-    AssignmentRule(
-        "Cve_raptot",
-        "Cve_rap + Cve_rx",
-        unit=U.mM,
-        name="Sum of rapamycin and rapamycin metabolites",
-        notes="""
-        Used for comparison with total plasma radioactivity.
-        """
-    ),
-    AssignmentRule(
-        "Cveblood_rap",
-        "Cve_rap * BP_rap",
-        unit=U.mM,
-        name="rapamycin blood concentration",
-        notes="""
-        Calculated based on blood-plasma ratio (BP)
-        """
-    ),
-    AssignmentRule(
-        "Cveblood_raptot",
-        "Cve_raptot * BP_rap",
-        unit=U.mM,
-        name="total rapamycin blood concentration",
-        notes="""
-        Calculated based on blood-plasma ratio (BP)
-        """
-    ),
-])
+_m.rules.extend(
+    [
+        AssignmentRule(
+            "Cveblood_rap",
+            "Cve_rap",
+            unit=U.mM,
+            name="rapamycin blood concentration",
+        ),
+        AssignmentRule(
+            "Cveplasma_rap",
+            "Cve_rap / BP_rap",
+            unit=U.mM,
+            name="rapamycin plasma concentration",
+            notes="The blood concentration over the blood to plasma ratio (BP).",
+        ),
+        AssignmentRule(
+            "Cveblood_raptot",
+            "Cve_rap + Cve_rx",
+            unit=U.mM,
+            name="rapamycin and metabolites blood concentration",
+            notes="For the comparison with the total radioactivity of blood.",
+        ),
+        AssignmentRule(
+            "Cveplasma_raptot",
+            "Cve_rap / BP_rap + Cve_rx",
+            unit=U.mM,
+            name="rapamycin and metabolites plasma concentration",
+            notes="For the comparison with the total radioactivity of plasma.",
+        ),
+        AssignmentRule(
+            "Afeces_raptot",
+            "Afeces_rap + Afeces_rx",
+            unit=U.mmole,
+            name="rapamycin and metabolites in the feces",
+        ),
+    ]
+)
 
 model_body: Model = _m
 
@@ -1459,6 +1570,7 @@ if __name__ == "__main__":
 
     result = create_model(
         filepath=MODEL_BASE_PATH / f"{model_body.sid}.xml",
-        model=model_body, sbml_level=3, sbml_version=2
+        model=model_body,
+        sbml_level=3,
+        sbml_version=2,
     )
-    visualize_sbml(result.sbml_path, delete_session=False)

@@ -1,46 +1,85 @@
-from typing import Dict
+"""Simulation experiment of the study Tortorici2014."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
+from typing import ClassVar, override
 
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Simulation
+
+from pkdb_models.models.rapamycin import MODEL
 from pkdb_models.models.rapamycin.experiments.base_experiment import (
     RapamycinSimulationExperiment,
 )
-from pkdb_models.models.rapamycin.experiments.metadata import (
-    RapamycinMappingMetaData,
-    Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration
-)
 
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
-from pkdb_models.models.rapamycin.helpers import run_experiments
 
 class Tortorici2014(RapamycinSimulationExperiment):
     """Simulation experiment of Tortorici2014.
 
-    Rifampin is a potent CYP3A4 inducer and speed up the metabolism of sirolimus.
+    Rapamycin 20 mg oral solution in healthy fasted men, alone and on day 9 of
+    rifampin 600 mg once daily for 14 days (Fig1, mean and SD, n = 14).
+    Rifampin induces CYP3A4 and P-glycoprotein. The effect is mostly on the
+    first pass: the AUCinf decreases to 18 % (geometric mean ratio, 90 % CI
+    16-21 %), the Cmax to 29 % (26-32 %), while the half-life is almost
+    unchanged (92 %), i.e. the systemic (hepatic) clearance changes little.
+    The induction is at steady state on day 9 and maintained over the
+    sampling (rifampin until day 14), so the multiple dosing of rifampin is
+    represented by constant induction factors.
     """
 
-    interventions = ["RAP20", "RAP20_RIF600"]
-    labels = {
+    dose: ClassVar[float] = 20.0
+    interventions: ClassVar[list[str]] = ["RAP20", "RAP20_RIF600"]
+    dataset_ids: ClassVar[dict[str, str]] = {
         "RAP20": "rapamycin_RAP20",
         "RAP20_RIF600": "rapamycin_RAP20_RIF600",
     }
-    colors = {
-        "RAP20": "black",
-        "RAP20_RIF600":"#e3256b",
+    names: ClassVar[dict[str, str]] = {
+        "RAP20": "20 mg",
+        "RAP20_RIF600": "20 mg + rifampin 600 mg/day",
     }
-    f_cyp3a4 = {
-        "RAP20": 1,  # no change in activity
-        "RAP20_RIF600": 2  # speed up the metabolism (example value)
+    colors: ClassVar[dict[str, str]] = {
+        "RAP20": "black",
+        "RAP20_RIF600": "#e3256b",
+    }
+    #: induction by rifampin (not fitted): the intestinal CYP3A4 (several
+    #: fold in duodenal biopsies, Kolars1992) and P-glycoprotein (3.5 fold,
+    #: Greiner1999) are strongly induced, the hepatic CYP3A4 only a little as
+    #: the half-life of rapamycin is unchanged (92 %). The intestinal CYP3A4
+    #: factor of 8 reproduces the AUC ratio of 0.18 with the hepatic factor
+    #: 1.1 and the P-glycoprotein factor 3.5 (AUC ratio 0.18, Cmax ratio 0.18,
+    #: half-life ratio 0.94 with the parameters of the model before the
+    #: refit); CYP3A5 is not induced as the subjects are taken as *3/*3.
+    induction: ClassVar[dict[str, dict[str, float]]] = {
+        "RAP20": {
+            "GU__f_cyp3a4": 1.0,
+            "LI__f_cyp3a4": 1.0,
+            "GU__f_pg": 1.0,
+        },
+        "RAP20_RIF600": {
+            "GU__f_cyp3a4": 8.0,
+            "LI__f_cyp3a4": 1.1,
+            "GU__f_pg": 3.5,
+        },
     }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig1"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 if not label.startswith("rapamycin_"):
                     continue
                 dset = DataSet.from_df(df_label, self.ureg)
@@ -48,34 +87,31 @@ class Tortorici2014(RapamycinSimulationExperiment):
                 dset.unit_conversion("mean", 1 / self.Mr.rap)
                 dsets[label] = dset
 
-        #console.print(dsets.keys())
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
         for intervention in self.interventions:
-            tcsims[f"rap_{intervention}"] = TimecourseSim(
-                [Timecourse(
-                    start=0,
-                    end=150 * 60,  # [min] 48h
-                    steps=3000,
-                    changes={
-                        **self.default_changes(),
-                        "BW": Q_(77.1, "kg"),
-                        "PODOSE_rap": Q_(20, "mg"),
-
-                        # CYP3A4 activity (inhibition by diltiazem)
-                        "GU__f_cyp3a4": Q_(self.f_cyp3a4[intervention], "dimensionless"),
-                        "LI__f_cyp3a4": Q_(self.f_cyp3a4[intervention], "dimensionless"),
+            simulations[f"rap_{intervention}"] = Simulation(
+                time_unit="hr",
+                end=150,
+                preinit_changes={
+                    **self.default_changes(),
+                    "BW": Q(77.1, "kg"),
+                    "PODOSE_rap": Q(self.dose, "mg"),
+                    # CYP3A4 and P-glycoprotein activity (induction by rifampin)
+                    **{
+                        pid: Q(value, "dimensionless")
+                        for pid, value in self.induction[intervention].items()
                     },
-                )]
+                },
             )
 
-        #console.print(tcsims.keys())
-        return tcsims
+        return simulations
 
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
 
         mappings = {}
 
@@ -84,62 +120,67 @@ class Tortorici2014(RapamycinSimulationExperiment):
                 self,
                 reference=FitData(
                     self,
-                    dataset=f"rapamycin_{intervention}",
+                    dataset=self.dataset_ids[intervention],
                     xid="time",
                     yid="mean",
                     yid_sd="mean_sd",
                     count="count",
                 ),
                 observable=FitData(
-                    self, task=f"task_rap_{intervention}", xid="time", yid=f"[Cveblood_rap]",
+                    self,
+                    task=f"task_rap_{intervention}",
+                    xid="time",
+                    yid="[Cveblood_rap]",
                 ),
-                metadata=RapamycinMappingMetaData(
+                metadata=PKPDMappingMetaData(
                     tissue=Tissue.BLOOD,
                     route=Route.PO,
                     application_form=ApplicationForm.SOLUTION,
                     dosing=Dosing.SINGLE,
                     health=Health.HEALTHY,
                     fasting=Fasting.FASTED,
-                    coadministration=Coadministration.NONE if intervention == "RAP20" else Coadministration.RIFAMPIN
-                )
+                    coadministration=Coadministration.NONE
+                    if intervention == "RAP20"
+                    else Coadministration.RIFAMPICIN,
+                ),
             )
 
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
         fig = Figure(
             experiment=self,
             sid="Fig1",
             name=f"{self.__class__.__name__}",
         )
         plots = fig.create_plots(
-            xaxis=Axis(self.label_time, unit=self.unit_time),
-            legend=True
+            xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
         )
         plots[0].set_yaxis(self.label_rap_blood, unit=self.unit_rap, scale="linear")
 
         for intervention in self.interventions:
-                # simulation
+            # simulation
             plots[0].add_data(
                 task=f"task_rap_{intervention}",
                 xid="time",
-                yid=f"[Cveblood_rap]",
-                label=intervention,
+                yid="[Cveblood_rap]",
+                label=self.names[intervention],
                 color=self.colors[intervention],
             )
-                # data
+            # data
             plots[0].add_data(
-                dataset=self.labels[intervention],
+                dataset=self.dataset_ids[intervention],
                 xid="time",
                 yid="mean",
                 yid_sd="mean_sd",
                 count="count",
-                label=intervention,
+                label=self.names[intervention],
                 color=self.colors[intervention],
             )
 
-        return {fig.sid: fig}
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    run_experiments(Tortorici2014, output_dir=Tortorici2014.__name__)
+    MODEL.run_experiments(Tortorici2014, output_dir=Tortorici2014.__name__)

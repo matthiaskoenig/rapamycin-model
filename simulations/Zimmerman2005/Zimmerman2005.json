@@ -1,0 +1,1425 @@
+{
+  "experiment_id": "Zimmerman2005",
+  "base_path": "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin",
+  "data_path": [
+    "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin/data/rapamycin"
+  ],
+  "models": {
+    "model": {
+      "sid": null,
+      "name": null,
+      "language": "SBML",
+      "language_type": "SBML",
+      "source": {
+        "source": "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin/models/output/models/rapamycin_body_flat.xml",
+        "path": "/home/mkoenig/git/rapamycin-model/src/pkdb_models/models/rapamycin/models/output/models/rapamycin_body_flat.xml",
+        "content": null
+      },
+      "base_path": null,
+      "changes": {},
+      "selections": [
+        "Afeces_rap",
+        "Afeces_raptot",
+        "Afeces_rx",
+        "Aurine_rx",
+        "GU__f_cyp3a4",
+        "GU__f_cyp3a5",
+        "GU__f_pg",
+        "GU__fed",
+        "IVDOSE_rap",
+        "KI__f_renal_function",
+        "LI__f_cyp3a4",
+        "LI__f_cyp3a5",
+        "PODOSE_rap",
+        "[Cve_rx]",
+        "[Cveblood_rap]",
+        "[Cveblood_raptot]",
+        "[Cveplasma_rap]",
+        "[Cveplasma_raptot]",
+        "f_cirrhosis",
+        "time"
+      ],
+      "parameters": {}
+    }
+  },
+  "tasks": {
+    "task_rap_RAP15_H": {
+      "sid": "model__rap_RAP15_H",
+      "name": null,
+      "model": "model",
+      "simulation": "rap_RAP15_H",
+      "observables": []
+    },
+    "task_rap_RAP15_A": {
+      "sid": "model__rap_RAP15_A",
+      "name": null,
+      "model": "model",
+      "simulation": "rap_RAP15_A",
+      "observables": []
+    },
+    "task_rap_RAP15_B": {
+      "sid": "model__rap_RAP15_B",
+      "name": null,
+      "model": "model",
+      "simulation": "rap_RAP15_B",
+      "observables": []
+    }
+  },
+  "observables": {},
+  "simulations": {
+    "rap_RAP15_H": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 320,
+      "preinit_changes": {
+        "BW": {
+          "value": 79.9,
+          "unit": "kilogram"
+        },
+        "PODOSE_rap": {
+          "value": 15,
+          "unit": "milligram"
+        },
+        "GU__fed": {
+          "value": 0.0,
+          "unit": "dimensionless"
+        },
+        "f_cirrhosis": {
+          "value": 0,
+          "unit": "dimensionless"
+        }
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
+    },
+    "rap_RAP15_A": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 320,
+      "preinit_changes": {
+        "BW": {
+          "value": 79.9,
+          "unit": "kilogram"
+        },
+        "PODOSE_rap": {
+          "value": 15,
+          "unit": "milligram"
+        },
+        "GU__fed": {
+          "value": 0.0,
+          "unit": "dimensionless"
+        },
+        "f_cirrhosis": {
+          "value": 0.3994897959183674,
+          "unit": "dimensionless"
+        }
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
+    },
+    "rap_RAP15_B": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 320,
+      "preinit_changes": {
+        "BW": {
+          "value": 79.9,
+          "unit": "kilogram"
+        },
+        "PODOSE_rap": {
+          "value": 15,
+          "unit": "milligram"
+        },
+        "GU__fed": {
+          "value": 0.0,
+          "unit": "dimensionless"
+        },
+        "f_cirrhosis": {
+          "value": 0.6979591836734694,
+          "unit": "dimensionless"
+        }
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
+    }
+  },
+  "data": {
+    "task_rap_RAP15_H__time": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__IVDOSE_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__IVDOSE_rap",
+      "index": "IVDOSE_rap",
+      "selection": "IVDOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__conc__Cveblood_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__conc__Cveblood_raptot",
+      "index": "Cveblood_raptot",
+      "selection": "[Cveblood_raptot]",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__conc__Cveplasma_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__conc__Cveplasma_raptot",
+      "index": "Cveplasma_raptot",
+      "selection": "[Cveplasma_raptot]",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__Afeces_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__Afeces_raptot",
+      "index": "Afeces_raptot",
+      "selection": "Afeces_raptot",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__GU__fed": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_H__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_H__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP15_H",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__time": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__IVDOSE_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__IVDOSE_rap",
+      "index": "IVDOSE_rap",
+      "selection": "IVDOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__conc__Cveblood_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__conc__Cveblood_raptot",
+      "index": "Cveblood_raptot",
+      "selection": "[Cveblood_raptot]",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__conc__Cveplasma_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__conc__Cveplasma_raptot",
+      "index": "Cveplasma_raptot",
+      "selection": "[Cveplasma_raptot]",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__Afeces_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__Afeces_raptot",
+      "index": "Afeces_raptot",
+      "selection": "Afeces_raptot",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__GU__fed": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_A__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_A__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP15_A",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__time": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__IVDOSE_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__IVDOSE_rap",
+      "index": "IVDOSE_rap",
+      "selection": "IVDOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__PODOSE_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__PODOSE_rap",
+      "index": "PODOSE_rap",
+      "selection": "PODOSE_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__conc__Cveblood_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__conc__Cveblood_rap",
+      "index": "Cveblood_rap",
+      "selection": "[Cveblood_rap]",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__conc__Cveplasma_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__conc__Cveplasma_rap",
+      "index": "Cveplasma_rap",
+      "selection": "[Cveplasma_rap]",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__conc__Cve_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__conc__Cve_rx",
+      "index": "Cve_rx",
+      "selection": "[Cve_rx]",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__conc__Cveblood_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__conc__Cveblood_raptot",
+      "index": "Cveblood_raptot",
+      "selection": "[Cveblood_raptot]",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__conc__Cveplasma_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__conc__Cveplasma_raptot",
+      "index": "Cveplasma_raptot",
+      "selection": "[Cveplasma_raptot]",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__Aurine_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__Aurine_rx",
+      "index": "Aurine_rx",
+      "selection": "Aurine_rx",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__Afeces_rap": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__Afeces_rap",
+      "index": "Afeces_rap",
+      "selection": "Afeces_rap",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__Afeces_rx": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__Afeces_rx",
+      "index": "Afeces_rx",
+      "selection": "Afeces_rx",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__Afeces_raptot": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__Afeces_raptot",
+      "index": "Afeces_raptot",
+      "selection": "Afeces_raptot",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__GU__fed": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__GU__f_pg": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__GU__f_pg",
+      "index": "GU__f_pg",
+      "selection": "GU__f_pg",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__GU__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__GU__f_cyp3a4",
+      "index": "GU__f_cyp3a4",
+      "selection": "GU__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__GU__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__GU__f_cyp3a5",
+      "index": "GU__f_cyp3a5",
+      "selection": "GU__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__LI__f_cyp3a4": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__LI__f_cyp3a4",
+      "index": "LI__f_cyp3a4",
+      "selection": "LI__f_cyp3a4",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_rap_RAP15_B__LI__f_cyp3a5": {
+      "type": "TASK",
+      "sid": "task_rap_RAP15_B__LI__f_cyp3a5",
+      "index": "LI__f_cyp3a5",
+      "selection": "LI__f_cyp3a5",
+      "unit": null,
+      "task": "task_rap_RAP15_B",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    }
+  },
+  "figures": {
+    "Tab2": {
+      "sid": "Tab2",
+      "name": "Zimmerman2005 (reported Cmax at tmax)",
+      "num_rows": 1,
+      "num_cols": 2,
+      "width": null,
+      "height": null,
+      "settings": {},
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Tab2__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Tab2__plot0_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": 0,
+              "max": 24,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Tab2__plot0_yaxis",
+              "name": "rapamycin blood [nM]",
+              "label": "rapamycin blood",
+              "unit": "nM",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Tab2__plot0_curve0",
+                "name": "15 mg healthy",
+                "x": "task_rap_RAP15_H__time",
+                "y": "task_rap_RAP15_H__conc__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Tab2__plot0_curve1",
+                "name": "15 mg healthy (Cmax)\u00b1SD (n=18)",
+                "x": "cmax_RAP15_H__time",
+                "y": "cmax_RAP15_H__mean",
+                "xerr": null,
+                "yerr": "cmax_RAP15_H__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Tab2__plot0_curve2",
+                "name": "15 mg Child-Pugh A",
+                "x": "task_rap_RAP15_A__time",
+                "y": "task_rap_RAP15_A__conc__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#74a9cfff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Tab2__plot0_curve3",
+                "name": "15 mg Child-Pugh A (Cmax)\u00b1SD (n=13)",
+                "x": "cmax_RAP15_A__time",
+                "y": "cmax_RAP15_A__mean",
+                "xerr": null,
+                "yerr": "cmax_RAP15_A__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#74a9cfff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Tab2__plot0_curve4",
+                "name": "15 mg Child-Pugh B",
+                "x": "task_rap_RAP15_B__time",
+                "y": "task_rap_RAP15_B__conc__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#2b8cbeff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Tab2__plot0_curve5",
+                "name": "15 mg Child-Pugh B (Cmax)\u00b1SD (n=5)",
+                "x": "cmax_RAP15_B__time",
+                "y": "cmax_RAP15_B__mean",
+                "xerr": null,
+                "yerr": "cmax_RAP15_B__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#2b8cbeff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              }
+            ],
+            "areas": [],
+            "bands": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Tab2__plot1",
+            "name": null,
+            "xaxis": {
+              "sid": "Tab2__plot1_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Tab2__plot1_yaxis",
+              "name": "rapamycin blood [nM]",
+              "label": "rapamycin blood",
+              "unit": "nM",
+              "scale": "LOG10",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Tab2__plot1_curve0",
+                "name": "15 mg healthy",
+                "x": "task_rap_RAP15_H__time",
+                "y": "task_rap_RAP15_H__conc__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Tab2__plot1_curve1",
+                "name": "15 mg healthy (Cmax)\u00b1SD (n=18)",
+                "x": "cmax_RAP15_H__time",
+                "y": "cmax_RAP15_H__mean",
+                "xerr": null,
+                "yerr": "cmax_RAP15_H__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Tab2__plot1_curve2",
+                "name": "15 mg Child-Pugh A",
+                "x": "task_rap_RAP15_A__time",
+                "y": "task_rap_RAP15_A__conc__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#74a9cfff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Tab2__plot1_curve3",
+                "name": "15 mg Child-Pugh A (Cmax)\u00b1SD (n=13)",
+                "x": "cmax_RAP15_A__time",
+                "y": "cmax_RAP15_A__mean",
+                "xerr": null,
+                "yerr": "cmax_RAP15_A__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#74a9cfff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Tab2__plot1_curve4",
+                "name": "15 mg Child-Pugh B",
+                "x": "task_rap_RAP15_B__time",
+                "y": "task_rap_RAP15_B__conc__Cveblood_rap",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#2b8cbeff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Tab2__plot1_curve5",
+                "name": "15 mg Child-Pugh B (Cmax)\u00b1SD (n=5)",
+                "x": "cmax_RAP15_B__time",
+                "y": "cmax_RAP15_B__mean",
+                "xerr": null,
+                "yerr": "cmax_RAP15_B__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#2b8cbeff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              }
+            ],
+            "areas": [],
+            "bands": []
+          },
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    }
+  }
+}
